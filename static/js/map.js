@@ -124,7 +124,6 @@
     var frameWrap = document.createElement("div");
     frameWrap.className = "gmap-frame";
     var iframe = document.createElement("iframe");
-    iframe.loading = "lazy";
     iframe.referrerPolicy = "no-referrer-when-downgrade";
     iframe.title = i18n.mapTitle || "Google Maps";
     iframe.setAttribute("allowfullscreen", "");

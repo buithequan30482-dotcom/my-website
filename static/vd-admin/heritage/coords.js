@@ -144,7 +144,7 @@
     gWrap.className = "vdh-gpreview";
     gWrap.innerHTML = '<div class="vdh-gpreview-head"><b>Đối chiếu trên Google Maps</b>' +
       '<span><button type="button" class="vdh-gsat" aria-pressed="true">Bản đồ</button> ' +
-      '<a target="_blank" rel="noopener">Mở Google Maps</a></span></div><iframe loading="lazy" title="Google Maps"></iframe>' +
+      '<a target="_blank" rel="noopener">Mở Google Maps</a></span></div><iframe title="Google Maps"></iframe>' +
       '<p class="vdh-gpreview-note">' + (cfg.key ? "" : "Chưa có Google Maps API key: chọn điểm trên bản đồ phía trên (OpenStreetMap/vệ tinh), khung này hiển thị lại đúng vị trí trên Google Maps để đối chiếu. Khi nhập API key trong Cấu hình hệ thống, bản đồ chọn điểm sẽ là Google Maps.") + '</p>';
     mapEl.parentNode.insertBefore(gWrap, mapEl.nextSibling);
     var gFrame = gWrap.querySelector("iframe"), gLink = gWrap.querySelector("a"), gSat = gWrap.querySelector(".vdh-gsat");
