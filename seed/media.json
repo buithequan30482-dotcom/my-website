@@ -132,5 +132,437 @@
     }
    }
   ]
+ },
+ "VD02": {
+  "ngay_thu_thap": "2026-10-16",
+  "anh": [
+   {
+    "url": "https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/t%e1%bb%95ng%20quan%20v%c3%a2n%20%c4%91%e1%bb%93n/l%e1%bb%8bch%20s%e1%bb%ad%20ph%c3%a1t%20tri%e1%bb%83n/image_tzf1622351772.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietBVGioiThieu.aspx?bvid=49",
+    "nguon": "Cổng TTĐT đặc khu Vân Đồn",
+    "chu_thich": {
+     "vi": "Miếu Quan Lạn, nơi thờ ba anh em tướng họ Phạm",
+     "en": "Quan Lạn shrine, dedicated to the three Phạm brothers",
+     "zh": "官澜庙，供奉范氏三兄弟将军"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/t%e1%bb%95ng%20quan%20v%c3%a2n%20%c4%91%e1%bb%93n/l%e1%bb%8bch%20s%e1%bb%ad%20ph%c3%a1t%20tri%e1%bb%83n/image_jvj1622351595.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietBVGioiThieu.aspx?bvid=49",
+    "nguon": "Cổng TTĐT đặc khu Vân Đồn",
+    "chu_thich": {
+     "vi": "Nghè thờ Trần Khánh Dư trên đảo Quan Lạn",
+     "en": "The nghè (shrine) of Trần Khánh Dư on Quan Lạn island",
+     "zh": "官澜 (Quan Lạn) 岛上的陈庆余 (Trần Khánh Dư) 祠"
+    }
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/t%e1%bb%95ng%20quan%20v%c3%a2n%20%c4%91%e1%bb%93n/l%e1%bb%8bch%20s%e1%bb%ad%20ph%c3%a1t%20tri%e1%bb%83n/image_ynk1622351928.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietBVGioiThieu.aspx?bvid=49",
+    "nguon": "Cổng TTĐT đặc khu Vân Đồn",
+    "chu_thich": {
+     "vi": "Chùa Quan Lạn (Linh Quang tự)",
+     "en": "Quan Lạn pagoda (Linh Quang tự)",
+     "zh": "官澜寺（灵光寺 Linh Quang tự）"
+    }
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/t%e1%bb%95ng%20quan%20v%c3%a2n%20%c4%91%e1%bb%93n/l%e1%bb%8bch%20s%e1%bb%ad%20ph%c3%a1t%20tri%e1%bb%83n/z6932482721887_679f2d0039b22e3a255447565fb1bf89.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietBVGioiThieu.aspx?bvid=49",
+    "nguon": "Cổng TTĐT đặc khu Vân Đồn",
+    "chu_thich": {
+     "vi": "Đình Quan Lạn",
+     "en": "Quan Lạn communal house",
+     "zh": "官澜亭（đình Quan Lạn）"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0AkWI4_PGAf51teARoL8aYwUSJcx5qThNFBrMmsnZStCfv64DZ8ac6obY8zGRcXkWQUYs0Bsr--P0X3cBQWMKy8/images866510_Tr9_Den_tho.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/quan-lan-huyen-tich-va-chien-cong-2307438.html",
+    "nguon": "Báo Quảng Ninh (bài: Huỳnh Đăng)",
+    "chu_thich": {
+     "vi": "Đền thờ ba vị tướng họ Phạm ở Quan Lạn",
+     "en": "Temple of the three Phạm generals in Quan Lạn",
+     "zh": "官澜 (Quan Lạn) 范氏三将军祠"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50Br1ymXb5Xn5uMfLWQSGJHB8XQVzfM7iz2Xf_TfEiajyR7hrJYFkGfYb_tCMaFwDk3JMyBFn4gjxAeoLdr0YCu1Nixz3UYxPnfBe9e0w7DC3KFp9qzrRm5hULWiDC8koE/2115278_lanh_dao_huyen_van_don_dang_huong_tai_mieu_duc_ong_09073516.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/mieu-duc-ong-o-quan-lan-3256407.html",
+    "nguon": "Báo Quảng Ninh (bài: Phạm Học)",
+    "chu_thich": {
+     "vi": "Dâng hương tại miếu Đức Ông, Quan Lạn",
+     "en": "Offering incense at Đức Ông shrine, Quan Lạn",
+     "zh": "在官澜德翁庙上香"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0KRSWD5Ii4gTSQ9lI0J3_BNFDVKdvhunVVkmEhF1Ttu8hjN0H1nk_KNqgIfNNqp6n8Pw76TYygaVZLEGATf6FKg/images705284_a2_t4.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/tim-trong-su-sach-ve-ba-vi-tuong-ho-pham-tho-tai-quan-lan-2216368.html",
+    "nguon": "Báo Quảng Ninh (bài: Trần Minh)",
+    "chu_thich": {
+     "vi": "Hai giáp Đông Nam Văn và Đoài Bắc Võ tế thần trước miếu Đức Ông",
+     "en": "The Đông Nam Văn and Đoài Bắc Võ village sections making offerings before Đức Ông shrine",
+     "zh": "东南文 (Đông Nam Văn) 与兑北武 (Đoài Bắc Võ) 两甲在德翁庙前祭神"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52YE5eo81eOp3Z_WaiIjYmevnQ7DalofeiPfnHE9N_lJll8e7bvIsLy-1DF0Tw9-nOUhEGBIppuRQZS5bNOtg_ssxLHKr6pl7loRE_Kg5H86w/2091339_ban_tho_tran_khanh_du_trong_hau_cung_07074506.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/nghe-tho-tran-khanh-du-tren-dao-quan-lan-3243721.html",
+    "nguon": "Báo Quảng Ninh (bài: Phan Thị Thúy Vân, Bảo tàng Quảng Ninh)",
+    "chu_thich": {
+     "vi": "Ban thờ Trần Khánh Dư trong hậu cung nghè Quan Lạn",
+     "en": "Altar of Trần Khánh Dư in the inner sanctuary of the Quan Lạn nghè",
+     "zh": "官澜祠后宫内的陈庆余 (Trần Khánh Dư) 神龛"
+    }
+   }
+  ],
+  "video": []
+ },
+ "VD03": {
+  "ngay_thu_thap": "2026-10-16",
+  "anh": [
+   {
+    "url": "https://image.sggp.org.vn/w1000/Uploaded/2026/duxredwsxr/2022_09_02/dao-ngoc-vung_LJGT.jpg.webp",
+    "trang_nguon": "https://www.sggp.org.vn/doi-thay-dao-ngoc-vung-post649807.html",
+    "nguon": "Báo Sài Gòn Giải Phóng (ảnh: Phạm Thơ)",
+    "chu_thich": {
+     "vi": "Khuôn viên khu lưu niệm và cây đa Bác Hồ trên đảo Ngọc Vừng",
+     "en": "Grounds of the Hồ Chí Minh memorial site and Uncle Hồ's banyan tree on Ngọc Vừng island",
+     "zh": "玉瓮岛 (Ngọc Vừng) 胡伯伯纪念区园地与胡伯伯榕树"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/14/ngoc-vung-4-16604851117981064038448-158-0-1408-2000-crop-1660485160446900008236.jpg",
+    "trang_nguon": "https://danviet.vn/vi-sao-ngoc-vung-co-ten-la-hon-dao-bung-sang-20220814205420437-d1037351.html",
+    "nguon": "Dân Việt (ảnh: K.N)",
+    "chu_thich": {
+     "vi": "Cây đa Bác Hồ trồng năm 1962, bên trái khu lưu niệm",
+     "en": "The banyan tree planted by Uncle Hồ in 1962, to the left of the memorial area",
+     "zh": "胡伯伯1962年亲手种植的榕树，位于纪念区左侧"
+    }
+   },
+   {
+    "url": "https://afamilycdn.com/150157425591193600/2026/6/1/1997893bachovethamxadaongocvungvachupanhcungcacemhocsinhngay1211196219551714-17802814568471830800609.jpg",
+    "trang_nguon": "https://afamily.vn/chuyen-it-ai-biet-ve-cay-da-bac-ho-tren-hon-dao-ngoc-bung-sang-giua-vinh-bai-tu-long-236260601101652717.chn",
+    "nguon": "aFamily / Phụ nữ mới (ảnh tư liệu)",
+    "chu_thich": {
+     "vi": "Ảnh tư liệu: Bác Hồ chụp ảnh cùng học sinh Ngọc Vừng năm 1962",
+     "en": "Archive photo: President Hồ Chí Minh with Ngọc Vừng schoolchildren, 1962",
+     "zh": "资料照片：1962年胡伯伯与玉瓮 (Ngọc Vừng) 学生合影"
+    }
+   },
+   {
+    "url": "https://afamilycdn.com/150157425591193600/2026/6/3/dao-ngoc-vung-khu-tuong-niem-bac-ho-1-17804543519661974364659.jpg",
+    "trang_nguon": "https://afamily.vn/chuyen-it-ai-biet-ve-cay-da-bac-ho-tren-hon-dao-ngoc-bung-sang-giua-vinh-bai-tu-long-236260601101652717.chn",
+    "nguon": "aFamily / Phụ nữ mới (ảnh: Q.L.)",
+    "chu_thich": {
+     "vi": "Khu lưu niệm Bác Hồ trên đảo Ngọc Vừng (2026)",
+     "en": "Hồ Chí Minh memorial site on Ngọc Vừng island (2026)",
+     "zh": "玉瓮岛 (Ngọc Vừng) 胡伯伯纪念区（2026年）"
+    }
+   },
+   {
+    "url": "https://afamilycdn.com/150157425591193600/2026/6/3/dao-ngoc-vung-khu-tuong-niem-bac-ho-2-17804543299352142660409.jpg",
+    "trang_nguon": "https://afamily.vn/chuyen-it-ai-biet-ve-cay-da-bac-ho-tren-hon-dao-ngoc-bung-sang-giua-vinh-bai-tu-long-236260601101652717.chn",
+    "nguon": "aFamily / Phụ nữ mới (ảnh: Q.L.)",
+    "chu_thich": {
+     "vi": "Một góc khu lưu niệm Bác Hồ, Ngọc Vừng (2026)",
+     "en": "A corner of the Hồ Chí Minh memorial site, Ngọc Vừng (2026)",
+     "zh": "玉瓮 (Ngọc Vừng) 胡伯伯纪念区一角（2026年）"
+    }
+   },
+   {
+    "url": "https://afamilycdn.com/150157425591193600/2026/6/3/dao-ngoc-vung-khu-tuong-niem-bac-ho-6-17804543787981191202603.jpg",
+    "trang_nguon": "https://afamily.vn/chuyen-it-ai-biet-ve-cay-da-bac-ho-tren-hon-dao-ngoc-bung-sang-giua-vinh-bai-tu-long-236260601101652717.chn",
+    "nguon": "aFamily / Phụ nữ mới (ảnh: Q.L.)",
+    "chu_thich": {
+     "vi": "Phòng trưng bày tư liệu tại khu lưu niệm Bác Hồ",
+     "en": "Exhibition room at the Hồ Chí Minh memorial site",
+     "zh": "胡志明纪念区内的资料展室"
+    }
+   },
+   {
+    "url": "https://mia.vn/media/uploads/blog-du-lich/dao-ngoc-vung-7-1753522181.jpg",
+    "trang_nguon": "https://mia.vn/cam-nang-du-lich/dao-ngoc-vung-ha-long-18951",
+    "nguon": "mia.vn (ghi nguồn ảnh: Báo Quảng Ninh)",
+    "chu_thich": {
+     "vi": "Nơi đón Bác Hồ với hàng phi lao và công trình lưu niệm",
+     "en": "The spot where Uncle Hồ was welcomed, with casuarina trees and memorial structures",
+     "zh": "迎接胡伯伯之处，木麻黄林与纪念建筑"
+    }
+   },
+   {
+    "url": "https://tripmap.vn/wp-content/uploads/2021/04/khu-luu-niem-bac-ho-1617945946315.jpeg",
+    "trang_nguon": "https://tripmap.vn/sights/h-van-don/khu-luu-niem-bac-ho/",
+    "nguon": "TripMap (nguồn phụ)",
+    "chu_thich": {
+     "vi": "Khu lưu niệm Bác Hồ trên đảo Ngọc Vừng (ảnh đăng khoảng 2021, có thể trước đợt cải tạo)",
+     "en": "Hồ Chí Minh memorial site on Ngọc Vừng island (posted c. 2021, possibly before renovation)",
+     "zh": "玉瓮岛 (Ngọc Vừng) 胡伯伯纪念区（约2021年发布，可能摄于改造前）"
+    }
+   }
+  ],
+  "video": []
+ },
+ "VD04": {
+  "ngay_thu_thap": "2026-10-16",
+  "anh": [
+   {
+    "url": "https://media.quangninh.gov.vn/7343e27a-9300-4e2d-80aa-c4ee118af1d6/Libraries/hinhanhbaiviet/2025/th%c3%a1ng%204/di%20t%c3%adch%20kh%e1%ba%a3o%20c%e1%bb%95%20ba%20v%c5%a9ng/z6517830611545_134c1320098169bcecb53eae7c182008.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/So/sovanhoathethao/Trang/ChiTietTinTuc.aspx?nid=12400",
+    "nguon": "Sở VHTT&DL Quảng Ninh (Cổng TTĐT tỉnh Quảng Ninh)",
+    "chu_thich": {
+     "vi": "Toàn cảnh khu vực di tích khảo cổ Ba Vũng",
+     "en": "View of the Ba Vũng archaeological site",
+     "zh": "巴湾（Ba Vũng）考古遗址景观"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/7343e27a-9300-4e2d-80aa-c4ee118af1d6/Libraries/hinhanhbaiviet/2025/th%c3%a1ng%204/di%20t%c3%adch%20kh%e1%ba%a3o%20c%e1%bb%95%20ba%20v%c5%a9ng/z6516685000711_333e0a325458f35b932f15254d5e9730.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/So/sovanhoathethao/Trang/ChiTietTinTuc.aspx?nid=12400",
+    "nguon": "Sở VHTT&DL Quảng Ninh (ảnh: Bảo tàng tỉnh Quảng Ninh)",
+    "chu_thich": {
+     "vi": "Bát gốm còn nguyên vẹn tìm thấy tại di chỉ Ba Vũng, lưu giữ tại Bảo tàng Quảng Ninh",
+     "en": "The intact pottery bowl from Ba Vũng, kept at the Quảng Ninh Museum",
+     "zh": "巴湾（Ba Vũng）遗址出土的完整陶碗，现藏广宁（Quảng Ninh）博物馆"
+    }
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/7343e27a-9300-4e2d-80aa-c4ee118af1d6/Libraries/hinhanhbaiviet/2025/th%c3%a1ng%204/di%20t%c3%adch%20kh%e1%ba%a3o%20c%e1%bb%95%20ba%20v%c5%a9ng/z6516685314905_cc4a2c1a57c88f322ec78a694c40c04b.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/So/sovanhoathethao/Trang/ChiTietTinTuc.aspx?nid=12400",
+    "nguon": "Sở VHTT&DL Quảng Ninh (ảnh: Bảo tàng tỉnh Quảng Ninh)",
+    "chu_thich": {
+     "vi": "Hiện vật đá tìm thấy tại di chỉ Ba Vũng",
+     "en": "Stone artefacts found at the Ba Vũng site",
+     "zh": "巴瓮 (Ba Vũng) 遗址出土的石器"
+    }
+   }
+  ],
+  "video": []
+ },
+ "VD05": {
+  "ngay_thu_thap": "2026-10-16",
+  "anh": [
+   {
+    "url": "https://static.wixstatic.com/media/13b421_ed2572c1be2142ffbbc7a7660657c604~mv2.jpg/v1/crop/x_0,y_11,w_800,h_521/fill/w_799,h_521,al_c,q_85,enc_avif,quality_auto/%E1%BA%A3nh%201.jpg",
+    "trang_nguon": "https://www.dulichngocvung.vn/tran-dia-phao-12-7-mm",
+    "nguon": "Du lịch đảo Ngọc Vừng (dulichngocvung.vn) – không ghi tác giả ảnh",
+    "chu_thich": {
+     "vi": "Trận địa 12,7 mm trên đồi Điếm Canh, đảo Ngọc Vừng – nơi bắn rơi chiếc máy bay Mỹ thứ 200 trên bầu trời Quảng Ninh.",
+     "en": "The 12.7 mm gun position on Điếm Canh hill, Ngọc Vừng island – where the 200th US aircraft over Quảng Ninh was shot down.",
+     "zh": "玉瓮 (Ngọc Vừng) 岛店更 (Điếm Canh) 山上的12.7毫米机枪阵地——击落广宁上空第200架美机之地。"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://static.wixstatic.com/media/13b421_f7fef9b8999247d998a67c921d192461~mv2.jpg/v1/fill/w_557,h_489,al_c,q_80,enc_avif,quality_auto/13b421_f7fef9b8999247d998a67c921d192461~mv2.jpg",
+    "trang_nguon": "https://www.dulichngocvung.vn/diem-du-lich-dao-ngoc-vung-n%C4%83m-2024",
+    "nguon": "Du lịch đảo Ngọc Vừng (dulichngocvung.vn) – không ghi tác giả ảnh",
+    "chu_thich": {
+     "vi": "Súng máy phòng không 12,7 mm trưng bày tại di tích",
+     "en": "A 12.7 mm anti-aircraft machine gun on display at the site",
+     "zh": "遗址陈列的12.7毫米高射机枪"
+    }
+   }
+  ],
+  "video": []
+ },
+ "VD06": {
+  "ngay_thu_thap": "2026-10-16",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50hLD-wZ9Wt4kZtqb1hECpyVrFdmbwbrsQz2_i9KxsT5vQQtacgCpfWWUr_Om_JLzhIlq5eErOquc3o20YAAl34Evmzva1ZC6i1CdCiBf39gQ0zA4_N0wDHC8Y7QsPfChheL8mpBondLZX9Ei6DoiE-7VbhFP45j-OhuLjeNj5AsCvfASHQv7AjJVbOD4q92ho/2184616_doan_ruoc_co_doi_co_than_doi_nhac_le_doi_te_khi_doi_dang_le_cung_dong_dao_nhan_dan_du_khach_tham_gia_03483223.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/dac-sac-le-te-dinh-mieu-ngoc-vung-3285382.html",
+    "nguon": "Báo Quảng Ninh điện tử (ảnh: Dương Trường – theo byline bài)",
+    "chu_thich": {
+     "vi": "Đoàn rước trong Lễ tế đình – miếu Ngọc Vừng, mùng 3 Tết Giáp Thìn 2024 (ảnh: Báo Quảng Ninh)",
+     "en": "The procession at the Ngọc Vừng communal house and shrine rite, 3rd day of Tết Giáp Thìn 2024 (photo: Báo Quảng Ninh)",
+     "zh": "玉瓮 (Ngọc Vừng) 亭庙祭典迎神队伍，甲辰年正月初三（2024年）（图：《广宁报》）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50hLD-wZ9Wt4kZtqb1hECpytOjxnWAdEQ0zwEUnIMkeImakfLMrplLT-U1OMucnfCqw6W2Thk1hlzXq14VJrwicetlcQ45ZyNRq-GosiJkrPQ/2181240_nghi_thuc_te_le_tai_dinh_ngoc_vung_21254712.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/phuc-dung-le-te-dinh-mieu-ngoc-vung-3283885.html",
+    "nguon": "Báo Quảng Ninh điện tử (ảnh: Dương Trường – theo byline bài)",
+    "chu_thich": {
+     "vi": "Nghi thức tế lễ tại đình Ngọc Vừng, ngày 12/2/2024 (ảnh: Báo Quảng Ninh)",
+     "en": "The sacrificial rite at Ngọc Vừng communal house, 12 February 2024 (photo: Báo Quảng Ninh)",
+     "zh": "玉瓮亭 (đình Ngọc Vừng) 祭礼仪式，2024年2月12日（图：《广宁报》）"
+    }
+   }
+  ],
+  "video": []
+ },
+ "VD07": {
+  "ngay_thu_thap": "2026-10-16",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0DWEUXLGn2FXqa2obRhb6WnIEEEzkTB64kwgcJYhrNya1RuSmD3p5uS4zJBFuiKQrA/images627531_0.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/Van-Hai-linh-tu-diem-du-lich-tam-linh-cua-Van-don-2162250.html",
+    "nguon": "Báo Quảng Ninh điện tử (bài: Giang - Quân)",
+    "chu_thich": {
+     "vi": "Đền thờ vua Lý Anh Tông (Vân Hải linh từ) sau tôn tạo",
+     "en": "The Temple of King Lý Anh Tông (Vân Hải linh từ) after restoration",
+     "zh": "修缮后的李英宗庙 (Vân Hải linh từ)"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0NVV1Aoo75Z8x7e-AJrDVdAqhZnAmbIJeyQoytjrvgIkaTRw3NdQ-o0NO0YdWIyShI0aWo8tY6l0SZDmmfRsopk/images1414413_maxresdefault.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/den-tho-vua-ly-anh-tong-2496008.html",
+    "nguon": "Báo Quảng Ninh điện tử (khung hình video QTV)",
+    "chu_thich": {
+     "vi": "Đền thờ vua Lý Anh Tông – khung hình phóng sự Quảng Ninh TV (2020)",
+     "en": "Temple of King Lý Anh Tông – still from a Quảng Ninh TV report (2020)",
+     "zh": "李英宗庙——广宁电视台专题片截图(2020年)"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53_dwsUn1jwYBmJsDlE1l2sg6O6KYzvLz5JbwXURR_wKNxX8YX0NTDqeMK8i3cOWWY/2311283_2_3_12163908.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/van-don-le-cau-an-xuan-at-ty-nam-2025-3342978.html",
+    "nguon": "Báo Quảng Ninh điện tử (bài: Nguyễn Thu - Thanh Nga, Trung tâm TT&VH huyện Vân Đồn)",
+    "chu_thich": {
+     "vi": "Lễ Cầu an Xuân Ất Tỵ 2025 tại đền thờ vua Lý Anh Tông",
+     "en": "Spring Prayer-for-Peace ceremony 2025 at the Temple of King Lý Anh Tông",
+     "zh": "2025年乙巳春祈安礼于李英宗庙举行"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv503fmA4sTFeV6cyrBy6NUJW8CZ2MpZU2x4105UFjn47AXr_Yc50c1y7lP6SPcfBD54/2150612_dong_trong_16154920.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/kham-pha-dong-dong-trong-o-van-don-3270464.html",
+    "nguon": "Báo Quảng Ninh điện tử (Truyền hình)",
+    "chu_thich": {
+     "vi": "Động Đông Trong, vịnh Bái Tử Long (ảnh đồ họa của Báo Quảng Ninh)",
+     "en": "Đông Trong Cave, Bái Tử Long Bay (graphic by Quảng Ninh newspaper)",
+     "zh": "拜子龙湾的东中洞 (Đông Trong)（《广宁报》配图）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=0pPCz9tSBtY",
+    "tieu_de": {
+     "vi": "Đền thờ vua Lý Anh Tông | QTV",
+     "en": "Temple of King Lý Anh Tông | QTV",
+     "zh": "李英宗庙 | 广宁电视台"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 14/08/2020"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=92OTszEKQ54",
+    "tieu_de": {
+     "vi": "Khám phá động Đông Trong ở Vân Đồn",
+     "en": "Exploring Đông Trong Cave in Vân Đồn",
+     "zh": "探访云屯东中洞"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 20/11/2023"
+   }
+  ]
+ },
+ "VD08": {
+  "ngay_thu_thap": "2026-10-16",
+  "anh": [
+   {
+    "url": "https://afamilycdn.com/150157425591193600/2026/5/30/thanh-co-nha-mac-dao-ngoc-vung1-1780113377762794292887.jpg",
+    "trang_nguon": "https://afamily.vn/tan-tich-mot-toa-thanh-co-500-tuoi-it-nguoi-viet-bien-den-giua-dao-ngoc-vung-bai-cat-trang-dai-3km-va-chuyen-ve-vung-bien-co-anh-ngoc-236260530111354258.chn",
+    "nguon": "Afamily (ảnh: Q.L.)",
+    "chu_thich": {
+     "vi": "Bia ghi dấu tích Thành cổ Ngọc Vừng",
+     "en": "Stele marking the remains of the Ngọc Vừng ancient citadel",
+     "zh": "玉翁古城 (Thành cổ Ngọc Vừng) 遗迹标志碑"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://afamilycdn.com/150157425591193600/2026/5/30/thanh-co-nha-mac-dao-ngoc-vung3-17801135788561146664014.jpg",
+    "trang_nguon": "https://afamily.vn/tan-tich-mot-toa-thanh-co-500-tuoi-it-nguoi-viet-bien-den-giua-dao-ngoc-vung-bai-cat-trang-dai-3km-va-chuyen-ve-vung-bien-co-anh-ngoc-236260530111354258.chn",
+    "nguon": "Afamily (ảnh: Q.L.)",
+    "chu_thich": {
+     "vi": "Khu vực thành cổ nay cây cỏ mọc kín",
+     "en": "The citadel area, now overgrown",
+     "zh": "古城区域如今草木丛生"
+    }
+   },
+   {
+    "url": "https://static.wixstatic.com/media/13b421_fabf3c6db8b84713bdaf2fd986fca93a~mv2.jpg/v1/fill/w_480,h_318,al_c,q_80,enc_avif,quality_auto/13b421_fabf3c6db8b84713bdaf2fd986fca93a~mv2.jpg",
+    "trang_nguon": "https://www.dulichngocvung.vn/thanh-co-ngoc-vung",
+    "nguon": "Du lịch Ngọc Vừng (dulichngocvung.vn)",
+    "chu_thich": {
+     "vi": "Đá sót lại tại khu vực thành cổ",
+     "en": "Remaining stones at the citadel site",
+     "zh": "古城遗址残存的石块"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0MLt6-DvWQSnUQi16xz0Z1Jt4UyQFmwtVW6rBu1s_QSoMmyBY7aaqTmrlt84CYxus58AGtjMyWCTDjhSOKkSaTajPD1BAvxVB8llJqr5s7gp/images995512_Tr4_moc_bao_ve_di_tich_ngoc_vung.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/thanh-co-ngoc-vung-co-tu-thoi-nguyen-2364117.html",
+    "nguon": "Báo Quảng Ninh điện tử (og:image; bài của Huỳnh Đăng)",
+    "chu_thich": {
+     "vi": "Cắm mốc bảo vệ di tích Thành cổ Ngọc Vừng",
+     "en": "Placing a protection marker at Ngọc Vừng Citadel",
+     "zh": "为玉瓮 (Ngọc Vừng) 古城设立保护界桩"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=qeFHGuE_E6Y",
+    "tieu_de": {
+     "vi": "Dấu ấn xưa thành cổ Ngọc Vừng (thành nhà Mạc)",
+     "en": "Ancient traces of the Ngọc Vừng citadel (the “Mạc citadel”)",
+     "zh": "玉翁古城 (Thành cổ Ngọc Vừng)（莫朝城）的旧日印记"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 12/04/2021"
+   }
+  ]
+ },
+ "VD10": {
+  "ngay_thu_thap": "2026-10-16",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50IAgFSrBlR6jU9ZAP5y7JhbnOHLIScZeiVK8QJIaRlCtEs3xm6NzVvU4uTs56QtnheFEUnE9TCYZXnYyowj6Vi/2135589_den_mau_nhin_tu_tren_cao_10245110.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/den-tho-mau-o-quan-lan-3264304.html",
+    "nguon": "Báo Quảng Ninh điện tử (bài: Phạm Học)",
+    "chu_thich": {
+     "vi": "Đền Mẫu Quan Lạn nhìn từ trên cao",
+     "en": "Aerial view of the Mother temple, Quan Lạn",
+     "zh": "俯瞰官澜 (Quan Lạn) 母庙"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://www.angsana.com/_next/image?url=https%3A%2F%2Fwww.angsana.com%2Fassets%2F2024-03%2FANVNQL-LocalAttraction-MauTemple.jpg&w=3840&q=75",
+    "trang_nguon": "https://www.angsana.com/vietnam/quan-lan/experiences/local-attractions",
+    "nguon": "Angsana Quan Lạn (trang du lịch)",
+    "chu_thich": {
+     "vi": "Đền Mẫu trên đảo Quan Lạn (ảnh giới thiệu của Angsana)",
+     "en": "The Mother temple on Quan Lạn island (Angsana promotional photo)",
+     "zh": "官澜 (Quan Lạn) 岛上的母庙（Angsana 宣传照片）"
+    }
+   }
+  ],
+  "video": []
+ },
+ "VD11": {
+  "ngay_thu_thap": "2026-10-16",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52DJ6C24ehj3VWTUykE1eFG-0uvYHaPg8JlfJXHRi1bhg-BiCNsdx9x0jvCzqFwnq-tPIVzbbDVYEdW893kK6ip/2535882_wtm_a08b60df064a4a33c2858c3d61366640.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/trao-bang-xep-hang-di-tich-lich-su-cap-tinh-den-tran-hai-post3416878.html",
+    "nguon": "Báo Quảng Ninh điện tử (ảnh: Ngân Hà, Đỗ Hiền – TT Truyền thông và Văn hóa đặc khu Vân Đồn)",
+    "chu_thich": {
+     "vi": "Lễ đón nhận Bằng xếp hạng Di tích lịch sử cấp tỉnh đền Trấn Hải và khai mạc Lễ hội truyền thống Vân Đồn, tối 29/7/2026.",
+     "en": "Ceremony receiving the provincial historical relic certificate for Trấn Hải Temple and opening the Vân Đồn Traditional Festival, evening of 29 July 2026.",
+     "zh": "镇海殿 (đền Trấn Hải) 省级历史遗迹定级证书接受仪式暨云屯 (Vân Đồn) 传统节庆开幕式，2026年7月29日晚。"
+    },
+    "dai_dien": true
+   }
+  ],
+  "video": []
  }
 }
