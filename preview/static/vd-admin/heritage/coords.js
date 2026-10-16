@@ -155,7 +155,7 @@
         var c = current();
         if (!c) { gWrap.hidden = true; return; }
         gWrap.hidden = false;
-        var src = "https://www.google.com/maps?hl=vi&output=embed&z=17&t=" + (gSatOn ? "k" : "m") + "&q=" + fmt(c[0]) + "," + fmt(c[1]);
+        var src = "https://maps.google.com/maps?hl=vi&output=embed&z=17&t=" + (gSatOn ? "k" : "m") + "&q=" + fmt(c[0]) + "," + fmt(c[1]);
         if (gFrame.src !== src) gFrame.src = src;
         gLink.href = "https://www.google.com/maps/search/?api=1&query=" + fmt(c[0]) + "," + fmt(c[1]);
       }, 400);

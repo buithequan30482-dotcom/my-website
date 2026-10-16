@@ -108,9 +108,10 @@
 
   /* ---------- Google Maps nhúng không cần API key ---------- */
   function gUrl(p, lang, zoom, sat) {
+    // Dạng nhúng Google Maps không cần API key (maps.google.com/maps?...&output=embed) – cần tham số q để hiển thị.
     var hl = lang === "zh-hans" ? "zh-CN" : (lang || "vi");
-    var base = "https://www.google.com/maps?hl=" + hl + "&output=embed&t=" + (sat ? "k" : "m");
-    if (!p) return base + "&ll=20.98,107.43&z=11";
+    var base = "https://maps.google.com/maps?hl=" + hl + "&output=embed&t=" + (sat ? "k" : "m");
+    if (!p) return base + "&q=" + encodeURIComponent("Vân Đồn, Quảng Ninh") + "&z=11";
     return base + "&q=" + p.lat.toFixed(6) + "," + p.lng.toFixed(6) + "&z=" + (zoom || 16);
   }
 
