@@ -1,5 +1,7 @@
-/* Bản đồ di tích: dùng Google Maps khi có API key, tự chuyển sang OpenStreetMap (Leaflet) khi chưa có
-   khóa hoặc Google không tải được (TR mục 6). */
+/* Bản đồ di tích – Google Maps (TR mục 6).
+   - Có API key (Cấu hình hệ thống): Google Maps JavaScript API, đủ các điểm, cửa sổ thông tin, tuyến.
+   - Chưa có key hoặc key lỗi: khung Google Maps nhúng (không cần key) + danh sách điểm; bấm điểm để xem trên Google Maps.
+   Leaflet/OpenStreetMap chỉ còn là lựa chọn khi gọi rõ opts.engine = "osm". */
 (function (w) {
   "use strict";
   var COLORS = { qgdb: "#A3302A", qg: "#B8893A", tinh: "#0E6B6B", kiemke: "#6F675B" };
@@ -67,8 +69,9 @@
 
   VDMap.prototype.init = function () {
     var self = this, o = this.opts;
+    var fallback = function () { return o.engine === "osm" ? self._leaflet() : self._gembed(); };
     var p = o.key ? loadGoogle(o.key, o.lang).then(function (g) { self.engine = "google"; self._google(g); })
-      .catch(function () { return self._leaflet(); }) : self._leaflet();
+      .catch(fallback) : fallback();
     return p.then(function () { return self; });
   };
 
@@ -103,6 +106,77 @@
     this._info = info;
   };
 
+  /* ---------- Google Maps nhúng không cần API key ---------- */
+  function gUrl(p, lang, zoom, sat) {
+    var hl = lang === "zh-hans" ? "zh-CN" : (lang || "vi");
+    var base = "https://www.google.com/maps?hl=" + hl + "&output=embed&t=" + (sat ? "k" : "m");
+    if (!p) return base + "&ll=20.98,107.43&z=11";
+    return base + "&q=" + p.lat.toFixed(6) + "," + p.lng.toFixed(6) + "&z=" + (zoom || 16);
+  }
+
+  VDMap.prototype._gembed = function () {
+    var self = this, o = this.opts, el = this.el, pts = this.points, i18n = o.i18n || {};
+    self.engine = "gembed";
+    el.classList.add("gmap-lite");
+    el.innerHTML = "";
+    var withList = (o.cluster || o.route) && pts.length > 1;
+    var frameWrap = document.createElement("div");
+    frameWrap.className = "gmap-frame";
+    var iframe = document.createElement("iframe");
+    iframe.loading = "lazy";
+    iframe.referrerPolicy = "no-referrer-when-downgrade";
+    iframe.title = i18n.mapTitle || "Google Maps";
+    iframe.setAttribute("allowfullscreen", "");
+    frameWrap.appendChild(iframe);
+    var bar = document.createElement("div");
+    bar.className = "gmap-bar";
+    var label = document.createElement("span");
+    var sat = false, cur = null;
+    var satBtn = document.createElement("button");
+    satBtn.type = "button"; satBtn.textContent = i18n.satellite || "Vệ tinh";
+    var open = document.createElement("a");
+    open.target = "_blank"; open.rel = "noopener"; open.textContent = i18n.openGoogle || "Mở Google Maps";
+    bar.appendChild(label); bar.appendChild(satBtn); bar.appendChild(open);
+    frameWrap.appendChild(bar);
+    var listEl = null, buttons = [];
+    function show(i, zoom) {
+      cur = i;
+      var p = i == null ? null : pts[i];
+      iframe.src = gUrl(p, o.lang, zoom || o.zoom, sat);
+      label.textContent = p ? p.site + (p.name && p.name !== p.site ? " – " + p.name : "") : (i18n.overview || "Vân Đồn");
+      open.href = p ? "https://www.google.com/maps/search/?api=1&query=" + p.lat + "," + p.lng : "https://www.google.com/maps/@20.98,107.43,11z";
+      buttons.forEach(function (b, k) { b.setAttribute("aria-current", k === i ? "true" : "false"); });
+    }
+    satBtn.addEventListener("click", function () {
+      sat = !sat; satBtn.textContent = sat ? (i18n.roadmap || "Bản đồ") : (i18n.satellite || "Vệ tinh"); show(cur);
+    });
+    if (withList) {
+      listEl = document.createElement("ol");
+      listEl.className = "gmap-list" + (o.route ? " is-route" : "");
+      pts.forEach(function (p, i) {
+        var li = document.createElement("li");
+        var b = document.createElement("button");
+        b.type = "button";
+        var sub = !o.route && i > 0 && pts[i - 1].site === p.site;
+        if (sub) { li.className = "is-sub"; b.innerHTML = "<span><small>" + esc(p.name) + "</small></span>"; }
+        else b.innerHTML = '<span class="seal seal-' + esc(p.cap) + '"></span><span><b>' + esc(p.site) + "</b>" +
+          (p.name && p.name !== p.site ? "<small>" + esc(p.name) + "</small>" : "") + "</span>";
+        b.addEventListener("click", function () { show(i); });
+        li.appendChild(b);
+        if (!sub) {
+          var a = document.createElement("a");
+          a.href = p.url; a.textContent = i18n.view || "Xem chi tiết"; a.className = "gmap-more";
+          li.appendChild(a);
+        }
+        listEl.appendChild(li); buttons.push(b);
+      });
+      el.appendChild(listEl);
+    }
+    el.appendChild(frameWrap);
+    show(pts.length === 1 || o.route || !withList ? (pts.length ? 0 : null) : null, pts.length === 1 ? o.zoom : null);
+    return Promise.resolve();
+  };
+
   VDMap.prototype._leaflet = function () {
     var self = this, o = this.opts;
     return leaflet(o.staticUrl || "/static/").then(function (L) {
@@ -130,6 +204,14 @@
   };
 
   VDMap.prototype.focus = function (i) {
+    if (this.engine === "gembed") {
+      var b = this.el.querySelectorAll(".gmap-list button")[i];
+      if (b) b.click(); else { this._gembedShow = true; this.el.querySelector("iframe").src = gUrl(this.points[i], this.opts.lang, 17); }
+      var lab = this.el.querySelector(".gmap-bar span"), p0 = this.points[i];
+      if (lab && p0) lab.textContent = p0.site + (p0.name && p0.name !== p0.site ? " – " + p0.name : "");
+      this.el.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
     var m = this.markers[i], p = this.points[i];
     if (!m) return;
     if (this.engine === "google") { this.map.panTo({ lat: p.lat, lng: p.lng }); this.map.setZoom(16); w.google.maps.event.trigger(m, "click"); }
@@ -139,6 +221,7 @@
 
   VDMap.prototype.locate = function () {
     var self = this;
+    if (self.engine === "gembed") { window.open("https://www.google.com/maps/@?api=1&map_action=map", "_blank", "noopener"); return; }
     if (!navigator.geolocation) return;
     navigator.geolocation.getCurrentPosition(function (pos) {
       var ll = [pos.coords.latitude, pos.coords.longitude];

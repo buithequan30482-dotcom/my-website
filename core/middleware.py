@@ -42,7 +42,7 @@ class SecurityHeadersMiddleware:
         "script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com; "
         "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
         "font-src 'self' data: https://fonts.gstatic.com; "
-        "frame-src https://www.google.com https://www.youtube-nocookie.com https://www.youtube.com; "
+        "frame-src https://www.google.com https://maps.google.com https://www.youtube-nocookie.com https://www.youtube.com; "
         "connect-src 'self' https://maps.googleapis.com https://nominatim.openstreetmap.org; "
         "frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
     )

@@ -139,6 +139,28 @@
     if (!text || !lat || !lng || !mapEl) return;
     var api = null;
     var self = row._vdhPoint = {};
+    // Khung đối chiếu trên Google Maps (nhúng, không cần API key): luôn hiển thị vị trí đang nhập trên Google.
+    var gWrap = document.createElement("div");
+    gWrap.className = "vdh-gpreview";
+    gWrap.innerHTML = '<div class="vdh-gpreview-head"><b>Đối chiếu trên Google Maps</b>' +
+      '<span><button type="button" class="vdh-gsat" aria-pressed="true">Bản đồ</button> ' +
+      '<a target="_blank" rel="noopener">Mở Google Maps</a></span></div><iframe loading="lazy" title="Google Maps"></iframe>' +
+      '<p class="vdh-gpreview-note">' + (cfg.key ? "" : "Chưa có Google Maps API key: chọn điểm trên bản đồ phía trên (OpenStreetMap/vệ tinh), khung này hiển thị lại đúng vị trí trên Google Maps để đối chiếu. Khi nhập API key trong Cấu hình hệ thống, bản đồ chọn điểm sẽ là Google Maps.") + '</p>';
+    mapEl.parentNode.insertBefore(gWrap, mapEl.nextSibling);
+    var gFrame = gWrap.querySelector("iframe"), gLink = gWrap.querySelector("a"), gSat = gWrap.querySelector(".vdh-gsat");
+    var gSatOn = true, gTimer = null;
+    function gUpdate() {
+      clearTimeout(gTimer);
+      gTimer = setTimeout(function () {
+        var c = current();
+        if (!c) { gWrap.hidden = true; return; }
+        gWrap.hidden = false;
+        var src = "https://www.google.com/maps?hl=vi&output=embed&z=17&t=" + (gSatOn ? "k" : "m") + "&q=" + fmt(c[0]) + "," + fmt(c[1]);
+        if (gFrame.src !== src) gFrame.src = src;
+        gLink.href = "https://www.google.com/maps/search/?api=1&query=" + fmt(c[0]) + "," + fmt(c[1]);
+      }, 400);
+    }
+    gSat.addEventListener("click", function () { gSatOn = !gSatOn; gSat.textContent = gSatOn ? "Bản đồ" : "Vệ tinh"; gUpdate(); });
 
     function say(m, level) {
       msg.textContent = m || "";
@@ -150,6 +172,7 @@
     }
     function check(note) {
       var c = current();
+      gUpdate();
       if (!c) { state.textContent = "chưa có tọa độ"; state.className = "vdh-point-state is-miss"; return; }
       state.textContent = fmt(c[0]) + ", " + fmt(c[1]);
       state.className = "vdh-point-state is-ok";
