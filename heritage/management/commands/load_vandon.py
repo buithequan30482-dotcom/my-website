@@ -15,7 +15,7 @@ from django.db import transaction
 from core.models import HelpArticle, SiteConfig
 from core.utils import vn_slugify
 from heritage.models import (DiemDiTich, DiemTuyen, DiTich, DoTinCay, HinhAnh, KhuVuc, LeHoi, LoaiHinh,
-                             NguonThamKhao, ThongTinHuuIch, TrangThai, TrangTinh, TuyenThamQuan)
+                             NguonThamKhao, ThongTinHuuIch, TrangThai, TrangTinh, TuyenThamQuan, Video)
 from heritage.placeholder import make_placeholder, motif_for
 
 SEED = Path(__file__).resolve().parents[3] / "seed"
@@ -80,6 +80,7 @@ class Command(BaseCommand):
         content = {c["ma"]: c for f in ("content_ranked.json", "content_kiemke.json")
                    if (SEED / f).exists() for c in json.loads((SEED / f).read_text("utf-8"))}
         misc = json.loads((SEED / "content_misc.json").read_text("utf-8")) if (SEED / "content_misc.json").exists() else {}
+        media = json.loads((SEED / "media.json").read_text("utf-8")) if (SEED / "media.json").exists() else {}
 
         cfg = SiteConfig.get()
         if not cfg.owner_name_en:
@@ -181,6 +182,28 @@ class Command(BaseCommand):
             for k, s in enumerate(c.get("nguon", [])):
                 NguonThamKhao.objects.create(di_tich=obj, ten=s.get("ten", "")[:400], url=(s.get("url") or "")[:500],
                                              ngay=s.get("ngay", "")[:50], thu_tu=k)
+            # ảnh, video thật từ seed/media.json (ảnh dạng liên kết ngoài – xem HinhAnh.url_ngoai)
+            m = media.get(ma) or {}
+            if m.get("anh"):
+                obj.hinh_anh.filter(la_minh_hoa=True).delete()
+                dai_dien = None
+                for k, a in enumerate(m["anh"]):
+                    h = obj.hinh_anh.filter(url_ngoai=a["url"]).first() or HinhAnh(di_tich=obj, url_ngoai=a["url"])
+                    h.trang_nguon = a.get("trang_nguon", "")[:500]
+                    h.nguon = a.get("nguon", "")[:300]
+                    h.tac_gia = a.get("tac_gia", "")[:200]
+                    h.thu_tu = k + 1
+                    setl(h, "chu_thich", a.get("chu_thich") or {})
+                    h.save()
+                    if dai_dien is None or a.get("dai_dien"):
+                        dai_dien = h
+                obj.anh_dai_dien = dai_dien
+            for k, v in enumerate(m.get("video", [])):
+                vo = obj.videos.filter(youtube_url=v["youtube_url"]).first() or Video(di_tich=obj, youtube_url=v["youtube_url"])
+                setl(vo, "tieu_de", v.get("tieu_de") or {})
+                vo.nguon = v.get("nguon", "")[:300]
+                vo.thu_tu = k + 1
+                vo.save()
             # ảnh minh họa
             if not no_images and not obj.hinh_anh.exists():
                 data = make_placeholder(obj.ten_vi or obj.ten, motif_for(obj.ten_vi or obj.ten, row["loai"]), seed=idx)

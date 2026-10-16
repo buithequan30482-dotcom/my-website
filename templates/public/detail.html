@@ -3,13 +3,13 @@
 {% block description %}{{ d.seo_description|default:d.tom_tat|striptags|truncatechars:160 }}{% endblock %}
 {% block og_title %}{{ d.ten }}{% endblock %}
 {% block og_description %}{{ d.tom_tat|striptags|truncatechars:200 }}{% endblock %}
-{% block og_image %}{% if d.anh_dai_dien %}<meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{{ d.anh_dai_dien.url }}">{% endif %}{% endblock %}
+{% block og_image %}{% if d.anh_dai_dien %}<meta property="og:image" content="{% if d.anh_dai_dien.la_anh_ngoai %}{{ d.anh_dai_dien.url }}{% else %}{{ request.scheme }}://{{ request.get_host }}{{ d.anh_dai_dien.url }}{% endif %}">{% endif %}{% endblock %}
 {% block head %}
 <script type="application/ld+json">{{ d|jsonld:request }}</script>
 {% endblock %}
 {% block content %}
 <section class="d-hero">
-  {% if d.anh_dai_dien %}<img src="{{ d.anh_dai_dien.url }}" srcset="{{ d.anh_dai_dien.srcset }}" sizes="100vw" alt="{{ d.anh_dai_dien.chu_thich|default:d.ten }}" fetchpriority="high">{% endif %}
+  {% if d.anh_dai_dien %}<img src="{{ d.anh_dai_dien.url }}" srcset="{{ d.anh_dai_dien.srcset }}" sizes="100vw" alt="{{ d.anh_dai_dien.chu_thich|default:d.ten }}" fetchpriority="high"{% if d.anh_dai_dien.la_anh_ngoai %} referrerpolicy="no-referrer"{% endif %}>{% endif %}
   <div class="cap"><div class="wrap">
     <div class="crumbs" style="color:#E5EEEA"><a style="color:#E5EEEA" href="{% url 'heritage:home' %}">{% trans "Trang chủ" %}</a> / <a style="color:#E5EEEA" href="{% url 'heritage:list' %}">{% trans "Di tích" %}</a></div>
     {% include "partials/seal.html" with lg=1 %}
@@ -33,7 +33,8 @@
     {% if d.thong_tin_tham_quan %}<section class="sub-block" id="tham-quan"><h2>{% trans "Hướng dẫn tham quan" %}</h2><div class="prose">{{ d.thong_tin_tham_quan|safe }}</div></section>{% endif %}
 
     {% if gallery %}<section class="sub-block" id="anh"><h2>{% trans "Ảnh" %}</h2>
-      <div class="gallery">{% for h in gallery %}<button type="button" data-lb="{{ h|img:2400 }}" data-cap="{{ h.chu_thich }}{% if h.nguon %} – {{ h.nguon }}{% endif %}" aria-label="{% trans "Xem ảnh lớn" %}: {{ h.chu_thich }}"><img src="{{ h|img:480 }}" alt="{{ h.chu_thich }}" loading="lazy"></button>{% endfor %}</div>
+      <div class="gallery">{% for h in gallery %}<button type="button" data-lb="{{ h|img:2400 }}" data-cap="{{ h.chu_thich }}{% if h.nguon %} – {{ h.nguon }}{% endif %}" aria-label="{% trans "Xem ảnh lớn" %}: {{ h.chu_thich }}"><img src="{{ h|img:480 }}" alt="{{ h.chu_thich }}" loading="lazy"{% if h.la_anh_ngoai %} referrerpolicy="no-referrer"{% endif %}></button>{% endfor %}</div>
+      {% if gallery_sources %}<p class="small muted" style="margin-top:8px">{% trans "Nguồn ảnh" %}: {% for h in gallery_sources %}<a href="{{ h.trang_nguon }}" rel="noopener" target="_blank">{{ h.nguon|default:h.trang_nguon }}</a>{% if not forloop.last %}; {% endif %}{% endfor %}</p>{% endif %}
     </section>{% endif %}
 
     {% if videos %}<section class="sub-block"><h2>{% trans "Video" %}</h2>

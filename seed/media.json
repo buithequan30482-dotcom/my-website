@@ -1,0 +1,136 @@
+{
+ "_ghi_chu": "Ảnh, video thật theo mã di tích. Ảnh dùng liên kết ngoài (HinhAnh.url_ngoai) cho tới khi có tệp ảnh được phép sử dụng. Nạp bằng: python manage.py load_vandon --update",
+ "VD01": {
+  "ngay_thu_thap": "2026-10-16",
+  "anh": [
+   {
+    "url": "https://media.quangninh.gov.vn/618ca5c4-79b3-478a-8adb-4184369067f7/Libraries/HinhAnhBaiViet/My%20folder/NGOC%20ANH%202025/NAnh2025thuongcangvandon.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/Trang/ChiTietBVGioiThieu.aspx?bvid=422",
+    "nguon": "Cổng Thông tin điện tử tỉnh Quảng Ninh",
+    "dai_dien": true,
+    "chu_thich": {
+     "vi": "Bức tranh phác họa Thương cảng cổ Vân Đồn, lưu giữ tại đình Quan Lạn",
+     "en": "Sketch of the ancient Vân Đồn trading port, kept at Quan Lạn Communal House",
+     "zh": "云屯古商港素描画，现保存于官澜亭"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0DWEUXLGn2FXqa2obRhb6WnuS6fJVMIPjL3sJQI4TaF_OrbOfJk0bRrMr8pxEjPP58Pw76TYygaVZLEGATf6FKg/images641172_a1_t4.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/bao-ton-va-phat-huy-gia-tri-di-san-ky-quan-vinh-ha-long-kham-pha-dao-cong-dong-cong-tay-2172044.html",
+    "nguon": "Báo Quảng Ninh",
+    "chu_thich": {
+     "vi": "Đảo Cống Tây, nơi lưu giữ nhiều dấu tích của thương cảng",
+     "en": "Cống Tây island, which holds many traces of the trading port",
+     "zh": "贡西岛，保存着众多商港遗迹"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53qOHajmUYdQLLvXgWF15O2vjVy7wOmF3IDTLSXup9D8mCLumvxSLOXCBRfLMpn_RJ8iW6hhX93TeVZwfht1cP0yOZsh1mXY9VUJyqE4TdctQ/2054035_khu_vuc_cong_cai_xa_quan_lan_tren_ban_do_09310312.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/thuong-cang-van-don-la-he-thong-ben-cang-chu-khong-phai-la-mot-cang-hay-la-cum-cang-rieng-biet-3226967.html",
+    "nguon": "Báo Quảng Ninh",
+    "chu_thich": {
+     "vi": "Khu vực bến Cống Cái (Quan Lạn) trên ảnh vệ tinh",
+     "en": "The Cống Cái landing area (Quan Lạn) on a satellite image",
+     "zh": "卫星图上的贡改 (Cống Cái) 码头区域（官澜）"
+    }
+   },
+   {
+    "url": "https://static.vinwonders.com/production/2025/04/khong-gian-dinh-quan-lan.jpg",
+    "trang_nguon": "https://vinwonders.com/vi/wonderpedia/news/dinh-quan-lan-quang-ninh/",
+    "nguon": "VinWonders (ảnh sưu tầm)",
+    "chu_thich": {
+     "vi": "Đình Quan Lạn, một điểm thuộc quần thể di tích",
+     "en": "Quan Lạn Communal House, one of the sites in the complex",
+     "zh": "官澜亭，遗址群中的一处遗迹点"
+    }
+   },
+   {
+    "url": "https://static.vinwonders.com/production/2025/04/dinh-quan-lan-quang-ninh.jpg",
+    "trang_nguon": "https://vinwonders.com/vi/wonderpedia/news/dinh-quan-lan-quang-ninh/",
+    "nguon": "VinWonders (ảnh sưu tầm)",
+    "chu_thich": {
+     "vi": "Gian thờ bên trong đình Quan Lạn",
+     "en": "The worship hall inside Quan Lạn Communal House",
+     "zh": "官澜亭内的祭祀殿"
+    }
+   },
+   {
+    "url": "https://static.vinwonders.com/production/2025/04/lich-su-dinh-quan-lan.jpg",
+    "trang_nguon": "https://vinwonders.com/vi/wonderpedia/news/dinh-quan-lan-quang-ninh/",
+    "nguon": "VinWonders (ảnh sưu tầm)",
+    "chu_thich": {
+     "vi": "Đầu đao hình rồng trên mái đình Quan Lạn",
+     "en": "Dragon-shaped roof corner of Quan Lạn Communal House",
+     "zh": "官澜亭屋檐上的龙形翘角"
+    }
+   },
+   {
+    "url": "https://static.vinwonders.com/production/2025/04/kien-truc-dinh-quan-lan.jpg",
+    "trang_nguon": "https://vinwonders.com/vi/wonderpedia/news/dinh-quan-lan-quang-ninh/",
+    "nguon": "VinWonders (ảnh sưu tầm)",
+    "chu_thich": {
+     "vi": "Chi tiết chạm khắc hình rồng trên kết cấu gỗ đình Quan Lạn",
+     "en": "Dragon carvings on the wooden structure of Quan Lạn Communal House",
+     "zh": "官澜亭木结构上的龙纹雕刻"
+    }
+   },
+   {
+    "url": "https://sun-ecommerce-cdn.azureedge.net/ecommerce/service-sites/asset/SunParadiseLandQuangNinh/google-doc/post_id_30700/AD_4nXeO3HF9Rm1VKslFcaYVfmWwIzZvS8zJWFx7ei_Em50jsgLD-dZF3hMkqxdG_75B5L39-4F8hjR_Bh4Cf1TtY7iSUhOxrGbIG2Q4aXIzXaJDzVJ7btCo2u2TKH4_F-J1gHn0bkvbpoZDHsTeX7XZjK4Sep0VnMJZd92K_X-vOzYpHSD5NjLK=s2048.webp",
+    "trang_nguon": "https://sunparadiseland.com/SunParadiseLandQuangNinh/tin-tuc/kham-pha-di-tich-thuong-cang-van-don-gia-tri-van-hoa-va-trai-nghiem-30700",
+    "nguon": "Sun Paradise Land (ảnh gốc: Báo Quảng Ninh)",
+    "chu_thich": {
+     "vi": "Đoàn khảo sát tại khu vực thương cảng Vân Đồn",
+     "en": "A survey team at the Vân Đồn trading port area",
+     "zh": "考察团在云屯商港区域"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=bw_IWFuaobw",
+    "nguon": "Xuân Hòa QTV – YouTube, 16/01/2024",
+    "tieu_de": {
+     "vi": "Phim tài liệu: Thương cảng Vân Đồn – Thương cảng đầu tiên của nước Đại Việt",
+     "en": "Documentary: Vân Đồn – the first trading port of Đại Việt",
+     "zh": "纪录片：云屯——大越第一个商港"
+    }
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=vJTkL61fhTU",
+    "nguon": "Quảng Ninh TV (QTV) – YouTube, 15/09/2022",
+    "tieu_de": {
+     "vi": "Bến Cái Làng – Trung tâm Thương cảng cổ Vân Đồn",
+     "en": "Cái Làng landing – the centre of the ancient Vân Đồn port",
+     "zh": "盖廊码头——云屯古商港的中心"
+    }
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=Bu79dEf1dIk",
+    "nguon": "Quảng Ninh TV (QTV) – YouTube, 15/09/2022",
+    "tieu_de": {
+     "vi": "Thương cảng Vân Đồn – Thương cảng đầu tiên của nước Đại Việt",
+     "en": "Vân Đồn – the first trading port of Đại Việt",
+     "zh": "云屯——大越第一个商港"
+    }
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=UAvj7TLgqrw",
+    "nguon": "Quảng Ninh TV (QTV) – YouTube, 28/04/2021",
+    "tieu_de": {
+     "vi": "Dấu tích thương cảng cổ Vân Đồn",
+     "en": "Traces of the ancient Vân Đồn trading port",
+     "zh": "云屯古商港遗迹"
+    }
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=OgtzRvV1BA0",
+    "nguon": "Quảng Ninh TV (QTV) – YouTube, 16/06/2024",
+    "tieu_de": {
+     "vi": "Bảo tồn, phát huy giá trị thương cảng Vân Đồn",
+     "en": "Conserving and promoting the value of the Vân Đồn trading port",
+     "zh": "保护和弘扬云屯商港的价值"
+    }
+   }
+  ]
+ }
+}

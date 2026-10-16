@@ -38,7 +38,9 @@ class SecurityHeadersMiddleware:
     CSP = (
         "default-src 'self'; "
         "img-src 'self' data: blob: https://*.googleapis.com https://*.gstatic.com https://*.google.com "
-        "https://*.tile.openstreetmap.org https://server.arcgisonline.com https://i.ytimg.com; "
+        "https://*.tile.openstreetmap.org https://server.arcgisonline.com https://i.ytimg.com "
+        "https:; "  # ảnh từ liên kết ngoài (HinhAnh.url_ngoai) – chỉ ảnh, không áp dụng cho script/iframe
+
         "script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://maps.gstatic.com; "
         "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
         "font-src 'self' data: https://fonts.gstatic.com; "

@@ -164,10 +164,16 @@ def site_detail(request, slug):
         if p.has_coord:
             p.map_index = i
             i += 1
+    gallery = list(d.hinh_anh.all())
+    seen, gallery_sources = set(), []
+    for h in gallery:
+        if h.trang_nguon and h.trang_nguon not in seen:
+            seen.add(h.trang_nguon)
+            gallery_sources.append(h)
     ctx = {
         "d": d, "points": points, "main": main, "review_form": getattr(request, "review_form", None),
         "points_json": js(map_points([d])),
-        "gallery": list(d.hinh_anh.all()), "videos": list(d.videos.all()),
+        "gallery": gallery, "gallery_sources": gallery_sources, "videos": list(d.videos.all()),
         "reviews": reviews[:20], "agg": agg, "dist": dist, "near": near,
         "untranslated": untranslated, "muon_den": YeuThich.objects.filter(di_tich=d).count(),
         "embed_single": len([p for p in d.diem.all() if p.has_coord]) == 1,

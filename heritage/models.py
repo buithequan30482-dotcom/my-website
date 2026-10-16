@@ -256,7 +256,12 @@ class HinhAnh(models.Model):
                                 verbose_name="Di tích")
     diem = models.ForeignKey(DiemDiTich, on_delete=models.SET_NULL, related_name="hinh_anh", null=True, blank=True,
                              verbose_name="Điểm di tích")
-    tep = models.ImageField("Tệp ảnh", upload_to=upload_to_anh)
+    tep = models.ImageField("Tệp ảnh", upload_to=upload_to_anh, blank=True)
+    url_ngoai = models.URLField("Liên kết ảnh ngoài", max_length=1000, blank=True,
+                                help_text="Dùng khi chưa tải được tệp ảnh: dán liên kết trực tiếp tới ảnh trên trang nguồn. "
+                                          "Ảnh có thể mất nếu trang nguồn đổi hoặc xóa – nên thay bằng tệp tải lên.")
+    trang_nguon = models.URLField("Trang nguồn của ảnh", max_length=500, blank=True,
+                                  help_text="Bài viết / trang chứa ảnh, để người xem và quản trị viên kiểm tra bản quyền.")
     chu_thich = models.CharField("Chú thích", max_length=300, blank=True)
     tac_gia = models.CharField("Tác giả", max_length=200, blank=True)
     nguon = models.CharField("Nguồn / bản quyền", max_length=300,
@@ -276,10 +281,22 @@ class HinhAnh(models.Model):
         ordering = ["thu_tu", "id"]
 
     def __str__(self):
-        return self.chu_thich or self.tep.name.rsplit("/", 1)[-1]
+        if self.chu_thich:
+            return self.chu_thich
+        return (self.tep.name or self.url_ngoai or "").rsplit("/", 1)[-1]
+
+    @property
+    def la_anh_ngoai(self):
+        return bool(self.url_ngoai) and not self.tep
+
+    def clean(self):
+        if not self.tep and not self.url_ngoai:
+            raise ValidationError("Cần tải tệp ảnh hoặc dán liên kết ảnh ngoài.")
 
     def url(self, size=960):
         from django.conf import settings as s
+        if self.la_anh_ngoai:
+            return self.url_ngoai
         if self.bien_the:
             sizes = sorted(int(k) for k in self.bien_the)
             pick = next((k for k in sizes if k >= size), sizes[-1])

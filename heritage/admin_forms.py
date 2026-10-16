@@ -149,7 +149,7 @@ def add_help(fields, hints=None, details=None):
 
 class HinhAnhChoiceField(forms.ModelChoiceField):
     def label_from_instance(self, obj):
-        label = obj.chu_thich_vi or obj.tep.name.rsplit("/", 1)[-1]
+        label = obj.chu_thich_vi or (obj.tep.name or obj.url_ngoai or "").rsplit("/", 1)[-1]
         extra = " (ảnh minh họa tạm)" if obj.la_minh_hoa else ""
         return f"Ảnh #{obj.pk} – {label[:70]}{extra}"
 

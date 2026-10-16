@@ -61,6 +61,26 @@ class PublicPagesTests(TestCase):
         self.assertContains(self.client.get("/vi/di-tich/?cap=qgdb"), "Đình Quan Lạn")
         self.assertNotContains(self.client.get("/vi/di-tich/?cap=qg"), "card-body")
 
+    def test_external_image_shown_with_source(self):
+        from heritage.models import HinhAnh
+        url = "https://example.org/anh/dinh.jpg"
+        h = HinhAnh.objects.create(di_tich=self.d, url_ngoai=url, trang_nguon="https://example.org/bai-viet",
+                                   nguon="Báo Thử", chu_thich="Đình nhìn từ sân")
+        self.assertTrue(h.la_anh_ngoai)
+        self.assertEqual(h.url(480), url)
+        self.d.anh_dai_dien = h
+        self.d.save()
+        r = self.client.get(f"/vi/di-tich/{self.d.slug}/")
+        self.assertContains(r, f'<meta property="og:image" content="{url}">', html=False)
+        self.assertContains(r, 'referrerpolicy="no-referrer"')
+        self.assertContains(r, 'href="https://example.org/bai-viet"')
+
+    def test_image_needs_file_or_link(self):
+        from django.core.exceptions import ValidationError
+        from heritage.models import HinhAnh
+        with self.assertRaises(ValidationError):
+            HinhAnh(di_tich=self.d, nguon="x").clean()
+
     def test_detail_seo_and_map(self):
         r = self.client.get(f"/vi/di-tich/{self.d.slug}/")
         self.assertContains(r, "application/ld+json")

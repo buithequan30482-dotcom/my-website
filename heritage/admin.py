@@ -603,6 +603,9 @@ class HinhAnhAdmin(VDAdmin):
                      "description": "Chuẩn ảnh: chiều ngang ≥ 1.920 px (ảnh bìa ≥ 2.400 px), tỉ lệ 3:2 hoặc 16:9; "
                                     "rõ nét, không chèn chữ, không logo đơn vị khác; JPG, PNG, WebP, HEIC; tối đa 25 MB. "
                                     "Hệ thống tự xoay, xóa GPS, tạo các cỡ WebP. Tải nhiều ảnh: mở di tích → thẻ Ảnh, video."}),
+        ("Ảnh từ liên kết ngoài (tạm thời)", {
+            "fields": ("url_ngoai", "trang_nguon"),
+            "description": "Chỉ dùng khi chưa có tệp ảnh. Khi đã tải tệp lên, hệ thống dùng tệp và bỏ qua liên kết."}),
         ("Thuộc di tích", {"fields": ("di_tich", "diem", "thu_tu")}),
         ("Chú thích và bản quyền", {"fields": ("chu_thich_vi", "chu_thich_en", "chu_thich_zh_hans", "tac_gia",
                                                 "nguon", "ngay_chup")}),

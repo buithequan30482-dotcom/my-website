@@ -60,7 +60,7 @@ def image_json(h, avatar_id=None):
         "chu_thich_vi": h.chu_thich_vi or "", "chu_thich_en": h.chu_thich_en or "",
         "chu_thich_zh_hans": h.chu_thich_zh_hans or "", "tac_gia": h.tac_gia, "nguon": h.nguon,
         "la_minh_hoa": h.la_minh_hoa, "small": bool(h.rong and h.rong < MIN_RECOMMENDED),
-        "avatar": avatar_id == h.pk, "name": os.path.basename(h.tep.name or ""),
+        "avatar": avatar_id == h.pk, "name": os.path.basename(h.tep.name or h.url_ngoai or ""),
     }
 
 
