@@ -1,0 +1,44 @@
+# =============================================================================
+# CHẾ ĐỘ HTTPS (Let's Encrypt). Chứng chỉ: /etc/letsencrypt/live/${DOMAIN}/
+# =============================================================================
+
+# ---- Cổng 80: chỉ phục vụ ACME + kiểm tra sống; còn lại chuyển hướng HTTPS ----
+server {
+    listen 80 default_server;
+    server_name _;
+
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+        default_type text/plain;
+        try_files $uri =404;
+    }
+    location = /nginx-health { access_log off; default_type text/plain; return 200 "ok\n"; }
+    # Chuyển về tên miền chính (không dùng $host để tránh chèn Host giả)
+    location / { return 301 https://${DOMAIN}$request_uri; }
+}
+
+# ---- Tên miền phụ (vd www.) -> tên miền chính ----
+server {
+    listen 443 ssl;
+    http2 on;
+    server_name ${EXTRA_DOMAINS} _;
+
+    ssl_certificate     /etc/letsencrypt/live/${DOMAIN}/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/${DOMAIN}/privkey.pem;
+    include /etc/nginx/vandon/snippets/ssl.conf;
+
+    return 301 https://${DOMAIN}$request_uri;
+}
+
+# ---- Site chính ----
+server {
+    listen 443 ssl default_server;
+    http2 on;
+    server_name ${DOMAIN};
+
+    ssl_certificate     /etc/letsencrypt/live/${DOMAIN}/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/${DOMAIN}/privkey.pem;
+    include /etc/nginx/vandon/snippets/ssl.conf;
+
+    include /etc/nginx/conf.d/vandon-locations.inc;
+}

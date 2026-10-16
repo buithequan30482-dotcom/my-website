@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% trans "Lễ hội, sự kiện" %}{% endblock %}
+{% block content %}
+<div class="wrap page-head"><div class="crumbs"><a href="{% url 'heritage:home' %}">{% trans "Trang chủ" %}</a> / {% trans "Lễ hội" %}</div>
+<h1>{% trans "Lễ hội, sự kiện" %}</h1><p class="muted">{% trans "Thời gian tính theo âm lịch, có thể thay đổi theo thông báo của địa phương." %}</p></div>
+<div class="wrap" style="padding-bottom:64px"><ol class="months">{% for l in items %}{% include "partials/festival_row.html" with full=1 %}{% empty %}<p class="muted">{% trans "Chưa có lễ hội nào." %}</p>{% endfor %}</ol></div>
+{% endblock %}

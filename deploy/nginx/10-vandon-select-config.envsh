@@ -1,0 +1,36 @@
+#!/bin/sh
+# =============================================================================
+# Chạy (source) bởi /docker-entrypoint.sh của image nginx TRƯỚC bước envsubst (20-envsubst-on-templates.sh).
+#  - Chuẩn hóa ADMIN_URL ("quan-tri-vd/" | "/quan-tri-vd" ...) -> ADMIN_PATH="/quan-tri-vd/"
+#  - Chọn cấu hình: HTTPS nếu đã có chứng chỉ cho $DOMAIN (NGINX_SSL=auto), ngược lại HTTP-only.
+#    NGINX_SSL=off: luôn HTTP-only (thử nghiệm nội bộ / đứng sau proxy khác); NGINX_SSL=on: bắt buộc HTTPS.
+# Tệp .envsh được "source" nên dùng sh thuần, không set -e (tránh làm dừng entrypoint nginx).
+# =============================================================================
+_src=/etc/nginx/vandon/templates
+_dst=/etc/nginx/templates
+
+_admin="$(printf '%s' "${ADMIN_URL:-quan-tri-vd/}" | sed -e 's#^/*##' -e 's#/*$##')"
+[ -n "$_admin" ] || _admin="quan-tri-vd"
+export ADMIN_PATH="/${_admin}/"
+export DOMAIN="${DOMAIN:-localhost}"
+export EXTRA_DOMAINS="${EXTRA_DOMAINS:-}"
+
+mkdir -p "$_dst"
+rm -f "$_dst"/*.template /etc/nginx/conf.d/default.conf
+cp "$_src/00-http.conf.template" "$_src/vandon-locations.inc.template" "$_dst/"
+
+_cert="/etc/letsencrypt/live/${DOMAIN}/fullchain.pem"
+case "${NGINX_SSL:-auto}" in
+  off) _mode=http ;;
+  on)  _mode=https ;;
+  *)   if [ -s "$_cert" ]; then _mode=https; else _mode=http; fi ;;
+esac
+if [ "$_mode" = "https" ] && [ ! -s "$_cert" ]; then
+  echo "[vandon] CẢNH BÁO: NGINX_SSL=on nhưng chưa có $_cert -> chuyển HTTP-only" >&2
+  _mode=http
+fi
+cp "$_src/site-${_mode}.conf.template" "$_dst/site.conf.template"
+
+# Chỉ thay các biến của dự án, giữ nguyên biến nginx ($host, $uri...)
+export NGINX_ENVSUBST_FILTER='^(ADMIN_PATH|DOMAIN|EXTRA_DOMAINS)$'
+echo "[vandon] nginx: chế độ ${_mode}, DOMAIN=${DOMAIN}, ADMIN_PATH=${ADMIN_PATH}" >&2

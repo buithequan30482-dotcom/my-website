@@ -1,0 +1,54 @@
+<div class="vd-upload">
+  <div class="vd-upload-main">
+    <h2 class="vd-upload-title">Tải ảnh lên</h2>
+    {% if vd_upload_url and vd_can_upload %}
+    <div class="vd-dropzone-wrap" data-upload-url="{{ vd_upload_url }}" data-max-mb="25">
+      <div class="vd-upload-meta">
+        <div class="vd-field">
+          <label for="vd-up-nguon" class="required">Nguồn / bản quyền (áp dụng cho các ảnh tải lần này)</label>
+          <input type="text" id="vd-up-nguon" maxlength="300" placeholder="Ví dụ: Ảnh: Phòng VHXH Vân Đồn" autocomplete="off">
+          <div class="help">Bắt buộc trước khi tải. Sau khi tải vẫn sửa được cho từng ảnh.</div>
+        </div>
+        <div class="vd-field">
+          <label for="vd-up-tacgia">Tác giả (người chụp)</label>
+          <input type="text" id="vd-up-tacgia" maxlength="200" placeholder="Ví dụ: Nguyễn Văn A" autocomplete="off">
+        </div>
+      </div>
+      <div class="vd-dropzone" tabindex="0" role="button" aria-describedby="vd-dz-hint">
+        <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 16V4m0 0-4 4m4-4 4 4"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+        <p class="vd-dz-text"><strong>Kéo thả nhiều ảnh vào đây</strong> hoặc <span class="vd-dz-btn">Chọn ảnh</span></p>
+        <p class="vd-dz-hint" id="vd-dz-hint">JPG, PNG, WebP, HEIC (iPhone) · tối đa 25 MB/ảnh</p>
+        <input type="file" class="vd-dz-input" accept=".jpg,.jpeg,.png,.webp,.heic,.heif,image/jpeg,image/png,image/webp,image/heic,image/heif" multiple hidden>
+      </div>
+      <p class="vd-dz-error" role="alert" hidden></p>
+      <ul class="vd-dz-list" aria-live="polite"></ul>
+      <div class="vd-dz-done" hidden>
+        <span class="vd-dz-done-text"></span>
+        <button type="button" class="button vd-dz-reload">Làm mới danh sách ảnh</button>
+      </div>
+    </div>
+    {% elif vd_upload_url %}
+    <p class="vd-note">Tài khoản của bạn chưa có quyền tải ảnh.</p>
+    {% else %}
+    <div class="vd-note vd-note-save">
+      <p><strong>Cần lưu di tích trước khi tải ảnh.</strong> Ảnh được gắn vào di tích đã lưu.</p>
+      {% if vd_wizard %}
+      <button type="submit" name="_vd_draft" value="1" class="button default vd-save-for-upload">Lưu nháp để tải ảnh</button>
+      {% else %}
+      <p>Bấm <em>Lưu và tiếp tục chỉnh sửa</em> ở cuối trang, sau đó quay lại thẻ này.</p>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+  <aside class="vd-standard" aria-label="Chuẩn ảnh">
+    <h3>Chuẩn ảnh</h3>
+    <ul>
+      <li>Chiều ngang <strong>≥ 1.920 px</strong>; ảnh bìa/đại diện <strong>≥ 2.400 px</strong>. Ảnh dưới {{ vd_min_width }} px sẽ bị cảnh báo.</li>
+      <li>Tỉ lệ khuyến nghị <strong>3:2</strong> hoặc <strong>16:9</strong>.</li>
+      <li>Ảnh rõ nét, đủ sáng; <strong>không chèn chữ</strong>, không logo đơn vị khác.</li>
+      <li>JPG, PNG, WebP, HEIC; tối đa 25 MB/ảnh.</li>
+      <li><strong>Bắt buộc ghi nguồn, tác giả.</strong> Chỉ dùng ảnh của cơ quan hoặc đã được tác giả cho phép; ảnh báo chí cần văn bản đồng ý.</li>
+    </ul>
+    <p class="vd-standard-foot">Hệ thống tự xoay ảnh, xóa vị trí GPS trong ảnh, nén và tạo các cỡ nhỏ.</p>
+  </aside>
+</div>

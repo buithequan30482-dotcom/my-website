@@ -1,0 +1,145 @@
+{% extends "base.html" %}{% load i18n static heritage_tags %}
+{% block title %}{{ d.seo_title|default:d.ten }}{% endblock %}
+{% block description %}{{ d.seo_description|default:d.tom_tat|striptags|truncatechars:160 }}{% endblock %}
+{% block og_title %}{{ d.ten }}{% endblock %}
+{% block og_description %}{{ d.tom_tat|striptags|truncatechars:200 }}{% endblock %}
+{% block og_image %}{% if d.anh_dai_dien %}<meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{{ d.anh_dai_dien.url }}">{% endif %}{% endblock %}
+{% block head %}
+<script type="application/ld+json">{{ d|jsonld:request }}</script>
+{% endblock %}
+{% block content %}
+<section class="d-hero">
+  {% if d.anh_dai_dien %}<img src="{{ d.anh_dai_dien.url }}" srcset="{{ d.anh_dai_dien.srcset }}" sizes="100vw" alt="{{ d.anh_dai_dien.chu_thich|default:d.ten }}" fetchpriority="high">{% endif %}
+  <div class="cap"><div class="wrap">
+    <div class="crumbs" style="color:#E5EEEA"><a style="color:#E5EEEA" href="{% url 'heritage:home' %}">{% trans "Trang chủ" %}</a> / <a style="color:#E5EEEA" href="{% url 'heritage:list' %}">{% trans "Di tích" %}</a></div>
+    {% include "partials/seal.html" with lg=1 %}
+    <h1>{{ d.ten }}</h1>
+    <div class="loc">{{ d.dia_chi_moi }}{% for l in d.loai_hinh.all %} – {{ l.ten }}{% endfor %}</div>
+  </div></div>
+  {% if d.anh_dai_dien.nguon %}<span class="photo-note">{{ d.anh_dai_dien.nguon }}</span>{% endif %}
+</section>
+
+<div class="wrap d-body">
+  <article>
+    {% if untranslated %}<p class="note-trans">{% trans "Bản dịch đang cập nhật – nội dung dưới đây hiển thị bằng tiếng Việt." %}</p>{% endif %}
+    <p class="lede">{{ d.tom_tat }}</p>
+    {% with toc=d.noi_dung|toc_items %}{% if toc|length > 1 %}
+    <nav class="toc" aria-label="{% trans "Mục lục bài viết" %}">{% for id, title in toc %}<a href="#{{ id }}">{{ title }}</a>{% endfor %}
+      {% if gallery %}<a href="#anh">{% trans "Ảnh" %}</a>{% endif %}<a href="#danh-gia">{% trans "Đánh giá" %}</a></nav>
+    {% endif %}{% endwith %}
+    <div class="prose">{{ d.noi_dung|with_anchors|safe }}</div>
+    {% if not d.noi_dung %}<p class="muted">{% trans "Bài giới thiệu chi tiết đang được biên soạn." %}</p>{% endif %}
+
+    {% if d.thong_tin_tham_quan %}<section class="sub-block" id="tham-quan"><h2>{% trans "Hướng dẫn tham quan" %}</h2><div class="prose">{{ d.thong_tin_tham_quan|safe }}</div></section>{% endif %}
+
+    {% if gallery %}<section class="sub-block" id="anh"><h2>{% trans "Ảnh" %}</h2>
+      <div class="gallery">{% for h in gallery %}<button type="button" data-lb="{{ h|img:2400 }}" data-cap="{{ h.chu_thich }}{% if h.nguon %} – {{ h.nguon }}{% endif %}" aria-label="{% trans "Xem ảnh lớn" %}: {{ h.chu_thich }}"><img src="{{ h|img:480 }}" alt="{{ h.chu_thich }}" loading="lazy"></button>{% endfor %}</div>
+    </section>{% endif %}
+
+    {% if videos %}<section class="sub-block"><h2>{% trans "Video" %}</h2>
+      {% for v in videos %}<figure style="margin:0 0 20px">{% if v.youtube_id %}<iframe class="video" src="https://www.youtube-nocookie.com/embed/{{ v.youtube_id }}" title="{{ v.tieu_de }}" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>{% else %}<video class="video" controls preload="none" src="{{ v.tep.url }}"></video>{% endif %}
+      <figcaption class="small muted">{{ v.tieu_de }} – {{ v.nguon }}</figcaption></figure>{% endfor %}
+    </section>{% endif %}
+
+    {% with lh=d.le_hoi.all %}{% if lh %}<section class="sub-block"><h2>{% trans "Lễ hội liên quan" %}</h2><ol class="months">{% for l in lh %}{% include "partials/festival_row.html" %}{% endfor %}</ol></section>{% endif %}{% endwith %}
+
+    <section class="sub-block" id="danh-gia"><h2>{% trans "Đánh giá, nhận xét" %}</h2>
+      <div class="rating-sum">
+        <div><div class="rating-big">{% if agg.n %}{{ agg.avg|floatformat:1 }}{% else %}–{% endif %}</div><div class="muted small">{% blocktrans count n=agg.n %}{{ n }} đánh giá đã duyệt{% plural %}{{ n }} đánh giá đã duyệt{% endblocktrans %}</div></div>
+        <div class="bars" aria-label="{% trans "Phân bố số sao" %}">{% for s, c in dist.items %}<div><span>{{ s }} ★</span><span class="bar"><i style="width:{% if agg.n %}{% widthratio c agg.n 100 %}{% else %}0{% endif %}%"></i></span><span>{{ c }}</span></div>{% endfor %}</div>
+      </div>
+      {% for r in reviews %}<div class="review">
+        <div><span class="stars" style="color:var(--dong-t)" aria-label="{{ r.so_sao }}/5">{{ r.so_sao|stars }}</span> <span class="who">{{ r.ten_hien_thi }}</span> <span class="small muted">{{ r.ngay_tao|date:"d/m/Y" }}</span></div>
+        <p style="margin:6px 0 0">{{ r.noi_dung|linebreaksbr }}</p>
+        {% if r.phan_hoi %}<div class="reply"><strong>{% trans "Ban quản trị" %}:</strong> {{ r.phan_hoi|linebreaksbr }}</div>{% endif %}
+      </div>{% empty %}<p class="muted">{% trans "Chưa có nhận xét nào. Hãy là người đầu tiên chia sẻ trải nghiệm." %}</p>{% endfor %}
+
+      {% review_form review_form as rf %}
+      <form class="form" method="post" action="{% url 'interactions:review_submit' d.slug %}" style="margin-top:28px;padding-top:24px;border-top:1px solid var(--line)" novalidate>
+        {% csrf_token %}
+        <h3>{% trans "Viết nhận xét" %}</h3>
+        {% if rf.non_field_errors %}<div class="msg msg-error">{{ rf.non_field_errors }}</div>{% endif %}
+        <div class="field"><span id="star-l" style="display:block;font-weight:600;font-size:15px;margin-bottom:4px">{{ rf.so_sao.label }}</span>
+          <div class="stars-input" role="radiogroup" aria-labelledby="star-l">{% for i in "54321" %}<input type="radio" id="s{{ i }}" name="so_sao" value="{{ i }}" {% if rf.so_sao.value|stringformat:"s" == i %}checked{% endif %}><label for="s{{ i }}" title="{{ i }}/5">★<span class="sr-only">{{ i }}/5</span></label>{% endfor %}</div>
+          {{ rf.so_sao.errors }}</div>
+        <div class="field">{{ rf.noi_dung.label_tag }}{{ rf.noi_dung }}<div class="help">{% trans "20–1.000 ký tự. Nhận xét hiển thị sau khi được kiểm duyệt." %}</div>{{ rf.noi_dung.errors }}</div>
+        <div class="row2">
+          <div class="field">{{ rf.ten_hien_thi.label_tag }}{{ rf.ten_hien_thi }}{{ rf.ten_hien_thi.errors }}</div>
+          <div class="field">{{ rf.email.label_tag }}{{ rf.email }}{{ rf.email.errors }}</div>
+        </div>
+        <label class="check">{{ rf.dong_y }}<span>{% trans "Tôi đồng ý để Phòng Văn hóa – Xã hội xử lý thông tin liên hệ theo" %} <a href="{% url 'heritage:page' 'chinh-sach-du-lieu' %}" target="_blank">{% trans "chính sách dữ liệu cá nhân" %}</a>. {% trans "Chỉ cần khi để lại email." %}</span></label>{{ rf.dong_y.errors }}
+        <div class="hp" aria-hidden="true">{{ rf.website }}</div>{{ rf.ts }}
+        <div><button class="btn" type="submit">{% trans "Gửi nhận xét" %}</button></div>
+      </form>
+    </section>
+
+    {% if d.nguon.all %}<section class="sub-block"><h2 style="font-size:20px">{% trans "Nguồn tham khảo" %}</h2>
+      <ol class="sources">{% for s in d.nguon.all %}<li>{% if s.url %}<a href="{{ s.url }}" rel="noopener" target="_blank">{{ s.ten }}</a>{% else %}{{ s.ten }}{% endif %}{% if s.ngay %} ({{ s.ngay }}){% endif %}</li>{% endfor %}</ol>
+    </section>{% endif %}
+  </article>
+
+  <aside>
+    <div class="aside-box">
+      <h2>{% trans "Thông tin tham quan" %}</h2>
+      <dl class="facts">
+        <div><dt>{% trans "Địa chỉ" %}</dt><dd>{{ d.dia_chi_moi }}{% if d.dia_chi_cu %}<br><span class="small muted">{% trans "Trước 01/7/2025" %}: {{ d.dia_chi_cu }}</span>{% endif %}</dd></div>
+        <div><dt>{% trans "Phí tham quan" %}</dt><dd>{{ d.phi_tham_quan|default:_("Miễn phí") }}</dd></div>
+        {% if d.gio_mo_cua %}<div><dt>{% trans "Giờ mở cửa" %}</dt><dd>{{ d.gio_mo_cua }}</dd></div>{% endif %}
+        {% if d.khu_vuc.la_dao %}<div><dt>{% trans "Đi lại" %}</dt><dd>{% blocktrans with dao=d.khu_vuc.dao %}Trên đảo {{ dao }} – đi tàu từ Bến cảng Ao Tiên.{% endblocktrans %} <a href="{% url 'heritage:useful' %}#di_lai">{% trans "Xem thông tin tàu" %}</a></dd></div>{% endif %}
+        <div><dt>{% trans "Hiện trạng" %}</dt><dd>{{ d.get_hien_trang_display }}{% if d.hien_trang_mo_ta %}<br><span class="small muted">{{ d.hien_trang_mo_ta }}</span>{% endif %}</dd></div>
+        {% if d.so_quyet_dinh %}<div><dt>{% trans "Xếp hạng" %}</dt><dd>{{ d.so_quyet_dinh }}{% if d.co_quan_qd %} – {{ d.co_quan_qd }}{% endif %}</dd></div>
+        {% elif d.nam_xep_hang %}<div><dt>{% if d.cap_xep_hang == 'kiemke' %}{% trans "Năm kiểm kê" %}{% else %}{% trans "Năm xếp hạng" %}{% endif %}</dt><dd>{{ d.nam_xep_hang }}</dd></div>{% endif %}
+        {% if d.lien_he %}<div><dt>{% trans "Liên hệ" %}</dt><dd>{{ d.lien_he }}</dd></div>{% endif %}
+      </dl>
+      <div class="aside-actions">
+        {% if main %}<a class="btn" href="{{ main.directions_url }}" target="_blank" rel="noopener">{% trans "Chỉ đường bằng Google Maps" %}</a>{% endif %}
+        <button class="btn btn-ghost want" type="button" data-want="{% url 'want_to_go' d.slug %}" data-slug="{{ d.slug }}" aria-pressed="false">{% trans "Muốn đến" %} · <span data-count>{{ muon_den }}</span></button>
+      </div>
+    </div>
+
+    <div class="aside-box">
+      <h2>{% trans "Vị trí" %}</h2>
+      {% if main %}
+        {% if embed_single and MAPS_KEY %}
+          <iframe class="map-embed" title="{% trans "Bản đồ vị trí" %} {{ d.ten }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?key={{ MAPS_KEY }}&q={{ main.lat|stringformat:'.6f' }},{{ main.lng|stringformat:'.6f' }}&zoom=15&language={% if cur_lang == 'zh-hans' %}zh-CN{% else %}{{ cur_lang }}{% endif %}"></iframe>
+        {% else %}
+          <div class="map-embed" id="d-map" data-map="pts-d" data-key="{{ MAPS_KEY }}" data-static="{% get_static_prefix %}" data-zoom="15"></div>
+          <script id="pts-d" type="application/json">{{ points_json|safe }}</script>
+        {% endif %}
+      {% else %}<p class="muted">{% trans "Đang cập nhật vị trí." %}</p>{% endif %}
+      {% if points|length > 1 %}<ul class="points" aria-label="{% trans "Các điểm của di tích" %}">{% for p in points %}<li>{% if p.has_coord %}<button type="button" data-focus-map="d-map" data-index="{{ p.map_index }}"><span>{{ p.ten }}</span>{% if p.do_tin_cay == 'tuong_doi' %}<small>{% trans "vị trí tương đối" %}</small>{% endif %}</button>{% else %}<span class="nocoord"><span>{{ p.ten }}</span><small>{% trans "đang cập nhật vị trí" %}</small></span>{% endif %}</li>{% endfor %}</ul>{% endif %}
+    </div>
+
+    <div class="aside-box">
+      <h2>{% trans "Chia sẻ" %}</h2>
+      <div class="share">
+        <a class="btn btn-ghost btn-sm" href="https://www.facebook.com/sharer/sharer.php?u={{ abs_url|urlencode }}" target="_blank" rel="noopener">Facebook</a>
+        <a class="btn btn-ghost btn-sm" href="https://zalo.me/share?u={{ abs_url|urlencode }}" target="_blank" rel="noopener">Zalo</a>
+        <button class="btn btn-ghost btn-sm" type="button" data-copy="{{ abs_url }}">{% trans "Sao chép liên kết" %}</button>
+        <button class="btn btn-ghost btn-sm" type="button" onclick="window.print()">{% trans "In trang" %}</button>
+      </div>
+      <div class="qr" style="margin-top:16px">
+        <img src="{% url 'qr' d.slug 'png' %}" alt="{% trans "Mã QR mở trang di tích" %}" width="96" height="96" loading="lazy">
+        <div>{% trans "Quét mã để mở trang này. Mã dùng để in đặt tại di tích." %}<br><a href="{% url 'qr' d.slug 'png' %}?download=1">PNG</a> · <a href="{% url 'qr' d.slug 'svg' %}?download=1">SVG</a></div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+{% if near %}<section class="section band"><div class="wrap">
+  <div class="section-head"><h2>{% trans "Di tích lân cận" %}</h2></div>
+  <div class="site-grid">{% for km, o, same in near %}<article class="card">
+    <div class="card-img">{% if o.anh_dai_dien %}<img src="{{ o.anh_dai_dien|img:480 }}" alt="" loading="lazy">{% endif %}</div>
+    <div class="card-body"><div class="card-meta">{% include "partials/seal.html" with d=o %}<span>{{ km|floatformat:1 }} km</span><span>{% if same %}{% trans "cùng đảo" %}{% elif o.khu_vuc.la_dao or d.khu_vuc.la_dao %}{% trans "cần đi tàu" %}{% else %}{% trans "đường bộ" %}{% endif %}</span></div>
+      <h3><a href="{{ o.get_absolute_url }}">{{ o.ten }}</a></h3></div></article>{% endfor %}</div>
+</div></section>{% endif %}
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="{% trans "Xem ảnh" %}">
+  <button class="lb-btn lb-close" type="button" aria-label="{% trans "Đóng" %}">×</button>
+  <button class="lb-btn lb-prev" type="button" aria-label="{% trans "Ảnh trước" %}">‹</button>
+  <img src="" alt=""><p></p>
+  <button class="lb-btn lb-next" type="button" aria-label="{% trans "Ảnh sau" %}">›</button>
+</div>
+{% endblock %}
+{% block scripts %}<script src="{% static 'js/map.js' %}" defer></script>{% endblock %}

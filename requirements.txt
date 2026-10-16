@@ -1,0 +1,34 @@
+# Thư viện Python cho Website di tích Đặc khu Vân Đồn
+# Phiên bản ghim theo môi trường phát triển đã kiểm thử (pip freeze, 16/10/2026).
+# Cập nhật: sửa số phiên bản tại đây -> chạy test -> build lại image (deploy/scripts/update.sh).
+
+# --- Lõi ---
+Django==5.2.7                   # LTS (hỗ trợ bảo mật tới 04/2028 theo lịch Django)
+asgiref==3.12.1
+sqlparse==0.6.0
+django-modeltranslation==0.20.6 # nội dung đa ngôn ngữ vi/en/zh-hans
+typing_extensions==4.16.0       # phụ thuộc của django-modeltranslation
+dj-database-url==3.1.2          # đọc DATABASE_URL
+
+# --- CSDL, cache ---
+psycopg[binary]==3.3.6          # PostgreSQL 16 (kèm libpq, không cần gói hệ thống)
+psycopg-binary==3.3.6
+django-redis==7.0.0
+redis==8.1.0
+
+# --- Ảnh, tệp, báo cáo ---
+pillow==12.3.0
+pillow-heif==1.8.1              # đọc ảnh HEIC/HEIF từ điện thoại (wheel đã kèm libheif)
+XlsxWriter==3.2.9               # xuất Excel có biểu đồ gốc
+openpyxl==3.1.5                 # đọc mẫu Excel nhập liệu
+et_xmlfile==2.0.0
+qrcode==8.2
+
+# --- Bảo mật ---
+bleach==6.4.0                   # làm sạch HTML biên tập viên nhập
+webencodings==0.6.1
+pyotp==2.10.0                   # mã OTP 2 lớp cho quản trị
+
+# --- Chạy production ---
+gunicorn==26.2.0
+whitenoise==6.12.0

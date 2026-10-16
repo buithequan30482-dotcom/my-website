@@ -1,0 +1,57 @@
+{% extends "admin/base_site.html" %}
+{% load static admin_dash %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Trang chủ</a> &rsaquo; <a href="{% url 'core:help' %}">Hướng dẫn sử dụng</a> &rsaquo; {{ art.title|strip_num }}</div>
+{% endblock %}
+{% block content_title %}{% endblock %}
+{% block nav-sidebar %}{% endblock %}
+
+{% block content %}
+{% help_neighbors articles art as nb %}
+<div id="content-main" class="vd-help-layout">
+  <nav class="vd-help-nav" aria-label="Danh sách bài hướng dẫn">
+    <h2>Các bài hướng dẫn</h2>
+    <ol>
+      {% for a in articles %}
+      <li><a href="{% url 'core:help_detail' a.slug %}"{% if a.pk == art.pk %} aria-current="page"{% endif %}>{{ a.title }}</a></li>
+      {% endfor %}
+    </ol>
+  </nav>
+
+  <article class="vd-article">
+    <header class="vd-article-head">
+      <div>
+        <h1>{{ art.title }}</h1>
+        {% if art.summary %}<p>{{ art.summary }}</p>{% endif %}
+      </div>
+      <div class="vd-noprint" style="display:flex;gap:8px;flex:none">
+        <a class="vd-btn" href="{% get_static_prefix %}docs/HDSD_Quan_tri.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+          Tải tài liệu PDF
+        </a>
+        <button type="button" class="vd-btn" data-vd-print>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/></svg>
+          In bài này
+        </button>
+        {% if perms.core.change_helparticle %}<a class="vd-btn" href="{% url 'admin:core_helparticle_change' art.pk %}">Sửa</a>{% endif %}
+      </div>
+    </header>
+
+    {% with emb=art.video_url|youtube_embed %}
+      {% if emb %}
+        <div class="vd-video"><iframe src="{{ emb }}" title="Video: {{ art.title }}" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+      {% elif art.video_url %}
+        <p class="vd-callout"><span>Video hướng dẫn: <a href="{{ art.video_url }}" target="_blank" rel="noopener">mở video</a></span></p>
+      {% endif %}
+    {% endwith %}
+
+    <div class="vd-prose">{{ art.body|safe }}</div>
+
+    <nav class="vd-pager vd-noprint" aria-label="Chuyển bài">
+      {% if nb.prev %}<a href="{% url 'core:help_detail' nb.prev.slug %}"><small>← Bài trước</small>{{ nb.prev.title|strip_num }}</a>{% endif %}
+      {% if nb.next %}<a class="next" href="{% url 'core:help_detail' nb.next.slug %}"><small>Bài tiếp →</small>{{ nb.next.title|strip_num }}</a>{% endif %}
+    </nav>
+  </article>
+</div>
+{% endblock %}

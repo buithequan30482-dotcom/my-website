@@ -1,0 +1,910 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: vandon-heritage 1.0\n"
+"POT-Creation-Date: 2026-10-16 12:23+0700\n"
+"PO-Revision-Date: 2026-10-16 12:00+0700\n"
+"Last-Translator: Vân Đồn heritage website team\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: heritage/models.py:25 templates/partials/map_legend.html:2
+#: templates/public/home.html:10
+msgid "Quốc gia đặc biệt"
+msgstr "Special National Monument"
+
+#: heritage/models.py:26 templates/partials/map_legend.html:2
+#: templates/public/home.html:11
+msgid "Quốc gia"
+msgstr "National Monument"
+
+#: heritage/models.py:27 templates/partials/map_legend.html:3
+#: templates/public/home.html:12
+msgid "Cấp tỉnh"
+msgstr "Provincial Monument"
+
+#: heritage/models.py:28 templates/partials/map_legend.html:3
+#: templates/public/home.html:13
+msgid "Kiểm kê"
+msgstr "Inventoried site"
+
+#: heritage/models.py:35
+msgid "Tốt"
+msgstr "Good"
+
+#: heritage/models.py:36
+msgid "Đã tu bổ, tôn tạo"
+msgstr "Restored and embellished"
+
+#: heritage/models.py:37
+msgid "Phế tích"
+msgstr "Ruins"
+
+#: heritage/models.py:38 interactions/i18n_strings.py:13
+#: templates/partials/filters.html:17
+msgid "Khác"
+msgstr "Other"
+
+#: heritage/models.py:418 templates/public/detail.html:88
+msgid "Đi lại"
+msgstr "Getting around"
+
+#: heritage/models.py:419
+msgid "Lưu trú"
+msgstr "Accommodation"
+
+#: heritage/models.py:420
+msgid "Y tế, khẩn cấp"
+msgstr "Health and emergencies"
+
+#: heritage/models.py:421 templates/public/detail.html:92
+msgid "Liên hệ"
+msgstr "Contacts"
+
+#: heritage/models.py:422
+msgid "Lưu ý khi tham quan"
+msgstr "Visitor tips"
+
+#: heritage/views.py:52
+#, python-format
+msgid "Đảo %s"
+msgstr "%s Island"
+
+#: interactions/forms.py:48
+msgid ""
+"Vui lòng đồng ý chính sách dữ liệu khi để lại email hoặc số điện thoại."
+msgstr ""
+"Please accept the data policy if you leave an email address or phone number."
+
+#: interactions/forms.py:51
+msgid "Số điện thoại không hợp lệ."
+msgstr "Invalid phone number."
+
+#: interactions/forms.py:56
+msgid "Đánh giá của bạn"
+msgstr "Your rating"
+
+#: interactions/forms.py:57
+msgid "Vui lòng chọn số sao."
+msgstr "Please choose a star rating."
+
+#: interactions/forms.py:58
+msgid "Nhận xét"
+msgstr "Review"
+
+#: interactions/forms.py:60
+msgid "Nhận xét cần ít nhất 20 ký tự."
+msgstr "Your review must be at least 20 characters long."
+
+#: interactions/forms.py:61
+msgid "Tên hiển thị"
+msgstr "Display name"
+
+#: interactions/forms.py:62 interactions/forms.py:83
+msgid "Email (không bắt buộc)"
+msgstr "Email (optional)"
+
+#: interactions/forms.py:63 interactions/forms.py:84
+msgid "Điện thoại (không bắt buộc)"
+msgstr "Phone (optional)"
+
+#: interactions/forms.py:64 interactions/forms.py:85
+msgid "Tôi đồng ý với chính sách xử lý dữ liệu cá nhân"
+msgstr "I agree to the personal data processing policy"
+
+#: interactions/forms.py:77
+msgid "Loại góp ý"
+msgstr "Feedback type"
+
+#: interactions/forms.py:79
+msgid "Di tích liên quan (không bắt buộc)"
+msgstr "Related site (optional)"
+
+#: interactions/forms.py:79
+msgid "— Không chọn —"
+msgstr "— None —"
+
+#: interactions/forms.py:80
+msgid "Nội dung"
+msgstr "Message"
+
+#: interactions/forms.py:82
+msgid "Họ tên (không bắt buộc)"
+msgstr "Full name (optional)"
+
+#: interactions/i18n_strings.py:9
+msgid "Góp ý dịch vụ"
+msgstr "Service feedback"
+
+#: interactions/i18n_strings.py:10
+msgid "Mong muốn, đề xuất"
+msgstr "Wishes and suggestions"
+
+#: interactions/i18n_strings.py:11
+msgid "Báo di tích xuống cấp"
+msgstr "Report a deteriorating site"
+
+#: interactions/i18n_strings.py:12 templates/public/feedback.html:23
+msgid "Hỏi đáp"
+msgstr "Questions"
+
+#: interactions/i18n_strings.py:15
+msgid "Mới"
+msgstr "New"
+
+#: interactions/i18n_strings.py:16
+msgid "Đang xử lý"
+msgstr "In progress"
+
+#: interactions/i18n_strings.py:17
+msgid "Đã xử lý"
+msgstr "Resolved"
+
+#: interactions/i18n_strings.py:18 templates/public/detail.html:139
+msgid "Đóng"
+msgstr "Closed"
+
+#: interactions/views.py:61 interactions/views.py:75
+msgid "Cảm ơn bạn! Nhận xét sẽ hiển thị sau khi được kiểm duyệt."
+msgstr "Thank you! Your review will appear once it has been moderated."
+
+#: interactions/views.py:64 interactions/views.py:95
+msgid "Bạn đã gửi quá nhiều lần trong một giờ. Vui lòng thử lại sau."
+msgstr ""
+"You have submitted too many times in the past hour. Please try again later."
+
+#: interactions/views.py:90
+msgid "Ảnh đính kèm phải là tệp ảnh, tối đa 5 MB mỗi ảnh."
+msgstr "Attachments must be image files, up to 5 MB each."
+
+#: templates/404.html:2 templates/404.html:3
+msgid "Không tìm thấy trang"
+msgstr "Page not found"
+
+#: templates/404.html:3
+msgid "Đường dẫn có thể đã thay đổi. Hãy tìm di tích hoặc quay về trang chủ."
+msgstr ""
+"The link may have changed. Search for a site or go back to the home page."
+
+#: templates/404.html:4 templates/public/home.html:16
+msgid "Tìm di tích"
+msgstr "Search sites"
+
+#: templates/404.html:4 templates/partials/filters.html:5
+#: templates/public/home.html:18
+msgid "Tìm"
+msgstr "Search"
+
+#: templates/base.html:6 templates/base.html:11 templates/base.html:12
+#: templates/base.html:28 templates/public/list.html:6
+msgid "Di tích Vân Đồn"
+msgstr "Vân Đồn Heritage"
+
+#: templates/base.html:6
+msgid "Đặc khu Vân Đồn"
+msgstr "Vân Đồn Special Zone"
+
+#: templates/base.html:7
+msgid ""
+"Tra cứu di tích lịch sử, văn hóa, danh thắng của Đặc khu Vân Đồn, Quảng "
+"Ninh: bản đồ, tuyến tham quan, lễ hội và thông tin đi lại."
+msgstr ""
+"Explore the historical, cultural and scenic sites of Vân Đồn Special Zone, "
+"Quảng Ninh: maps, tour routes, festivals and travel information."
+
+#: templates/base.html:13
+msgid ""
+"Tra cứu di tích lịch sử, văn hóa, danh thắng của Đặc khu Vân Đồn, Quảng "
+"Ninh."
+msgstr ""
+"Explore the historical, cultural and scenic sites of Vân Đồn Special Zone, "
+"Quảng Ninh."
+
+#: templates/base.html:20
+msgid "Xem chi tiết"
+msgstr "View details"
+
+#: templates/base.html:20
+msgid "Đã sao chép"
+msgstr "Copied"
+
+#: templates/base.html:20
+msgid "Không lấy được vị trí. Hãy cho phép trình duyệt truy cập vị trí."
+msgstr ""
+"Could not get your location. Please allow the browser to access your "
+"location."
+
+#: templates/base.html:23
+msgid "Bỏ qua, tới nội dung chính"
+msgstr "Skip to main content"
+
+#: templates/base.html:28
+msgid "Đặc khu Vân Đồn, tỉnh Quảng Ninh"
+msgstr "Vân Đồn Special Zone, Quảng Ninh Province"
+
+#: templates/base.html:30
+msgid "Điều hướng chính"
+msgstr "Main navigation"
+
+#: templates/base.html:31 templates/public/detail.html:14
+#: templates/public/list.html:5
+msgid "Di tích"
+msgstr "Sites"
+
+#: templates/base.html:32 templates/public/list.html:30
+#: templates/public/map.html:5
+msgid "Bản đồ"
+msgstr "Map"
+
+#: templates/base.html:33 templates/public/home.html:39
+#: templates/public/route_detail.html:4 templates/public/routes.html:2
+#: templates/public/routes.html:4 templates/public/routes.html:5
+msgid "Tuyến tham quan"
+msgstr "Routes"
+
+#: templates/base.html:34 templates/public/festivals.html:4
+msgid "Lễ hội"
+msgstr "Festivals"
+
+#: templates/base.html:35 templates/public/home.html:56
+#: templates/public/useful.html:2 templates/public/useful.html:4
+#: templates/public/useful.html:5
+msgid "Thông tin hữu ích"
+msgstr "Useful info"
+
+#: templates/base.html:36 templates/public/feedback.html:4
+msgid "Góp ý"
+msgstr "Feedback"
+
+#: templates/base.html:42
+msgid "Menu"
+msgstr "Menu"
+
+#: templates/base.html:52
+msgid "Điện thoại"
+msgstr "Phone"
+
+#: templates/base.html:56 templates/public/feedback.html:22
+#: templates/public/lookup.html:6
+msgid "Tra cứu"
+msgstr "Explore"
+
+#: templates/base.html:58 templates/public/list.html:2
+msgid "Danh sách di tích"
+msgstr "List of sites"
+
+#: templates/base.html:59 templates/public/map.html:2
+#: templates/public/map.html:6
+msgid "Bản đồ di tích"
+msgstr "Heritage map"
+
+#: templates/base.html:60 templates/public/news.html:2
+#: templates/public/news.html:4 templates/public/news_detail.html:4
+msgid "Tin tức"
+msgstr "News"
+
+#: templates/base.html:61
+msgid "Giới thiệu Vân Đồn"
+msgstr "About Vân Đồn"
+
+#: templates/base.html:65
+msgid "Hỗ trợ"
+msgstr "Support"
+
+#: templates/base.html:67
+msgid "Gửi góp ý, mong muốn"
+msgstr "Send feedback or suggestions"
+
+#: templates/base.html:68 templates/public/lookup.html:2
+#: templates/public/lookup.html:5
+msgid "Tra cứu phản hồi"
+msgstr "Check a response"
+
+#: templates/base.html:69
+msgid "Chính sách dữ liệu cá nhân"
+msgstr "Personal data policy"
+
+#: templates/base.html:75
+msgid ""
+"Ảnh có nhãn “Ảnh minh họa” là ảnh tạm, sẽ được thay bằng ảnh chính thức."
+msgstr ""
+"Photos labelled “Illustration” are placeholders and will be replaced with "
+"official photos."
+
+#: templates/partials/card.html:4
+msgid "Phế tích – tra cứu"
+msgstr "Ruins – for reference"
+
+#: templates/partials/card.html:7
+#, python-format
+msgid "%(n)s đánh giá"
+msgid_plural "%(n)s đánh giá"
+msgstr[0] "%(n)s review"
+msgstr[1] "%(n)s reviews"
+
+#: templates/partials/filters.html:3
+msgid "Từ khóa"
+msgstr "Keyword"
+
+#: templates/partials/filters.html:4
+msgid "Tìm tên di tích…"
+msgstr "Search by site name…"
+
+#: templates/partials/filters.html:8
+msgid "Cấp xếp hạng"
+msgstr "Ranking"
+
+#: templates/partials/filters.html:11
+msgid "Loại hình"
+msgstr "Type"
+
+#: templates/partials/filters.html:14
+msgid "Khu vực / đảo"
+msgstr "Area / island"
+
+#: templates/partials/filters.html:15
+msgid "đi tàu"
+msgstr "by boat"
+
+#: templates/partials/filters.html:18
+msgid "Chỉ di tích tham quan được"
+msgstr "Visitable sites only"
+
+#: templates/partials/filters.html:20
+msgid "Lọc"
+msgstr "Filter"
+
+#: templates/partials/filters.html:20 templates/public/list.html:43
+msgid "Xóa bộ lọc"
+msgstr "Clear filters"
+
+#: templates/partials/map_legend.html:1
+msgid "Chú giải"
+msgstr "Legend"
+
+#: templates/partials/map_legend.html:5
+msgid ""
+"Một số di tích chưa có tọa độ hoặc chỉ có vị trí tương đối, đang được cập "
+"nhật."
+msgstr ""
+"Some sites have no coordinates yet or only an approximate location; these "
+"are being updated."
+
+#: templates/public/detail.html:14 templates/public/feedback.html:4
+#: templates/public/festivals.html:4 templates/public/home.html:2
+#: templates/public/list.html:5 templates/public/map.html:5
+#: templates/public/news.html:4 templates/public/news_detail.html:4
+#: templates/public/page.html:4 templates/public/route_detail.html:4
+#: templates/public/routes.html:4 templates/public/useful.html:4
+msgid "Trang chủ"
+msgstr "Home"
+
+#: templates/public/detail.html:24
+msgid "Bản dịch đang cập nhật – nội dung dưới đây hiển thị bằng tiếng Việt."
+msgstr "Translation in progress – the content below is shown in Vietnamese."
+
+#: templates/public/detail.html:27
+msgid "Mục lục bài viết"
+msgstr "Contents"
+
+#: templates/public/detail.html:28 templates/public/detail.html:35
+msgid "Ảnh"
+msgstr "Photos"
+
+#: templates/public/detail.html:28
+msgid "Đánh giá"
+msgstr "Reviews"
+
+#: templates/public/detail.html:31
+msgid "Bài giới thiệu chi tiết đang được biên soạn."
+msgstr "A detailed introduction is being prepared."
+
+#: templates/public/detail.html:33
+msgid "Hướng dẫn tham quan"
+msgstr "Visitor guide"
+
+#: templates/public/detail.html:36
+msgid "Xem ảnh lớn"
+msgstr "View larger photo"
+
+#: templates/public/detail.html:39
+msgid "Video"
+msgstr "Video"
+
+#: templates/public/detail.html:44
+msgid "Lễ hội liên quan"
+msgstr "Related festivals"
+
+#: templates/public/detail.html:46
+msgid "Đánh giá, nhận xét"
+msgstr "Reviews and comments"
+
+#: templates/public/detail.html:48
+#, python-format
+msgid "%(n)s đánh giá đã duyệt"
+msgid_plural "%(n)s đánh giá đã duyệt"
+msgstr[0] "%(n)s approved review"
+msgstr[1] "%(n)s approved reviews"
+
+#: templates/public/detail.html:49
+msgid "Phân bố số sao"
+msgstr "Star distribution"
+
+#: templates/public/detail.html:54
+msgid "Ban quản trị"
+msgstr "Management Board"
+
+#: templates/public/detail.html:55
+msgid "Chưa có nhận xét nào. Hãy là người đầu tiên chia sẻ trải nghiệm."
+msgstr "No reviews yet. Be the first to share your experience."
+
+#: templates/public/detail.html:60
+msgid "Viết nhận xét"
+msgstr "Write a review"
+
+#: templates/public/detail.html:65
+msgid "20–1.000 ký tự. Nhận xét hiển thị sau khi được kiểm duyệt."
+msgstr "20–1,000 characters. Reviews appear after moderation."
+
+#: templates/public/detail.html:70 templates/public/feedback.html:16
+msgid "Tôi đồng ý để Phòng Văn hóa – Xã hội xử lý thông tin liên hệ theo"
+msgstr ""
+"I agree to the Culture and Society Office processing my contact details in "
+"accordance with the"
+
+#: templates/public/detail.html:70 templates/public/feedback.html:16
+msgid "chính sách dữ liệu cá nhân"
+msgstr "personal data policy"
+
+#: templates/public/detail.html:70
+msgid "Chỉ cần khi để lại email."
+msgstr "Only required if you leave an email address."
+
+#: templates/public/detail.html:72
+msgid "Gửi nhận xét"
+msgstr "Submit review"
+
+#: templates/public/detail.html:76
+msgid "Nguồn tham khảo"
+msgstr "References"
+
+#: templates/public/detail.html:83
+msgid "Thông tin tham quan"
+msgstr "Visitor information"
+
+#: templates/public/detail.html:85
+msgid "Địa chỉ"
+msgstr "Address"
+
+#: templates/public/detail.html:85
+msgid "Trước 01/7/2025"
+msgstr "Before 1 July 2025"
+
+#: templates/public/detail.html:86
+msgid "Phí tham quan"
+msgstr "Admission"
+
+#: templates/public/detail.html:86
+msgid "Miễn phí"
+msgstr "Free"
+
+#: templates/public/detail.html:87
+msgid "Giờ mở cửa"
+msgstr "Opening hours"
+
+#: templates/public/detail.html:88
+#, python-format
+msgid "Trên đảo %(dao)s – đi tàu từ Bến cảng Ao Tiên."
+msgstr "On %(dao)s Island – take a boat from Ao Tiên Port."
+
+#: templates/public/detail.html:88
+msgid "Xem thông tin tàu"
+msgstr "See boat information"
+
+#: templates/public/detail.html:89
+msgid "Hiện trạng"
+msgstr "Condition"
+
+#: templates/public/detail.html:90
+msgid "Xếp hạng"
+msgstr "Ranking decision"
+
+#: templates/public/detail.html:91
+msgid "Năm kiểm kê"
+msgstr "Year inventoried"
+
+#: templates/public/detail.html:91
+msgid "Năm xếp hạng"
+msgstr "Year ranked"
+
+#: templates/public/detail.html:95
+msgid "Chỉ đường bằng Google Maps"
+msgstr "Directions in Google Maps"
+
+#: templates/public/detail.html:96
+msgid "Muốn đến"
+msgstr "Want to visit"
+
+#: templates/public/detail.html:101
+msgid "Vị trí"
+msgstr "Location"
+
+#: templates/public/detail.html:104
+msgid "Bản đồ vị trí"
+msgstr "Location map"
+
+#: templates/public/detail.html:110
+msgid "Đang cập nhật vị trí."
+msgstr "Location being updated."
+
+#: templates/public/detail.html:111
+msgid "Các điểm của di tích"
+msgstr "Points within this site"
+
+#: templates/public/detail.html:111
+msgid "vị trí tương đối"
+msgstr "approximate location"
+
+#: templates/public/detail.html:111
+msgid "đang cập nhật vị trí"
+msgstr "location being updated"
+
+#: templates/public/detail.html:115
+msgid "Chia sẻ"
+msgstr "Share"
+
+#: templates/public/detail.html:119
+msgid "Sao chép liên kết"
+msgstr "Copy link"
+
+#: templates/public/detail.html:120
+msgid "In trang"
+msgstr "Print page"
+
+#: templates/public/detail.html:123
+msgid "Mã QR mở trang di tích"
+msgstr "QR code for this site page"
+
+#: templates/public/detail.html:124
+msgid "Quét mã để mở trang này. Mã dùng để in đặt tại di tích."
+msgstr ""
+"Scan to open this page. The code is for printing and display at the site."
+
+#: templates/public/detail.html:131
+msgid "Di tích lân cận"
+msgstr "Nearby sites"
+
+#: templates/public/detail.html:134
+msgid "cùng đảo"
+msgstr "same island"
+
+#: templates/public/detail.html:134
+msgid "cần đi tàu"
+msgstr "boat needed"
+
+#: templates/public/detail.html:134
+msgid "đường bộ"
+msgstr "by road"
+
+#: templates/public/detail.html:138
+msgid "Xem ảnh"
+msgstr "View photo"
+
+#: templates/public/detail.html:140
+msgid "Ảnh trước"
+msgstr "Previous photo"
+
+#: templates/public/detail.html:142
+msgid "Ảnh sau"
+msgstr "Next photo"
+
+#: templates/public/feedback.html:2 templates/public/feedback.html:5
+msgid "Góp ý, mong muốn"
+msgstr "Feedback and suggestions"
+
+#: templates/public/feedback.html:6
+msgid ""
+"Gửi góp ý về dịch vụ, đề xuất, câu hỏi hoặc báo di tích xuống cấp. Sau khi "
+"gửi, bạn nhận mã tra cứu để xem phản hồi."
+msgstr ""
+"Send feedback on services, suggestions or questions, or report a "
+"deteriorating site. After submitting you will receive a reference code to "
+"check our response."
+
+#: templates/public/feedback.html:13
+msgid "Ảnh đính kèm (tối đa 3 ảnh, mỗi ảnh ≤ 5 MB)"
+msgstr "Attach photos (up to 3, max 5 MB each)"
+
+#: templates/public/feedback.html:16
+msgid "Chỉ cần khi để lại email hoặc số điện thoại."
+msgstr "Only required if you leave an email address or phone number."
+
+#: templates/public/feedback.html:18
+msgid "Gửi góp ý"
+msgstr "Send feedback"
+
+#: templates/public/feedback.html:21
+msgid "Đã gửi góp ý?"
+msgstr "Already sent feedback?"
+
+#: templates/public/feedback.html:21
+msgid "Nhập mã tra cứu để xem trạng thái xử lý và phản hồi."
+msgstr "Enter your reference code to see its status and our response."
+
+#: templates/public/feedback.html:22 templates/public/lookup.html:6
+msgid "Mã tra cứu"
+msgstr "Reference code"
+
+#: templates/public/feedback_done.html:2 templates/public/feedback_done.html:5
+msgid "Đã gửi góp ý"
+msgstr "Feedback sent"
+
+#: templates/public/feedback_done.html:6
+msgid "Cảm ơn bạn. Mã tra cứu của bạn là:"
+msgstr "Thank you. Your reference code is:"
+
+#: templates/public/feedback_done.html:8
+msgid "Hãy lưu lại mã này để xem trạng thái xử lý và phản hồi."
+msgstr "Please keep this code to check the status and our response."
+
+#: templates/public/feedback_done.html:9
+msgid "Xem trạng thái"
+msgstr "Check status"
+
+#: templates/public/feedback_done.html:9
+msgid "Về trang chủ"
+msgstr "Back to home"
+
+#: templates/public/festivals.html:2 templates/public/festivals.html:5
+msgid "Lễ hội, sự kiện"
+msgstr "Festivals and events"
+
+#: templates/public/festivals.html:5 templates/public/home.html:47
+msgid ""
+"Thời gian tính theo âm lịch, có thể thay đổi theo thông báo của địa phương."
+msgstr ""
+"Dates follow the lunar calendar and may change according to local "
+"announcements."
+
+#: templates/public/festivals.html:6
+msgid "Chưa có lễ hội nào."
+msgstr "No festivals yet."
+
+#: templates/public/home.html:7
+msgid "Vân Đồn – nơi lưu dấu thương cảng cổ Đại Việt"
+msgstr "Vân Đồn – home of Đại Việt's ancient trading port"
+
+#: templates/public/home.html:8
+msgid ""
+"Từ năm 1149, các bến cảng trên quần đảo Bái Tử Long đã đón thuyền buôn nhiều"
+" nước. Tra cứu di tích, xem vị trí trên bản đồ và chuẩn bị chuyến đi ra đảo."
+msgstr ""
+"Since 1149, the harbours of the Bái Tử Long archipelago have welcomed "
+"merchant ships from many lands. Explore the heritage sites, see them on the "
+"map and plan your trip to the islands."
+
+#: templates/public/home.html:9
+msgid "Số lượng di tích theo cấp xếp hạng"
+msgstr "Number of sites by ranking"
+
+#: templates/public/home.html:17
+msgid "Tên di tích, đảo, xã…"
+msgstr "Site name, island, commune…"
+
+#: templates/public/home.html:22
+msgid "Hải đồ vị trí các di tích Vân Đồn"
+msgstr "Chart of Vân Đồn heritage sites"
+
+#: templates/public/home.html:23
+msgid ""
+"Vị trí di tích theo tọa độ trong danh mục. Bấm vào điểm để xem chi tiết; nét"
+" đứt minh họa hướng ra các đảo."
+msgstr ""
+"Site positions based on catalogue coordinates. Click a point for details; "
+"dashed lines show the way to the islands."
+
+#: templates/public/home.html:31
+msgid "Di tích tiêu biểu"
+msgstr "Featured sites"
+
+#: templates/public/home.html:31
+msgid ""
+"Các di tích được xếp hạng quốc gia đặc biệt, quốc gia và những điểm nên đến "
+"khi tới Vân Đồn."
+msgstr ""
+"Special National and National Monuments, plus places worth seeing when you "
+"visit Vân Đồn."
+
+#: templates/public/home.html:32
+#, python-format
+msgid "Xem cả %(total)s di tích"
+msgstr "See all %(total)s sites"
+
+#: templates/public/home.html:39
+msgid "Gợi ý hành trình theo chủ đề, đi lần lượt từng điểm."
+msgstr "Themed itineraries that take you from one stop to the next."
+
+#: templates/public/home.html:40
+msgid "Tất cả tuyến"
+msgstr "All routes"
+
+#: templates/public/home.html:47
+msgid "Lễ hội theo mùa"
+msgstr "Seasonal festivals"
+
+#: templates/public/home.html:48
+msgid "Lịch lễ hội"
+msgstr "Festival calendar"
+
+#: templates/public/home.html:55
+msgid "Đến Vân Đồn"
+msgstr "Getting to Vân Đồn"
+
+#: templates/public/home.html:55
+msgid "Lịch tàu, giá vé thay đổi theo mùa – hãy liên hệ cảng trước khi đi."
+msgstr ""
+"Boat timetables and fares change with the season – contact the port before "
+"you travel."
+
+#: templates/public/list.html:7
+msgid ""
+"Lọc theo cấp xếp hạng, loại hình, khu vực; xem dạng danh sách hoặc bản đồ."
+msgstr "Filter by ranking, type or area; view as a list or on the map."
+
+#: templates/public/list.html:11 templates/public/map.html:10
+msgid "Bộ lọc"
+msgstr "Filters"
+
+#: templates/public/list.html:16
+#, python-format
+msgid "%(n)s di tích"
+msgid_plural "%(n)s di tích"
+msgstr[0] "%(n)s site"
+msgstr[1] "%(n)s sites"
+
+#: templates/public/list.html:20
+msgid "Sắp xếp"
+msgstr "Sort"
+
+#: templates/public/list.html:22
+msgid "Nổi bật"
+msgstr "Featured"
+
+#: templates/public/list.html:23
+msgid "Tên A–Z"
+msgstr "Name A–Z"
+
+#: templates/public/list.html:24
+msgid "Đánh giá cao"
+msgstr "Top rated"
+
+#: templates/public/list.html:25
+msgid "Gần tôi"
+msgstr "Near me"
+
+#: templates/public/list.html:28
+msgid "Kiểu hiển thị"
+msgstr "View"
+
+#: templates/public/list.html:29
+msgid "Danh sách"
+msgstr "List"
+
+#: templates/public/list.html:39
+msgid "Phân trang"
+msgstr "Pagination"
+
+#: templates/public/list.html:43
+msgid "Không có di tích phù hợp với bộ lọc."
+msgstr "No sites match your filters."
+
+#: templates/public/lookup.html:9
+msgid "Mã"
+msgstr "Code"
+
+#: templates/public/lookup.html:10
+msgid "Loại"
+msgstr "Type"
+
+#: templates/public/lookup.html:11
+msgid "Ngày gửi"
+msgstr "Date sent"
+
+#: templates/public/lookup.html:12
+msgid "Trạng thái"
+msgstr "Status"
+
+#: templates/public/lookup.html:13
+msgid "Phản hồi"
+msgstr "Response"
+
+#: templates/public/lookup.html:13
+msgid "Chưa có phản hồi."
+msgstr "No response yet."
+
+#: templates/public/lookup.html:15
+msgid "Không tìm thấy mã tra cứu. Kiểm tra lại mã, ví dụ GY-2026-00001."
+msgstr "Reference code not found. Please check the code, e.g. GY-2026-00001."
+
+#: templates/public/map.html:14
+msgid "Vị trí của tôi"
+msgstr "My location"
+
+#: templates/public/news.html:7
+msgid "Chưa có tin tức."
+msgstr "No news yet."
+
+#: templates/public/route_detail.html:9
+msgid "Các điểm dừng"
+msgstr "Stops"
+
+#: templates/public/route_detail.html:15
+msgid "Đường nét đứt nối các điểm theo thứ tự, không phải lộ trình thực tế."
+msgstr ""
+"Dashed lines join the stops in order and do not show the actual route."
+
+#: templates/public/routes.html:5
+msgid ""
+"Hành trình gợi ý theo chủ đề. Thời gian đi tàu ra đảo phụ thuộc lịch tàu và "
+"thời tiết."
+msgstr ""
+"Themed itineraries. Boat travel to the islands depends on timetables and the"
+" weather."
+
+#: templates/public/routes.html:6
+msgid "Chưa có tuyến tham quan."
+msgstr "No tour routes yet."
+
+#: templates/public/useful.html:5
+msgid ""
+"Mỗi mục ghi ngày cập nhật. Lịch tàu, giá vé thay đổi theo mùa – hãy liên hệ "
+"cảng trước khi đi."
+msgstr ""
+"Each entry shows when it was last updated. Boat timetables and fares change "
+"with the season – contact the port before you travel."
+
+#: templates/public/useful.html:7
+msgid "Nhóm thông tin"
+msgstr "Categories"
+
+#: templates/public/useful.html:10
+msgid "Trang tham khảo"
+msgstr "Further reading"
+
+#: templates/public/useful.html:11
+#, python-format
+msgid "Cập nhật ngày %(d)s"
+msgstr "Updated %(d)s"
+
+#: templates/public/useful.html:11
+msgid "Nguồn"
+msgstr "Source"

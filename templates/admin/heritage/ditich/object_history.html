@@ -1,0 +1,32 @@
+{% extends "admin/object_history.html" %}
+{% load static %}
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static 'vd-admin/heritage/heritage-admin.css' %}">{% endblock %}
+{% block content %}
+<div id="content-main" class="vdh-history">
+  <h2 class="vdh-h">Lịch sử chỉnh sửa chi tiết</h2>
+  <p class="vdh-panel-intro">Mỗi lần lưu, hệ thống ghi lại người sửa, thời gian và giá trị trước / sau của từng trường (rút gọn 200 ký tự).
+    Muốn khôi phục nội dung cũ: sao chép giá trị ở cột “Trước” vào ô tương ứng rồi lưu.</p>
+  {% if vd_audit %}
+  <table class="vdh-history-table">
+    <thead><tr><th scope="col">Thời gian</th><th scope="col">Người thực hiện</th><th scope="col">Thao tác</th><th scope="col">Thay đổi</th></tr></thead>
+    <tbody>
+    {% for e in vd_audit %}
+      <tr>
+        <td>{{ e.log.created_at|date:"H:i d/m/Y" }}</td>
+        <td>{{ e.log.username|default:"Hệ thống" }}</td>
+        <td>{{ e.log.get_action_display }}</td>
+        <td>{% if e.changes %}
+          <details><summary>{{ e.changes|length }} trường</summary>
+            <dl class="vdh-diff">{% for c in e.changes %}<dt>{{ c.field }}</dt><dd><del>{{ c.old|default:"(trống)" }}</del> <ins>{{ c.new|default:"(trống)" }}</ins></dd>{% endfor %}</dl>
+          </details>{% else %}{{ e.log.object_repr }}{% endif %}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p>Chưa có ghi nhận chi tiết trong nhật ký thao tác.</p>
+  {% endif %}
+  <h2 class="vdh-h">Lịch sử theo khu quản trị</h2>
+  {{ block.super }}
+</div>
+{% endblock %}

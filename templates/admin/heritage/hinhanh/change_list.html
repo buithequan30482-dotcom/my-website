@@ -1,0 +1,8 @@
+{% extends "admin/change_list.html" %}
+{% load static %}
+{% block bodyclass %}{{ block.super }} vdh-image-library{% endblock %}
+{% block search %}
+{{ block.super }}
+<p class="vdh-lib-note"><span>Thư viện ảnh của toàn bộ website. Để tải nhiều ảnh cho một di tích: mở di tích → thẻ <strong>Ảnh, video</strong> → kéo thả.</span>
+  <button type="button" class="button vdh-btn-quiet vdh-view-toggle" data-grid-label="Xem dạng bảng" data-table-label="Xem dạng lưới">Xem dạng bảng</button></p>
+{% endblock %}

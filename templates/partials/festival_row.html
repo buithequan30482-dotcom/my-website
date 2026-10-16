@@ -1,0 +1,8 @@
+{% load i18n %}<li class="month-row">
+  <div class="when">{{ l.thoi_gian_am_lich|default:"" }}<small>{{ l.thoi_gian_duong_lich }}</small></div>
+  <div>{% if l.cong_nhan %}<span class="badge-heritage">{{ l.cong_nhan }}</span>{% endif %}
+    <h3>{{ l.ten }}</h3>
+    {% if full %}<div class="prose">{{ l.mo_ta|safe }}</div>{% else %}<p>{{ l.mo_ta|striptags|truncatewords:40 }}</p>{% endif %}
+    <div class="small muted">{% if l.dia_diem %}{{ l.dia_diem }}{% endif %}{% for d in l.di_tich.all %}{% if forloop.first %} — {% endif %}<a href="{{ d.get_absolute_url }}">{{ d.ten }}</a>{% if not forloop.last %}, {% endif %}{% endfor %}</div>
+  </div>
+</li>

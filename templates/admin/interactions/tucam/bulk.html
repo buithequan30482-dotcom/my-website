@@ -1,0 +1,24 @@
+{% extends "admin/base_site.html" %}
+{% block breadcrumbs %}
+<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Trang chủ</a> &rsaquo; <a href="{% url 'admin:app_list' 'interactions' %}">{{ opts.app_config.verbose_name }}</a> &rsaquo; <a href="{% url 'admin:interactions_tucam_changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a> &rsaquo; Thêm hàng loạt</div>
+{% endblock %}
+{% block content %}
+<div id="content-main" style="max-width:760px">
+  <form method="post">
+    {% csrf_token %}
+    <fieldset class="module aligned">
+      <h2>Danh sách từ ngữ cấm</h2>
+      <div class="form-row">
+        {{ form.danh_sach.errors }}
+        <label for="{{ form.danh_sach.id_for_label }}" class="required">{{ form.danh_sach.label }}</label>
+        {{ form.danh_sach }}
+        <div class="help">{{ form.danh_sach.help_text }}</div>
+      </div>
+    </fieldset>
+    <div class="submit-row">
+      <input type="submit" class="default" value="Thêm vào danh mục">
+      <a href="{% url 'admin:interactions_tucam_changelist' %}" class="closelink">Hủy</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

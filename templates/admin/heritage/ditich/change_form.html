@@ -1,0 +1,139 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls static %}
+
+{% block bodyclass %}{{ block.super }} vdh-ditich-form{% if vd_wizard %} vdh-wizard-mode{% endif %}{% endblock %}
+
+{% block object-tools-items %}
+  {% if vd_preview_url %}<li><a href="{{ vd_preview_url }}" target="_blank" rel="noopener" class="vdh-tool-preview" title="Mở trang công khai của bản đã lưu (kể cả khi còn nháp)">Xem trước</a></li>{% endif %}
+  {% if vd_public_url %}<li><a href="{{ vd_public_url }}" target="_blank" rel="noopener">Xem trên website</a></li>{% endif %}
+  {% if original and not vd_wizard %}<li><a href="?wizard=1">Chế độ từng bước</a></li>{% endif %}
+  {% if vd_wizard and original %}<li><a href="?">Chế độ đầy đủ</a></li>{% endif %}
+  {{ block.super }}
+{% endblock %}
+
+{% block form_top %}
+{{ vd_map_config|json_script:"vdh-map-config" }}
+{{ vd_gallery|json_script:"vdh-gallery-data" }}
+<input type="hidden" name="_vd_tab" id="vdh-tab-input" value="">
+{% if vd_wizard %}<input type="hidden" name="_vd_wizard" id="vdh-wizard-input" value="1">{% endif %}
+<div id="vdh-form-meta" hidden data-modified="{{ vd_modified }}" data-saved="{% if original %}1{% else %}0{% endif %}" data-wizard="{% if vd_wizard %}1{% else %}0{% endif %}"></div>
+
+<div class="vdh-autosave-banner" id="vdh-restore" role="status" hidden>
+  <span class="vdh-autosave-text"></span>
+  <button type="button" class="button vdh-restore-yes">Khôi phục bản nháp</button>
+  <button type="button" class="button vdh-btn-quiet vdh-restore-no">Bỏ qua</button>
+</div>
+
+{% if vd_wizard %}
+<div class="vdh-wizard-head">
+  <p class="vdh-wizard-title">{% if add %}Thêm di tích mới – từng bước{% else %}Hoàn thiện “{{ original.ten_vi }}” – từng bước{% endif %}</p>
+  <p class="vdh-wizard-sub">Có thể bấm <strong>Lưu nháp</strong> bất cứ lúc nào và quay lại sau. Ô có dấu * là bắt buộc.</p>
+  <ol class="vdh-steps" role="list">
+    {% for s in vd_steps %}
+    <li><button type="button" class="vdh-step" data-step="{{ s.n }}" data-tabs="{{ s.tabs }}">
+      <span class="vdh-step-num">{{ s.n }}</span><span class="vdh-step-label">{{ s.label }}</span><span class="vdh-err-dot" hidden>!</span>
+    </button></li>
+    {% endfor %}
+  </ol>
+  <div class="vdh-progress" aria-hidden="true"><span id="vdh-progress-bar"></span></div>
+</div>
+{% elif original %}
+<div class="vdh-status" aria-label="Mức độ hoàn thiện">
+  <div class="vdh-status-head">
+    <span class="vdh-st vdh-st-{{ original.trang_thai }}">{{ original.get_trang_thai_display }}</span>
+    {% if not vd_completeness %}
+      <strong class="vdh-ok-text">Đã hoàn thiện – đủ điều kiện xuất bản.</strong>
+    {% elif vd_req_count %}
+      <strong>Chưa đủ điều kiện xuất bản.</strong> <span>Bấm vào từng mục để tới đúng chỗ cần bổ sung.</span>
+    {% else %}
+      <strong class="vdh-ok-text">Đủ điều kiện xuất bản.</strong> <span>Gợi ý để trang đầy đủ hơn:</span>
+    {% endif %}
+  </div>
+  {% if vd_completeness %}
+  <ul class="vdh-status-list">
+    {% for it in vd_completeness %}
+    <li><button type="button" class="vdh-status-item vdh-lv-{{ it.level }}" data-goto-tab="{{ it.tab }}">{% if it.level == "req" %}<span class="vdh-lv-tag">Bắt buộc</span>{% endif %}{{ it.text }}</button></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <p class="vdh-status-foot">Theo dữ liệu đã lưu lúc {{ original.ngay_sua|date:"H:i d/m/Y" }}.</p>
+</div>
+{% else %}
+<div class="vdh-status vdh-status-new">
+  <strong>Di tích mới.</strong> Điền thẻ “Thông tin chung”, “Nội dung” rồi bấm <em>Lưu và tiếp tục chỉnh sửa</em> để tải ảnh.
+  Lần đầu? Dùng <a href="{% url 'admin:heritage_ditich_wizard' %}">chế độ từng bước</a>.
+</div>
+{% endif %}
+{% endblock %}
+
+{% block field_sets %}
+<nav class="vdh-tabs" role="tablist" aria-label="Các phần của di tích">
+  {% for t in vd_tabs %}
+  <button type="button" class="vdh-tab" role="tab" data-tab="{{ t.id }}" aria-controls="vdh-panel-{{ t.id }}" id="vdh-tab-{{ t.id }}" aria-selected="false">
+    {{ t.label }}<span class="vdh-err-dot" hidden title="Thẻ này có lỗi">!</span>
+  </button>
+  {% endfor %}
+</nav>
+
+{% for t in vd_tabs %}
+<section class="vdh-panel" id="vdh-panel-{{ t.id }}" data-tab="{{ t.id }}" role="tabpanel" aria-labelledby="vdh-tab-{{ t.id }}">
+  {% if t.intro %}<p class="vdh-panel-intro">{{ t.intro }}</p>{% endif %}
+
+  {% if t.id == "anh" %}{% include "admin/heritage/ditich/gallery.html" %}{% endif %}
+
+  {% with cls="vdtab-"|add:t.id %}
+  {% for fieldset in adminform %}
+    {% if cls in fieldset.classes %}
+      {% include "admin/includes/fieldset.html" with heading_level=2 prefix="fieldset" id_prefix=0 id_suffix=forloop.counter0 %}
+    {% endif %}
+  {% endfor %}
+  {% endwith %}
+
+  {% for inline_admin_formset in inline_admin_formsets %}
+    {% if inline_admin_formset.opts.vd_tab == t.id %}{% include inline_admin_formset.opts.template %}{% endif %}
+  {% endfor %}
+</section>
+{% endfor %}
+
+{% if vd_wizard %}
+<section class="vdh-panel" id="vdh-panel-kiemtra" data-tab="kiemtra" role="tabpanel">
+  <h2 class="vdh-check-title">Kiểm tra trước khi gửi duyệt</h2>
+  <p class="vdh-panel-intro">Danh sách cập nhật ngay theo những gì bạn đã nhập. Mục <strong class="vdh-red">đỏ</strong> là điều kiện bắt buộc để xuất bản;
+    mục <strong class="vdh-amber">vàng</strong> là gợi ý nên bổ sung. Bấm vào một mục để quay lại bước đó.</p>
+  <ul class="vdh-checklist" id="vdh-checklist" data-real-images="{{ vd_real_images }}">
+    <li data-check="ten" data-step="1" data-level="req">Tên tiếng Việt</li>
+    <li data-check="cap" data-step="1" data-level="req">Cấp xếp hạng</li>
+    <li data-check="khu_vuc" data-step="1" data-level="req">Khu vực / đảo</li>
+    <li data-check="anh_dai_dien" data-step="3" data-level="req">Ảnh đại diện</li>
+    <li data-check="tom_tat" data-step="4" data-level="req">Tóm tắt tiếng Việt (1–3 câu)</li>
+    <li data-check="toa_do" data-step="2" data-level="sug">Có ít nhất một điểm có tọa độ</li>
+    <li data-check="toa_do_du" data-step="2" data-level="sug">Mọi điểm đều có tọa độ</li>
+    <li data-check="anh_that" data-step="3" data-level="sug">Có ảnh chính thức (không chỉ ảnh minh họa)</li>
+    <li data-check="noi_dung" data-step="4" data-level="sug">Bài giới thiệu</li>
+    <li data-check="tham_quan" data-step="4" data-level="sug">Hướng dẫn tham quan</li>
+    <li data-check="en" data-level="sug">Bản dịch tiếng Anh (có thể bổ sung sau ở chế độ đầy đủ)</li>
+    <li data-check="zh" data-level="sug">Bản dịch tiếng Trung (có thể bổ sung sau ở chế độ đầy đủ)</li>
+  </ul>
+  <p class="vdh-check-summary" id="vdh-check-summary" role="status"></p>
+  <p class="vdh-help-inline">Bấm <strong>Gửi duyệt</strong> để lưu và chuyển sang trạng thái “Chờ duyệt”.
+    {% if not vd_can_publish %}Người có quyền <strong>Duyệt nội dung</strong> sẽ xem và xuất bản.{% else %}Bạn có quyền xuất bản: sau khi gửi duyệt có thể chọn “Xuất bản” ở danh sách di tích.{% endif %}</p>
+</section>
+{% endif %}
+{% endblock %}
+
+{% block inline_field_sets %}{% endblock %}
+
+{% block submit_buttons_bottom %}
+<p class="vdh-autosave-status" id="vdh-autosave-status" aria-live="polite"></p>
+{% if vd_wizard %}
+<div class="vdh-wizard-nav submit-row">
+  <button type="button" class="button vdh-prev">‹ Quay lại</button>
+  <span class="vdh-spacer"></span>
+  <button type="submit" name="_vd_draft" value="1" class="button vdh-btn-quiet vdh-save-draft">Lưu nháp</button>
+  <button type="button" class="button default vdh-next">Tiếp ›</button>
+  <button type="submit" name="_vd_send_review" value="1" class="button default vdh-send" hidden>Gửi duyệt</button>
+</div>
+{% else %}
+{{ block.super }}
+{% endif %}
+{% endblock %}

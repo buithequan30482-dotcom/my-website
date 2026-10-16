@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% trans "Tra cứu phản hồi" %}{% endblock %}
+{% block content %}
+<div class="wrap page-head" style="padding-bottom:80px;max-width:760px">
+<h1>{% trans "Tra cứu phản hồi" %}</h1>
+<form class="search" method="get"><label class="sr-only" for="ma2">{% trans "Mã tra cứu" %}</label><input id="ma2" name="ma" value="{{ ma }}" placeholder="GY-2026-00001"><button type="submit">{% trans "Tra cứu" %}</button></form>
+{% if searched %}{% if obj %}
+<dl class="facts aside-box" style="margin-top:28px">
+  <div><dt>{% trans "Mã" %}</dt><dd>{{ obj.ma_tra_cuu }}</dd></div>
+  <div><dt>{% trans "Loại" %}</dt><dd>{% trans obj.get_loai_display %}</dd></div>
+  <div><dt>{% trans "Ngày gửi" %}</dt><dd>{{ obj.ngay_tao|date:"d/m/Y H:i" }}</dd></div>
+  <div><dt>{% trans "Trạng thái" %}</dt><dd><strong>{% trans obj.get_trang_thai_display %}</strong></dd></div>
+  <div><dt>{% trans "Phản hồi" %}</dt><dd>{{ obj.phan_hoi|default:_("Chưa có phản hồi.")|linebreaksbr }}</dd></div>
+</dl>
+{% else %}<p class="msg msg-error">{% trans "Không tìm thấy mã tra cứu. Kiểm tra lại mã, ví dụ GY-2026-00001." %}</p>{% endif %}{% endif %}
+</div>
+{% endblock %}

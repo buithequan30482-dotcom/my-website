@@ -1,0 +1,44 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:"Quản trị Di tích Vân Đồn" }}{% endblock %}
+
+{% comment %}Giao diện quản trị dùng một chế độ sáng duy nhất (bảng màu giấy dó – xanh ngọc), không nạp dark_mode.css.
+admin.js đặt data-theme="light" ngay khi tải để các trang con (thống kê…) cũng hiển thị sáng.{% endcomment %}
+{% block dark-mode-vars %}<script src="{% static 'vd-admin/admin.js' %}"></script>{% endblock %}
+
+{% block extrastyle %}<link rel="stylesheet" href="{% static 'fonts/fonts.css' %}"><link rel="stylesheet" href="{% static 'vd-admin/admin.css' %}"><link rel="icon" href="{% static 'img/favicon.svg' %}" type="image/svg+xml">{% endblock %}
+
+{% block branding %}
+<a class="vd-brand" href="{% url 'admin:index' %}">
+  <span class="vd-seal" aria-hidden="true">VĐ</span>
+  <span class="vd-brand-text">
+    <span id="site-name">{{ site_header|default:"Quản trị Website Di tích Vân Đồn" }}</span>
+    <span class="vd-brand-sub">{{ site_cfg.owner_name|default:"Phòng Văn hóa – Xã hội, Đặc khu Vân Đồn" }}</span>
+  </span>
+</a>
+{% endblock %}
+
+{% block welcome-msg %}
+  <span class="vd-hello">Xin chào, <strong>{% firstof user.get_full_name user.get_username %}</strong></span>
+{% endblock %}
+
+{% block userlinks %}
+  <a href="/" target="_blank" rel="noopener">Xem website</a>
+  <a href="{% url 'core:help' %}">Hướng dẫn sử dụng</a>
+  {% if user.is_superuser or perms.interactions.view_danhgia %}<a href="{% url 'dashboard:index' %}">Thống kê</a>{% endif %}
+  {% if user.admin_profile.otp_enabled %}<a href="{% url 'core:otp_setup' %}" class="vd-otp-on" title="Quản lý xác thực 2 lớp">✓ Đã bật 2 lớp</a>{% else %}<a href="{% url 'core:otp_setup' %}" class="vd-otp-off">Bật xác thực 2 lớp</a>{% endif %}
+  {% if user.has_usable_password %}<a href="{% url 'admin:password_change' %}">Đổi mật khẩu</a>{% endif %}
+  <form id="logout-form" method="post" action="{% url 'admin:logout' %}">
+    {% csrf_token %}
+    <button type="submit">Đăng xuất</button>
+  </form>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block footer %}
+<div id="footer" class="vd-footer">
+  {% if user.is_authenticated and user.is_staff %}{{ site_cfg.site_name|default:"Di tích Vân Đồn" }} · Khu quản trị · <a href="{% url 'core:help' %}">Cần trợ giúp? Xem hướng dẫn sử dụng</a>{% endif %}
+</div>
+{% endblock %}

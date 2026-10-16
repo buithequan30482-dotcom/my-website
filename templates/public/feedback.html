@@ -1,0 +1,26 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% trans "Góp ý, mong muốn" %}{% endblock %}
+{% block content %}
+<div class="wrap page-head"><div class="crumbs"><a href="{% url 'heritage:home' %}">{% trans "Trang chủ" %}</a> / {% trans "Góp ý" %}</div>
+<h1>{% trans "Góp ý, mong muốn" %}</h1>
+<p class="muted" style="max-width:60ch">{% trans "Gửi góp ý về dịch vụ, đề xuất, câu hỏi hoặc báo di tích xuống cấp. Sau khi gửi, bạn nhận mã tra cứu để xem phản hồi." %}</p></div>
+<div class="wrap d-body" style="padding-top:0">
+  <form class="form" method="post" enctype="multipart/form-data" novalidate>{% csrf_token %}
+    {% if form.non_field_errors %}<div class="msg msg-error">{{ form.non_field_errors }}</div>{% endif %}
+    <div class="row2"><div class="field">{{ form.loai.label_tag }}{{ form.loai }}{{ form.loai.errors }}</div>
+      <div class="field">{{ form.di_tich.label_tag }}{{ form.di_tich }}{{ form.di_tich.errors }}</div></div>
+    <div class="field">{{ form.noi_dung.label_tag }}{{ form.noi_dung }}{{ form.noi_dung.errors }}</div>
+    <div class="field"><label for="anh">{% trans "Ảnh đính kèm (tối đa 3 ảnh, mỗi ảnh ≤ 5 MB)" %}</label><input id="anh" type="file" name="anh" accept="image/*" multiple></div>
+    <div class="row2"><div class="field">{{ form.ho_ten.label_tag }}{{ form.ho_ten }}</div><div class="field">{{ form.email.label_tag }}{{ form.email }}{{ form.email.errors }}</div></div>
+    <div class="field" style="max-width:310px">{{ form.dien_thoai.label_tag }}{{ form.dien_thoai }}{{ form.dien_thoai.errors }}</div>
+    <label class="check">{{ form.dong_y }}<span>{% trans "Tôi đồng ý để Phòng Văn hóa – Xã hội xử lý thông tin liên hệ theo" %} <a href="{% url 'heritage:page' 'chinh-sach-du-lieu' %}" target="_blank">{% trans "chính sách dữ liệu cá nhân" %}</a>. {% trans "Chỉ cần khi để lại email hoặc số điện thoại." %}</span></label>{{ form.dong_y.errors }}
+    <div class="hp" aria-hidden="true">{{ form.website }}</div>{{ form.ts }}
+    <div><button class="btn" type="submit">{% trans "Gửi góp ý" %}</button></div>
+  </form>
+  <aside>
+    <div class="aside-box"><h2>{% trans "Đã gửi góp ý?" %}</h2><p>{% trans "Nhập mã tra cứu để xem trạng thái xử lý và phản hồi." %}</p>
+      <form class="search" action="{% url 'interactions:lookup' %}"><label class="sr-only" for="ma">{% trans "Mã tra cứu" %}</label><input id="ma" name="ma" placeholder="GY-2026-00001"><button type="submit">{% trans "Tra cứu" %}</button></form></div>
+    {% if public_qa %}<div class="aside-box"><h2>{% trans "Hỏi đáp" %}</h2>{% for q in public_qa %}<div class="review"><p style="margin:0 0 6px"><strong>{{ q.noi_dung|truncatewords:30 }}</strong></p><p style="margin:0">{{ q.phan_hoi }}</p></div>{% endfor %}</div>{% endif %}
+  </aside>
+</div>
+{% endblock %}

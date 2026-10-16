@@ -1,0 +1,22 @@
+{% extends "admin/change_list.html" %}
+{% load static %}
+{% block bodyclass %}{{ block.super }} vdh-ditich-list{% endblock %}
+{% block object-tools-items %}
+  {% if has_add_permission %}
+  <li><a href="{% url 'admin:heritage_ditich_wizard' %}" class="vdh-tool-primary">Thêm di tích (từng bước)</a></li>
+  <li><a href="{% url 'admin:heritage_ditich_import' %}">Nhập từ Excel</a></li>
+  {% endif %}
+  {{ block.super }}
+{% endblock %}
+{% block search %}
+{{ block.super }}
+<details class="vdh-legend">
+  <summary>Cách đọc cột “Hoàn thiện”</summary>
+  <p><span class="vdh-chip vdh-chip-ok">Ảnh 3</span> số ảnh chính thức ·
+     <span class="vdh-chip vdh-chip-warn">⚠ Ảnh 1</span> chỉ có ảnh minh họa tạm ·
+     <span class="vdh-chip vdh-chip-warn">Tọa độ 2/3</span> số điểm có tọa độ / tổng số điểm ·
+     <span class="vdh-chip vdh-chip-ok">EN ✓</span> <span class="vdh-chip vdh-chip-warn">中 ✗</span> bản dịch tiếng Anh / tiếng Trung ·
+     <span class="vdh-chip vdh-chip-ok">Bài ✓</span> đã có bài giới thiệu.
+     Xanh: đủ; vàng: nên bổ sung; đỏ: còn thiếu. Dùng bộ lọc bên phải để tìm di tích thiếu tọa độ, chỉ có ảnh minh họa, thiếu bản dịch.</p>
+</details>
+{% endblock %}

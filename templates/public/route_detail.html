@@ -1,0 +1,19 @@
+{% extends "base.html" %}{% load i18n static heritage_tags %}
+{% block title %}{{ r.ten }}{% endblock %}
+{% block content %}
+<div class="wrap page-head"><div class="crumbs"><a href="{% url 'heritage:home' %}">{% trans "Trang chủ" %}</a> / <a href="{% url 'heritage:routes' %}">{% trans "Tuyến tham quan" %}</a></div>
+<h1>{{ r.ten }}</h1><p class="muted">{% if r.thoi_luong %}{{ r.thoi_luong }}{% endif %}{% if r.phuong_tien %} – {{ r.phuong_tien }}{% endif %}</p></div>
+<div class="wrap d-body" style="padding-top:0">
+  <div>
+    <div class="prose">{{ r.mo_ta|safe }}</div>
+    <h2 style="margin-top:32px">{% trans "Các điểm dừng" %}</h2>
+    <ol class="route-steps">{% for s in stops %}<li><div><h3 style="margin-bottom:4px"><a href="{{ s.di_tich.get_absolute_url }}">{{ s.di_tich.ten }}</a></h3>
+      <div class="card-meta">{% include "partials/seal.html" with d=s.di_tich %}<span>{{ s.di_tich.khu_vuc.ten }}</span></div>
+      {% if s.ghi_chu %}<p style="margin:8px 0 0">{{ s.ghi_chu }}</p>{% endif %}</div></li>{% endfor %}</ol>
+  </div>
+  <aside><div class="map-box" style="height:460px;position:sticky;top:96px" id="r-map" data-map="pts-r" data-key="{{ MAPS_KEY }}" data-static="{% get_static_prefix %}" data-route></div>
+  <p class="map-note">{% trans "Đường nét đứt nối các điểm theo thứ tự, không phải lộ trình thực tế." %}</p></aside>
+</div>
+<script id="pts-r" type="application/json">{{ points_json|safe }}</script>
+{% endblock %}
+{% block scripts %}<script src="{% static 'js/map.js' %}" defer></script>{% endblock %}

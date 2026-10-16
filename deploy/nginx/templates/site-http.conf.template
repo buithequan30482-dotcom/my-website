@@ -1,0 +1,10 @@
+# =============================================================================
+# CHẾ ĐỘ HTTP-ONLY (khởi tạo trước khi có chứng chỉ, hoặc thử nghiệm nội bộ)
+# Được chọn khi NGINX_SSL=off, hoặc NGINX_SSL=auto mà chưa có chứng chỉ cho ${DOMAIN}.
+# =============================================================================
+server {
+    listen 80 default_server;
+    server_name ${DOMAIN} ${EXTRA_DOMAINS} _;
+
+    include /etc/nginx/conf.d/vandon-locations.inc;
+}

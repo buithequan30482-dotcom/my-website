@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% trans "Không tìm thấy trang" %}{% endblock %}
+{% block content %}<div class="wrap page-head" style="padding-bottom:100px"><h1>{% trans "Không tìm thấy trang" %}</h1><p>{% trans "Đường dẫn có thể đã thay đổi. Hãy tìm di tích hoặc quay về trang chủ." %}</p>
+<form class="search" action="{% url 'heritage:list' %}"><input name="q" aria-label="{% trans "Tìm di tích" %}"><button>{% trans "Tìm" %}</button></form></div>{% endblock %}

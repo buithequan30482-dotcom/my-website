@@ -1,0 +1,82 @@
+<div class="vdh-media">
+  <div class="vdh-upload">
+    <h2 class="vdh-h">Tải ảnh lên</h2>
+    {% if vd_can_upload %}
+    <div class="vdh-dropzone-wrap" id="vdh-upload">
+      <div class="vdh-upload-meta">
+        <div class="vdh-field">
+          <label for="vdh-up-nguon" class="required">Nguồn / bản quyền chung cho đợt tải</label>
+          <input type="text" id="vdh-up-nguon" maxlength="300" placeholder="Ví dụ: Ảnh: Phòng VHXH Vân Đồn" autocomplete="off" form="vdh-noform">
+          <div class="help">Bắt buộc. Sau khi tải vẫn sửa được cho từng ảnh.</div>
+        </div>
+        <div class="vdh-field">
+          <label for="vdh-up-tacgia" class="required">Tác giả (người chụp)</label>
+          <input type="text" id="vdh-up-tacgia" maxlength="200" placeholder="Ví dụ: Nguyễn Văn A" autocomplete="off" form="vdh-noform">
+          <div class="help">Bắt buộc. Ghi “Không rõ” nếu chưa xác định.</div>
+        </div>
+      </div>
+      <div class="vdh-dropzone" tabindex="0" role="button" aria-describedby="vdh-dz-hint">
+        <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4m0 0-4 4m4-4 4 4"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+        <p class="vdh-dz-text"><strong>Kéo thả nhiều ảnh vào đây</strong> hoặc <span class="vdh-dz-btn">Chọn ảnh</span></p>
+        <p class="vdh-dz-hint" id="vdh-dz-hint">JPG, PNG, WebP, HEIC (iPhone) · tối đa 25 MB/ảnh</p>
+        <input type="file" class="vdh-dz-input" form="vdh-noform" accept=".jpg,.jpeg,.png,.webp,.heic,.heif,image/jpeg,image/png,image/webp,image/heic,image/heif" multiple hidden>
+      </div>
+      <p class="vdh-dz-error" role="alert" hidden></p>
+      <ul class="vdh-dz-list" aria-live="polite"></ul>
+    </div>
+    {% elif original %}
+    <p class="vdh-note">Tài khoản của bạn chưa có quyền tải ảnh.</p>
+    {% else %}
+    <div class="vdh-note vdh-note-save">
+      <p><strong>Lưu nháp để tải ảnh.</strong> Ảnh được gắn vào di tích đã lưu, nên cần lưu di tích một lần trước.</p>
+      <button type="submit" name="_vd_draft" value="1" class="button default vdh-save-for-upload">Lưu nháp và tiếp tục</button>
+    </div>
+    {% endif %}
+  </div>
+  <aside class="vdh-standard" aria-label="Chuẩn ảnh">
+    <h3>Chuẩn ảnh</h3>
+    <ul>
+      <li>Chiều ngang <strong>≥ 1.920 px</strong>; ảnh bìa / đại diện <strong>≥ 2.400 px</strong>. Ảnh dưới {{ vd_min_width }} px bị cảnh báo.</li>
+      <li>Tỉ lệ khuyến nghị <strong>3:2</strong> hoặc <strong>16:9</strong>.</li>
+      <li>Ảnh rõ nét, đủ sáng; <strong>không chèn chữ</strong>, <strong>không logo</strong> đơn vị khác.</li>
+      <li>JPG, PNG, WebP, HEIC; tối đa 25 MB/ảnh.</li>
+      <li><strong>Bắt buộc ghi nguồn, tác giả.</strong> Chỉ dùng ảnh của cơ quan hoặc đã được tác giả cho phép; ảnh báo chí cần văn bản đồng ý.</li>
+    </ul>
+    <p class="vdh-standard-foot">Hệ thống tự xoay ảnh, xóa vị trí GPS trong ảnh, nén và tạo các cỡ nhỏ.</p>
+  </aside>
+</div>
+
+{% if original %}
+<div class="vdh-gallery-wrap">
+  <h2 class="vdh-h">Ảnh của di tích <span class="vdh-count" id="vdh-gallery-count"></span></h2>
+  <p class="vdh-gallery-empty" id="vdh-gallery-empty" hidden>Chưa có ảnh nào. Kéo thả ảnh vào khung phía trên.</p>
+  <ul class="vdh-gallery" id="vdh-gallery" aria-label="Ảnh của di tích – kéo để sắp thứ tự"></ul>
+</div>
+<template id="vdh-card-tpl">
+  <li class="vdh-card">
+    <div class="vdh-card-img">
+      <span class="vdh-handle" title="Kéo để sắp thứ tự" aria-hidden="true">⠿</span>
+      <img alt="" loading="lazy">
+      <span class="vdh-ph-label" hidden>Ảnh minh họa tạm</span>
+      <span class="vdh-small-label" hidden>Ảnh nhỏ</span>
+      <button type="button" class="vdh-star" aria-pressed="false" title="Đặt làm ảnh đại diện">★</button>
+    </div>
+    <div class="vdh-card-body">
+      <p class="vdh-card-meta"><span class="vdh-card-size"></span><span class="vdh-avatar-tag" hidden>Ảnh đại diện</span></p>
+      <label>Chú thích (tiếng Việt)<input type="text" data-f="chu_thich_vi" maxlength="300" form="vdh-noform"></label>
+      <details class="vdh-card-more">
+        <summary>Chú thích EN / 中文</summary>
+        <label>English<input type="text" data-f="chu_thich_en" maxlength="300" form="vdh-noform"></label>
+        <label>中文<input type="text" data-f="chu_thich_zh_hans" maxlength="300" form="vdh-noform"></label>
+      </details>
+      <label>Tác giả<input type="text" data-f="tac_gia" maxlength="200" form="vdh-noform"></label>
+      <label>Nguồn / bản quyền *<input type="text" data-f="nguon" maxlength="300" required form="vdh-noform"></label>
+      <p class="vdh-card-msg" role="status"></p>
+      <div class="vdh-card-actions">
+        <a class="vdh-card-open" target="_blank" rel="noopener">Xem ảnh lớn</a>
+        <button type="button" class="vdh-del">Xóa ảnh</button>
+      </div>
+    </div>
+  </li>
+</template>
+{% endif %}

@@ -1,0 +1,22 @@
+{% extends "admin/base_site.html" %}
+
+{% block nav-breadcrumbs %}{% endblock %}
+{% block nav-sidebar %}{% endblock %}
+{% block content_title %}{% endblock %}
+
+{% block content %}
+<div id="content-main" class="vd-verify">
+  <span class="vd-shield" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 14v2"/></svg></span>
+  <h1>Nhập mã xác thực</h1>
+  <p>Mở ứng dụng <strong>Google Authenticator</strong> hoặc <strong>Microsoft Authenticator</strong> trên điện thoại và nhập 6 số đang hiện cho <em>Di tich Van Don</em>.</p>
+  <form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ next }}">
+    <label class="visually-hidden" for="otp-code">Mã 6 số</label>
+    <input id="otp-code" class="vd-code-input" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required autofocus data-vd-otp data-autosubmit placeholder="······">
+    <input type="submit" value="Xác nhận">
+  </form>
+  <p class="vd-small">Mất điện thoại? Liên hệ Quản trị hệ thống để đặt lại xác thực 2 lớp.<br>
+    <a href="#" onclick="document.getElementById('logout-form').submit();return false;">Đăng xuất</a></p>
+</div>
+{% endblock %}

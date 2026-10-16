@@ -1,0 +1,136 @@
+{% extends "admin/base_site.html" %}
+{% load static humanize %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static 'dashboard/dashboard.css' %}">{% endblock %}
+{% block extrahead %}{{ block.super }}
+<script src="{% static 'vendor/chart.umd.min.js' %}" defer></script>
+<script src="{% static 'dashboard/dashboard.js' %}" defer></script>
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Trang chủ quản trị</a> › Thống kê tương tác</div>
+{% endblock %}
+
+{% block content_title %}{% endblock %}
+{% block content %}
+<div class="vd-dash">
+  <header class="vd-head">
+    <div>
+      <h1>Thống kê tương tác</h1>
+      <p class="vd-muted">
+        Kỳ báo cáo <strong>{{ bl.tu|date:"d/m/Y" }} – {{ bl.den|date:"d/m/Y" }}</strong> ({{ bl.so_ngay }} ngày),
+        so với {{ ky_truoc.tu|date:"d/m/Y" }} – {{ ky_truoc.den|date:"d/m/Y" }}. Bộ lọc: {{ bl.mo_ta }}.
+      </p>
+    </div>
+    <div class="vd-actions">
+      <a class="vd-btn vd-btn-primary" href="{% url 'dashboard:export_xlsx' %}?{{ q }}">Xuất Excel</a>
+      <details class="vd-menu">
+        <summary class="vd-btn">Xuất CSV ▾</summary>
+        <div class="vd-menu-list">
+          <a href="{% url 'dashboard:export_csv' %}?bang=danhgia&amp;{{ q }}">Đánh giá</a>
+          <a href="{% url 'dashboard:export_csv' %}?bang=gopy&amp;{{ q }}">Góp ý</a>
+          <a href="{% url 'dashboard:export_csv' %}?bang=luotxem&amp;{{ q }}">Lượt xem</a>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <form class="vd-filter" method="get" aria-label="Bộ lọc thống kê">
+    <label>Kỳ
+      <select name="ky" id="vd-ky">
+        {% for v, n in lua_chon.ky %}<option value="{{ v }}"{% if bl.ky == v %} selected{% endif %}>{{ n }}</option>{% endfor %}
+      </select>
+    </label>
+    <label class="vd-range">Từ <input type="date" name="tu" value="{{ bl.tu|date:'Y-m-d' }}"></label>
+    <label class="vd-range">Đến <input type="date" name="den" value="{{ bl.den|date:'Y-m-d' }}"></label>
+    <label>Di tích
+      <select name="di_tich"><option value="">Tất cả</option>
+        {% for pk, ma, ten in lua_chon.di_tich %}<option value="{{ pk }}"{% if bl.di_tich == pk %} selected{% endif %}>{{ ma }} – {{ ten|truncatechars:48 }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Khu vực
+      <select name="khu_vuc"><option value="">Tất cả</option>
+        {% for pk, ten in lua_chon.khu_vuc %}<option value="{{ pk }}"{% if bl.khu_vuc == pk %} selected{% endif %}>{{ ten }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Cấp xếp hạng
+      <select name="cap"><option value="">Tất cả</option>
+        {% for v, n in lua_chon.cap %}<option value="{{ v }}"{% if bl.cap == v %} selected{% endif %}>{{ n }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Ngôn ngữ
+      <select name="ngon_ngu"><option value="">Tất cả</option>
+        {% for v, n in lua_chon.ngon_ngu %}<option value="{{ v }}"{% if bl.ngon_ngu == v %} selected{% endif %}>{{ n }}</option>{% endfor %}
+      </select>
+    </label>
+    <div class="vd-filter-btns">
+      <button type="submit" class="vd-btn vd-btn-primary">Áp dụng</button>
+      <a class="vd-btn" href="{% url 'dashboard:index' %}">Đặt lại</a>
+    </div>
+  </form>
+
+  <section class="vd-todo" aria-label="Việc cần làm">
+    <h2>Việc cần làm</h2>
+    <div class="vd-todo-grid">
+      {% for v in viec %}
+      <div class="vd-todo-item vd-{{ v.mau }}{% if not v.so %} vd-zero{% endif %}">
+        <span class="vd-todo-num">{{ v.so_hien_thi }}</span>
+        <span class="vd-todo-label">{{ v.nhan }}</span>
+        <span class="vd-todo-links">
+          {% if v.url %}<a href="{{ v.url }}">Xử lý ngay →</a>{% endif %}
+          {% if v.url_phu %}<a href="{{ v.url_phu }}" class="vd-muted">{{ v.nhan_phu }}</a>{% endif %}
+        </span>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="vd-kpis" aria-label="Chỉ số chính">
+    {% for k in kpi %}
+    <div class="vd-kpi">
+      <span class="vd-kpi-label" title="{{ k.cach_tinh }}">{{ k.nhan }}</span>
+      <span class="vd-kpi-value">
+        {% if k.gia_tri is None %}–{% elif k.key == "diem_tb" %}{{ k.gia_tri|floatformat:2 }}<small>/5</small>{% elif k.don_vi == "%" %}{{ k.gia_tri|floatformat:1 }}<small>%</small>{% elif k.don_vi == "ngày" %}{{ k.gia_tri|floatformat:1 }}<small> ngày</small>{% else %}{{ k.so_hien_thi }}{% endif %}
+      </span>
+      <span class="vd-kpi-delta{% if k.tot is True %} up{% elif k.tot is False %} down{% endif %}">
+        {% if k.thay_doi is None %}Không có số liệu kỳ trước{% else %}{% if k.thay_doi > 0 %}▲ +{% elif k.thay_doi < 0 %}▼ {% else %}■ {% endif %}{{ k.thay_doi|floatformat:1 }}% so với kỳ trước{% endif %}
+      </span>
+      <span class="vd-kpi-note">{{ k.cach_tinh }}</span>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="vd-charts">
+    <figure class="vd-card vd-wide">
+      <figcaption>Lượt xem và số đánh giá theo {% if data.chuoi.muc == "thang" %}tháng{% elif data.chuoi.muc == "tuan" %}tuần{% else %}ngày{% endif %}</figcaption>
+      <div class="vd-canvas vd-canvas-lg"><canvas id="c-chuoi" role="img" aria-label="Biểu đồ đường lượt xem và đánh giá"></canvas></div>
+    </figure>
+    <figure class="vd-card">
+      <figcaption>Top 10 di tích theo lượt xem</figcaption>
+      <div class="vd-canvas vd-canvas-md"><canvas id="c-top-xem" role="img" aria-label="Top 10 di tích theo lượt xem"></canvas></div>
+    </figure>
+    <figure class="vd-card">
+      <figcaption>Điểm trung bình theo di tích <span class="vd-muted">(top 15, đánh giá đã duyệt)</span></figcaption>
+      <div class="vd-canvas vd-canvas-md"><canvas id="c-top-diem" role="img" aria-label="Điểm trung bình theo di tích"></canvas></div>
+    </figure>
+    <figure class="vd-card">
+      <figcaption>Phân bố số sao <span class="vd-muted">(theo trạng thái, trừ spam)</span></figcaption>
+      <div class="vd-canvas"><canvas id="c-sao" role="img" aria-label="Phân bố số sao"></canvas></div>
+    </figure>
+    <figure class="vd-card">
+      <figcaption>Góp ý theo loại và trạng thái xử lý</figcaption>
+      <div class="vd-canvas"><canvas id="c-gopy" role="img" aria-label="Góp ý theo loại"></canvas></div>
+    </figure>
+    <figure class="vd-card">
+      <figcaption>Lượt xem theo ngôn ngữ</figcaption>
+      <div class="vd-canvas vd-canvas-sm"><canvas id="c-ngon-ngu" role="img" aria-label="Lượt xem theo ngôn ngữ"></canvas></div>
+    </figure>
+    <figure class="vd-card">
+      <figcaption>Lượt xem theo thiết bị</figcaption>
+      <div class="vd-canvas vd-canvas-sm"><canvas id="c-thiet-bi" role="img" aria-label="Lượt xem theo thiết bị"></canvas></div>
+    </figure>
+  </section>
+  <p class="vd-muted vd-foot">Số liệu lấy trực tiếp từ cơ sở dữ liệu website; lượt xem được gộp theo ngày, không lưu IP. Lượt “Muốn đến” không áp dụng bộ lọc ngôn ngữ.</p>
+</div>
+{{ chart_data|json_script:"vd-data" }}
+{% endblock %}

@@ -1,0 +1,78 @@
+{% load i18n admin_urls %}
+<div class="js-inline-admin-formset inline-group vdh-points-group"
+     id="{{ inline_admin_formset.formset.prefix }}-group"
+     data-inline-type="stacked"
+     data-inline-formset="{{ inline_admin_formset.inline_formset_data }}">
+<fieldset class="module {{ inline_admin_formset.classes }}" aria-labelledby="{{ inline_admin_formset.formset.prefix }}-heading">
+  <h2 id="{{ inline_admin_formset.formset.prefix }}-heading" class="inline-heading">{{ inline_admin_formset.opts.verbose_name_plural|capfirst }}</h2>
+{{ inline_admin_formset.formset.management_form }}
+{{ inline_admin_formset.formset.non_form_errors }}
+<div class="vdh-points">
+{% for inline_admin_form in inline_admin_formset %}{% with f=inline_admin_form.form %}<div class="inline-related vdh-point{% if inline_admin_form.original %} has_original{% endif %}{% if forloop.last and inline_admin_formset.has_add_permission %} empty-form last-related{% endif %}" id="{{ inline_admin_formset.formset.prefix }}-{% if forloop.last and inline_admin_formset.has_add_permission %}empty{% else %}{{ forloop.counter0 }}{% endif %}">
+  <h3 class="vdh-point-head">
+    <span class="vdh-handle" title="Kéo để sắp thứ tự" aria-hidden="true">⠿</span>
+    <b>Điểm</b>
+    <span class="inline_label">{% if inline_admin_form.original %}{{ inline_admin_form.original.ten_vi|default:inline_admin_form.original }}{% else %}mới{% endif %}</span>
+    <span class="vdh-point-state" aria-live="polite"></span>
+    {% if inline_admin_formset.formset.can_delete and inline_admin_formset.has_delete_permission and inline_admin_form.original %}<span class="delete">{{ inline_admin_form.deletion_field.field }} {{ inline_admin_form.deletion_field.label_tag }}</span>{% endif %}
+  </h3>
+  {% if f.non_field_errors %}{{ f.non_field_errors }}{% endif %}
+  <div class="vdh-point-body">
+    <div class="vdh-point-fields">
+      <div class="vdh-grid3">
+        {% include "admin/heritage/includes/field.html" with f=f.ten_vi %}
+        {% include "admin/heritage/includes/field.html" with f=f.ten_en %}
+        {% include "admin/heritage/includes/field.html" with f=f.ten_zh_hans %}
+      </div>
+      <div class="vdh-coord-box">
+        <p class="vdh-coord-title">Tọa độ – chọn một trong 3 cách</p>
+        <div class="vdh-field field-toa_do{% if f.toa_do.errors %} errors{% endif %}">
+          <label for="{{ f.toa_do.id_for_label }}"><span class="vdh-way">1</span> Dán tọa độ (độ-phút-giây hoặc thập phân)</label>
+          <div class="vdh-coord-row">
+            {{ f.toa_do }}
+            <button type="button" class="button vdh-parse">Đọc tọa độ</button>
+          </div>
+          {{ f.toa_do.errors }}
+          <div class="help">{{ f.toa_do.help_text }}</div>
+        </div>
+        <div class="vdh-grid2">
+          <div class="vdh-field field-vi_do{% if f.vi_do.errors %} errors{% endif %}">
+            <label for="{{ f.vi_do.id_for_label }}"><span class="vdh-way">2</span> Vĩ độ (N)</label>{{ f.vi_do }}{{ f.vi_do.errors }}
+          </div>
+          <div class="vdh-field field-kinh_do{% if f.kinh_do.errors %} errors{% endif %}">
+            <label for="{{ f.kinh_do.id_for_label }}">Kinh độ (E)</label>{{ f.kinh_do }}{{ f.kinh_do.errors }}
+          </div>
+        </div>
+        <p class="vdh-coord-msg" role="status" aria-live="polite"></p>
+      </div>
+      <div class="vdh-grid2">
+        {% include "admin/heritage/includes/field.html" with f=f.do_tin_cay %}
+        {% include "admin/heritage/includes/field.html" with f=f.diem_chinh extra_class="vdh-field-check-pad" %}
+      </div>
+      <details class="vdh-point-desc"{% if f.mo_ta_vi.value or f.mo_ta_vi.errors %} open{% endif %}>
+        <summary>Mô tả ngắn của điểm (không bắt buộc)</summary>
+        {% include "admin/heritage/includes/field.html" with f=f.mo_ta_vi %}
+        {% include "admin/heritage/includes/field.html" with f=f.mo_ta_en %}
+        {% include "admin/heritage/includes/field.html" with f=f.mo_ta_zh_hans %}
+      </details>
+      {{ f.thu_tu }}
+    </div>
+    <div class="vdh-point-map">
+      <p class="vdh-map-title"><span class="vdh-way">3</span> Chọn trên bản đồ – bấm để đặt điểm, kéo điểm để chỉnh</p>
+      <div class="vdh-map-tools">
+        <div class="vdh-map-search">
+          <input type="search" class="vdh-map-q" placeholder="Tìm địa danh, ví dụ: đình Quan Lạn" aria-label="Tìm địa danh" form="vdh-noform" autocomplete="off">
+          <button type="button" class="button vdh-map-go">Tìm</button>
+          <ul class="vdh-map-results" hidden></ul>
+        </div>
+        <button type="button" class="button vdh-sat" aria-pressed="false">Vệ tinh</button>
+      </div>
+      <div class="vdh-map" role="application" aria-label="Bản đồ chọn tọa độ"></div>
+    </div>
+  </div>
+  {% if inline_admin_form.needs_explicit_pk_field %}{{ inline_admin_form.pk_field.field }}{% endif %}
+  {% if inline_admin_form.fk_field %}{{ inline_admin_form.fk_field.field }}{% endif %}
+</div>{% endwith %}{% endfor %}
+</div>
+</fieldset>
+</div>

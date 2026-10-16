@@ -1,0 +1,272 @@
+[
+ {
+  "di_tich": "Nơi bắt sống giặc lái Mỹ",
+  "diem": "Cái Rồng",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không tìm thấy nguồn mô tả vị trí hay tọa độ (WebSearch nhiều truy vấn; OSM/Nominatim bị chặn). Cần khảo sát thực địa / hồ sơ xếp hạng.",
+  "nguon_url": null
+ },
+ {
+  "di_tich": "Hang Soi Nhụ",
+  "diem": "Hang Soi Nhụ (xã Hạ Long cũ)",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Tài liệu khảo cổ (Trình Năng Chung 2025; halongbay.com.vn) chỉ nêu di chỉ trên các đảo đá vôi vịnh Bái Tử Long, không có tọa độ; GNS (NGA) không có địa danh Soi Nhụ.",
+  "nguon_url": "https://baotanglichsu.vn/DataFiles/2025/12/News/Tieng%20Viet/25.12.2025/Thong%20bao%20Khoa%20hoc%20nam%202025/002.pdf"
+ },
+ {
+  "di_tich": "Hang Hà Giắt",
+  "diem": "Hang Hà Giắt (xã Hạ Long cũ)",
+  "van_de": "Thiếu",
+  "lat": 21.083333,
+  "lng": 107.433333,
+  "tin_cay": "Thấp",
+  "can_cu": "Chỉ để định hướng: GNS (NGA) có địa danh 'Hà Hiắt Ch.' (PPL, độ chính xác 1 phút ≈ ±1–2 km) tại 21.083333,107.433333 và 'Massif du Ha Hiat' (khối núi) tại 21.116667,107.483333. Đây là tọa độ địa danh/khu vực, không phải cửa hang. Cần xác định thực địa.",
+  "nguon_url": "https://geonames.nga.mil/geon-ags/rest/services/RESEARCH/GIS_OUTPUT/MapServer/0/query"
+ },
+ {
+  "di_tich": "Bến Cái Cổng",
+  "diem": "Bến Cái Cổng (Minh Châu)",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không tìm thấy nguồn mô tả vị trí hay tọa độ.",
+  "nguon_url": null
+ },
+ {
+  "di_tich": "Bến Con Quy",
+  "diem": "Bến Con Quy (Minh Châu)",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không có tọa độ. Bài khảo cổ (vjol Khảo cổ học) mô tả: 'Bến Con Quy thuộc thôn Sơn Hào, xã Quan Lạn, là một quả đồi thấp, nằm về phía đông bắc vụng Cống Cái, cách khoảng 1,5 km' — mâu thuẫn với địa chỉ Minh Châu trong danh mục, cần đối chiếu. Báo Đấu thầu có dự án 'bến cảng Con Quy, xã Quan Lạn' (không có tọa độ).",
+  "nguon_url": "https://vjol.info.vn/khaoco/vi/article/download/235917/209743/379429"
+ },
+ {
+  "di_tich": "Nhà thờ họ Phạm Văn",
+  "diem": "Nhà thờ họ Phạm Văn (Quan Lạn 2)",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không tìm thấy nguồn.",
+  "nguon_url": null
+ },
+ {
+  "di_tich": "Bãi tắm Quan Lạn",
+  "diem": "Bãi tắm Quan Lạn",
+  "van_de": "Thiếu",
+  "lat": 20.9037204,
+  "lng": 107.5237963,
+  "tin_cay": "Trung bình",
+  "can_cu": "Beach Atlas ghi trực tiếp 'Latitud 20.9037204 / Longitud 107.5237963' (nguồn tổng hợp, chưa rõ gốc). Điểm cách làng Quan Lạn ~4,3 km về ĐB và cách đình Minh Châu ~4,1 km; khớp mô tả 'bãi nằm giữa xã Minh Châu và xã Quan Lạn' (gallery.threeland.com). Lưu ý nằm ngoài khung 20.85–20.90°N dự kiến và bãi dài nhiều km nên điểm chỉ là một vị trí trên bãi.",
+  "nguon_url": "https://www.beachatlas.com/es/quan-lan"
+ },
+ {
+  "di_tich": "Đền Vân Hải",
+  "diem": "Đền Vân Hải (Quan Lạn 3)",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không tìm thấy nguồn.",
+  "nguon_url": null
+ },
+ {
+  "di_tich": "Bến Cống Cái",
+  "diem": "Bến/vụng Cống Cái (Quan Lạn 3)",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không có tọa độ. Bài khảo cổ mô tả vụng Cống Cái 'nằm ở phần trung tâm của đảo Quan Lạn', gắn với thung lũng Sơn Hào và 'ngã ba Cống Cái - Sông Mang'.",
+  "nguon_url": "https://vjol.info.vn/khaoco/vi/article/download/235917/209743/379429"
+ },
+ {
+  "di_tich": "Miếu Bà",
+  "diem": "Miếu Bà (Quan Lạn 3)",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không tìm thấy nguồn.",
+  "nguon_url": null
+ },
+ {
+  "di_tich": "Di tích lưu niệm Bác Hồ",
+  "diem": "Vạn Yên 2",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không tìm thấy nguồn mô tả vị trí.",
+  "nguon_url": null
+ },
+ {
+  "di_tich": "Đường mòn Hồ Chí Minh trên biển",
+  "diem": "Vạn Yên 2",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không tìm thấy nguồn; các bài về di tích QGĐB Đường HCM trên biển (2024) chỉ nêu Hải Phòng, Phú Yên, BR-VT, Cà Mau, không nêu điểm ở Vân Đồn.",
+  "nguon_url": "https://thanhnien.vn/duong-ho-chi-minh-tren-bien-duoc-xep-hang-di-tich-quoc-gia-dac-biet-185241126224538574.htm"
+ },
+ {
+  "di_tich": "Cụm di tích Quan Lạn",
+  "diem": "Miếu Sao Ỏn",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không có tọa độ. Báo Pháp luật chỉ nêu núi Sao Ơn là một trong ba ngọn núi án ngữ phía trước (phía tây) đình Quan Lạn.",
+  "nguon_url": "https://baophapluat.vn/dinh-quan-lan-ngoi-dinh-thieng-300-tuoi-ben-song-nuoc-van-don-post385300.html"
+ },
+ {
+  "di_tich": "Quần thể Thương cảng Vân Đồn (Quan Lạn)",
+  "diem": "Bến Cái Làng",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không có tọa độ. Bài khảo cổ: Cái Làng 'nằm ở phía tây nam núi Man, thuộc xã Quan Lạn'; có giếng nước ngọt (Giếng Hệu) trong thung lũng Cái Làng.",
+  "nguon_url": "https://vjol.info.vn/khaoco/vi/article/download/235917/209743/379429"
+ },
+ {
+  "di_tich": "Quần thể Thương cảng Vân Đồn (Quan Lạn)",
+  "diem": "Đình Quan Lạn",
+  "van_de": "Thiếu",
+  "lat": 20.876352,
+  "lng": 107.494069,
+  "tin_cay": "Thấp",
+  "can_cu": "Chỉ là tọa độ khu dân cư làng Quan Lạn (OSM node 1637299336 qua Mapcarta: 20.876352, 107.494069), KHÔNG phải tọa độ công trình; sai số có thể vài trăm m. Đình ở thôn Đoài, giữa làng, cách bến tàu ~1 km (Báo Pháp luật, sunparadiseland). Không dùng làm tọa độ chính thức.",
+  "nguon_url": "https://mapcarta.com/15483072"
+ },
+ {
+  "di_tich": "Quần thể Thương cảng Vân Đồn (Quan Lạn)",
+  "diem": "Chùa Quan Lạn",
+  "van_de": "Thiếu",
+  "lat": 20.876352,
+  "lng": 107.494069,
+  "tin_cay": "Thấp",
+  "can_cu": "Chỉ là tọa độ khu dân cư làng Quan Lạn (OSM node 1637299336 qua Mapcarta: 20.876352, 107.494069), KHÔNG phải tọa độ công trình; sai số có thể vài trăm m. Lonely Planet: chùa nằm trong làng Quan Lạn, đối diện chợ cá. Không dùng làm tọa độ chính thức.",
+  "nguon_url": "https://www.lonelyplanet.com/points-of-interest/quan-lan-pagoda/1526576"
+ },
+ {
+  "di_tich": "Quần thể Thương cảng Vân Đồn (Quan Lạn)",
+  "diem": "Miếu thờ 3 anh em họ Phạm",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không tìm thấy vị trí cụ thể (thuộc cùng điểm 'Đình, chùa Quan Lạn và miếu thờ 3 anh em họ Phạm' trong quyết định xếp hạng).",
+  "nguon_url": null
+ },
+ {
+  "di_tich": "Quần thể Thương cảng Vân Đồn (Quan Lạn)",
+  "diem": "Nghè Trần Khánh Dư",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không có tọa độ. Báo Pháp luật: nghè cách đình ~1,5 km; sunparadiseland lại nói 'gần kề' đình, dựng lại năm 1995 tại bến Đình — mâu thuẫn, cần thực địa.",
+  "nguon_url": "https://baophapluat.vn/dinh-quan-lan-ngoi-dinh-thieng-300-tuoi-ben-song-nuoc-van-don-post385300.html"
+ },
+ {
+  "di_tich": "Quần thể Thương cảng Vân Đồn (Quan Lạn)",
+  "diem": "Giếng Chổi",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không tìm thấy nguồn.",
+  "nguon_url": null
+ },
+ {
+  "di_tich": "Quần thể Thương cảng Vân Đồn (Quan Lạn)",
+  "diem": "Miếu Lòng Dinh",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không tìm thấy nguồn.",
+  "nguon_url": null
+ },
+ {
+  "di_tich": "Quần thể Thương cảng Vân Đồn (Quan Lạn)",
+  "diem": "Sông Mang",
+  "van_de": "Thiếu",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Không có tọa độ; bài khảo cổ chỉ nêu 'ngã ba Cống Cái - Sông Mang' ở trung tâm đảo Quan Lạn.",
+  "nguon_url": "https://vjol.info.vn/khaoco/vi/article/download/235917/209743/379429"
+ },
+ {
+  "di_tich": "Đền Vạ Giếng (đền Vụng Giếng)",
+  "diem": "Thắng Lợi",
+  "van_de": "Trùng",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Tọa độ 20°54'37.9\"N 107°18'49.3\"E trùng Bảo Tháp; không tìm được nguồn độc lập cho đền. Đề nghị để trống/đo lại thực địa.",
+  "nguon_url": null
+ },
+ {
+  "di_tich": "Miếu Cổng Bà",
+  "diem": "Minh Châu",
+  "van_de": "Trùng",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Tọa độ dùng chung 20°58'15.6\"N 107°32'00.8\"E (20.97100,107.53356) không có nguồn độc lập. Kiểm tra: điểm cách đình Minh Châu ~3,9 km về phía bắc, cách 'Đông Lâm' (GNS, 20.980122,107.525733) ~1,3 km và cửa Pak Ha Mun/Cửa Đối (GNS 20.966667,107.55) ~1,8 km — tức ở cực bắc đảo Quan Lạn/đảo Trà Bản, gần Minh Châu hơn Quan Lạn.",
+  "nguon_url": "https://geonames.nga.mil/geon-ags/rest/services/RESEARCH/GIS_OUTPUT/MapServer/0/query"
+ },
+ {
+  "di_tich": "Đền Trấn Hải (đền Cậu)",
+  "diem": "Quan Lạn 1",
+  "van_de": "Xác minh",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Tọa độ đang ghi (20.97100,107.53356) cách làng Quan Lạn (thôn Quan Lạn 1, ~20.8764,107.4941) ~11,3 km, không khớp địa chỉ 'thôn Quan Lạn 1'. Khả năng tọa độ này thuộc một điểm ở Minh Châu (có thể Miếu Cổng Bà) và bị sao chép sang Đền Trấn Hải, hoặc ngược lại — chưa xác định được.",
+  "nguon_url": "https://geonames.nga.mil/geon-ags/rest/services/RESEARCH/GIS_OUTPUT/MapServer/0/query"
+ },
+ {
+  "di_tich": "Đình - Miếu Ngọc Vừng",
+  "diem": "Miếu Ngọc Vừng",
+  "van_de": "Trùng",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Đình và miếu cùng 20°49'10.1\"N 107°21'30.1\"E; không tìm được nguồn tách riêng tọa độ miếu. Giữ tọa độ cho đình, miếu cần đo thực địa.",
+  "nguon_url": null
+ },
+ {
+  "di_tich": "Trận địa pháo 12,7 mm dân quân xã Ngọc Vừng",
+  "diem": "Ngọc Vừng",
+  "van_de": "Sai định dạng",
+  "lat": 20.816667,
+  "lng": 107.352778,
+  "tin_cay": "Trung bình",
+  "can_cu": "20°48'60.0\" = 20°49'00.0\" → 20.816667, 107°21'10.0\" → 107.352778 (chuẩn hóa toán học). Điểm nằm trên đảo Ngọc Vừng (GNS 'Đảo Ngọc Vừng' 20.815787,107.357278). Gốc ghi là 'vị trí tương đối' nên độ tin cậy chỉ Trung bình.",
+  "nguon_url": "https://geonames.nga.mil/geon-ags/rest/services/RESEARCH/GIS_OUTPUT/MapServer/0/query"
+ },
+ {
+  "di_tich": "Đền thờ Vua Lý Anh Tông và Động Đông Trong",
+  "diem": "Động Đông Trong",
+  "van_de": "Xác minh",
+  "lat": null,
+  "lng": null,
+  "tin_cay": "Thấp",
+  "can_cu": "Tọa độ đang ghi 20°52'33.0\"N 107°29'48.6\"E (20.87583,107.49683) nằm GIỮA LÀNG QUAN LẠN: cách điểm 'Đông Nam' (thôn, GNS 20.876288,107.497133) ~60 m, cách node OSM làng Quan Lạn ~290 m, cách Miếu Cao Sơn ~340 m; cách Đền Vua Lý Anh Tông (Cái Rồng) ~21,9 km. Kết luận: tọa độ SAI (không thể là động thuộc cụm Cái Rồng); chưa tìm được tọa độ đúng.",
+  "nguon_url": "https://geonames.nga.mil/geon-ags/rest/services/RESEARCH/GIS_OUTPUT/MapServer/0/query"
+ }
+]

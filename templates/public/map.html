@@ -1,0 +1,21 @@
+{% extends "base.html" %}{% load i18n static %}
+{% block title %}{% trans "Bản đồ di tích" %}{% endblock %}
+{% block content %}
+<div class="wrap page-head">
+  <div class="crumbs"><a href="{% url 'heritage:home' %}">{% trans "Trang chủ" %}</a> / {% trans "Bản đồ" %}</div>
+  <h1>{% trans "Bản đồ di tích" %}</h1>
+</div>
+<div class="wrap map-wrap">
+  <div>
+    <button class="btn btn-ghost filter-toggle" type="button" data-toggle="filters" aria-controls="filters" aria-expanded="false">{% trans "Bộ lọc" %}</button>
+    {% url 'heritage:map' as action %}{% include "partials/filters.html" %}
+  </div>
+  <div>
+    <div style="display:flex;justify-content:flex-end;margin-bottom:10px"><button class="btn btn-ghost btn-sm" type="button" data-locate="big-map">{% trans "Vị trí của tôi" %}</button></div>
+    <div class="map-box map-full" id="big-map" data-map="pts-map" data-key="{{ MAPS_KEY }}" data-static="{% get_static_prefix %}" data-cluster></div>
+    {% include "partials/map_legend.html" %}
+  </div>
+</div>
+<script id="pts-map" type="application/json">{{ points_json|safe }}</script>
+{% endblock %}
+{% block scripts %}<script src="{% static 'js/map.js' %}" defer></script>{% endblock %}

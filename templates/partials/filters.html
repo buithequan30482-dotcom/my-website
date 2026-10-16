@@ -1,0 +1,21 @@
+{% load i18n %}<form class="filters" id="filters" method="get" action="{{ action }}" data-autosubmit>
+  <div class="field search" style="margin-bottom:22px">
+    <label class="sr-only" for="q-f">{% trans "Từ khóa" %}</label>
+    <input id="q-f" type="search" name="q" value="{{ f.q }}" placeholder="{% trans "Tìm tên di tích…" %}" data-suggest="{% url 'suggest' %}">
+    <button type="submit">{% trans "Tìm" %}</button>
+  </div>
+  {% if view %}<input type="hidden" name="view" value="{{ view }}">{% endif %}
+  <fieldset><legend>{% trans "Cấp xếp hạng" %}</legend>
+    {% for k, v in caps %}<label><input type="checkbox" name="cap" value="{{ k }}" {% if k in f.cap %}checked{% endif %}><span class="seal seal-{{ k }}">{{ v }}</span></label>{% endfor %}
+  </fieldset>
+  <fieldset><legend>{% trans "Loại hình" %}</legend>
+    {% for l in loai_list %}<label><input type="checkbox" name="loai" value="{{ l.slug }}" {% if l.slug in f.loai %}checked{% endif %}>{{ l.ten }}</label>{% endfor %}
+  </fieldset>
+  <fieldset><legend>{% trans "Khu vực / đảo" %}</legend>
+    {% for k in khu_list %}<label><input type="checkbox" name="khu" value="{{ k.slug }}" {% if k.slug in f.khu %}checked{% endif %}>{{ k.ten }}{% if k.la_dao %} <small class="muted">({% trans "đi tàu" %})</small>{% endif %}</label>{% endfor %}
+  </fieldset>
+  <fieldset><legend>{% trans "Khác" %}</legend>
+    <label><input type="checkbox" name="tq" value="1" {% if f.tq %}checked{% endif %}>{% trans "Chỉ di tích tham quan được" %}</label>
+  </fieldset>
+  <div class="filters-actions"><noscript><button class="btn btn-sm" type="submit">{% trans "Lọc" %}</button></noscript><a href="{{ action }}">{% trans "Xóa bộ lọc" %}</a></div>
+</form>

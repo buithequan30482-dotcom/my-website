@@ -1,0 +1,672 @@
+{
+ "tuyen": [
+  {
+   "ten": {
+    "vi": "Dấu tích Thương cảng Vân Đồn",
+    "en": "Traces of the Vân Đồn Trading Port",
+    "zh": "云屯商港遗迹之旅"
+   },
+   "mo_ta": {
+    "vi": "<p>Hành trình đi tìm thương cảng đầu tiên của Đại Việt, lập năm 1149. Bắt đầu tại đền thờ vua Lý Anh Tông ở Cái Rồng – người cho lập trang Vân Đồn – rồi ra đảo Quan Lạn thăm bến Cái Làng, nơi nhiều nhà nghiên cứu xác định là trung tâm thương cảng, cùng đình, chùa, miếu, nghè gắn với chiến thắng Vân Đồn năm 1288. Tiếp đó đến bến Cống Cái ở Quan Lạn và các bến cổ Con Quy, Cái Cổng ở Minh Châu – những nơi khảo cổ học đã tìm thấy gốm, tiền cổ của nhiều thế kỷ.</p><p>Phần lớn các bến cổ nay là phế tích: xin không đào bới, không nhặt mảnh gốm. Cụm di tích trên đảo Thắng Lợi (Cống Đông – Cống Tây) cần thuyền riêng, nên liên hệ địa phương trước.</p>",
+    "en": "<p>A journey in search of Đại Việt's first trading port, founded in 1149. It begins at the temple of King Lý Anh Tông in Cái Rồng, the king who founded the Vân Đồn estate, then crosses to Quan Lạn island to visit Cái Làng landing, identified by many researchers as the heart of the port, along with the communal house, pagoda and shrines linked to the 1288 victory at Vân Đồn. It continues to Cống Cái landing on Quan Lạn and the ancient anchorages of Con Quy and Cái Cổng on Minh Châu, where archaeologists have found ceramics and coins spanning centuries.</p><p>Most of the old anchorages are now ruins: please do not dig or collect sherds. The Thắng Lợi island sites (Cống Đông – Cống Tây) require a separate boat; contact local people in advance.</p>",
+    "zh": "<p>寻访1149年创立的大越第一个商港之旅。行程从 Cái Rồng 的李英宗庙开始——正是这位君主设立了云屯庄；随后前往官澜岛，参观被许多学者认定为商港中心的 Cái Làng 码头，以及与1288年云屯大捷相关的亭、寺、庙、祠。接着前往官澜的 Cống Cái 码头和明珠的 Con Quy、Cái Cổng 古泊位——考古学家在这些地方发现了跨越数百年的陶瓷和古钱。</p><p>大部分古泊位现为废墟：请勿挖掘、勿拾取陶片。胜利岛（Cống Đông – Cống Tây）遗迹需另租船只，请提前联系当地人。</p>"
+   },
+   "thoi_luong": {
+    "vi": "2 ngày 1 đêm",
+    "en": "2 days, 1 night",
+    "zh": "两天一夜"
+   },
+   "phuong_tien": {
+    "vi": "Ô tô (Cái Rồng – Ao Tiên); tàu khách Ao Tiên – Quan Lạn; xe điện, xe đạp hoặc xe máy trên đảo",
+    "en": "Car (Cái Rồng – Ao Tiên); passenger boat Ao Tiên – Quan Lạn; electric cart, bicycle or motorbike on the island",
+    "zh": "汽车（Cái Rồng—敖仙港）；敖仙—官澜客船；岛上乘电瓶车、骑自行车或摩托车"
+   },
+   "diem": [
+    {
+     "ma": "VD07",
+     "ghi_chu": {
+      "vi": "Khởi đầu: đền thờ vị vua lập trang Vân Đồn năm 1149.",
+      "en": "Start: the temple of the king who founded Vân Đồn in 1149.",
+      "zh": "起点：1149年设立云屯庄的君主之庙。"
+     }
+    },
+    {
+     "ma": "VD01",
+     "ghi_chu": {
+      "vi": "Bến Cái Làng, giếng Hệu, đình – chùa Quan Lạn, nghè Trần Khánh Dư; điểm Thắng Lợi đi thuyền riêng.",
+      "en": "Cái Làng landing, Hệu Well, Quan Lạn Communal House and Pagoda, Trần Khánh Dư Shrine; Thắng Lợi sites by separate boat.",
+      "zh": "Cái Làng 码头、Hệu 井、官澜亭与寺、陈庆余祠；胜利岛遗迹需另乘船。"
+     }
+    },
+    {
+     "ma": "VD33",
+     "ghi_chu": {
+      "vi": "Bến cổ Cống Cái – nơi khảo cổ tìm thấy dấu tích bến, kè đá và nhiều lớp gốm.",
+      "en": "Cống Cái ancient landing, where excavations revealed wharf remains, stone embankments and layers of ceramics.",
+      "zh": "Cống Cái 古码头，考古发现了码头遗迹、石堤和多层陶瓷。"
+     }
+    },
+    {
+     "ma": "VD25",
+     "ghi_chu": {
+      "vi": "Bến Con Quy (Minh Châu) – một trong những trung tâm sớm nhất của thương cảng.",
+      "en": "Con Quy landing (Minh Châu), one of the port's earliest centres.",
+      "zh": "Con Quy 码头（明珠），商港最早的中心之一。"
+     }
+    },
+    {
+     "ma": "VD24",
+     "ghi_chu": {
+      "vi": "Bến cổ Cái Cổng (Minh Châu), nay là phế tích.",
+      "en": "Cái Cổng ancient landing (Minh Châu), now a ruin.",
+      "zh": "Cái Cổng 古码头（明珠），现为废墟。"
+     }
+    }
+   ]
+  },
+  {
+   "ten": {
+    "vi": "Quan Lạn – Minh Châu: đình, miếu và biển",
+    "en": "Quan Lạn – Minh Châu: Communal Houses, Shrines and the Sea",
+    "zh": "官澜—明珠：亭、庙与海"
+   },
+   "mo_ta": {
+    "vi": "<p>Hai ngày trên dải đảo dài chừng 20 km, nơi các làng biển còn giữ nhiều lớp tín ngưỡng: đình Quan Lạn thờ vua Lý Anh Tông và thành hoàng, các miếu thờ ba anh em họ Phạm, đền Mẫu và đền Trấn Hải ở cửa Đông, cụm đền, miếu Vân Sơn ở Sơn Hào; sang Minh Châu thăm đình làng và đền Đức Ông. Xen giữa là những bãi cát trắng của Quan Lạn và Minh Châu. Nếu đi vào trung tuần tháng 6 âm lịch, du khách có thể dự Lễ hội đình Quan Lạn – di sản văn hóa phi vật thể quốc gia.</p>",
+    "en": "<p>Two days on an island strip some 20 km long, where seafaring villages preserve many layers of belief: Quan Lạn Communal House honouring King Lý Anh Tông and the guardian deity, the shrines of the three Phạm brothers, the Mother Goddess and Trấn Hải temples at the eastern gate, and the Vân Sơn temple-and-shrine complex at Sơn Hào; then over to Minh Châu for its communal house and Đức Ông Temple. In between lie the white-sand beaches of Quan Lạn and Minh Châu. Visitors arriving in the middle of the 6th lunar month can join the Quan Lạn Communal House Festival, a national intangible cultural heritage.</p>",
+    "zh": "<p>在长约20公里的海岛上度过两天，这里的渔村保留着多层次的信仰：供奉李英宗和城隍的官澜亭、范氏三兄弟诸庙、东门的圣母庙与镇海庙、山豪的云山祠庙群；再到明珠参观村亭和德翁庙。其间点缀着官澜和明珠的白沙海滩。若在农历六月中旬前来，还可参加国家级非物质文化遗产——官澜亭庙会。</p>"
+   },
+   "thoi_luong": {
+    "vi": "2 ngày 1 đêm",
+    "en": "2 days, 1 night",
+    "zh": "两天一夜"
+   },
+   "phuong_tien": {
+    "vi": "Tàu khách Ao Tiên – Quan Lạn hoặc Ao Tiên – Minh Châu; xe điện, xe đạp, xe máy trên đảo",
+    "en": "Passenger boat Ao Tiên – Quan Lạn or Ao Tiên – Minh Châu; electric cart, bicycle or motorbike on the island",
+    "zh": "敖仙—官澜或敖仙—明珠客船；岛上乘电瓶车、骑自行车或摩托车"
+   },
+   "diem": [
+    {
+     "ma": "VD01",
+     "ghi_chu": {
+      "vi": "Đình, chùa Quan Lạn, miếu Đức Ông, nghè Trần Khánh Dư ở trung tâm xã.",
+      "en": "Quan Lạn Communal House and Pagoda, Đức Ông Shrine and Trần Khánh Dư Shrine in the commune centre.",
+      "zh": "乡中心的官澜亭、官澜寺、德翁庙和陈庆余祠。"
+     }
+    },
+    {
+     "ma": "VD02",
+     "ghi_chu": {
+      "vi": "Miếu Sao Ỏn bên sông Mang, miếu Đông Hồ, miếu Cao Sơn.",
+      "en": "Sao Ỏn Shrine by the Mang River, Đông Hồ Shrine and Cao Sơn Shrine.",
+      "zh": "Mang 河畔的 Sao Ỏn 庙、Đông Hồ 庙和高山庙。"
+     }
+    },
+    {
+     "ma": "VD10",
+     "ghi_chu": {
+      "vi": "Đền Mẫu trên doi đất giữa biển ở cửa Đông.",
+      "en": "The Mother Goddess Temple on a spit in the sea at the eastern gate.",
+      "zh": "东门海中沙洲上的圣母庙。"
+     }
+    },
+    {
+     "ma": "VD11",
+     "ghi_chu": {
+      "vi": "Đền Trấn Hải (đền Cậu), gần Eo Gió.",
+      "en": "Trấn Hải Temple (Đền Cậu), near Eo Gió.",
+      "zh": "风口附近的镇海庙（舅庙）。"
+     }
+    },
+    {
+     "ma": "VD34",
+     "ghi_chu": {
+      "vi": "Cụm đền, miếu Vân Sơn ở thôn Sơn Hào.",
+      "en": "The Vân Sơn temple-and-shrine complex in Sơn Hào hamlet.",
+      "zh": "山豪村的云山祠庙群。"
+     }
+    },
+    {
+     "ma": "VD31",
+     "ghi_chu": {
+      "vi": "Bãi tắm Quan Lạn – nghỉ chân, tắm biển.",
+      "en": "Quan Lạn beach – rest and swim.",
+      "zh": "官澜海滩——休憩、游泳。"
+     }
+    },
+    {
+     "ma": "VD21",
+     "ghi_chu": {
+      "vi": "Đình làng Minh Châu.",
+      "en": "Minh Châu village communal house.",
+      "zh": "明珠村亭。"
+     }
+    },
+    {
+     "ma": "VD26",
+     "ghi_chu": {
+      "vi": "Đền Đức Ông (Minh Châu), thờ Phạm Công Chính.",
+      "en": "Đức Ông Temple (Minh Châu), honouring Phạm Công Chính.",
+      "zh": "明珠德翁庙，供奉 Phạm Công Chính。"
+     }
+    },
+    {
+     "ma": "VD22",
+     "ghi_chu": {
+      "vi": "Kết thúc tại bãi Minh Châu – bãi cát hình vòng cung, đẹp nhất buổi sáng.",
+      "en": "End at Minh Châu beach, a crescent of sand at its best in the morning.",
+      "zh": "终点：明珠海滩，弧形沙滩，清晨最美。"
+     }
+    }
+   ]
+  },
+  {
+   "ten": {
+    "vi": "Ngọc Vừng – theo chân Bác Hồ",
+    "en": "Ngọc Vừng – In the Footsteps of Uncle Hồ",
+    "zh": "Ngọc Vừng——追寻胡伯伯足迹"
+   },
+   "mo_ta": {
+    "vi": "<p>Một ngày trên đảo Ngọc Vừng – xã đảo anh hùng nơi Chủ tịch Hồ Chí Minh đến thăm tháng 11/1962. Từ bến Cống Yên, trạm trung chuyển của thương cảng xưa, đi xe điện vào khu lưu niệm Bác Hồ ở trung tâm xã, lên đồi Điếm Canh nơi dân quân bắn rơi chiếc máy bay Mỹ thứ 200 trên bầu trời Quảng Ninh, thăm đình – miếu Ngọc Vừng, rồi xuống bãi Trường Chinh và dấu tích thành cổ ở nam đảo.</p>",
+    "en": "<p>A day on Ngọc Vừng, the hero island commune visited by President Hồ Chí Minh in November 1962. From Cống Yên landing, once a staging post of the old trading port, take an electric cart to the Hồ Chí Minh Memorial in the commune centre, climb Điếm Canh hill where the militia downed the 200th American aircraft over Quảng Ninh, visit the communal house and shrine, then head down to Trường Chinh beach and the remains of the old citadel on the south of the island.</p>",
+    "zh": "<p>在 Ngọc Vừng 岛度过一天——这座英雄岛乡于1962年11月迎来胡志明主席的探访。从昔日商港中转站 Cống Yên 码头出发，乘电瓶车前往乡中心的胡志明纪念地，登上民兵击落广宁上空第200架美机的 Điếm Canh 山，参观 Ngọc Vừng 亭庙，再前往岛南的长征滩和古城遗迹。</p>"
+   },
+   "thoi_luong": {
+    "vi": "1 ngày (có thể nghỉ đêm trên đảo)",
+    "en": "1 day (overnight on the island possible)",
+    "zh": "一天（可在岛上过夜）"
+   },
+   "phuong_tien": {
+    "vi": "Tàu khách Ao Tiên – Ngọc Vừng (bến Cống Yên); xe điện, xe máy trên đảo",
+    "en": "Passenger boat Ao Tiên – Ngọc Vừng (Cống Yên landing); electric cart or motorbike on the island",
+    "zh": "敖仙—Ngọc Vừng（Cống Yên 码头）客船；岛上乘电瓶车或摩托车"
+   },
+   "diem": [
+    {
+     "ma": "VD28",
+     "ghi_chu": {
+      "vi": "Đến đảo tại bến Cống Yên – vụng kín gió, trạm dừng của thuyền buôn thời Lý – Trần.",
+      "en": "Arrive at Cống Yên landing, a sheltered cove where Lý–Trần merchant ships stopped.",
+      "zh": "抵达 Cống Yên 码头——李陈时期商船停靠的避风湾。"
+     }
+    },
+    {
+     "ma": "VD03",
+     "ghi_chu": {
+      "vi": "Khu lưu niệm Bác Hồ: sân đáp trực thăng, nhà trưng bày, nhà bia, cây đa.",
+      "en": "Hồ Chí Minh Memorial: helicopter landing ground, exhibition hall, stele house, banyan tree.",
+      "zh": "胡志明纪念地：直升机降落场、展览馆、碑亭、榕树。"
+     }
+    },
+    {
+     "ma": "VD05",
+     "ghi_chu": {
+      "vi": "Trận địa pháo 12,7 mm trên đồi Điếm Canh.",
+      "en": "The 12.7 mm anti-aircraft position on Điếm Canh hill.",
+      "zh": "Điếm Canh 山上的12.7毫米高射机枪阵地。"
+     }
+    },
+    {
+     "ma": "VD06",
+     "ghi_chu": {
+      "vi": "Đình – miếu Ngọc Vừng thờ ba anh em họ Phạm.",
+      "en": "Ngọc Vừng Communal House and Shrine honouring the Phạm brothers.",
+      "zh": "供奉范氏三兄弟的 Ngọc Vừng 亭庙。"
+     }
+    },
+    {
+     "ma": "VD27",
+     "ghi_chu": {
+      "vi": "Bãi Trường Chinh – bãi cát gần 3 km mang tên Tổng Bí thư Trường Chinh.",
+      "en": "Trường Chinh beach, nearly 3 km of sand named after General Secretary Trường Chinh.",
+      "zh": "长征滩——以长征总书记命名、长近3公里的沙滩。"
+     }
+    },
+    {
+     "ma": "VD08",
+     "ghi_chu": {
+      "vi": "Dấu tích thành cổ (Bảo Tĩnh Hải) bên bãi Trường Chinh.",
+      "en": "Remains of the old citadel (Tĩnh Hải fort) by Trường Chinh beach.",
+      "zh": "长征滩旁的古城（静海堡）遗迹。"
+     }
+    }
+   ]
+  },
+  {
+   "ten": {
+    "vi": "Vân Đồn kháng chiến",
+    "en": "Vân Đồn in the Resistance Wars",
+    "zh": "抗战中的云屯"
+   },
+   "mo_ta": {
+    "vi": "<p>Hành trình qua những địa danh ghi dấu các cuộc đấu tranh của người Vân Đồn. Ngày thứ nhất trên đảo Cái Bầu: căn cứ kháng chiến Khe Mai (Đoàn Kết), nơi dân quân bắt sống giặc lái Mỹ năm 1966 (Cái Rồng), di tích mỏ than Kế Bào – nơi công nhân nổi dậy năm 1929 – và điểm xuất phát của đoàn tàu không số trên Đường Hồ Chí Minh trên biển (Vạn Yên). Ngày thứ hai ra đảo Ngọc Vừng, thăm khu lưu niệm Bác Hồ và trận địa pháo đồi Điếm Canh.</p><p>Một số điểm kiểm kê chưa có công trình đón tiếp và vị trí đang được cập nhật; nên liên hệ Phòng Văn hóa – Xã hội đặc khu trước khi đi.</p>",
+    "en": "<p>A route through places marking the struggles of the people of Vân Đồn. Day one on Cái Bầu island: the Khe Mai resistance base (Đoàn Kết), the spot where militia captured an American pilot in 1966 (Cái Rồng), the Kế Bào coal mine site where workers rose up in 1929, and the departure point of the “ships without numbers” on the Hồ Chí Minh Trail at Sea (Vạn Yên). Day two crosses to Ngọc Vừng for the Hồ Chí Minh Memorial and the anti-aircraft position on Điếm Canh hill.</p><p>Some inventoried sites have no visitor facilities and their locations are being updated; please contact the Special Zone's Culture and Society Office before setting out.</p>",
+    "zh": "<p>一条走访云屯人民斗争足迹的线路。第一天在 Cái Bầu 岛：Khe Mai 抗战根据地（团结）、1966年民兵活捉美军飞行员之地（Cái Rồng）、1929年矿工起义的 Kế Bào 煤矿遗址，以及海上胡志明小道“无号船队”的出发地（万安）。第二天前往 Ngọc Vừng 岛，参观胡志明纪念地和 Điếm Canh 山高射机枪阵地。</p><p>部分清查遗迹尚无接待设施，位置信息正在更新；出发前请联系特区文化社会科。</p>"
+   },
+   "thoi_luong": {
+    "vi": "2 ngày",
+    "en": "2 days",
+    "zh": "两天"
+   },
+   "phuong_tien": {
+    "vi": "Ô tô, xe máy trên đảo Cái Bầu; tàu khách Ao Tiên – Ngọc Vừng",
+    "en": "Car or motorbike on Cái Bầu island; passenger boat Ao Tiên – Ngọc Vừng",
+    "zh": "Cái Bầu 岛上乘汽车或摩托车；敖仙—Ngọc Vừng 客船"
+   },
+   "diem": [
+    {
+     "ma": "VD09",
+     "ghi_chu": {
+      "vi": "Căn cứ kháng chiến Khe Mai (di tích cấp tỉnh) – liên hệ trước để được dẫn đường.",
+      "en": "Khe Mai Resistance Base (provincial monument) – contact ahead for directions.",
+      "zh": "Khe Mai 抗战根据地（省级遗迹）——请提前联系以获取向导。"
+     }
+    },
+    {
+     "ma": "VD15",
+     "ghi_chu": {
+      "vi": "Nơi dân quân Thạch Hà bắt sống giặc lái Mỹ năm 1966, nay là phế tích; vị trí đang cập nhật.",
+      "en": "Where Thạch Hà militia captured an American pilot in 1966, now a ruin; location being updated.",
+      "zh": "1966年 Thạch Hà 民兵活捉美军飞行员之地，现为遗迹；位置正在更新。"
+     }
+    },
+    {
+     "ma": "VD44",
+     "ghi_chu": {
+      "vi": "Mỏ than Kế Bào (lập 1/9/1888): cầu sắt, lò thông gió còn lại.",
+      "en": "Kế Bào coal mine (founded 1 September 1888): surviving iron bridge and ventilation shaft.",
+      "zh": "Kế Bào 煤矿（1888年9月1日创立）：现存铁桥和通风井。"
+     }
+    },
+    {
+     "ma": "VD43",
+     "ghi_chu": {
+      "vi": "Đường Hồ Chí Minh trên biển tại Vạn Yên – nơi xuất phát của đoàn tàu không số; vị trí đang cập nhật.",
+      "en": "Hồ Chí Minh Trail at Sea at Vạn Yên, departure point of the “ships without numbers”; location being updated.",
+      "zh": "万安的海上胡志明小道——“无号船队”出发地；位置正在更新。"
+     }
+    },
+    {
+     "ma": "VD03",
+     "ghi_chu": {
+      "vi": "Ngày 2: Khu lưu niệm Bác Hồ trên đảo Ngọc Vừng.",
+      "en": "Day 2: Hồ Chí Minh Memorial on Ngọc Vừng.",
+      "zh": "第二天：Ngọc Vừng 岛胡志明纪念地。"
+     }
+    },
+    {
+     "ma": "VD05",
+     "ghi_chu": {
+      "vi": "Trận địa pháo 12,7 mm đồi Điếm Canh – nơi bắn rơi máy bay Mỹ thứ 200 trên bầu trời Quảng Ninh.",
+      "en": "The 12.7 mm position on Điếm Canh hill, where the 200th American aircraft over Quảng Ninh was shot down.",
+      "zh": "Điếm Canh 山12.7毫米阵地——击落广宁上空第200架美机之处。"
+     }
+    }
+   ]
+  }
+ ],
+ "le_hoi": [
+  {
+   "ten": {
+    "vi": "Lễ hội đình Quan Lạn (Lễ hội truyền thống Vân Đồn)",
+    "en": "Quan Lạn Communal House Festival (Vân Đồn Traditional Festival)",
+    "zh": "官澜亭庙会（云屯传统节）"
+   },
+   "mo_ta": {
+    "vi": "<p>Lễ hội lớn nhất trong năm của đảo Quan Lạn, kỷ niệm chiến thắng Vân Đồn năm 1288 – khi quân Trần do Nhân Huệ Vương Trần Khánh Dư chỉ huy đánh tan đoàn thuyền lương của tướng Nguyên Trương Văn Hổ trên sông Mang – và cầu an cho những người làm nghề sông nước. Lễ hội kéo dài từ ngày 10 đến 19 tháng 6 âm lịch, chính hội ngày 18/6.</p><p>Phần lễ gồm rước sắc, tế thần tại đình, chùa, miếu, nghè, các nghi thức thu rầm, phong tướng và diễu hành trên sông Mang; bài vị Thành hoàng Trần Khánh Dư được rước từ nghè về đình làm lễ rồi rước trở lại khi kết thúc. Điểm nhấn là cuộc đua bơi chải chiều chính hội giữa hai giáp Đông Nam Văn và Đoài Bắc Võ: trước khi đua, hai phe diễu hành quanh làng và gặp nhau ba lần ở sân đình, tượng trưng cho ba lần nhà Trần đánh thắng quân Nguyên; hai vị tướng làm lễ tại miếu Đức Ông rồi mới xuất phát. Ngày 20/12/2019, Bộ Văn hóa, Thể thao và Du lịch đưa Lễ hội đình Quan Lạn vào Danh mục di sản văn hóa phi vật thể quốc gia.</p>",
+    "en": "<p>Quan Lạn island's biggest festival of the year, commemorating the 1288 Vân Đồn victory, when Trần forces under Prince Nhân Huệ Vương Trần Khánh Dư destroyed the Yuan general Trương Văn Hổ's supply fleet on the Mang River, and praying for the safety of those who live by the water. It runs from the 10th to the 19th day of the 6th lunar month, with the main day on the 18th.</p><p>The rites include processions of royal decrees, offerings at the communal house, pagoda, shrines and nghè, the “thu rầm” and “phong tướng” (conferring of generals) rituals and a parade on the Mang River; the tablet of the guardian deity Trần Khánh Dư is carried from the nghè to the communal house and back at the end. The highlight is the afternoon rowing race on the main day between the Đông Nam Văn and Đoài Bắc Võ teams: beforehand the two sides parade round the village and meet three times in the communal-house courtyard, symbolising the Trần's three victories over the Yuan, and their two “generals” make offerings at Đức Ông Shrine before setting off. On 20 December 2019 the Ministry of Culture, Sports and Tourism inscribed the festival on the National List of Intangible Cultural Heritage.</p>",
+    "zh": "<p>官澜岛一年中最盛大的节庆，纪念1288年云屯大捷——仁惠王陈庆余率陈军在 Mang 河上击溃元将张文虎的运粮船队——并为靠水为生的人们祈求平安。庙会从农历六月初十持续到十九，正会为六月十八日。</p><p>祭礼部分包括迎敕、在亭、寺、庙、祠祭神，以及“thu rầm”、封将和 Mang 河巡游等仪式；城隍陈庆余的牌位从祠中迎至亭内行礼，节后再迎回。高潮是正会当天下午“东南文”与“兑北武”两甲之间的划船比赛：赛前两队绕村游行，在亭前广场三次相会，象征陈朝三次战胜元军；两位“将军”先到德翁庙行礼，然后才出发比赛。2019年12月20日，文化体育旅游部将官澜亭庙会列入国家级非物质文化遗产名录。</p>"
+   },
+   "thoi_gian_am_lich": {
+    "vi": "Từ ngày 10 đến 19 tháng 6 âm lịch; chính hội ngày 18/6",
+    "en": "10th–19th day of the 6th lunar month; main day on the 18th",
+    "zh": "农历六月初十至十九；正会六月十八日"
+   },
+   "thoi_gian_duong_lich": {
+    "vi": "Thường rơi vào tháng 7 dương lịch (năm 2025: chính hội ngày 12/7/2025)",
+    "en": "Usually falls in July (in 2025 the main day was 12 July)",
+    "zh": "通常在公历7月（2025年正会为7月12日）"
+   },
+   "thang_sap_xep": 7,
+   "dia_diem": {
+    "vi": "Đình Quan Lạn, bến Đình và sông Mang, xã đảo Quan Lạn",
+    "en": "Quan Lạn Communal House, Đình landing and the Mang River, Quan Lạn island",
+    "zh": "官澜亭、亭码头及 Mang 河，官澜岛"
+   },
+   "cong_nhan": {
+    "vi": "Di sản văn hóa phi vật thể quốc gia (Bộ VHTTDL, 20/12/2019)",
+    "en": "National Intangible Cultural Heritage (Ministry of Culture, Sports and Tourism, 20 December 2019)",
+    "zh": "国家级非物质文化遗产（文化体育旅游部，2019年12月20日）"
+   },
+   "di_tich": [
+    "VD01",
+    "VD02"
+   ],
+   "nguon": "Báo Quảng Ninh – Lễ hội đình Quan Lạn được công nhận là Di sản văn hóa phi vật thể Quốc gia (https://baoquangninh.vn/le-hoi-dinh-quan-lan-duoc-cong-nhan-la-di-san-van-hoa-phi-vat-the-quoc-gia-2464869.html); Báo Quảng Ninh – Tưng bừng Lễ hội truyền thống Vân Đồn năm 2025, 13/07/2025 (https://baoquangninh.vn/tung-bung-le-hoi-truyen-thong-van-don-nam-2025-3366539.html); Báo Quảng Ninh – Nghè thờ Trần Khánh Dư trên đảo Quan Lạn, 11/06/2023 (https://baoquangninh.vn/nghe-tho-tran-khanh-du-tren-dao-quan-lan-3243721.html)"
+  },
+  {
+   "ten": {
+    "vi": "Lễ tế đình – miếu Ngọc Vừng",
+    "en": "Ngọc Vừng Communal House and Shrine Rite",
+    "zh": "Ngọc Vừng 亭庙祭礼"
+   },
+   "mo_ta": {
+    "vi": "<p>Nghi lễ đầu xuân của làng đảo Ngọc Vừng, tưởng niệm ba anh em họ Phạm – những người được tôn làm thành hoàng vì có công giúp Trần Khánh Dư trong trận Vân Đồn năm 1288 – và cầu quốc thái dân an, mưa thuận gió hòa. Lễ từng mai một do biến động lịch sử và được phục dựng vào mùng 3 Tết Giáp Thìn năm 2024; theo Báo Quảng Ninh, nghi thức rước thần đã không được tổ chức hơn 60 năm. Lễ gồm đám rước từ miếu về đình với đội cờ, phường bát âm, kiệu Long đình do trai làng khiêng, nghi thức đánh trống, thỉnh chuông, dâng hương và đọc chúc văn.</p>",
+    "en": "<p>The spring rite of Ngọc Vừng island village, honouring the three Phạm brothers, venerated as guardian deities for helping Trần Khánh Dư in the 1288 Battle of Vân Đồn, and praying for national peace and favourable weather. Lapsed through historical upheavals, it was revived on the third day of Tết in the Year of the Dragon, 2024; according to the Quảng Ninh newspaper, the procession of the deities had not been held for more than 60 years. The rite features a procession from the shrine to the communal house with flag bearers, a traditional ensemble and a dragon palanquin carried by young men, followed by drumming, bell strikes, incense offerings and the reading of a prayer.</p>",
+    "zh": "<p>Ngọc Vừng 岛村的新春祭礼，纪念因在1288年云屯之战中协助陈庆余而被尊为城隍的范氏三兄弟，祈求国泰民安、风调雨顺。该祭礼曾因历史变迁而中断，于2024年甲辰年正月初三恢复；据《广宁报》报道，迎神仪式已有60多年未曾举行。祭礼包括由旗队、八音乐班和村中青年抬龙亭轿组成的队伍从庙迎神至亭，以及击鼓、鸣钟、上香和宣读祝文等仪式。</p>"
+   },
+   "thoi_gian_am_lich": {
+    "vi": "Mùng 3 Tết Nguyên đán (tháng Giêng âm lịch)",
+    "en": "3rd day of the Lunar New Year (1st lunar month)",
+    "zh": "农历正月初三"
+   },
+   "thoi_gian_duong_lich": {
+    "vi": "Thường rơi vào cuối tháng 1 hoặc tháng 2 dương lịch",
+    "en": "Usually late January or February",
+    "zh": "通常在公历1月下旬或2月"
+   },
+   "thang_sap_xep": 2,
+   "dia_diem": {
+    "vi": "Đình – miếu Ngọc Vừng, xã đảo Ngọc Vừng",
+    "en": "Ngọc Vừng Communal House and Shrine, Ngọc Vừng island",
+    "zh": "Ngọc Vừng 亭庙，Ngọc Vừng 岛"
+   },
+   "cong_nhan": {
+    "vi": "Lễ tế truyền thống được phục dựng năm 2024",
+    "en": "Traditional rite revived in 2024",
+    "zh": "2024年恢复的传统祭礼"
+   },
+   "di_tich": [
+    "VD06"
+   ],
+   "nguon": "Báo Quảng Ninh – Đặc sắc Lễ tế đình - miếu Ngọc Vừng, 24/02/2024 (https://baoquangninh.vn/dac-sac-le-te-dinh-mieu-ngoc-vung-3285382.html)"
+  },
+  {
+   "ten": {
+    "vi": "Giỗ Mẫu đền Mẫu Quan Lạn",
+    "en": "Mother Goddess Anniversary at Quan Lạn's Đền Mẫu",
+    "zh": "官澜圣母庙圣母忌日"
+   },
+   "mo_ta": {
+    "vi": "<p>Ngày giỗ Thánh Mẫu được tổ chức hằng năm tại đền Mẫu cửa Đông, xã đảo Quan Lạn – ngôi đền thờ Tam tòa Thánh Mẫu còn giữ đạo sắc phong năm 1889. Trước năm 1959, khoảng hai tháng sau lễ hội bơi chải đình Quan Lạn, làng Yến Hải còn tổ chức đua thuyền trên đường đua vòng khoảng 1.600 m từ đền Mẫu qua đền Trấn Hải; tục đua thuyền này đã dừng từ năm 1960 và chưa được phục dựng.</p>",
+    "en": "<p>The Holy Mother's anniversary is held every year at the Eastern Gate Mother Temple on Quan Lạn island, a temple to the Three Mother Goddesses that still keeps a royal decree of 1889. Before 1959, about two months after the Quan Lạn rowing festival, Yến Hải village also held a boat race on a loop of about 1,600 m from Đền Mẫu round Trấn Hải Temple; the race has not been held since 1960 and has not yet been revived.</p>",
+    "zh": "<p>每年在官澜岛东门圣母庙举行圣母忌日祭礼。这座供奉三府圣母的庙宇至今保存着1889年的敕封。1959年以前，在官澜亭划船节约两个月后，燕海村还会在从圣母庙绕经镇海庙、长约1,600米的环形赛道上举行赛船；该习俗自1960年起停办，至今尚未恢复。</p>"
+   },
+   "thoi_gian_am_lich": {
+    "vi": "Mùng 3 tháng 3 âm lịch",
+    "en": "3rd day of the 3rd lunar month",
+    "zh": "农历三月初三"
+   },
+   "thoi_gian_duong_lich": {
+    "vi": "Thường rơi vào tháng 3 hoặc tháng 4 dương lịch",
+    "en": "Usually March or April",
+    "zh": "通常在公历3月或4月"
+   },
+   "thang_sap_xep": 4,
+   "dia_diem": {
+    "vi": "Đền Mẫu, cửa Đông, xã đảo Quan Lạn",
+    "en": "Đền Mẫu, eastern gate, Quan Lạn island",
+    "zh": "官澜岛东门圣母庙"
+   },
+   "cong_nhan": {
+    "vi": "",
+    "en": "",
+    "zh": ""
+   },
+   "di_tich": [
+    "VD10"
+   ],
+   "nguon": "Báo Quảng Ninh – Đền thờ mẫu ở Quan Lạn, 15/10/2023 (https://baoquangninh.vn/den-tho-mau-o-quan-lan-3264304.html)"
+  }
+ ],
+ "thong_tin": [
+  {
+   "nhom": "di_lai",
+   "tieu_de": {
+    "vi": "Đến Vân Đồn bằng đường hàng không",
+    "en": "Getting to Vân Đồn by air",
+    "zh": "乘飞机前往云屯"
+   },
+   "noi_dung": {
+    "vi": "<p>Cảng hàng không quốc tế Vân Đồn (mã IATA: VDO) nằm ngay trên địa bàn đặc khu, khai trương ngày 30/12/2018, cách trung tâm Hạ Long khoảng 50 km. Tại sảnh đến có quầy taxi, xe hợp đồng và xe buýt; bảng giá taxi được niêm yết tại sân bay. Tuyến xe buýt Hạ Long – sân bay Vân Đồn chỉ phục vụ hành khách đi máy bay.</p><p>Các đường bay khai thác thay đổi theo mùa; vui lòng kiểm tra với hãng hàng không trước khi đặt vé.</p>",
+    "en": "<p>Vân Đồn International Airport (IATA: VDO) lies within the special zone; it opened on 30 December 2018 and is about 50 km from central Hạ Long. The arrivals hall has taxi desks, hire cars and buses, and taxi fares are posted at the airport. The Hạ Long – Vân Đồn Airport bus serves air passengers only.</p><p>Routes vary by season; please check with the airline before booking.</p>",
+    "zh": "<p>云屯国际机场（IATA代码：VDO）位于特区境内，于2018年12月30日启用，距下龙市中心约50公里。到达大厅设有出租车柜台、包车和巴士服务，出租车价格在机场公示。下龙—云屯机场巴士线路仅为航空旅客服务。</p><p>航线随季节调整，订票前请向航空公司确认。</p>"
+   },
+   "lien_ket": "https://en.wikipedia.org/wiki/Van_Don_International_Airport",
+   "nguon": "Wikipedia – Van Don International Airport (https://en.wikipedia.org/wiki/Van_Don_International_Airport); Báo Quảng Ninh – Các phương tiện để di chuyển từ sân bay Vân Đồn đến các điểm du lịch tại Quảng Ninh (https://baoquangninh.vn/huong-dan-di-chuyen-tu-san-bay-van-don-de-cac-diem-du-lich-tai-quang-ninh-3252237.html)",
+   "ngay_cap_nhat": "2026-10-16"
+  },
+  {
+   "nhom": "di_lai",
+   "tieu_de": {
+    "vi": "Đường bộ: cao tốc Hạ Long – Vân Đồn",
+    "en": "By road: Hạ Long – Vân Đồn Expressway",
+    "zh": "公路：下龙—云屯高速公路"
+   },
+   "noi_dung": {
+    "vi": "<p>Từ Hà Nội, Hải Phòng hoặc Hạ Long, du khách có thể đi theo cao tốc Hạ Long – Vân Đồn để đến đảo Cái Bầu – nơi có trung tâm đặc khu (Cái Rồng), sân bay và Bến cảng Ao Tiên. Các di tích trên đảo Cái Bầu như đền thờ vua Lý Anh Tông, di tích khảo cổ Ba Vũng, căn cứ Khe Mai có thể đến bằng ô tô, xe máy.</p>",
+    "en": "<p>From Hà Nội, Hải Phòng or Hạ Long, take the Hạ Long – Vân Đồn Expressway to Cái Bầu island, home to the special zone's centre (Cái Rồng), the airport and Ao Tiên Port. Sites on Cái Bầu such as the King Lý Anh Tông Temple, the Ba Vũng archaeological site and the Khe Mai base can be reached by car or motorbike.</p>",
+    "zh": "<p>从河内、海防或下龙出发，可经下龙—云屯高速公路抵达 Cái Bầu 岛——特区中心 (Cái Rồng)、机场和敖仙港均位于该岛。岛上的李英宗庙、Ba Vũng 考古遗址、Khe Mai 根据地等可乘汽车或摩托车前往。</p>"
+   },
+   "lien_ket": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietBVGioiThieu.aspx?bvid=54",
+   "nguon": "Cổng TTĐT đặc khu Vân Đồn – Giới thiệu khái quát đặc khu Vân Đồn, 14/01/2026 (https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietBVGioiThieu.aspx?bvid=54)",
+   "ngay_cap_nhat": "2026-10-16"
+  },
+  {
+   "nhom": "di_lai",
+   "tieu_de": {
+    "vi": "Bến cảng Ao Tiên – cửa ngõ ra các đảo",
+    "en": "Ao Tiên Port – gateway to the islands",
+    "zh": "敖仙港——前往各海岛的门户"
+   },
+   "noi_dung": {
+    "vi": "<p>Từ ngày 28/2/2023, toàn bộ tàu khách tuyến đảo của Vân Đồn chuyển từ cảng Cái Rồng sang Bến cảng cao cấp Ao Tiên (khu vực xã Hạ Long cũ); cảng Cái Rồng nay chủ yếu phục vụ tàu cá. Cảng Ao Tiên rộng khoảng 30 ha, có thể tiếp nhận đồng thời nhiều phương tiện, phục vụ các tuyến ra Minh Châu, Quan Lạn, Thắng Lợi, Ngọc Vừng, Bản Sen (Vân Đồn) và Cô Tô.</p><p><strong>Lưu ý:</strong> website không đăng giá vé và giờ tàu cụ thể vì thông tin này thay đổi theo mùa, theo hãng tàu và theo thời tiết. Vui lòng liên hệ trực tiếp Bến cảng Ao Tiên hoặc hãng tàu để có lịch mới nhất trước khi khởi hành. Vào dịp lễ, cuối tuần mùa hè, lượng khách rất đông, nên đặt vé sớm.</p>",
+    "en": "<p>Since 28 February 2023 all island passenger boats in Vân Đồn have moved from Cái Rồng harbour to Ao Tiên high-grade port (in former Hạ Long commune); Cái Rồng now mainly serves fishing boats. Covering about 30 ha and able to handle many vessels at once, Ao Tiên serves routes to Minh Châu, Quan Lạn, Thắng Lợi, Ngọc Vừng, Bản Sen (Vân Đồn) and Cô Tô.</p><p><strong>Note:</strong> this website does not publish fares or departure times, as they change with the season, operator and weather. Please contact Ao Tiên Port or the boat operator directly for the latest timetable before travelling. Holidays and summer weekends are very busy, so book early.</p>",
+    "zh": "<p>自2023年2月28日起，云屯所有海岛客运船只由 Cái Rồng 港迁至敖仙 (Ao Tiên) 高级港（位于原下龙乡）；Cái Rồng 港现主要服务渔船。敖仙港占地约30公顷，可同时接纳多艘船只，开行前往明珠、官澜、胜利、Ngọc Vừng、Bản Sen（云屯）及姑苏的航线。</p><p><strong>提示：</strong>由于票价和船期随季节、船公司和天气变化，本网站不公布具体票价和开船时间。出发前请直接联系敖仙港或船公司获取最新时刻表。节假日和夏季周末游客众多，请提前订票。</p>"
+   },
+   "lien_ket": "https://baoquangninh.vn/van-don-dua-vao-su-dung-ben-cang-cao-cap-ao-tien-tu-28-2-3226533.html",
+   "nguon": "Báo Quảng Ninh – Vân Đồn: Đưa vào sử dụng Bến cảng cao cấp Ao Tiên từ ngày 28/2, 14/02/2023 (https://baoquangninh.vn/van-don-dua-vao-su-dung-ben-cang-cao-cap-ao-tien-tu-28-2-3226533.html); Báo Quảng Ninh – Cảng Ao Tiên: Hành trình an toàn ra tuyến đảo, 22/06/2024 (https://baoquangninh.vn/cang-ao-tien-hanh-trinh-an-toan-ra-tuyen-dao-3304937.html); Báo Quảng Ninh – Bến cảng cao cấp Ao Tiên miễn, giảm vé cho cư dân tuyến đảo Vân Đồn, Cô Tô, 29/04/2026 (https://baoquangninh.vn/ben-cang-cao-cap-ao-tien-mien-giam-ve-voi-cu-dan-tuyen-dao-van-don-co-to-3405599.html)",
+   "ngay_cap_nhat": "2026-10-16"
+  },
+  {
+   "nhom": "di_lai",
+   "tieu_de": {
+    "vi": "Tuyến tàu ra các đảo có di tích",
+    "en": "Boat routes to the heritage islands",
+    "zh": "前往遗迹海岛的航线"
+   },
+   "noi_dung": {
+    "vi": "<p>Vân Đồn có 10 tuyến đường thủy nội địa ra các đảo. Với du khách tham quan di tích, các tuyến chính từ Bến cảng Ao Tiên gồm:</p><ul><li><strong>Quan Lạn:</strong> tàu cập cảng Quan Lạn hoặc cảng Minh Châu (hai cảng cách nhau khoảng 12 km trên cùng một đảo). Phù hợp cho tuyến “Quan Lạn – Minh Châu” và “Dấu tích Thương cảng Vân Đồn”.</li><li><strong>Minh Châu:</strong> gần bãi Minh Châu, đình làng Minh Châu, bến cổ Con Quy, Cái Cổng.</li><li><strong>Ngọc Vừng:</strong> tàu cập bến Cống Yên; từ bến đi xe điện khoảng 15–20 phút vào trung tâm xã.</li><li><strong>Thắng Lợi:</strong> đảo có các điểm Cống Đông – Cống Tây thuộc Quần thể Thương cảng Vân Đồn; nhiều điểm cần thuyền nhỏ, nên liên hệ địa phương trước.</li><li><strong>Bản Sen:</strong> có hang Nhà Trò, hang Hoi, đình Bản Sen; khám phá hang nên thuê người địa phương dẫn đường.</li></ul><p>Lịch tàu thay đổi theo mùa và thời tiết; vui lòng liên hệ cảng để có lịch mới nhất.</p>",
+    "en": "<p>Vân Đồn has 10 inland waterway routes to its islands. For heritage visitors, the main routes from Ao Tiên Port are:</p><ul><li><strong>Quan Lạn:</strong> boats dock at Quan Lạn or Minh Châu harbour (about 12 km apart on the same island). Suits the “Quan Lạn – Minh Châu” and “Traces of the Vân Đồn Trading Port” routes.</li><li><strong>Minh Châu:</strong> close to Minh Châu beach, the village communal house and the ancient Con Quy and Cái Cổng landings.</li><li><strong>Ngọc Vừng:</strong> boats dock at Cống Yên; an electric cart takes about 15–20 minutes to the commune centre.</li><li><strong>Thắng Lợi:</strong> home to the Cống Đông – Cống Tây sites of the Vân Đồn Trading Port Complex; many require a small boat, so contact local people in advance.</li><li><strong>Bản Sen:</strong> Nhà Trò Cave, Hoi Cave and Bản Sen Communal House; hire a local guide to explore the caves.</li></ul><p>Schedules vary with season and weather; please contact the port for the latest timetable.</p>",
+    "zh": "<p>云屯共有10条通往各岛的内河航线。对参观遗迹的游客而言，从敖仙港出发的主要航线有：</p><ul><li><strong>官澜：</strong>船只停靠官澜港或明珠港（两港位于同一岛上，相距约12公里），适合“官澜—明珠”和“云屯商港遗迹”线路。</li><li><strong>明珠：</strong>靠近明珠海滩、明珠村亭及 Con Quy、Cái Cổng 古码头。</li><li><strong>Ngọc Vừng：</strong>船只停靠 Cống Yên 码头，再乘电瓶车约15至20分钟到达乡中心。</li><li><strong>胜利：</strong>岛上有云屯商港遗址群的 Cống Đông – Cống Tây 遗迹点，多处需乘小船前往，请提前联系当地人。</li><li><strong>Bản Sen：</strong>有 Nhà Trò 洞、Hoi 洞和 Bản Sen 亭；探洞请聘请当地向导。</li></ul><p>船期随季节和天气变化，请联系港口获取最新时刻表。</p>"
+   },
+   "lien_ket": "https://quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=145266",
+   "nguon": "Cổng TTĐT tỉnh Quảng Ninh – Vân Đồn: Đảm bảo an toàn giao thông tuyến đảo, 25/10/2024 (https://quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=145266); VnExpress – 48 giờ ở Quan Lạn, 19/07/2024 (https://vnexpress.net/48-gio-o-quan-lan-4771171.html); Cổng Du lịch Quảng Ninh – Trải nghiệm mới với Khu lưu niệm Bác Hồ trên đảo Ngọc Vừng, 22/08/2022 (https://dulich.quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=3348); Báo Quảng Ninh – Khám phá Bản Sen (https://baoquangninh.vn/kham-pha-ban-sen-2274973.html)",
+   "ngay_cap_nhat": "2026-10-16"
+  },
+  {
+   "nhom": "di_lai",
+   "tieu_de": {
+    "vi": "Di chuyển trên các đảo",
+    "en": "Getting around the islands",
+    "zh": "岛上交通"
+   },
+   "noi_dung": {
+    "vi": "<p>Trên đảo Quan Lạn – Minh Châu và Ngọc Vừng, phương tiện phổ biến là xe điện du lịch; du khách cũng có thể thuê xe đạp hoặc xe máy. Trên đảo Cái Bầu (Cái Rồng, Hạ Long, Vạn Yên, Đoàn Kết, Đông Xá) có thể đi ô tô, taxi, xe máy. Một số di tích kiểm kê nằm ở vùng xa, đường mòn hoặc chỉ đi được bằng thuyền; nên hỏi đường người dân địa phương và không đi một mình vào hang động.</p>",
+    "en": "<p>On Quan Lạn – Minh Châu and Ngọc Vừng, electric tourist carts are the usual way to get around; bicycles and motorbikes can also be hired. On Cái Bầu island (Cái Rồng, Hạ Long, Vạn Yên, Đoàn Kết, Đông Xá), cars, taxis and motorbikes are available. Some inventoried sites are remote, along trails or reachable only by boat; ask local people for directions and never enter caves alone.</p>",
+    "zh": "<p>在官澜—明珠岛和 Ngọc Vừng 岛上，最常见的交通工具是旅游电瓶车，也可租用自行车或摩托车。在 Cái Bầu 岛（Cái Rồng、下龙、万安、团结、东舍）可乘汽车、出租车或骑摩托车。部分清查遗迹地处偏远，需走小路或乘船才能到达；请向当地居民问路，切勿独自进入洞穴。</p>"
+   },
+   "lien_ket": "https://vnexpress.net/48-gio-o-quan-lan-4771171.html",
+   "nguon": "VnExpress – 48 giờ ở Quan Lạn, 19/07/2024 (https://vnexpress.net/48-gio-o-quan-lan-4771171.html); Báo Quảng Ninh – Trải nghiệm du lịch hè Minh Châu (https://baoquangninh.vn/cuon-hut-trai-nghiem-moi-o-du-lich-he-minh-chau-3195081.html); Báo Quảng Ninh – Khám phá Bản Sen (https://baoquangninh.vn/kham-pha-ban-sen-2274973.html)",
+   "ngay_cap_nhat": "2026-10-16"
+  },
+  {
+   "nhom": "luu_tru",
+   "tieu_de": {
+    "vi": "Lưu trú trên các đảo",
+    "en": "Staying on the islands",
+    "zh": "海岛住宿"
+   },
+   "noi_dung": {
+    "vi": "<p>Quan Lạn có khu trung tâm với chợ, phố đi bộ và nhiều khách sạn; riêng khu Minh Châu có hơn 50 nhà nghỉ, khách sạn. Dịp Lễ hội đình Quan Lạn (giữa tháng 6 âm lịch), các ngày lễ và cuối tuần mùa hè, chỗ ở thường kín – nên đặt phòng sớm. Website không giới thiệu cơ sở lưu trú cụ thể.</p>",
+    "en": "<p>Quan Lạn has a centre with a market, walking street and many hotels, and Minh Châu alone has more than 50 guesthouses and hotels. During the Quan Lạn Communal House Festival (mid-6th lunar month), public holidays and summer weekends accommodation fills up, so book early. This website does not recommend specific establishments.</p>",
+    "zh": "<p>官澜岛中心有集市、步行街和多家酒店；仅明珠一带就有50多家旅馆和酒店。官澜亭庙会（农历六月中旬）、节假日及夏季周末期间住宿往往客满，请提前预订。本网站不推荐具体住宿场所。</p>"
+   },
+   "lien_ket": "https://baoquangninh.vn/cuon-hut-trai-nghiem-moi-o-du-lich-he-minh-chau-3195081.html",
+   "nguon": "Báo Quảng Ninh – Trải nghiệm du lịch hè Minh Châu (https://baoquangninh.vn/cuon-hut-trai-nghiem-moi-o-du-lich-he-minh-chau-3195081.html); VnExpress – 48 giờ ở Quan Lạn, 19/07/2024 (https://vnexpress.net/48-gio-o-quan-lan-4771171.html)",
+   "ngay_cap_nhat": "2026-10-16"
+  },
+  {
+   "nhom": "luu_y",
+   "tieu_de": {
+    "vi": "Trang phục và ứng xử tại nơi thờ tự",
+    "en": "Dress and conduct at places of worship",
+    "zh": "祭祀场所的着装与礼仪"
+   },
+   "noi_dung": {
+    "vi": "<ul><li>Mặc trang phục kín đáo, lịch sự (không mặc đồ tắm, áo hai dây, quần quá ngắn) khi vào đình, chùa, đền, miếu, nghè.</li><li>Bỏ mũ, nói khẽ; không tự ý chạm vào tượng, đồ thờ, sắc phong.</li><li>Hỏi ý kiến người trông coi trước khi chụp ảnh bên trong ban thờ; không dùng đèn flash vào hiện vật cổ.</li><li>Đặt lễ, thắp hương đúng nơi quy định; không đốt vàng mã ngoài khu vực hóa vàng.</li><li>Trong lễ hội, tôn trọng nghi thức và hướng dẫn của ban tổ chức, nhường lối cho đoàn rước.</li><li>Tại các di tích phế tích, bến cổ, di chỉ khảo cổ: không đào bới, không nhặt hay mang đi mảnh gốm, đồng tiền cổ, đá – đây là hiện vật thuộc di sản được pháp luật bảo vệ.</li></ul>",
+    "en": "<ul><li>Wear modest clothing (no swimwear, spaghetti straps or very short shorts) when entering communal houses, pagodas, temples, shrines and nghè.</li><li>Remove hats and speak softly; do not touch statues, ritual objects or royal decrees.</li><li>Ask the caretaker before photographing altars; do not use flash on ancient artefacts.</li><li>Place offerings and incense only where designated; burn votive paper only in the designated burner.</li><li>During festivals, respect the rites and organisers' instructions and make way for processions.</li><li>At ruins, ancient landings and archaeological sites, do not dig or remove sherds, old coins or stones: they are heritage objects protected by law.</li></ul>",
+    "zh": "<ul><li>进入亭、寺、庙、祠时请着装得体（勿穿泳装、吊带衫或过短的短裤）。</li><li>入内请脱帽、轻声；勿随意触碰神像、祭器和敕封。</li><li>在神龛前拍照请先征得看守人同意；勿对古物使用闪光灯。</li><li>请在指定位置摆放供品、上香；只在焚纸处焚烧纸钱。</li><li>庙会期间请尊重仪式和主办方指引，为迎神队伍让路。</li><li>在废墟遗址、古码头和考古遗址处，请勿挖掘，勿拾取或带走陶片、古钱和石块——这些都是受法律保护的文化遗产。</li></ul>"
+   },
+   "lien_ket": "",
+   "nguon": "Biên soạn theo nguyên tắc bảo vệ di sản của Phòng VHXH đặc khu Vân Đồn",
+   "ngay_cap_nhat": "2026-10-16"
+  },
+  {
+   "nhom": "luu_y",
+   "tieu_de": {
+    "vi": "An toàn đi biển và mùa mưa bão",
+    "en": "Sea safety and the storm season",
+    "zh": "出海安全与风暴季节"
+   },
+   "noi_dung": {
+    "vi": "<ul><li>Luôn mặc áo phao khi đi tàu, thuyền; chỉ đi các phương tiện có đăng ký, đón khách tại bến hợp pháp.</li><li>Mùa mưa bão ở vùng biển Quảng Ninh tập trung vào mùa hè và mùa thu (như cơn bão số 3 năm 2024). Khi có thông báo cấm biển hoặc tạm dừng tuyến tàu, xin hoãn chuyến đi và theo dõi thông tin của chính quyền đặc khu.</li><li>Một số di tích nằm sát mép nước (đền Mẫu, các bến cổ): chú ý thủy triều, không đứng sát mép đá khi sóng lớn.</li><li>Chỉ tắm biển tại khu vực bãi tắm có cứu hộ, không bơi xa bờ, không tắm khi trời giông.</li><li>Vào hang động cần có người địa phương dẫn đường, mang đèn pin, giày bám tốt.</li></ul>",
+    "en": "<ul><li>Always wear a life jacket on boats; use only registered vessels boarding at authorised landings.</li><li>The storm season on the Quảng Ninh coast is concentrated in summer and autumn (as with Typhoon No. 3 in 2024). If a sea ban or route suspension is announced, postpone your trip and follow the special zone authorities' updates.</li><li>Some sites lie at the water's edge (Đền Mẫu, ancient landings): watch the tide and keep back from rock edges in heavy seas.</li><li>Swim only at beaches with lifeguards, stay close to shore and do not swim during thunderstorms.</li><li>Enter caves only with a local guide, a torch and shoes with good grip.</li></ul>",
+    "zh": "<ul><li>乘船时务必穿救生衣；只乘坐在合法码头载客的登记船只。</li><li>广宁沿海的风暴季节主要集中在夏秋两季（如2024年第3号台风）。如遇禁海或航线暂停通知，请推迟行程并关注特区政府发布的信息。</li><li>部分遗迹紧邻水边（圣母庙、古码头）：请留意潮汐，风浪大时勿靠近岩石边缘。</li><li>只在有救生员的海滩游泳，勿远离岸边，雷雨天气勿下水。</li><li>进入洞穴须有当地向导陪同，并携带手电筒、穿防滑鞋。</li></ul>"
+   },
+   "lien_ket": "https://quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=145266",
+   "nguon": "Cổng TTĐT tỉnh Quảng Ninh – Vân Đồn: Đảm bảo an toàn giao thông tuyến đảo, 25/10/2024 (https://quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=145266); Báo Quảng Ninh – Khám phá Bản Sen (https://baoquangninh.vn/kham-pha-ban-sen-2274973.html)",
+   "ngay_cap_nhat": "2026-10-16"
+  },
+  {
+   "nhom": "y_te",
+   "tieu_de": {
+    "vi": "Y tế và số điện thoại khẩn cấp",
+    "en": "Medical care and emergency numbers",
+    "zh": "医疗与紧急电话"
+   },
+   "noi_dung": {
+    "vi": "<p>Số điện thoại khẩn cấp toàn quốc (miễn phí, gọi 24/24):</p><ul><li><strong>113</strong> – Công an (an ninh, trật tự)</li><li><strong>114</strong> – Cứu nạn, cứu hộ, phòng cháy chữa cháy</li><li><strong>115</strong> – Cấp cứu y tế</li></ul><p>Cơ sở y tế chính trên địa bàn là <strong>Bệnh viện Đa khoa khu vực Vân Đồn</strong> (trực thuộc Sở Y tế Quảng Ninh, hình thành trên cơ sở hợp nhất Trung tâm Y tế Vân Đồn và Cô Tô); ngoài ra có trạm y tế Cái Bầu, Vân Hải và các điểm y tế ở các thôn. Số điện thoại của các cơ sở y tế đang được cập nhật.</p><p>Trên các đảo xa, khả năng cấp cứu chuyên sâu còn hạn chế và phụ thuộc thời tiết; du khách có bệnh nền nên mang theo thuốc cá nhân.</p>",
+    "en": "<p>National emergency numbers (free, 24/7):</p><ul><li><strong>113</strong> – Police</li><li><strong>114</strong> – Rescue and fire services</li><li><strong>115</strong> – Medical emergencies</li></ul><p>The main medical facility is <strong>Vân Đồn Regional General Hospital</strong> (under the Quảng Ninh Department of Health, formed by merging the Vân Đồn and Cô Tô health centres); there are also the Cái Bầu and Vân Hải health stations and local health posts. Phone numbers for these facilities are being updated.</p><p>On the outer islands, advanced emergency care is limited and depends on the weather; visitors with health conditions should bring their own medication.</p>",
+    "zh": "<p>全国紧急电话（免费，24小时）：</p><ul><li><strong>113</strong>——公安（治安）</li><li><strong>114</strong>——救援、消防</li><li><strong>115</strong>——医疗急救</li></ul><p>当地主要医疗机构为<strong>云屯区域综合医院</strong>（隶属广宁省卫生厅，由云屯和姑苏两个医疗中心合并而成）；此外还有 Cái Bầu、云海卫生站及各村卫生点。上述机构的电话号码正在更新中。</p><p>在偏远海岛，专科急救能力有限且受天气影响；有基础疾病的游客请自备常用药品。</p>"
+   },
+   "lien_ket": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietBVGioiThieu.aspx?bvid=54",
+   "nguon": "Cổng TTĐT đặc khu Vân Đồn – Giới thiệu khái quát đặc khu Vân Đồn, 14/01/2026 (https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietBVGioiThieu.aspx?bvid=54)",
+   "ngay_cap_nhat": "2026-10-16"
+  },
+  {
+   "nhom": "lien_he",
+   "tieu_de": {
+    "vi": "Liên hệ",
+    "en": "Contact",
+    "zh": "联系方式"
+   },
+   "noi_dung": {
+    "vi": "<p><strong>Phòng Văn hóa – Xã hội đặc khu Vân Đồn</strong> – đơn vị quản lý nội dung website, tiếp nhận góp ý về di tích và yêu cầu liên quan đến dữ liệu cá nhân.</p><ul><li>Địa chỉ: UBND đặc khu Vân Đồn, tỉnh Quảng Ninh</li><li>Điện thoại: đang cập nhật</li><li>Thư điện tử: đang cập nhật</li></ul><p>Thư điện tử chung của UBND đặc khu Vân Đồn (theo Cổng thông tin điện tử đặc khu): ubndvd@quangninh.gov.vn.</p>",
+    "en": "<p><strong>Culture and Society Office, Vân Đồn Special Zone</strong> – manages this website's content and receives feedback on heritage sites and requests concerning personal data.</p><ul><li>Address: Vân Đồn Special Zone People's Committee, Quảng Ninh province</li><li>Phone: being updated</li><li>Email: being updated</li></ul><p>General email of the Vân Đồn Special Zone People's Committee (per the special zone portal): ubndvd@quangninh.gov.vn.</p>",
+    "zh": "<p><strong>云屯特区文化社会科</strong>——负责本网站内容管理，受理有关遗迹的意见以及个人数据相关请求。</p><ul><li>地址：广宁省云屯特区人民委员会</li><li>电话：正在更新</li><li>电子邮箱：正在更新</li></ul><p>云屯特区人民委员会公共邮箱（据特区门户网站）：ubndvd@quangninh.gov.vn。</p>"
+   },
+   "lien_ket": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietBVGioiThieu.aspx?bvid=54",
+   "nguon": "Cổng TTĐT đặc khu Vân Đồn – Giới thiệu khái quát đặc khu Vân Đồn, 14/01/2026 (https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietBVGioiThieu.aspx?bvid=54)",
+   "ngay_cap_nhat": "2026-10-16"
+  }
+ ],
+ "trang_tinh": [
+  {
+   "slug": "gioi-thieu",
+   "tieu_de": {
+    "vi": "Giới thiệu Vân Đồn và hệ thống di tích",
+    "en": "About Vân Đồn and Its Heritage Sites",
+    "zh": "云屯及其遗迹体系简介"
+   },
+   "noi_dung": {
+    "vi": "<h3>Vùng đất Vân Đồn</h3>\n<p>Đặc khu Vân Đồn nằm ở phía đông nam tỉnh Quảng Ninh, gồm hơn 600 hòn đảo lớn nhỏ trên vịnh Bái Tử Long, liền kề vịnh Hạ Long – được coi là quần đảo lớn nhất miền Bắc. Tổng diện tích tự nhiên 2.171,33 km², trong đó 583,92 km² là đất nổi và 1.587,41 km² là mặt biển; dân số khoảng 53.900 người thuộc 17 dân tộc. Tên Vân Đồn được cho là bắt nguồn từ núi Vân ở vùng Quan Lạn – “ngọn núi có mây phủ”.</p>\n<p>Năm 1149, vua Lý Anh Tông cho lập trang Vân Đồn để mở cửa giao thương với thuyền buôn nước ngoài, khởi đầu cho thương cảng đầu tiên của Đại Việt – một hệ thống bến cảng trải trên nhiều đảo, hoạt động qua nhiều thế kỷ. Vùng biển này cũng ghi dấu chiến thắng Vân Đồn năm 1288 của quân Trần do Trần Khánh Dư chỉ huy. Trong thời hiện đại, ngày 26/12/1948 huyện Cẩm Phả được thành lập; ngày 13/3/1994 đổi tên thành huyện Vân Đồn; từ ngày 01/7/2025, toàn bộ 12 xã, thị trấn của huyện hợp thành đặc khu Vân Đồn với 72 thôn, khu phố. Đặc khu có Cảng hàng không quốc tế Vân Đồn, cao tốc Hạ Long – Vân Đồn và Bến cảng cao cấp Ao Tiên.</p>\n<h3>Hệ thống di tích</h3>\n<p>Theo danh mục di tích được rà soát, trên địa bàn đặc khu Vân Đồn có <strong>44 di tích</strong>, gồm:</p>\n<ul>\n<li><strong>1 di tích quốc gia đặc biệt:</strong> Quần thể Thương cảng Vân Đồn (xếp hạng năm 2023), gồm các điểm trên đảo Thắng Lợi và đảo Quan Lạn.</li>\n<li><strong>3 di tích quốc gia:</strong> Cụm di tích lịch sử và kiến trúc nghệ thuật Quan Lạn (miếu Sao Ỏn, miếu Đông Hồ, miếu Cao Sơn); Địa điểm lưu niệm Chủ tịch Hồ Chí Minh trên đảo Ngọc Vừng; Di tích khảo cổ Ba Vũng.</li>\n<li><strong>7 di tích cấp tỉnh:</strong> Trận địa pháo 12,7 mm của dân quân xã Ngọc Vừng; Đình – miếu Ngọc Vừng; Đền thờ Vua Lý Anh Tông và Động Đông Trong; Thành cổ Ngọc Vừng; Căn cứ kháng chiến Khe Mai; Đền Mẫu; Đền Trấn Hải (đền Cậu).</li>\n<li><strong>33 di tích kiểm kê:</strong> các hang động tiền sử (Nhà Trò, Hoi, Soi Nhụ, Hà Giắt, hang Quan), các đình, đền, miếu, chùa ở Bản Sen, Cái Rồng, Đoàn Kết, Minh Châu, Quan Lạn, Thắng Lợi, Hạ Long, Vạn Yên; các bến cổ liên quan thương cảng (Cái Cổng, Con Quy, Cống Yên, Cống Hẹp, Cống Cái); các bãi tắm danh thắng; các di tích lịch sử cách mạng như nơi bắt sống giặc lái Mỹ, Đường Hồ Chí Minh trên biển, địa điểm lưu niệm mỏ than Kế Bào.</li>\n</ul>\n<p>Bên cạnh di sản vật thể, Lễ hội đình Quan Lạn – lễ hội kỷ niệm chiến thắng Vân Đồn năm 1288 – đã được đưa vào Danh mục di sản văn hóa phi vật thể quốc gia năm 2019. Trên địa bàn đặc khu còn có đền Cặp Tiên (khu vực Đông Xá), thuộc quần thể di tích quốc gia đặc biệt Đền Cửa Ông và do Ban quản lý di tích Đền Cửa Ông – Cặp Tiên quản lý.</p>\n<h3>Những lớp trầm tích văn hóa</h3>\n<p>Các di tích Vân Đồn trải dài qua nhiều thời kỳ: từ các di chỉ tiền sử như Ba Vũng, Soi Nhụ, Đông Trong – theo Viện Khảo cổ học, Vân Đồn có hơn 10 di tích tiền sử; qua thời kỳ thương cảng Lý – Trần – Lê với các bến cổ, chùa tháp; đến các đình, miếu, đền thờ những người có công giữ biển; và các di tích kháng chiến chống Mỹ trên đảo Ngọc Vừng. Theo loại hình, di tích được chia thành: lịch sử, kiến trúc nghệ thuật, khảo cổ và danh lam thắng cảnh.</p>\n<h3>Về website này</h3>\n<p>Website do Phòng Văn hóa – Xã hội đặc khu Vân Đồn xây dựng nhằm giới thiệu, quảng bá các di tích tới người dân và du khách bằng ba ngôn ngữ Việt, Anh, Trung. Nội dung được biên soạn từ danh mục di tích và các nguồn tư liệu công bố (báo chí, cổng thông tin chính quyền, công trình nghiên cứu), có ghi nguồn ở từng trang. Một số di tích kiểm kê còn ít tư liệu; chúng tôi mong nhận được góp ý, tư liệu và hình ảnh từ bạn đọc để hoàn thiện nội dung.</p>",
+    "en": "<h3>The land of Vân Đồn</h3>\n<p>Vân Đồn Special Zone lies in the south-east of Quảng Ninh province and comprises more than 600 islands in Bái Tử Long Bay, next to Hạ Long Bay, considered the largest archipelago in northern Vietnam. Its total area is 2,171.33 km², of which 583.92 km² is land and 1,587.41 km² sea; its population of about 53,900 belongs to 17 ethnic groups. The name Vân Đồn is said to come from Vân mountain in the Quan Lạn area, “the mountain veiled in cloud”.</p>\n<p>In 1149 King Lý Anh Tông established the Vân Đồn estate to open trade with foreign merchant ships, the beginning of Đại Việt's first trading port, a network of anchorages across many islands that operated for centuries. These waters also witnessed the 1288 Vân Đồn victory of the Trần army under Trần Khánh Dư. In modern times, Cẩm Phả district was established on 26 December 1948 and renamed Vân Đồn district on 13 March 1994; from 1 July 2025 all 12 communes and towns of the district merged to form Vân Đồn Special Zone with 72 hamlets and quarters. The zone has Vân Đồn International Airport, the Hạ Long – Vân Đồn Expressway and Ao Tiên high-grade port.</p>\n<h3>Heritage sites</h3>\n<p>According to the reviewed heritage inventory, Vân Đồn Special Zone has <strong>44 heritage sites</strong>:</p>\n<ul>\n<li><strong>1 Special National Monument:</strong> the Vân Đồn Trading Port Complex (listed in 2023), with sites on Thắng Lợi and Quan Lạn islands.</li>\n<li><strong>3 National Monuments:</strong> the Quan Lạn Historical and Architectural Relic Cluster (Sao Ỏn, Đông Hồ and Cao Sơn shrines); the President Hồ Chí Minh Memorial Site on Ngọc Vừng Island; and the Ba Vũng Archaeological Site.</li>\n<li><strong>7 Provincial Monuments:</strong> the Ngọc Vừng Militia 12.7 mm Anti-aircraft Position; Ngọc Vừng Communal House and Shrine; King Lý Anh Tông Temple and Đông Trong Cave; Ngọc Vừng Ancient Citadel; Khe Mai Resistance Base; the Mother Goddess Temple (Đền Mẫu); and Trấn Hải Temple (Đền Cậu).</li>\n<li><strong>33 inventoried sites:</strong> prehistoric caves (Nhà Trò, Hoi, Soi Nhụ, Hà Giắt, Quan), communal houses, temples, shrines and pagodas in Bản Sen, Cái Rồng, Đoàn Kết, Minh Châu, Quan Lạn, Thắng Lợi, Hạ Long and Vạn Yên; ancient landings of the trading port (Cái Cổng, Con Quy, Cống Yên, Cống Hẹp, Cống Cái); scenic beaches; and revolutionary sites such as the place where an American pilot was captured, the Hồ Chí Minh Trail at Sea and the Kế Bào coal mine memorial site.</li>\n</ul>\n<p>Beyond tangible heritage, the Quan Lạn Communal House Festival, commemorating the 1288 Vân Đồn victory, was inscribed on the National List of Intangible Cultural Heritage in 2019. The special zone is also home to Cặp Tiên Temple (Đông Xá area), part of the Cửa Ông Temple Special National Monument and managed by the Cửa Ông – Cặp Tiên Temple Management Board.</p>\n<h3>Layers of culture</h3>\n<p>Vân Đồn's heritage spans many periods: prehistoric sites such as Ba Vũng, Soi Nhụ and Đông Trong (the Institute of Archaeology counts more than ten prehistoric sites in Vân Đồn); the Lý, Trần and Lê trading-port era with its ancient landings, pagodas and towers; communal houses, shrines and temples honouring those who defended the sea; and sites of the resistance against the United States on Ngọc Vừng island. By type, the sites are classified as historical, architectural and artistic, archaeological, and scenic landscape.</p>\n<h3>About this website</h3>\n<p>This website was created by the Culture and Society Office of Vân Đồn Special Zone to introduce the area's heritage to residents and visitors in Vietnamese, English and Chinese. Its content is compiled from the heritage inventory and published sources (newspapers, government portals and research), with sources cited on each page. Some inventoried sites are still sparsely documented; we welcome comments, documents and photographs from readers to help complete the content.</p>",
+    "zh": "<h3>云屯这片土地</h3>\n<p>云屯特区位于广宁省东南部，由拜子龙湾上600多座大小岛屿组成，毗邻下龙湾，被视为越南北方最大的群岛。总面积2,171.33平方公里，其中陆地583.92平方公里、海域1,587.41平方公里；人口约53,900人，分属17个民族。“云屯”之名据说源自官澜一带的云山，意为“云雾缭绕的山”。</p>\n<p>1149年，李英宗下令设立云屯庄，向外国商船开放贸易，由此开启了大越第一个商港——一个分布在众多岛屿上、运作长达数百年的港口体系。这片海域也见证了1288年陈庆余率陈军取得的云屯大捷。近代以来，锦普县于1948年12月26日成立，1994年3月13日更名为云屯县；自2025年7月1日起，全县12个乡镇合并组成云屯特区，下辖72个村和街区。特区拥有云屯国际机场、下龙—云屯高速公路和敖仙高级港。</p>\n<h3>遗迹体系</h3>\n<p>根据经审核的遗迹名录，云屯特区共有<strong>44处遗迹</strong>，包括：</p>\n<ul>\n<li><strong>国家特别级遗迹1处：</strong>云屯商港遗址群（2023年列级），包括胜利岛和官澜岛上的多个遗迹点。</li>\n<li><strong>国家级遗迹3处：</strong>官澜历史与建筑艺术遗迹群（Sao Ỏn 庙、Đông Hồ 庙、高山庙）；Ngọc Vừng 岛胡志明主席纪念地；Ba Vũng 考古遗址。</li>\n<li><strong>省级遗迹7处：</strong>Ngọc Vừng 乡民兵12.7毫米高射机枪阵地；Ngọc Vừng 亭庙；李英宗庙与 Đông Trong 洞；Ngọc Vừng 古城；Khe Mai 抗战根据地；圣母庙；镇海庙（舅庙）。</li>\n<li><strong>清查登记遗迹33处：</strong>史前洞穴（Nhà Trò 洞、Hoi 洞、Soi Nhụ 洞、Hà Giắt 洞、Quan 洞），Bản Sen、Cái Rồng、团结、明珠、官澜、胜利、下龙、万安等地的亭、庙、祠、寺；与商港相关的古码头（Cái Cổng、Con Quy、Cống Yên、Cống Hẹp、Cống Cái）；风景海滩；以及活捉美军飞行员之地、海上胡志明小道、Kế Bào 煤矿纪念地等革命历史遗迹。</li>\n</ul>\n<p>除物质遗产外，纪念1288年云屯大捷的官澜亭庙会已于2019年列入国家级非物质文化遗产名录。特区境内还有位于东舍一带的 Cặp Tiên 庙，属于国家特别级遗迹翁门庙 (Đền Cửa Ông) 遗址群，由翁门—Cặp Tiên 庙遗迹管理委员会管理。</p>\n<h3>多层次的文化积淀</h3>\n<p>云屯的遗迹跨越多个历史时期：从 Ba Vũng、Soi Nhụ、Đông Trong 等史前遗址（据考古学院统计，云屯有十余处史前遗址），到李、陈、黎时期商港的古码头和寺塔；从供奉守海功臣的亭、庙、祠，到 Ngọc Vừng 岛上的抗美战争遗迹。按类型划分，遗迹可分为历史、建筑艺术、考古和风景名胜四类。</p>\n<h3>关于本网站</h3>\n<p>本网站由云屯特区文化社会科建设，以越南语、英语和中文向居民和游客介绍、推广当地遗迹。内容依据遗迹名录及已公开的资料（报刊、政府门户网站、学术研究）编写，并在各页注明出处。部分清查遗迹的资料尚少，欢迎读者提供意见、资料和图片，帮助我们完善内容。</p>"
+   }
+  },
+  {
+   "slug": "chinh-sach-du-lieu",
+   "tieu_de": {
+    "vi": "Chính sách xử lý dữ liệu cá nhân",
+    "en": "Personal Data Processing Policy",
+    "zh": "个人数据处理政策"
+   },
+   "noi_dung": {
+    "vi": "<h3>1. Căn cứ và phạm vi áp dụng</h3>\n<p>Chính sách này được xây dựng theo Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định số 356/2025/NĐ-CP, có hiệu lực từ ngày 01/01/2026. Chính sách áp dụng cho dữ liệu cá nhân mà bạn cung cấp khi gửi nhận xét, góp ý hoặc hình ảnh qua biểu mẫu trên website giới thiệu di tích đặc khu Vân Đồn.</p>\n<h3>2. Đơn vị xử lý dữ liệu</h3>\n<p>Phòng Văn hóa – Xã hội đặc khu Vân Đồn (UBND đặc khu Vân Đồn, tỉnh Quảng Ninh) là đơn vị quyết định mục đích và phương tiện xử lý dữ liệu cá nhân thu thập qua website này.</p>\n<h3>3. Dữ liệu chúng tôi thu thập</h3>\n<ul>\n<li><strong>Tên hiển thị</strong> (bắt buộc): có thể là tên thật hoặc biệt danh; tên này được hiển thị công khai cùng nhận xét.</li>\n<li><strong>Thư điện tử hoặc số điện thoại</strong> (không bắt buộc): chỉ dùng để liên hệ lại khi cần, không hiển thị công khai.</li>\n<li><strong>Nội dung nhận xét, góp ý</strong>.</li>\n<li><strong>Ảnh</strong> bạn tải lên (không bắt buộc).</li>\n<li><strong>Dữ liệu kỹ thuật tối thiểu:</strong> chúng tôi <strong>không lưu địa chỉ IP gốc</strong>; hệ thống chỉ lưu giá trị băm (mã hóa một chiều) của địa chỉ IP để phòng chống thư rác và gửi trùng lặp. Giá trị băm không được dùng để định danh bạn.</li>\n</ul>\n<p>Xin không đưa vào nhận xét hoặc ảnh các thông tin nhạy cảm của bạn hay của người khác (số giấy tờ tùy thân, thông tin sức khỏe, hình ảnh người khác khi chưa được đồng ý…).</p>\n<h3>4. Mục đích xử lý</h3>\n<ul>\n<li>Hiển thị nhận xét và ảnh của bạn trên trang di tích tương ứng (sau khi được kiểm duyệt);</li>\n<li>Tiếp nhận góp ý để bổ sung, chỉnh sửa thông tin về di tích;</li>\n<li>Liên hệ lại với bạn khi cần làm rõ góp ý (nếu bạn cung cấp thư điện tử hoặc số điện thoại);</li>\n<li>Phòng chống thư rác, nội dung vi phạm pháp luật và hành vi lạm dụng biểu mẫu.</li>\n</ul>\n<p>Chúng tôi không sử dụng dữ liệu của bạn cho mục đích quảng cáo, không bán và không chuyển giao cho bên thứ ba vì mục đích thương mại. Dữ liệu chỉ được cung cấp cho cơ quan nhà nước có thẩm quyền khi pháp luật yêu cầu.</p>\n<h3>5. Sự đồng ý</h3>\n<p>Bằng việc đánh dấu ô đồng ý và gửi biểu mẫu, bạn đồng ý cho chúng tôi xử lý dữ liệu theo chính sách này. Bạn có quyền rút lại sự đồng ý bất cứ lúc nào; việc rút lại không ảnh hưởng đến tính hợp pháp của việc xử lý đã thực hiện trước đó. Trẻ em gửi nhận xét cần có sự đồng ý của cha, mẹ hoặc người giám hộ theo quy định pháp luật.</p>\n<h3>6. Cookie</h3>\n<p>Website <strong>không sử dụng cookie theo dõi</strong>, cookie quảng cáo hay công cụ theo dõi hành vi của bên thứ ba.</p>\n<h3>7. Thời hạn lưu trữ</h3>\n<p>Dữ liệu cá nhân gắn với nhận xét, góp ý được lưu trữ tối đa <strong>24 tháng</strong> kể từ ngày gửi. Hết thời hạn này, dữ liệu sẽ được <strong>ẩn danh hóa</strong>: tên hiển thị, thư điện tử, số điện thoại bị xóa; nội dung nhận xét có thể được giữ lại ở dạng không còn xác định được người gửi. Nhận xét bị từ chối kiểm duyệt hoặc bị xóa theo yêu cầu sẽ được xóa sớm hơn.</p>\n<h3>8. Quyền của bạn</h3>\n<p>Theo quy định pháp luật về bảo vệ dữ liệu cá nhân, bạn có quyền:</p>\n<ul>\n<li>Được biết về việc xử lý dữ liệu cá nhân của mình;</li>\n<li>Yêu cầu xem, truy cập dữ liệu cá nhân của mình;</li>\n<li>Yêu cầu chỉnh sửa dữ liệu không chính xác;</li>\n<li>Yêu cầu xóa dữ liệu, gỡ nhận xét hoặc ảnh đã gửi;</li>\n<li>Rút lại sự đồng ý, phản đối hoặc yêu cầu hạn chế xử lý;</li>\n<li>Khiếu nại, tố cáo theo quy định pháp luật.</li>\n</ul>\n<p>Để thực hiện các quyền trên, vui lòng liên hệ đầu mối dưới đây và cung cấp thông tin đủ để xác định nhận xét của bạn (tên hiển thị, thời gian gửi, trang di tích). Chúng tôi sẽ phản hồi trong thời hạn theo quy định pháp luật.</p>\n<h3>9. Bảo vệ dữ liệu</h3>\n<p>Chúng tôi áp dụng các biện pháp quản lý và kỹ thuật phù hợp để bảo vệ dữ liệu: giới hạn quyền truy cập cho cán bộ được phân công, truyền dữ liệu qua kết nối được mã hóa, không lưu địa chỉ IP gốc. Khi phát hiện sự cố vi phạm dữ liệu cá nhân, chúng tôi sẽ xử lý và thông báo theo quy định.</p>\n<h3>10. Đầu mối liên hệ</h3><ul><li><strong>Phòng Văn hóa – Xã hội đặc khu Vân Đồn</strong></li><li>Địa chỉ: UBND đặc khu Vân Đồn, tỉnh Quảng Ninh</li><li>Điện thoại: đang cập nhật</li><li>Thư điện tử: đang cập nhật</li></ul>\n<h3>11. Cập nhật chính sách</h3>\n<p>Chính sách có thể được điều chỉnh khi pháp luật thay đổi hoặc khi website bổ sung tính năng. Phiên bản mới sẽ được đăng tại trang này kèm ngày cập nhật.</p>",
+    "en": "<h3>1. Legal basis and scope</h3>\n<p>This policy is based on the Law on Personal Data Protection No. 91/2025/QH15 and Decree No. 356/2025/NĐ-CP, effective from 1 January 2026. It applies to personal data you provide when submitting comments, feedback or photos through the forms on the Vân Đồn Special Zone heritage website.</p>\n<h3>2. Data controller</h3>\n<p>The Culture and Society Office of Vân Đồn Special Zone (Vân Đồn Special Zone People's Committee, Quảng Ninh province) determines the purposes and means of processing personal data collected through this website.</p>\n<h3>3. Data we collect</h3>\n<ul>\n<li><strong>Display name</strong> (required): your real name or a nickname, shown publicly with your comment.</li>\n<li><strong>Email address or phone number</strong> (optional): used only to contact you if needed; never shown publicly.</li>\n<li><strong>The content of your comment or feedback</strong>.</li>\n<li><strong>Photos</strong> you upload (optional).</li>\n<li><strong>Minimal technical data:</strong> we <strong>do not store your original IP address</strong>; the system keeps only a hash (one-way encoding) of it to prevent spam and duplicate submissions. The hash is not used to identify you.</li>\n</ul>\n<p>Please do not include sensitive information about yourself or others in comments or photos (identity document numbers, health information, images of other people without their consent, etc.).</p>\n<h3>4. Purposes of processing</h3>\n<ul>\n<li>Displaying your comments and photos on the relevant heritage page (after moderation);</li>\n<li>Receiving feedback to supplement or correct information about heritage sites;</li>\n<li>Contacting you to clarify your feedback (if you provided an email address or phone number);</li>\n<li>Preventing spam, unlawful content and abuse of the forms.</li>\n</ul>\n<p>We do not use your data for advertising, and we do not sell or transfer it to third parties for commercial purposes. Data is disclosed to competent state authorities only where the law requires.</p>\n<h3>5. Consent</h3>\n<p>By ticking the consent box and submitting the form, you agree to the processing of your data under this policy. You may withdraw your consent at any time; withdrawal does not affect the lawfulness of processing carried out before it. Children submitting comments need the consent of a parent or guardian as required by law.</p>\n<h3>6. Cookies</h3>\n<p>This website <strong>does not use tracking cookies</strong>, advertising cookies or third-party behavioural tracking tools.</p>\n<h3>7. Retention period</h3>\n<p>Personal data linked to comments and feedback is kept for no more than <strong>24 months</strong> from submission. After that it is <strong>anonymised</strong>: display names, email addresses and phone numbers are deleted, and the comment text may be kept in a form that no longer identifies the sender. Comments rejected in moderation or deleted on request are removed sooner.</p>\n<h3>8. Your rights</h3>\n<p>Under personal data protection law, you have the right to:</p>\n<ul>\n<li>Be informed about the processing of your personal data;</li>\n<li>Request to view and access your personal data;</li>\n<li>Request correction of inaccurate data;</li>\n<li>Request deletion of your data, or removal of comments or photos you submitted;</li>\n<li>Withdraw consent, object to or request restriction of processing;</li>\n<li>Lodge complaints or denunciations in accordance with the law.</li>\n</ul>\n<p>To exercise these rights, please contact us at the address below with enough information to identify your comment (display name, time of submission, heritage page). We will respond within the time limits set by law.</p>\n<h3>9. Data security</h3>\n<p>We apply appropriate organisational and technical measures to protect your data: access is limited to assigned staff, data is transmitted over encrypted connections, and original IP addresses are not stored. If a personal data breach is detected, we will handle and report it as required by law.</p>\n<h3>10. Contact</h3><ul><li><strong>Culture and Society Office, Vân Đồn Special Zone</strong></li><li>Address: Vân Đồn Special Zone People's Committee, Quảng Ninh province</li><li>Phone: being updated</li><li>Email: being updated</li></ul>\n<h3>11. Policy updates</h3>\n<p>This policy may be revised when the law changes or new website features are added. The new version will be posted on this page with its update date.</p>",
+    "zh": "<h3>1. 依据与适用范围</h3>\n<p>本政策依据第91/2025/QH15号《个人数据保护法》和第356/2025/NĐ-CP号议定制定，自2026年1月1日起施行，适用于您通过云屯特区遗迹介绍网站的表单提交评论、意见或图片时所提供的个人数据。</p>\n<h3>2. 数据处理单位</h3>\n<p>云屯特区文化社会科（广宁省云屯特区人民委员会）负责决定通过本网站收集的个人数据的处理目的和方式。</p>\n<h3>3. 我们收集的数据</h3>\n<ul>\n<li><strong>显示名称</strong>（必填）：可以是真实姓名或昵称，将与评论一同公开显示。</li>\n<li><strong>电子邮箱或电话号码</strong>（选填）：仅在必要时用于回复联系，不公开显示。</li>\n<li><strong>评论、意见内容</strong>。</li>\n<li>您上传的<strong>图片</strong>（选填）。</li>\n<li><strong>最少量的技术数据：</strong>我们<strong>不保存原始IP地址</strong>，系统仅保存IP地址的哈希值（单向加密），用于防范垃圾信息和重复提交。该哈希值不会用于识别您的身份。</li>\n</ul>\n<p>请勿在评论或图片中包含您本人或他人的敏感信息（身份证件号码、健康信息、未经同意的他人肖像等）。</p>\n<h3>4. 处理目的</h3>\n<ul>\n<li>在相应遗迹页面上显示您的评论和图片（经审核后）；</li>\n<li>接收意见，用于补充、更正遗迹信息；</li>\n<li>在需要澄清意见时与您联系（如您提供了电子邮箱或电话号码）；</li>\n<li>防范垃圾信息、违法内容和滥用表单的行为。</li>\n</ul>\n<p>我们不将您的数据用于广告，也不出售或为商业目的向第三方转让。仅在法律要求时向有权国家机关提供数据。</p>\n<h3>5. 同意</h3>\n<p>勾选同意框并提交表单，即表示您同意我们按照本政策处理您的数据。您可随时撤回同意；撤回不影响此前处理的合法性。儿童提交评论须依法取得父母或监护人的同意。</p>\n<h3>6. Cookie</h3>\n<p>本网站<strong>不使用跟踪类Cookie</strong>、广告Cookie或第三方行为跟踪工具。</p>\n<h3>7. 保存期限</h3>\n<p>与评论、意见相关的个人数据自提交之日起最多保存<strong>24个月</strong>。期满后，数据将被<strong>匿名化</strong>处理：删除显示名称、电子邮箱和电话号码，评论内容可能以无法识别提交者的形式保留。未通过审核或应要求删除的评论将更早删除。</p>\n<h3>8. 您的权利</h3>\n<p>根据个人数据保护相关法律，您有权：</p>\n<ul>\n<li>知悉您的个人数据处理情况；</li>\n<li>要求查看、访问您的个人数据；</li>\n<li>要求更正不准确的数据；</li>\n<li>要求删除数据，或撤下您提交的评论、图片；</li>\n<li>撤回同意、反对处理或要求限制处理；</li>\n<li>依法提出投诉、举报。</li>\n</ul>\n<p>如需行使上述权利，请通过下方联系方式与我们联系，并提供足以识别您评论的信息（显示名称、提交时间、遗迹页面）。我们将在法律规定的期限内予以答复。</p>\n<h3>9. 数据安全</h3>\n<p>我们采取适当的管理和技术措施保护您的数据：仅限指定工作人员访问，数据通过加密连接传输，不保存原始IP地址。如发现个人数据泄露事件，我们将依法处理并通报。</p>\n<h3>10. 联系方式</h3><ul><li><strong>云屯特区文化社会科</strong></li><li>地址：广宁省云屯特区人民委员会</li><li>电话：正在更新</li><li>电子邮箱：正在更新</li></ul>\n<h3>11. 政策更新</h3>\n<p>本政策可能因法律变化或网站新增功能而调整。新版本将在本页面公布，并注明更新日期。</p>"
+   }
+  }
+ ],
+ "khu_vuc": {
+  "Cái Rồng": {
+   "en": "Cai Rong",
+   "zh": "Cái Rồng"
+  },
+  "Đông Xá": {
+   "en": "Dong Xa",
+   "zh": "东舍 (Đông Xá)"
+  },
+  "Hạ Long": {
+   "en": "Ha Long (Van Don)",
+   "zh": "下龙（云屯）"
+  },
+  "Vạn Yên": {
+   "en": "Van Yen",
+   "zh": "万安 (Vạn Yên)"
+  },
+  "Đoàn Kết": {
+   "en": "Doan Ket",
+   "zh": "团结 (Đoàn Kết)"
+  },
+  "Bản Sen": {
+   "en": "Ban Sen",
+   "zh": "Bản Sen"
+  },
+  "Minh Châu": {
+   "en": "Minh Chau",
+   "zh": "明珠 (Minh Châu)"
+  },
+  "Quan Lạn": {
+   "en": "Quan Lan",
+   "zh": "官澜 (Quan Lạn)"
+  },
+  "Thắng Lợi": {
+   "en": "Thang Loi",
+   "zh": "胜利 (Thắng Lợi)"
+  },
+  "Ngọc Vừng": {
+   "en": "Ngoc Vung",
+   "zh": "Ngọc Vừng"
+  }
+ },
+ "loai_hinh": {
+  "Lịch sử": {
+   "en": "Historical",
+   "zh": "历史"
+  },
+  "Kiến trúc nghệ thuật": {
+   "en": "Architectural and Artistic",
+   "zh": "建筑艺术"
+  },
+  "Khảo cổ": {
+   "en": "Archaeological",
+   "zh": "考古"
+  },
+  "Danh lam thắng cảnh": {
+   "en": "Scenic Landscape",
+   "zh": "风景名胜"
+  }
+ }
+}

@@ -1,0 +1,942 @@
+[
+ {
+  "ma": "VD01",
+  "nhom": "Quốc gia đặc biệt",
+  "ten": "Quần thể Thương cảng Vân Đồn",
+  "ten_day_du": "Quần thể Thương cảng Vân Đồn Gồm các điểm di tích: - Xã Thắng Lợi: (1) Vụng 1, Vụng 2, Vụng 3; (2) Bảo tháp; (3) chùa Cây Quéo; (4) Chùa Lấm, vụng chùa Lấm; (5) chùa Cát, vụng chùa Cát; (6) Vụng Chuồng Bò; (7) Vụng Huyện; - Xã Quan Lạn: (1) Bến Cái Làng; (2) Đình, chùa Quan Lạn và miếu thờ 3 anh em họ Phạm; (3) Nghè Trần Khánh Dư; (4) Giếng Chổi; (5) miếu Lòng Dinh; (6) Sông Mang.",
+  "khu_vuc": "Thắng Lợi, Quan Lạn",
+  "dc_cu": "Xã Thắng Lợi, xã Quan Lạn, huyện Vân đồn",
+  "dc_moi": "Thôn Thắng Lợi, Thôn Quan Lạn 1, thôn Quan Lạn 2, thôn Quan Lạn 3, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Quốc gia đặc biệt",
+  "diem": [
+   {
+    "ten": "Vụng 1, Vụng 2, Vụng 3",
+    "lat": 20.886972,
+    "lng": 107.313361,
+    "dms": "20°53'13.1\"N 107°18'48.1\"E",
+    "tuong_doi": false,
+    "sua": ""
+   },
+   {
+    "ten": "Bảo Tháp",
+    "lat": 20.910528,
+    "lng": 107.313694,
+    "dms": "20°54'37.9\"N 107°18'49.3\"E",
+    "tuong_doi": false,
+    "sua": ""
+   },
+   {
+    "ten": "Chùa Cây Quéo",
+    "lat": 20.890111,
+    "lng": 107.315306,
+    "dms": "20°53'24.4\"N 107°18'55.1\"E",
+    "tuong_doi": false,
+    "sua": ""
+   },
+   {
+    "ten": "Chùa Lấm, Vụng Chùa Lấm",
+    "lat": 20.877028,
+    "lng": 107.317472,
+    "dms": "20°52'37.3\"N 107°19'02.9\"E",
+    "tuong_doi": false,
+    "sua": ""
+   },
+   {
+    "ten": "Chùa Cát, Vụng chùa Cát",
+    "lat": 20.879389,
+    "lng": 107.3145,
+    "dms": "20°52'45.8\"N 107°18'52.2\"E",
+    "tuong_doi": false,
+    "sua": ""
+   },
+   {
+    "ten": "Vụng Chuồng bò",
+    "lat": 20.887194,
+    "lng": 107.307389,
+    "dms": "20°53'13.9\"N 107°18'26.6\"E",
+    "tuong_doi": false,
+    "sua": ""
+   },
+   {
+    "ten": "Vụng Huyện",
+    "lat": 20.897028,
+    "lng": 107.309361,
+    "dms": "20°53'49.3\"N 107°18'33.7\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Khu vực Thắng Lợi: (1) Vụng 1, Vụng 2, Vụng 3: 20°53'13.1\"N 107°18'48.1\"E; (2) Bảo Tháp: 20°54'37.9\"N 107°18'49.3\"E; (3) Chùa Cây Quéo: 20°53'24.4\"N 107°18'55.1\"E; ((4): Chùa Lấm, Vụng Chùa Lấm: 20°52'37.3\"N 107°19'02.9\"E; (5) Chùa Cát, Vụng chùa Cát: 20°52'45.8\"N 107°18'52.2\"E; (6) Vụng Chuồng bò: 20°53'13.9\"N 107°18'26.6\"E; (7) Vụng Huyện: 20°53'49.3\"N 107°18'33.7\"E"
+ },
+ {
+  "ma": "VD02",
+  "nhom": "Quốc gia",
+  "ten": "Cụm di tích lịch sử và kiến trúc nghệ thuật Quan Lạn: miếu Sao Ỏn, miếu Đông Hồ, miếu Cao Sơn (các điểm: đình, chùa, miếu thờ 3 anh em họ Phạm, nghè thờ Trần Khánh Dư đã được xếp hạng cấp quốc gia đặc biệt)",
+  "ten_day_du": "Cụm di tích lịch sử và kiến trúc nghệ thuật Quan Lạn: miếu Sao Ỏn, miếu Đông Hồ, miếu Cao Sơn (các điểm: đình, chùa, miếu thờ 3 anh em họ Phạm, nghè thờ Trần Khánh Dư đã được xếp hạng cấp quốc gia đặc biệt)",
+  "khu_vuc": "Quan Lạn",
+  "dc_cu": "Xã Quan Lạn huyện Vân Đồn",
+  "dc_moi": "Thôn Quan Lạn 1, thôn Quan Lạn 2, Đặc khu Vân Đồn",
+  "loai": "Lịch sử - kiến trúc, nghệ thuật",
+  "cap": "Quốc gia",
+  "diem": [
+   {
+    "ten": "Miếu Đông Hồ",
+    "lat": 20.858944,
+    "lng": 107.483556,
+    "dms": "20°51'32.2\"N 107°29'00.8\"E",
+    "tuong_doi": false,
+    "sua": ""
+   },
+   {
+    "ten": "Miếu Cao Sơn",
+    "lat": 20.874722,
+    "lng": 107.493833,
+    "dms": "20°52'29.0\"N 107°29'37.8\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Miếu Đông Hồ: 20°51'32.2\"N 107°29'00.8\"E; Miếu Cao Sơn: 20°52'29.0\"N 107°29'37.8\"E"
+ },
+ {
+  "ma": "VD03",
+  "nhom": "Quốc gia",
+  "ten": "Địa điểm lưu niệm Chủ tịch Hồ Chí Minh trên đảo Ngọc Vừng",
+  "ten_day_du": "Địa điểm lưu niệm Chủ tịch Hồ Chí Minh trên đảo Ngọc Vừng",
+  "khu_vuc": "Ngọc Vừng",
+  "dc_cu": "Xã Ngọc Vừng",
+  "dc_moi": "Thôn Ngọc Vừng, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Quốc gia",
+  "diem": [
+   {
+    "ten": "Địa điểm lưu niệm Chủ tịch Hồ Chí Minh trên đảo Ngọc Vừng",
+    "lat": 20.813944,
+    "lng": 107.359194,
+    "dms": "20°48'50.2\"N 107°21'33.1\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°48'50.2\"N 107°21'33.1\"E"
+ },
+ {
+  "ma": "VD04",
+  "nhom": "Quốc gia",
+  "ten": "Di tích khảo cổ Ba Vũng",
+  "ten_day_du": "Di tích khảo cổ Ba Vũng",
+  "khu_vuc": "Hạ Long",
+  "dc_cu": "Thôn 3, Xã Hạ Long",
+  "dc_moi": "Khu phố Hạ Long 1, Đặc khu Vân Đồn",
+  "loai": "Khảo cổ",
+  "cap": "Quốc gia",
+  "diem": [
+   {
+    "ten": "Di tích khảo cổ Ba Vũng",
+    "lat": 21.093083,
+    "lng": 107.470278,
+    "dms": "21°05'35.1\"N 107°28'13.0\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "21°05'35.1\"N 107°28'13.0\"E"
+ },
+ {
+  "ma": "VD05",
+  "nhom": "Cấp tỉnh",
+  "ten": "Trận địa pháo 12,7 mm của dân quân xã Ngọc Vừng",
+  "ten_day_du": "Trận địa pháo 12,7 mm của dân quân xã Ngọc Vừng",
+  "khu_vuc": "Ngọc Vừng",
+  "dc_cu": "Xã Ngọc Vừng huyện Vân Đồn",
+  "dc_moi": "Thôn Ngọc Vừng, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Cấp tỉnh",
+  "diem": [
+   {
+    "ten": "Trận địa pháo 12,7 mm của dân quân xã Ngọc Vừng",
+    "lat": 20.816667,
+    "lng": 107.352778,
+    "dms": "20°48'60.0\"N 107°21'10.0\"E",
+    "tuong_doi": true,
+    "sua": "Sửa định dạng 60\" → +1'"
+   }
+  ],
+  "ghichu": "Vị trí tương đối: 20°48'60.0\"N 107°21'10.0\"E"
+ },
+ {
+  "ma": "VD06",
+  "nhom": "Cấp tỉnh",
+  "ten": "Đình -Miếu Ngọc Vừng",
+  "ten_day_du": "Đình -Miếu Ngọc Vừng",
+  "khu_vuc": "Ngọc Vừng",
+  "dc_cu": "Xã Ngọc Vừng huyện Vân Đồn",
+  "dc_moi": "Thôn Ngọc Vừng, Đặc khu Vân Đồn",
+  "loai": "Di tích lịch sử",
+  "cap": "Cấp tỉnh",
+  "diem": [
+   {
+    "ten": "Đình",
+    "lat": 20.819472,
+    "lng": 107.358361,
+    "dms": "20°49'10.1\"N 107°21'30.1\"E",
+    "tuong_doi": false,
+    "sua": ""
+   },
+   {
+    "ten": "Miếu",
+    "lat": 20.819472,
+    "lng": 107.358361,
+    "dms": "20°49'10.1\"N 107°21'30.1\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Đình: 20°49'10.1\"N 107°21'30.1\"E; Miếu: 20°49'10.1\"N 107°21'30.1\"E"
+ },
+ {
+  "ma": "VD07",
+  "nhom": "Cấp tỉnh",
+  "ten": "Đền thờ Vua Lý Anh Tông và Động Đông Trong",
+  "ten_day_du": "Đền thờ Vua Lý Anh Tông và Động Đông Trong",
+  "khu_vuc": "Cái Rồng",
+  "dc_cu": "Thị trấn Cái Rồng huyện Vân Đồn",
+  "dc_moi": "Khu phố Cái Rồng 4, Đặc khu Vân Đồn",
+  "loai": "Lịch sử - Danh thắng",
+  "cap": "Cấp tỉnh",
+  "diem": [
+   {
+    "ten": "Đền Vua Lý Anh Tông",
+    "lat": 21.062528,
+    "lng": 107.429083,
+    "dms": "21°03'45.1\"N 107°25'44.7\"E",
+    "tuong_doi": false,
+    "sua": ""
+   },
+   {
+    "ten": "Động Đông Trong",
+    "lat": 20.875833,
+    "lng": 107.496833,
+    "dms": "20°52'33.0\"N 107°29'48.6\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Đền Vua Lý Anh Tông: 21°03'45.1\"N 107°25'44.7\"E; Động Đông Trong: 20°52'33.0\"N 107°29'48.6\"E"
+ },
+ {
+  "ma": "VD08",
+  "nhom": "Cấp tỉnh",
+  "ten": "Thành cổ Ngọc Vừng",
+  "ten_day_du": "Thành cổ Ngọc Vừng",
+  "khu_vuc": "Ngọc Vừng",
+  "dc_cu": "Xã Ngọc Vừng huyện Vân Đồn",
+  "dc_moi": "Thôn Ngọc Vừng, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Cấp tỉnh",
+  "diem": [
+   {
+    "ten": "Thành cổ Ngọc Vừng",
+    "lat": 20.801194,
+    "lng": 107.374139,
+    "dms": "20°48'04.3\"N 107°22'26.9\"E",
+    "tuong_doi": true,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Vị trí tương đối: 20°48'04.3\"N 107°22'26.9\"E"
+ },
+ {
+  "ma": "VD09",
+  "nhom": "Cấp tỉnh",
+  "ten": "Căn cứ kháng chiến Khe Mai",
+  "ten_day_du": "Căn cứ kháng chiến Khe Mai",
+  "khu_vuc": "Đoàn Kết",
+  "dc_cu": "Xã Đoàn Kết huyện Vân Đồn",
+  "dc_moi": "Thôn Đoàn Kết 1, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Cấp tỉnh",
+  "diem": [
+   {
+    "ten": "Căn cứ kháng chiến Khe Mai",
+    "lat": 21.121278,
+    "lng": 107.428611,
+    "dms": "21°07'16.6\"N 107°25'43.0\"E",
+    "tuong_doi": true,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Vị trí tương đối 21°07'16.6\"N 107°25'43.0\"E"
+ },
+ {
+  "ma": "VD10",
+  "nhom": "Cấp tỉnh",
+  "ten": "Đền Mẫu",
+  "ten_day_du": "Đền Mẫu",
+  "khu_vuc": "Quan Lạn",
+  "dc_cu": "Xã Quan Lạn huyện Vân Đồn",
+  "dc_moi": "Thôn Quan Lạn 1, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Cấp tỉnh",
+  "diem": [
+   {
+    "ten": "Đền Mẫu",
+    "lat": 20.824944,
+    "lng": 107.470806,
+    "dms": "20°49'29.8\"N 107°28'14.9\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°49'29.8\"N 107°28'14.9\"E"
+ },
+ {
+  "ma": "VD11",
+  "nhom": "Cấp tỉnh",
+  "ten": "Đền Trấn Hải (đền Cậu)",
+  "ten_day_du": "Đền Trấn Hải (đền Cậu)",
+  "khu_vuc": "Quan Lạn",
+  "dc_cu": "Thôn Yến Hải, xã Quan Lạn huyện Vân Đồn",
+  "dc_moi": "Thôn Quan Lạn 1, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Cấp tỉnh",
+  "diem": [
+   {
+    "ten": "Đền Trấn Hải (đền Cậu)",
+    "lat": 20.971,
+    "lng": 107.533556,
+    "dms": "20°58'15.6\"N 107°32'00.8\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°58'15.6\"N 107°32'00.8\"E"
+ },
+ {
+  "ma": "VD12",
+  "nhom": "Kiểm kê",
+  "ten": "Hang Nhà Trò",
+  "ten_day_du": "Hang Nhà Trò",
+  "khu_vuc": "Bản Sen",
+  "dc_cu": "Xã Bản Sen huyện Vân Đồn",
+  "dc_moi": "Thôn Bản Sen 1, Đặc khu Vân Đồn",
+  "loai": "Danh lam thắng cảnh",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Hang Nhà Trò",
+    "lat": 20.971056,
+    "lng": 107.491917,
+    "dms": "20°58'15.8\"N 107°29'30.9\"E",
+    "tuong_doi": true,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Vị trí tương đối: 20°58'15.8\"N 107°29'30.9\"E"
+ },
+ {
+  "ma": "VD13",
+  "nhom": "Kiểm kê",
+  "ten": "Đình Bản Sen",
+  "ten_day_du": "Đình Bản Sen",
+  "khu_vuc": "Bản Sen",
+  "dc_cu": "Xã Bản Sen huyện Vân Đồn",
+  "dc_moi": "Thôn Bản Sen 1, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Đình Bản Sen",
+    "lat": 20.943028,
+    "lng": 107.4995,
+    "dms": "20°56'34.9\"N 107°29'58.2\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°56'34.9\"N 107°29'58.2\"E"
+ },
+ {
+  "ma": "VD14",
+  "nhom": "Kiểm kê",
+  "ten": "Hang Hoi",
+  "ten_day_du": "Hang Hoi",
+  "khu_vuc": "Bản Sen",
+  "dc_cu": "Xã Bản Sen huyện Vân Đồn",
+  "dc_moi": "Thôn Bản Sen 1, Đặc khu Vân Đồn",
+  "loai": "DLTC",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Hang Hoi",
+    "lat": 21.016,
+    "lng": 107.442028,
+    "dms": "21°00'57.6\"N 107°26'31.3\"E",
+    "tuong_doi": true,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Vị trí tương đối: 21°00'57.6\"N 107°26'31.3\"E"
+ },
+ {
+  "ma": "VD15",
+  "nhom": "Kiểm kê",
+  "ten": "Nơi bắt sống giặc lái Mỹ",
+  "ten_day_du": "Nơi bắt sống giặc lái Mỹ",
+  "khu_vuc": "Cái Rồng",
+  "dc_cu": "Thị trấn Cái Rồng huyện Vân Đồn",
+  "dc_moi": "Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD16",
+  "nhom": "Kiểm kê",
+  "ten": "Đền thờ họ Lý (Miếu Ba Cô)",
+  "ten_day_du": "Đền thờ họ Lý (Miếu Ba Cô)",
+  "khu_vuc": "Cái Rồng",
+  "dc_cu": "Thị trấn Cái Rồng huyện Vân Đồn",
+  "dc_moi": "Khu phố Cái Rồng 3, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Đền thờ họ Lý (Miếu Ba Cô)",
+    "lat": 21.07175,
+    "lng": 107.425722,
+    "dms": "21°04'18.3\"N 107°25'32.6\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "21°04'18.3\"N 107°25'32.6\"E"
+ },
+ {
+  "ma": "VD17",
+  "nhom": "Kiểm kê",
+  "ten": "Đình làng Hà Vực",
+  "ten_day_du": "Đình làng Hà Vực",
+  "khu_vuc": "Đoàn Kết",
+  "dc_cu": "Xã Đoàn Kết huyện Vân Đồn",
+  "dc_moi": "Thôn Đoàn Kết 1, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Đình làng Hà Vực",
+    "lat": 21.108861,
+    "lng": 107.415639,
+    "dms": "21°06'31.9\"N 107°24'56.3\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "21°06'31.9\"N 107°24'56.3\"E"
+ },
+ {
+  "ma": "VD18",
+  "nhom": "Kiểm kê",
+  "ten": "Hang Soi Nhụ",
+  "ten_day_du": "Hang Soi Nhụ",
+  "khu_vuc": "Hạ Long",
+  "dc_cu": "Xã Hạ Long huyện Vân Đồn",
+  "dc_moi": "Đặc khu Vân Đồn",
+  "loai": "Khảo cổ",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD19",
+  "nhom": "Kiểm kê",
+  "ten": "Hang Hà Giắt",
+  "ten_day_du": "Hang Hà Giắt",
+  "khu_vuc": "Hạ Long",
+  "dc_cu": "Xã Hạ Long huyện Vân Đồn",
+  "dc_moi": "Khu phố Hạ Long 1, Đặc khu Vân Đồn",
+  "loai": "Khảo cổ",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD20",
+  "nhom": "Kiểm kê",
+  "ten": "Bãi tắm Hạ Long",
+  "ten_day_du": "Bãi tắm Hạ Long",
+  "khu_vuc": "Hạ Long",
+  "dc_cu": "Xã Hạ Long huyện Vân Đồn",
+  "dc_moi": "Khu phố Hạ Long 1, Đặc khu Vân Đồn",
+  "loai": "DLTC",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Bãi tắm Hạ Long",
+    "lat": 21.10775,
+    "lng": 107.484639,
+    "dms": "21°06'27.9\"N 107°29'04.7\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "21°06'27.9\"N 107°29'04.7\"E"
+ },
+ {
+  "ma": "VD21",
+  "nhom": "Kiểm kê",
+  "ten": "Đình làng Minh Châu",
+  "ten_day_du": "Đình làng Minh Châu",
+  "khu_vuc": "Minh Châu",
+  "dc_cu": "Xã Minh Châu huyện Vân Đồn",
+  "dc_moi": "Thôn Minh Châu, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Đình làng Minh Châu",
+    "lat": 20.936722,
+    "lng": 107.541556,
+    "dms": "20°56'12.2\"N 107°32'29.6\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°56'12.2\"N 107°32'29.6\"E"
+ },
+ {
+  "ma": "VD22",
+  "nhom": "Kiểm kê",
+  "ten": "Bãi tắm Minh Châu",
+  "ten_day_du": "Bãi tắm Minh Châu",
+  "khu_vuc": "Minh Châu",
+  "dc_cu": "Xã Minh Châu huyện Vân Đồn",
+  "dc_moi": "Thôn Minh Châu, Đặc khu Vân Đồn",
+  "loai": "DLTC",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Bãi tắm Minh Châu",
+    "lat": 20.945306,
+    "lng": 107.550361,
+    "dms": "20°56'43.1\"N 107°33'01.3\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°56'43.1\"N 107°33'01.3\"E"
+ },
+ {
+  "ma": "VD23",
+  "nhom": "Kiểm kê",
+  "ten": "Miếu Cổng Bà",
+  "ten_day_du": "Miếu Cổng Bà",
+  "khu_vuc": "Minh Châu",
+  "dc_cu": "Xã Minh Châu huyện Vân Đồn",
+  "dc_moi": "Thôn Minh Châu, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Miếu Cổng Bà",
+    "lat": 20.971,
+    "lng": 107.533556,
+    "dms": "20°58'15.6\"N 107°32'00.8\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°58'15.6\"N 107°32'00.8\"E"
+ },
+ {
+  "ma": "VD24",
+  "nhom": "Kiểm kê",
+  "ten": "Bến Cái Cổng",
+  "ten_day_du": "Bến Cái Cổng",
+  "khu_vuc": "Minh Châu",
+  "dc_cu": "Xã Minh Châu huyện Vân Đồn",
+  "dc_moi": "Thôn Minh Châu, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD25",
+  "nhom": "Kiểm kê",
+  "ten": "Bến Con Quy",
+  "ten_day_du": "Bến Con Quy",
+  "khu_vuc": "Minh Châu",
+  "dc_cu": "Xã Minh Châu huyện Vân Đồn",
+  "dc_moi": "Thôn Minh Châu, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD26",
+  "nhom": "Kiểm kê",
+  "ten": "Đền Đức Ông",
+  "ten_day_du": "Đền Đức Ông",
+  "khu_vuc": "Minh Châu",
+  "dc_cu": "Xã Minh Châu huyện Vân Đồn",
+  "dc_moi": "Thôn Minh Châu, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Đền Đức Ông",
+    "lat": 20.934222,
+    "lng": 107.538333,
+    "dms": "20°56'03.2\"N 107°32'18.0\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°56'03.2\"N 107°32'18.0\"E"
+ },
+ {
+  "ma": "VD27",
+  "nhom": "Kiểm kê",
+  "ten": "Bãi tắm Ngọc Vừng",
+  "ten_day_du": "Bãi tắm Ngọc Vừng",
+  "khu_vuc": "Ngọc Vừng",
+  "dc_cu": "Xã Ngọc Vừng huyện Vân Đồn",
+  "dc_moi": "Thôn Ngọc Vừng, Đặc khu Vân Đồn",
+  "loai": "DLTC",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Bãi tắm Ngọc Vừng",
+    "lat": 20.80825,
+    "lng": 107.356944,
+    "dms": "20°48'29.7\"N 107°21'25.0\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°48'29.7\"N 107°21'25.0\"E"
+ },
+ {
+  "ma": "VD28",
+  "nhom": "Kiểm kê",
+  "ten": "Bến Cống Yên",
+  "ten_day_du": "Bến Cống Yên",
+  "khu_vuc": "Ngọc Vừng",
+  "dc_cu": "Xã Ngọc Vừng huyện Vân Đồn",
+  "dc_moi": "Thôn Ngọc Vừng, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Bến Cống Yên",
+    "lat": 20.848361,
+    "lng": 107.341667,
+    "dms": "20°50'54.1\"N 107°20'30.0\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°50'54.1\"N 107°20'30.0\"E"
+ },
+ {
+  "ma": "VD29",
+  "nhom": "Kiểm kê",
+  "ten": "Bến Cống Hẹp",
+  "ten_day_du": "Bến Cống Hẹp",
+  "khu_vuc": "Ngọc Vừng",
+  "dc_cu": "Xã Ngọc Vừng huyện Vân Đồn",
+  "dc_moi": "Thôn Ngọc Vừng, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Bến Cống Hẹp",
+    "lat": 20.830917,
+    "lng": 107.358139,
+    "dms": "20°49'51.3\"N 107°21'29.3\"E",
+    "tuong_doi": true,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Vị trí tương đối 20°49'51.3\"N 107°21'29.3\"E"
+ },
+ {
+  "ma": "VD30",
+  "nhom": "Kiểm kê",
+  "ten": "Nhà thờ họ Phạm Văn",
+  "ten_day_du": "Nhà thờ họ Phạm Văn",
+  "khu_vuc": "Quan Lạn",
+  "dc_cu": "Xã Quan Lạn huyện Vân Đồn",
+  "dc_moi": "Thôn Quan Lạn 2, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD31",
+  "nhom": "Kiểm kê",
+  "ten": "Bãi tắm Quan Lạn",
+  "ten_day_du": "Bãi tắm Quan Lạn",
+  "khu_vuc": "Quan Lạn",
+  "dc_cu": "Xã Quan Lạn huyện Vân Đồn",
+  "dc_moi": "Thôn Quan Lạn 1, Đặc khu Vân Đồn",
+  "loai": "Danh lam thắng cảnh",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD32",
+  "nhom": "Kiểm kê",
+  "ten": "Đền Vân Hải",
+  "ten_day_du": "Đền Vân Hải",
+  "khu_vuc": "Quan Lạn",
+  "dc_cu": "Xã Quan Lạn huyện Vân Đồn",
+  "dc_moi": "Thôn Quan Lạn 3, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD33",
+  "nhom": "Kiểm kê",
+  "ten": "Bến Cống Cái",
+  "ten_day_du": "Bến Cống Cái",
+  "khu_vuc": "Quan Lạn",
+  "dc_cu": "Xã Quan Lạn huyện Vân Đồn",
+  "dc_moi": "Thôn Quan Lạn 3, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD34",
+  "nhom": "Kiểm kê",
+  "ten": "Đền, miếu Vân Sơn",
+  "ten_day_du": "Đền, miếu Vân Sơn",
+  "khu_vuc": "Quan Lạn",
+  "dc_cu": "Thôn Sơn Hào, xã Quan Lạn huyện Vân Đồn",
+  "dc_moi": "Thôn Quan Lạn 3, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Đền, miếu Vân Sơn",
+    "lat": 20.906333,
+    "lng": 107.522444,
+    "dms": "20°54'22.8\"N 107°31'20.8\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°54'22.8\"N 107°31'20.8\"E"
+ },
+ {
+  "ma": "VD35",
+  "nhom": "Kiểm kê",
+  "ten": "Miếu Bà",
+  "ten_day_du": "Miếu Bà",
+  "khu_vuc": "Quan Lạn",
+  "dc_cu": "Xã Quan Lạn huyện Vân Đồn",
+  "dc_moi": "Thôn Quan Lạn 3, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD36",
+  "nhom": "Kiểm kê",
+  "ten": "Hang Quan",
+  "ten_day_du": "Hang Quan",
+  "khu_vuc": "Thắng Lợi",
+  "dc_cu": "Xã Thắng Lợi huyện Vân Đồn",
+  "dc_moi": "Thôn Thắng Lợi, Đặc khu Vân Đồn",
+  "loai": "DLTC",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Hang Quan",
+    "lat": 20.900083,
+    "lng": 107.328389,
+    "dms": "20°54'00.3\"N 107°19'42.2\"E",
+    "tuong_doi": true,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Vị trí tương đối: 20°54'00.3\"N 107°19'42.2\"E"
+ },
+ {
+  "ma": "VD37",
+  "nhom": "Kiểm kê",
+  "ten": "Chùa vụng Chuồng Bò",
+  "ten_day_du": "Chùa vụng Chuồng Bò",
+  "khu_vuc": "Thắng Lợi",
+  "dc_cu": "Xã Thắng Lợi huyện Vân Đồn",
+  "dc_moi": "Thôn Thắng Lợi, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Chùa vụng Chuồng Bò",
+    "lat": 20.887139,
+    "lng": 107.3075,
+    "dms": "20°53'13.7\"N 107°18'27.0\"E",
+    "tuong_doi": true,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Vị trí tương đối: 20°53'13.7\"N 107°18'27.0\"E"
+ },
+ {
+  "ma": "VD38",
+  "nhom": "Kiểm kê",
+  "ten": "Đền Vạ Giếng (đền Vụng Giếng)",
+  "ten_day_du": "Đền Vạ Giếng (đền Vụng Giếng)",
+  "khu_vuc": "Thắng Lợi",
+  "dc_cu": "Xã Thắng Lợi huyện Vân Đồn",
+  "dc_moi": "Thôn Thắng Lợi, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Đền Vạ Giếng (đền Vụng Giếng)",
+    "lat": 20.910528,
+    "lng": 107.313694,
+    "dms": "20°54'37.9\"N 107°18'49.3\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°54'37.9\"N 107°18'49.3\"E"
+ },
+ {
+  "ma": "VD39",
+  "nhom": "Kiểm kê",
+  "ten": "Chùa Trong",
+  "ten_day_du": "Chùa Trong",
+  "khu_vuc": "Thắng Lợi",
+  "dc_cu": "Xã Thắng Lợi huyện Vân Đồn",
+  "dc_moi": "Thôn Thắng Lợi, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Chùa Trong",
+    "lat": 20.880806,
+    "lng": 107.317694,
+    "dms": "20°52'50.9\"N 107°19'03.7\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "20°52'50.9\"N 107°19'03.7\"E"
+ },
+ {
+  "ma": "VD40",
+  "nhom": "Kiểm kê",
+  "ten": "Chùa Cái Bầu",
+  "ten_day_du": "Chùa Cái Bầu",
+  "khu_vuc": "Hạ Long",
+  "dc_cu": "Xã Hạ Long huyện Vân Đồn",
+  "dc_moi": "Khu phố Hạ Long 1, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Chùa Cái Bầu",
+    "lat": 21.123278,
+    "lng": 107.505083,
+    "dms": "21°07'23.8\"N 107°30'18.3\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "21°07'23.8\"N 107°30'18.3\"E"
+ },
+ {
+  "ma": "VD41",
+  "nhom": "Kiểm kê",
+  "ten": "Miếu Cái Bầu (Đại vương Cổ Miếu)",
+  "ten_day_du": "Miếu Cái Bầu (Đại vương Cổ Miếu)",
+  "khu_vuc": "Vạn Yên",
+  "dc_cu": "Xã Vạn Yên huyện Vân Đồn",
+  "dc_moi": "Thôn Vạn Yên 1, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Miếu Cái Bầu (Đại vương Cổ Miếu)",
+    "lat": 21.1215,
+    "lng": 107.505222,
+    "dms": "21°07’17.4”N 107°30’18.8”E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "21°07’17.4”N 107°30’18.8”E"
+ },
+ {
+  "ma": "VD42",
+  "nhom": "Kiểm kê",
+  "ten": "Di tích lưu niệm Bác Hồ",
+  "ten_day_du": "Di tích lưu niệm Bác Hồ",
+  "khu_vuc": "Vạn Yên",
+  "dc_cu": "Xã Vạn Yên huyện Vân Đồn",
+  "dc_moi": "Thôn Vạn Yên 2, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD43",
+  "nhom": "Kiểm kê",
+  "ten": "Đường mòn Hồ Chí Minh trên biển",
+  "ten_day_du": "Đường mòn Hồ Chí Minh trên biển",
+  "khu_vuc": "Vạn Yên",
+  "dc_cu": "Xã Vạn Yên huyện Vân Đồn",
+  "dc_moi": "Thôn Vạn Yên 2, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [],
+  "ghichu": ""
+ },
+ {
+  "ma": "VD44",
+  "nhom": "Kiểm kê",
+  "ten": "Địa điểm lưu niệm mỏ than Kế Bào",
+  "ten_day_du": "Địa điểm lưu niệm mỏ than Kế Bào",
+  "khu_vuc": "Vạn Yên",
+  "dc_cu": "Xã Vạn Yên huyện Vân Đồn",
+  "dc_moi": "Thôn Vạn Yên 2, Đặc khu Vân Đồn",
+  "loai": "Lịch sử",
+  "cap": "Kiểm kê",
+  "diem": [
+   {
+    "ten": "Cầu sắt Cái Bầu - Mỏ than Kế bào",
+    "lat": 21.131,
+    "lng": 107.501833,
+    "dms": "21°07'51.6\"N 107°30'06.6\"E",
+    "tuong_doi": false,
+    "sua": ""
+   },
+   {
+    "ten": "Lò thông gió - Mỏ than Kế bào",
+    "lat": 21.140889,
+    "lng": 107.5085,
+    "dms": "21°08'27.2\"N 107°30'30.6\"E",
+    "tuong_doi": false,
+    "sua": ""
+   }
+  ],
+  "ghichu": "Cầu sắt Cái Bầu - Mỏ than Kế bào: 21°07'51.6\"N 107°30'06.6\"E; Lò thông gió - Mỏ than Kế bào : 21°08'27.2\"N 107°30'30.6\"E"
+ }
+]

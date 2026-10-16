@@ -1,0 +1,98 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static admin_dash %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static "admin/css/dashboard.css" %}">{% endblock %}
+{% block coltype %}colM{% endblock %}
+{% block bodyclass %}{{ block.super }} dashboard{% endblock %}
+{% block nav-breadcrumbs %}{% endblock %}
+{% block nav-sidebar %}{% endblock %}
+{% block content_title %}{% endblock %}
+
+{% block content %}
+{% admin_dashboard as dash %}
+<div id="content-main" class="vd-home">
+  <div class="vd-home-head">
+    <div>
+      <h1>Xin chào, {% firstof user.get_full_name user.get_username %}</h1>
+      <p>Hôm nay {% now "l, d/m/Y" %}. Dưới đây là tổng quan nội dung và các việc cần xử lý.</p>
+    </div>
+  </div>
+
+  {% if dash.tiles_tuongtac %}
+  <h2 class="vd-section-title">Tương tác của người dân, du khách</h2>
+  <ul class="vd-tiles">
+    {% for t in dash.tiles_tuongtac %}{% include "admin/core/_tile.html" %}{% endfor %}
+  </ul>
+  {% endif %}
+  {% if dash.tiles_ditich %}
+  <h2 class="vd-section-title">Nội dung di tích</h2>
+  <ul class="vd-tiles">
+    {% for t in dash.tiles_ditich %}{% include "admin/core/_tile.html" %}{% endfor %}
+  </ul>
+  {% endif %}
+
+  <div class="vd-home-grid">
+    <section class="vd-panel" aria-labelledby="vd-todo-h">
+      <h2 class="vd-section-title" id="vd-todo-h">Việc cần làm</h2>
+      {% if dash.todo %}
+      <ul class="vd-todo">
+        {% for t in dash.todo %}
+        <li class="tone-{{ t.tone }}">
+          {% if t.url %}<a href="{{ t.url }}">{% else %}<div class="vd-todo-row">{% endif %}
+            <span class="vd-todo-count">{{ t.count|so_vn }}</span>
+            <span class="vd-todo-text"><strong>{{ t.label }}</strong>{% if t.hint %}<span>{{ t.hint }}</span>{% endif %}</span>
+            {% if t.url %}<span class="vd-todo-go">Xem →</span>{% endif %}
+          {% if t.url %}</a>{% else %}</div>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="vd-empty">✓ Không có việc tồn đọng. Mọi thứ đã được xử lý.</p>
+      {% endif %}
+    </section>
+
+    <section class="vd-panel" aria-labelledby="vd-sc-h">
+      <h2 class="vd-section-title" id="vd-sc-h">Lối tắt</h2>
+      <ul class="vd-shortcuts">
+        {% for s in dash.shortcuts %}
+        <li><a href="{{ s.url }}" class="{% if s.primary %}is-primary{% endif %}">
+          <span class="vd-ico" aria-hidden="true">
+            {% if s.icon == "plus" %}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+            {% elif s.icon == "image" %}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></svg>
+            {% elif s.icon == "table" %}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg>
+            {% elif s.icon == "check" %}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            {% elif s.icon == "chart" %}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+            {% else %}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17h.01"/></svg>{% endif %}
+          </span>
+          <span>{{ s.label }}{% if s.hint %}<small>{{ s.hint }}</small>{% endif %}</span>
+        </a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+
+  <h2 class="vd-section-title">Các mục quản trị</h2>
+  {% if app_list %}
+  <div class="vd-apps">
+    {% for app in app_list|vd_app_list %}
+    <div class="app-{{ app.app_label }} module">
+      <table>
+        <caption><a href="{{ app.app_url }}" class="section">{{ app.name }}</a></caption>
+        {% for model in app.models %}
+        <tr class="model-{{ model.object_name|lower }}">
+          <th scope="row">{% if model.admin_url %}<a href="{{ model.admin_url }}">{{ model.name }}</a>{% else %}{{ model.name }}{% endif %}</th>
+          <td>{% if model.add_url %}<a href="{{ model.add_url }}" class="addlink">Thêm</a>{% endif %}</td>
+          <td>{% if model.admin_url and show_changelinks|default:True %}{% if model.view_only %}<a href="{{ model.admin_url }}" class="viewlink">Xem</a>{% else %}<a href="{{ model.admin_url }}" class="changelink">Sửa</a>{% endif %}{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p>Bạn chưa được cấp quyền quản lý mục nào. Liên hệ Quản trị hệ thống.</p>
+  {% endif %}
+</div>
+{% endblock %}
+
+{% block sidebar %}{% endblock %}

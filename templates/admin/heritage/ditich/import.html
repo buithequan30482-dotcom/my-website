@@ -1,0 +1,52 @@
+{% extends "admin/base_site.html" %}
+{% load static admin_urls %}
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static 'vd-admin/heritage/heritage-admin.css' %}">{% endblock %}
+{% block extrahead %}{{ block.super }}<script src="{% static 'vd-admin/heritage/common.js' %}" defer></script>{% endblock %}
+{% block bodyclass %}{{ block.super }} vdh-import-page{% endblock %}
+{% block breadcrumbs %}
+<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Trang chủ</a> › <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a> › <a href="{{ changelist_url }}">{{ opts.verbose_name_plural|capfirst }}</a> › Nhập từ Excel</div>
+{% endblock %}
+{% block content %}
+<div id="content-main" class="vdh-import">
+  <ol class="vdh-import-steps" aria-label="Các bước">
+    <li class="is-current"><span>1</span> Tải mẫu, điền dữ liệu</li>
+    <li><span>2</span> Tải lên và kiểm tra</li>
+    <li><span>3</span> Xác nhận nhập</li>
+  </ol>
+  <div class="vdh-import-grid">
+    <section class="vdh-card-box">
+      <h2 class="vdh-h">Bước 1 – Tải file mẫu</h2>
+      <p>File mẫu có sẵn danh sách chọn cho <em>Cấp xếp hạng</em>, <em>Khu vực</em> và sheet <strong>Huong dan</strong> giải thích từng cột.
+         Dòng 2 là ví dụ (mã {{ example_code }}) – xóa trước khi nhập.</p>
+      <p><a class="button default vdh-btn-icon" href="{{ template_url }}">⬇ Tải file mẫu (.xlsx)</a></p>
+      <details class="vdh-cols">
+        <summary>Các cột trong file ({{ columns|length }} cột)</summary>
+        <table class="vdh-table-plain">
+          <thead><tr><th scope="col">Cột</th><th scope="col">Bắt buộc</th><th scope="col">Ghi chú</th></tr></thead>
+          <tbody>{% for key, label, req, width, note in columns %}<tr><td><strong>{{ label }}</strong></td><td>{% if req %}<span class="vdh-req">Có</span>{% else %}–{% endif %}</td><td>{{ note }}</td></tr>{% endfor %}</tbody>
+        </table>
+      </details>
+      <p class="vdh-help-inline">Mẹo: muốn sửa hàng loạt di tích đã có, ở danh sách di tích chọn các dòng → thao tác <em>Xuất danh sách ra Excel</em>, sửa trong Excel rồi nhập lại bằng chế độ <em>Cập nhật theo mã</em>.</p>
+    </section>
+    <section class="vdh-card-box">
+      <h2 class="vdh-h">Bước 2 – Tải file lên để kiểm tra</h2>
+      <form method="post" enctype="multipart/form-data" novalidate>{% csrf_token %}
+        {% if form.non_field_errors %}{{ form.non_field_errors }}{% endif %}
+        <div class="vdh-field{% if form.file.errors %} errors{% endif %}">
+          <label for="{{ form.file.id_for_label }}" class="required">{{ form.file.label }}</label>
+          {{ form.file }}
+          {{ form.file.errors }}
+          <div class="help">{{ form.file.help_text }}</div>
+        </div>
+        <fieldset class="vdh-field vdh-radio">
+          <legend>{{ form.mode.label }}</legend>
+          {% for r in form.mode %}<label>{{ r.tag }} {{ r.choice_label }}</label>{% endfor %}
+          {% if not can_update %}<p class="help">Tài khoản của bạn chỉ dùng được chế độ Thêm mới.</p>{% endif %}
+        </fieldset>
+        <p class="vdh-help-inline">Hệ thống chỉ <strong>kiểm tra</strong> ở bước này, chưa ghi dữ liệu.</p>
+        <button type="submit" class="button default">Kiểm tra file</button>
+      </form>
+    </section>
+  </div>
+</div>
+{% endblock %}

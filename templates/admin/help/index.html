@@ -1,0 +1,40 @@
+{% extends "admin/base_site.html" %}
+{% load static admin_dash %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Trang chủ</a> &rsaquo; Hướng dẫn sử dụng</div>
+{% endblock %}
+{% block content_title %}{% endblock %}
+{% block nav-sidebar %}{% endblock %}
+
+{% block content %}
+<div id="content-main">
+  <div class="vd-help-head">
+    <div>
+      <h1>Hướng dẫn sử dụng</h1>
+      <p>Các bài hướng dẫn từng bước cho cán bộ quản trị. Bấm vào một bài để đọc; có thể in từng bài để dùng khi tập huấn.</p>
+    </div>
+    <div class="vd-noprint" style="display:flex;gap:8px;flex-wrap:wrap">
+      <a class="vd-btn vd-btn-primary" href="{% get_static_prefix %}docs/HDSD_Quan_tri.pdf" download>Tải tài liệu PDF</a>
+      {% if perms.core.change_helparticle %}<a class="vd-btn" href="{% url 'admin:core_helparticle_changelist' %}">Sửa nội dung hướng dẫn</a>{% endif %}
+    </div>
+  </div>
+  {% if articles %}
+  <ul class="vd-help-grid">
+    {% for a in articles %}
+    <li>
+      <a class="vd-help-card" href="{% url 'core:help_detail' a.slug %}">
+        <span class="vd-help-num">{{ forloop.counter }}</span>
+        {% if a.video_url %}<span class="vd-badge vd-badge-dong vd-has-video">Có video</span>{% endif %}
+        <h2>{{ a.title|strip_num }}</h2>
+        {% if a.summary %}<p>{{ a.summary }}</p>{% else %}<p></p>{% endif %}
+        <span class="vd-more">Đọc hướng dẫn →</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="vd-empty">Chưa có bài hướng dẫn nào.</p>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,210 @@
+# =============================================================================
+# Website di tích Đặc khu Vân Đồn – Docker Compose (production, 1 VPS 2 vCPU / 4 GB / 80 GB)
+# Chạy tại thư mục gốc dự án:  docker compose up -d --build   (hoặc: make up)
+# Biến cấu hình: ./.env (tạo bằng deploy/scripts/first-run.sh từ .env.example)
+#
+# Mạng: "backend" là mạng nội bộ (internal: không ra Internet) – db và redis CHỈ nằm ở đây;
+#       "edge" cho nginx (mở 80/443), certbot (gọi Let's Encrypt), web (gửi email SMTP), backup (rclone ra kho ngoài).
+#       Chỉ nginx publish cổng ra VPS.
+# =============================================================================
+name: vandon
+
+x-logging: &default-logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "5"
+
+services:
+  # ---------------------------------------------------------------- nginx ---
+  nginx:
+    image: nginx:1.28-alpine
+    restart: unless-stopped
+    depends_on:
+      web:
+        condition: service_started
+    ports:
+      - "${HTTP_PORT:-80}:80"
+      - "${HTTPS_PORT:-443}:443"
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+      EXTRA_DOMAINS: ${EXTRA_DOMAINS:-}
+      ADMIN_URL: ${ADMIN_URL:-quan-tri-vd/}
+      NGINX_SSL: ${NGINX_SSL:-auto}
+      TZ: Asia/Ho_Chi_Minh
+    volumes:
+      - ./deploy/nginx/templates:/etc/nginx/vandon/templates:ro
+      - ./deploy/nginx/snippets:/etc/nginx/vandon/snippets:ro
+      - ./deploy/nginx/10-vandon-select-config.envsh:/docker-entrypoint.d/10-vandon-select-config.envsh:ro
+      - static:/srv/static:ro
+      - media:/srv/media:ro
+      - certs:/etc/letsencrypt:ro
+      - certbot-www:/var/www/certbot:ro
+    # Nạp lại cấu hình 6 giờ/lần để nhận chứng chỉ đã gia hạn
+    command: ["/bin/sh", "-c", "while :; do sleep 6h; nginx -s reload; done & exec /docker-entrypoint.sh nginx -g 'daemon off;'"]
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/nginx-health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    networks: [edge, backend]
+    deploy:
+      resources:
+        limits: { cpus: "0.50", memory: 256M }
+    logging: *default-logging
+
+  # ------------------------------------------------------------------ web ---
+  # Không đặt container_name: deploy/scripts/update.sh tạm chạy 2 bản để cập nhật không gián đoạn.
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vandon-web:${APP_VERSION:-latest}
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      # Ghép từ POSTGRES_* nếu .env không đặt DATABASE_URL riêng
+      DATABASE_URL: ${DATABASE_URL:-postgres://${POSTGRES_USER:-vandon}:${POSTGRES_PASSWORD:?Thiếu POSTGRES_PASSWORD trong .env}@db:5432/${POSTGRES_DB:-vandon}}
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      MEDIA_ROOT: /srv/media
+      STATIC_SHARED_DIR: /srv/static
+    volumes:
+      - media:/srv/media
+      - static:/srv/static
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    expose:
+      - "8000"
+    stop_grace_period: 40s
+    # edge: cần ra Internet để gửi email SMTP (thông báo kiểm duyệt, đặt lại mật khẩu)
+    networks: [backend, edge]
+    deploy:
+      resources:
+        limits: { cpus: "1.50", memory: 1536M }
+    logging: *default-logging
+
+  # ------------------------------------------------------------------- db ---
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-vandon}
+      POSTGRES_USER: ${POSTGRES_USER:-vandon}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Thiếu POSTGRES_PASSWORD trong .env}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C.UTF-8"
+      TZ: Asia/Ho_Chi_Minh
+    # Tinh chỉnh cho ~1 GB RAM dành cho PostgreSQL (ước tính ban đầu, điều chỉnh theo thực tế)
+    command:
+      - postgres
+      - -c
+      - shared_buffers=256MB
+      - -c
+      - effective_cache_size=768MB
+      - -c
+      - work_mem=8MB
+      - -c
+      - maintenance_work_mem=64MB
+      - -c
+      - max_connections=60
+      - -c
+      - log_min_duration_statement=1000
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    shm_size: 256m
+    networks: [backend]
+    deploy:
+      resources:
+        limits: { cpus: "1.00", memory: 1024M }
+    logging: *default-logging
+
+  # ---------------------------------------------------------------- redis ---
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    # Chỉ làm cache + bộ đếm giới hạn tần suất: không cần lưu xuống đĩa
+    command: ["redis-server", "--save", "", "--appendonly", "no", "--maxmemory", "96mb", "--maxmemory-policy", "allkeys-lru"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+    networks: [backend]
+    deploy:
+      resources:
+        limits: { cpus: "0.25", memory: 128M }
+    logging: *default-logging
+
+  # --------------------------------------------------------------- backup ---
+  # cron trong container: CSDL hằng ngày (BACKUP_CRON, mặc định 02:00), media đầy đủ hằng tuần + gia tăng hằng ngày,
+  # tùy chọn rclone đẩy ra kho ngoài. Xem deploy/scripts/backup.sh
+  backup:
+    build:
+      context: ./deploy/backup
+    image: vandon-backup:latest
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      # web tạo volume "media" trước (giữ chủ sở hữu UID 10001 từ image); nếu backup tạo trước, volume thuộc root
+      web:
+        condition: service_started
+    environment:
+      PGHOST: db
+      PGPORT: "5432"
+      PGUSER: ${POSTGRES_USER:-vandon}
+      PGPASSWORD: ${POSTGRES_PASSWORD:?Thiếu POSTGRES_PASSWORD trong .env}
+      PGDATABASE: ${POSTGRES_DB:-vandon}
+      BACKUP_CRON: ${BACKUP_CRON:-0 2 * * *}
+      BACKUP_KEEP_DAYS: ${BACKUP_KEEP_DAYS:-30}
+      MEDIA_FULL_WEEKDAY: ${MEDIA_FULL_WEEKDAY:-7}
+      MEDIA_KEEP_WEEKS: ${MEDIA_KEEP_WEEKS:-5}
+      RCLONE_REMOTE: ${RCLONE_REMOTE:-}
+      RCLONE_KEEP_DAYS: ${RCLONE_KEEP_DAYS:-90}
+      RCLONE_CONFIG: /config/rclone/rclone.conf
+      TZ: Asia/Ho_Chi_Minh
+    volumes:
+      - backups:/backups
+      - media:/srv/media                 # ghi được: phục vụ restore.sh
+      - ./deploy/scripts:/scripts:ro
+      - ./deploy/rclone:/config/rclone   # đặt rclone.conf tại deploy/rclone/rclone.conf (nếu dùng kho ngoài)
+    networks: [backend, edge]
+    deploy:
+      resources:
+        limits: { cpus: "0.50", memory: 512M }
+    logging: *default-logging
+
+  # -------------------------------------------------------------- certbot ---
+  certbot:
+    image: certbot/certbot:v3.1.0
+    restart: unless-stopped
+    volumes:
+      - certs:/etc/letsencrypt
+      - certbot-www:/var/www/certbot
+    # Kiểm tra gia hạn 12 giờ/lần (certbot chỉ gia hạn khi còn < 30 ngày); nginx tự reload 6 giờ/lần
+    entrypoint: ["/bin/sh", "-c", "trap exit TERM; while :; do certbot renew --webroot -w /var/www/certbot --quiet; sleep 12h & wait $${!}; done"]
+    networks: [edge]
+    deploy:
+      resources:
+        limits: { cpus: "0.25", memory: 128M }
+    logging: *default-logging
+
+networks:
+  edge:
+  backend:
+    internal: true
+
+volumes:
+  pgdata:
+  media:
+  static:
+  backups:
+  certs:
+  certbot-www:

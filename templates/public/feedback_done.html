@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% trans "Đã gửi góp ý" %}{% endblock %}
+{% block content %}
+<div class="wrap page-head" style="padding-bottom:80px;max-width:760px">
+<h1>{% trans "Đã gửi góp ý" %}</h1>
+<p>{% trans "Cảm ơn bạn. Mã tra cứu của bạn là:" %}</p>
+<p class="code-big">{{ ma }}</p>
+<p class="muted">{% trans "Hãy lưu lại mã này để xem trạng thái xử lý và phản hồi." %}</p>
+<p><a class="btn" href="{% url 'interactions:lookup' %}?ma={{ ma }}">{% trans "Xem trạng thái" %}</a> <a class="btn btn-ghost" href="{% url 'heritage:home' %}">{% trans "Về trang chủ" %}</a></p>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+# Không đưa vào image: dữ liệu chạy, bí mật, tệp sinh ra, tài liệu nặng
+.git
+.gitignore
+**/__pycache__
+**/*.pyc
+**/*.pyo
+*.sqlite3
+db.sqlite3
+.env
+.env.*
+!.env.example
+media/
+staticfiles/
+docs/
+deploy/
+!deploy/docker/
+backups/
+*.log
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+*.swp
+.DS_Store
+DEV_NOTES.md
+# Tệp điều khiển triển khai (không cần trong image)
+docker-compose.yml
+Makefile
+README.md

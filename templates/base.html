@@ -1,0 +1,79 @@
+{% load i18n static %}<!doctype html>
+<html lang="{{ cur_lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{% trans "Di tích Vân Đồn" %}{% endblock %} | {% trans "Đặc khu Vân Đồn" %}</title>
+<meta name="description" content="{% block description %}{% trans "Tra cứu di tích lịch sử, văn hóa, danh thắng của Đặc khu Vân Đồn, Quảng Ninh: bản đồ, tuyến tham quan, lễ hội và thông tin đi lại." %}{% endblock %}">
+<meta name="theme-color" content="#0A4A4E">
+{% for l in lang_links %}<link rel="alternate" hreflang="{% if l.code == 'zh-hans' %}zh-Hans{% else %}{{ l.code }}{% endif %}" href="{{ request.scheme }}://{{ request.get_host }}{{ l.url }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ request.scheme }}://{{ request.get_host }}{% for l in lang_links %}{% if l.code == 'vi' %}{{ l.url }}{% endif %}{% endfor %}">
+<meta property="og:site_name" content="{% trans "Di tích Vân Đồn" %}">
+<meta property="og:title" content="{% block og_title %}{% trans "Di tích Vân Đồn" %}{% endblock %}">
+<meta property="og:description" content="{% block og_description %}{% trans "Tra cứu di tích lịch sử, văn hóa, danh thắng của Đặc khu Vân Đồn, Quảng Ninh." %}{% endblock %}">
+<meta property="og:type" content="website">
+{% block og_image %}{% endblock %}
+<link rel="icon" href="{% static 'img/favicon.svg' %}" type="image/svg+xml">
+<link rel="preload" href="{% static 'fonts/be-vietnam-pro-vietnamese-400-normal.woff2' %}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{% static 'css/site.css' %}">
+{% block head %}{% endblock %}
+<script>window.VD_I18N={view:"{% trans "Xem chi tiết" %}",copied:"{% trans "Đã sao chép" %}",geoFail:"{% trans "Không lấy được vị trí. Hãy cho phép trình duyệt truy cập vị trí." %}"};</script>
+</head>
+<body>
+<a class="skip" href="#main">{% trans "Bỏ qua, tới nội dung chính" %}</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="{% url 'heritage:home' %}">
+      <span class="brand-seal" aria-hidden="true">VĐ</span>
+      <span><span class="brand-name">{% trans "Di tích Vân Đồn" %}</span><span class="brand-sub">{% trans "Đặc khu Vân Đồn, tỉnh Quảng Ninh" %}</span></span>
+    </a>
+    <nav class="nav" id="main-nav" aria-label="{% trans "Điều hướng chính" %}">
+      <a href="{% url 'heritage:list' %}" {% if url_name == 'list' or url_name == 'detail' %}aria-current="page"{% endif %}>{% trans "Di tích" %}</a>
+      <a href="{% url 'heritage:map' %}" {% if url_name == 'map' %}aria-current="page"{% endif %}>{% trans "Bản đồ" %}</a>
+      <a href="{% url 'heritage:routes' %}" {% if url_name == 'routes' or url_name == 'route' %}aria-current="page"{% endif %}>{% trans "Tuyến tham quan" %}</a>
+      <a href="{% url 'heritage:festivals' %}" {% if url_name == 'festivals' %}aria-current="page"{% endif %}>{% trans "Lễ hội" %}</a>
+      <a href="{% url 'heritage:useful' %}" {% if url_name == 'useful' %}aria-current="page"{% endif %}>{% trans "Thông tin hữu ích" %}</a>
+      <a href="{% url 'interactions:feedback' %}" {% if url_name == 'feedback' %}aria-current="page"{% endif %}>{% trans "Góp ý" %}</a>
+    </nav>
+    <nav class="lang" aria-label="{% trans "Ngôn ngữ" %}">
+      {% for l in lang_links %}<a href="{{ l.url }}" hreflang="{{ l.code }}" lang="{{ l.code }}" title="{{ l.name }}"{% if l.current %} aria-current="true"{% endif %}>{{ l.short }}</a>{% endfor %}
+    </nav>
+    <button class="menu-btn" type="button" data-toggle="main-nav" aria-controls="main-nav" aria-expanded="false">{% trans "Menu" %}</button>
+  </div>
+</header>
+{% if messages %}<div class="wrap">{% for m in messages %}<div class="msg msg-{{ m.tags }}" role="status">{{ m }}</div>{% endfor %}</div>{% endif %}
+<main id="main">{% block content %}{% endblock %}</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <h2>{{ site_cfg.owner_name }}</h2>
+      {% if site_cfg.address %}<p>{{ site_cfg.address }}</p>{% endif %}
+      <p>{% if site_cfg.phone %}{% trans "Điện thoại" %}: <a href="tel:{{ site_cfg.phone }}">{{ site_cfg.phone }}</a><br>{% endif %}
+      {% if site_cfg.email %}Email: <a href="mailto:{{ site_cfg.email }}">{{ site_cfg.email }}</a>{% endif %}</p>
+    </div>
+    <div>
+      <h2>{% trans "Tra cứu" %}</h2>
+      <ul>
+        <li><a href="{% url 'heritage:list' %}">{% trans "Danh sách di tích" %}</a></li>
+        <li><a href="{% url 'heritage:map' %}">{% trans "Bản đồ di tích" %}</a></li>
+        <li><a href="{% url 'heritage:news' %}">{% trans "Tin tức" %}</a></li>
+        <li><a href="{% url 'heritage:page' 'gioi-thieu' %}">{% trans "Giới thiệu Vân Đồn" %}</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>{% trans "Hỗ trợ" %}</h2>
+      <ul>
+        <li><a href="{% url 'interactions:feedback' %}">{% trans "Gửi góp ý, mong muốn" %}</a></li>
+        <li><a href="{% url 'interactions:lookup' %}">{% trans "Tra cứu phản hồi" %}</a></li>
+        <li><a href="{% url 'heritage:page' 'chinh-sach-du-lieu' %}">{% trans "Chính sách dữ liệu cá nhân" %}</a></li>
+        {% if site_cfg.facebook_url %}<li><a href="{{ site_cfg.facebook_url }}" rel="noopener">Facebook</a></li>{% endif %}
+        {% if site_cfg.youtube_url %}<li><a href="{{ site_cfg.youtube_url }}" rel="noopener">YouTube</a></li>{% endif %}
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom"><div class="wrap"><span>© {% now "Y" %} {{ site_cfg.owner_name }}</span><span>{% trans "Ảnh có nhãn “Ảnh minh họa” là ảnh tạm, sẽ được thay bằng ảnh chính thức." %}</span></div></div>
+</footer>
+<script src="{% static 'js/site.js' %}" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,61 @@
+{% extends "base.html" %}{% load i18n static %}
+{% block title %}{% trans "Trang chủ" %}{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>{% trans "Vân Đồn – nơi lưu dấu thương cảng cổ Đại Việt" %}</h1>
+      <p class="lead">{% blocktrans %}Từ năm 1149, các bến cảng trên quần đảo Bái Tử Long đã đón thuyền buôn nhiều nước. Tra cứu di tích, xem vị trí trên bản đồ và chuẩn bị chuyến đi ra đảo.{% endblocktrans %}</p>
+      <ul class="hero-stats" aria-label="{% trans "Số lượng di tích theo cấp xếp hạng" %}">
+        <li><b>{{ counts.qgdb }}</b><span class="seal seal-qgdb">{% trans "Quốc gia đặc biệt" %}</span></li>
+        <li><b>{{ counts.qg }}</b><span class="seal seal-qg">{% trans "Quốc gia" %}</span></li>
+        <li><b>{{ counts.tinh }}</b><span class="seal seal-tinh">{% trans "Cấp tỉnh" %}</span></li>
+        <li><b>{{ counts.kiemke }}</b><span class="seal seal-kiemke">{% trans "Kiểm kê" %}</span></li>
+      </ul>
+      <form class="search" action="{% url 'heritage:list' %}" role="search">
+        <label class="sr-only" for="q-home">{% trans "Tìm di tích" %}</label>
+        <input id="q-home" name="q" type="search" placeholder="{% trans "Tên di tích, đảo, xã…" %}" data-suggest="{% url 'suggest' %}">
+        <button type="submit">{% trans "Tìm" %}</button>
+      </form>
+    </div>
+    <figure style="margin:0">
+      <div class="chart" id="hai-do" data-points="pts-home" data-hub="Cái Bầu" data-label="{% trans "Hải đồ vị trí các di tích Vân Đồn" %}"></div>
+      <figcaption class="chart-caption">{% trans "Vị trí di tích theo tọa độ trong danh mục. Bấm vào điểm để xem chi tiết; nét đứt minh họa hướng ra các đảo." %}</figcaption>
+    </figure>
+  </div>
+</section>
+<script id="pts-home" type="application/json">{{ points_json|safe }}</script>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><h2>{% trans "Di tích tiêu biểu" %}</h2><p>{% trans "Các di tích được xếp hạng quốc gia đặc biệt, quốc gia và những điểm nên đến khi tới Vân Đồn." %}</p></div>
+      <a class="link-more" href="{% url 'heritage:list' %}">{% blocktrans %}Xem cả {{ total }} di tích{% endblocktrans %}</a></div>
+    <div class="feature-grid">{% for d in featured %}{% include "partials/card.html" with big=forloop.first %}{% endfor %}</div>
+  </div>
+</section>
+
+{% if routes %}<section class="section band">
+  <div class="wrap">
+    <div class="section-head"><div><h2>{% trans "Tuyến tham quan" %}</h2><p>{% trans "Gợi ý hành trình theo chủ đề, đi lần lượt từng điểm." %}</p></div>
+      <a class="link-more" href="{% url 'heritage:routes' %}">{% trans "Tất cả tuyến" %}</a></div>
+    <div class="route-list">{% for r in routes %}{% include "partials/route_card.html" %}{% endfor %}</div>
+  </div>
+</section>{% endif %}
+
+{% if festivals %}<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><h2>{% trans "Lễ hội theo mùa" %}</h2><p>{% trans "Thời gian tính theo âm lịch, có thể thay đổi theo thông báo của địa phương." %}</p></div>
+      <a class="link-more" href="{% url 'heritage:festivals' %}">{% trans "Lịch lễ hội" %}</a></div>
+    <ol class="months">{% for l in festivals %}{% include "partials/festival_row.html" %}{% endfor %}</ol>
+  </div>
+</section>{% endif %}
+
+{% if travel %}<section class="section band">
+  <div class="wrap">
+    <div class="section-head"><div><h2>{% trans "Đến Vân Đồn" %}</h2><p>{% trans "Lịch tàu, giá vé thay đổi theo mùa – hãy liên hệ cảng trước khi đi." %}</p></div>
+      <a class="link-more" href="{% url 'heritage:useful' %}">{% trans "Thông tin hữu ích" %}</a></div>
+    <div class="travel">{% for t in travel %}<div><h3>{{ t.tieu_de }}</h3>{{ t.noi_dung|striptags|truncatewords:38 }}</div>{% endfor %}</div>
+  </div>
+</section>{% endif %}
+{% endblock %}
+{% block scripts %}<script src="{% static 'js/chart.js' %}" defer></script>{% endblock %}

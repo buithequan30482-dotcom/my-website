@@ -1,0 +1,67 @@
+{% extends "admin/base_site.html" %}
+{% load static admin_urls %}
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static 'vd-admin/heritage/heritage-admin.css' %}">{% endblock %}
+{% block extrahead %}{{ block.super }}<script src="{% static 'vd-admin/heritage/common.js' %}" defer></script>{% endblock %}
+{% block bodyclass %}{{ block.super }} vdh-import-page{% endblock %}
+{% block breadcrumbs %}
+<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Trang chủ</a> › <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a> › <a href="{{ changelist_url }}">{{ opts.verbose_name_plural|capfirst }}</a> › <a href="{{ import_url }}">Nhập từ Excel</a> › Kiểm tra</div>
+{% endblock %}
+{% block content %}
+{{ summary_json|json_script:"vdh-import-summary" }}
+<div id="content-main" class="vdh-import" data-import-preview>
+  <ol class="vdh-import-steps" aria-label="Các bước">
+    <li class="is-done"><span>1</span> Tải mẫu, điền dữ liệu</li>
+    <li class="is-done"><span>2</span> Tải lên và kiểm tra</li>
+    <li class="is-current"><span>3</span> Xác nhận nhập</li>
+  </ol>
+  <p>File <strong>{{ filename }}</strong>: <span data-sum="total">{{ summary.total }}</span> dòng dữ liệu –
+    <span class="vdh-pill vdh-pill-ok"><span data-sum="valid">{{ summary.valid }}</span> hợp lệ</span>
+    <span class="vdh-pill vdh-pill-bad"><span data-sum="invalid">{{ summary.invalid }}</span> lỗi</span>
+    {% if summary.warnings %}<span class="vdh-pill vdh-pill-warn">{{ summary.warnings }} có cảnh báo</span>{% endif %}
+    (<span data-sum="new">{{ summary.new }}</span> thêm mới, <span data-sum="existing">{{ summary.existing }}</span> cập nhật).
+    Chỉ các dòng <strong>hợp lệ</strong> được nhập; dòng lỗi bị bỏ qua.</p>
+
+  <form method="post" action="{{ import_url }}" class="vdh-import-confirm">{% csrf_token %}
+    <input type="hidden" name="token" value="{{ token }}">
+    <fieldset class="vdh-field vdh-radio">
+      <legend>Cách nhập</legend>
+      <label><input type="radio" name="mode" value="new"{% if mode == "new" %} checked{% endif %}> <strong>Thêm mới</strong> – chỉ thêm các mã chưa có; mã đã có báo lỗi</label>
+      {% if can_update %}<label><input type="radio" name="mode" value="update"{% if mode == "update" %} checked{% endif %}> <strong>Cập nhật theo mã</strong> – mã đã có thì cập nhật ô có dữ liệu, mã chưa có thì thêm mới</label>{% endif %}
+    </fieldset>
+
+    <div class="vdh-table-scroll">
+    <table class="vdh-import-table">
+      <thead><tr><th scope="col">Dòng</th><th scope="col">Mã</th><th scope="col">Tên</th><th scope="col">Cấp</th><th scope="col">Khu vực</th><th scope="col">Loại hình</th><th scope="col">Tọa độ</th><th scope="col">Kết quả kiểm tra</th></tr></thead>
+      <tbody>
+      {% for r in rows %}
+        <tr class="vdh-irow{% if r.skip %} is-skip{% endif %}" data-exists="{% if r.exists %}1{% else %}0{% endif %}" data-err-new="{{ r.errors_new|length }}" data-err-update="{{ r.errors_update|length }}" data-skip="{% if r.skip %}1{% else %}0{% endif %}">
+          <td>{{ r.row }}</td>
+          <td><strong>{{ r.ma|default:"—" }}</strong>{% if r.exists %}<br><small class="vdh-sub">đã có</small>{% endif %}</td>
+          <td>{{ r.raw.ten|default:"—" }}</td>
+          <td>{{ r.raw.cap|default:"—" }}</td>
+          <td>{{ r.khu_vuc_ten|default:r.raw.khu_vuc|default:"—" }}</td>
+          <td>{{ r.loai_hinh_ten|join:", "|default:r.raw.loai_hinh|default:"—" }}</td>
+          <td>{% if r.points %}{{ r.points|length }} điểm{% else %}—{% endif %}</td>
+          <td class="vdh-icheck">
+            {% if r.skip %}<span class="vdh-pill">Bỏ qua</span>{% endif %}
+            <div class="vdh-mode-new">
+              {% if not r.skip %}{% if r.errors_new %}<span class="vdh-pill vdh-pill-bad">Lỗi</span><ul class="vdh-msgs vdh-msgs-bad">{% for e in r.errors_new %}<li>{{ e }}</li>{% endfor %}</ul>{% else %}<span class="vdh-pill vdh-pill-ok">Hợp lệ – thêm mới</span>{% endif %}{% endif %}
+            </div>
+            <div class="vdh-mode-update">
+              {% if not r.skip %}{% if r.errors_update %}<span class="vdh-pill vdh-pill-bad">Lỗi</span><ul class="vdh-msgs vdh-msgs-bad">{% for e in r.errors_update %}<li>{{ e }}</li>{% endfor %}</ul>{% else %}<span class="vdh-pill vdh-pill-ok">Hợp lệ – {% if r.exists %}cập nhật{% else %}thêm mới{% endif %}</span>{% endif %}{% endif %}
+            </div>
+            {% if r.warnings %}<ul class="vdh-msgs vdh-msgs-warn">{% for w in r.warnings %}<li>{{ w }}</li>{% endfor %}</ul>{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    <div class="submit-row vdh-import-actions">
+      <a class="button vdh-btn-quiet" href="{{ import_url }}">‹ Tải file khác</a>
+      <span class="vdh-spacer"></span>
+      <button type="submit" class="button default vdh-confirm-btn">Xác nhận nhập <span data-sum="valid">{{ summary.valid }}</span> dòng hợp lệ</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

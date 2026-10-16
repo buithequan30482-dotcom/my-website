@@ -1,0 +1,44 @@
+{% extends "admin/login.html" %}
+{% comment %}Trang đăng nhập khu quản trị: kế thừa mẫu chuẩn của Django, thêm lời chào và nhắc khóa tạm.{% endcomment %}
+
+{% block content %}
+<div class="vd-login-head">
+  <h1>Đăng nhập khu quản trị</h1>
+  <p>Dành cho cán bộ được cấp tài khoản quản lý nội dung website di tích.</p>
+</div>
+{% if form.errors and not form.non_field_errors %}
+<p class="errornote">Vui lòng kiểm tra lại thông tin bên dưới.</p>
+{% endif %}
+{% for error in form.non_field_errors %}
+<p class="errornote{% if 'tạm khóa' in error %} vd-locked{% endif %}" role="alert">{{ error }}</p>
+{% endfor %}
+
+<div id="content-main">
+{% if user.is_authenticated %}
+<p class="errornote">Bạn đang đăng nhập bằng tài khoản {{ username }} nhưng không có quyền vào trang này. Đăng nhập bằng tài khoản khác?</p>
+{% endif %}
+
+<form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+  <div class="form-row">
+    {{ form.username.errors }}
+    <label for="{{ form.username.id_for_label }}" class="required">Tên đăng nhập</label> {{ form.username }}
+  </div>
+  <div class="form-row">
+    {{ form.password.errors }}
+    <label for="{{ form.password.id_for_label }}" class="required">Mật khẩu</label> {{ form.password }}
+    <input type="hidden" name="next" value="{{ next }}">
+  </div>
+  {% url 'admin_password_reset' as password_reset_url %}
+  {% if password_reset_url %}
+  <div class="password-reset-link"><a href="{{ password_reset_url }}">Quên mật khẩu?</a></div>
+  {% endif %}
+  <div class="submit-row">
+    <input type="submit" value="Đăng nhập">
+  </div>
+  <p class="vd-login-note">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+    <span>Nhập sai mật khẩu <strong>5 lần</strong> liên tiếp, tài khoản sẽ tạm khóa <strong>15 phút</strong>. Quên mật khẩu, liên hệ Quản trị hệ thống.</span>
+  </p>
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,97 @@
+{% extends "admin/base_site.html" %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Trang chủ</a> &rsaquo; Xác thực 2 lớp</div>
+{% endblock %}
+{% block content_title %}{% endblock %}
+{% block nav-sidebar %}{% endblock %}
+
+{% block content %}
+<div id="content-main" class="vd-otp">
+  <h1>Xác thực 2 lớp</h1>
+
+  {% if enabled %}
+    <div class="vd-otp-status">
+      <span class="vd-shield" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span>
+      <div>
+        <h2>Đang bật xác thực 2 lớp</h2>
+        <p>Mỗi lần đăng nhập, sau mật khẩu hệ thống sẽ hỏi mã 6 số trên ứng dụng xác thực của bạn.</p>
+      </div>
+    </div>
+    <div class="vd-otp-cards">
+      <div class="vd-card">
+        <h3>Đổi điện thoại hoặc cài lại ứng dụng</h3>
+        <p>Tạo mã bí mật mới và quét lại mã QR. Mã trên điện thoại cũ sẽ không dùng được nữa.</p>
+        <form method="post" action="{% url 'core:otp_reset' %}" data-vd-confirm="Đặt lại xác thực 2 lớp? Bạn sẽ phải quét mã QR mới ngay sau đó.">
+          {% csrf_token %}
+          <label for="reset-code">Mã 6 số hiện tại</label>
+          <div class="vd-code-row">
+            <input id="reset-code" class="vd-code-input" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required data-vd-otp placeholder="······">
+            <input type="submit" value="Đặt lại">
+          </div>
+        </form>
+      </div>
+      <div class="vd-card vd-card-danger">
+        <h3>Tắt xác thực 2 lớp</h3>
+        {% if required %}
+          <p>Tài khoản <strong>Quản trị hệ thống</strong> bắt buộc dùng xác thực 2 lớp (TR 8.2), không thể tắt. Nếu đổi điện thoại, dùng chức năng <em>Đặt lại</em> bên cạnh.</p>
+        {% else %}
+          <p>Không khuyến nghị. Tài khoản sẽ chỉ được bảo vệ bằng mật khẩu.</p>
+          <form method="post" action="{% url 'core:otp_disable' %}" data-vd-confirm="Tắt xác thực 2 lớp cho tài khoản này?">
+            {% csrf_token %}
+            <label for="off-code">Mã 6 số hiện tại</label>
+            <div class="vd-code-row">
+              <input id="off-code" class="vd-code-input" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required data-vd-otp placeholder="······">
+              <button type="submit" class="vd-btn vd-btn-danger">Tắt</button>
+            </div>
+          </form>
+        {% endif %}
+      </div>
+    </div>
+    <p class="vd-quiet" style="margin-top:16px">Mất điện thoại và không còn mã? Liên hệ Quản trị hệ thống để được đặt lại.</p>
+
+  {% else %}
+    {% if required %}
+      <div class="vd-callout vd-callout-son"><span><strong>Bắt buộc:</strong> tài khoản Quản trị hệ thống phải bật xác thực 2 lớp trước khi tiếp tục làm việc.</span></div>
+    {% endif %}
+    <p class="vd-otp-lead">Xác thực 2 lớp giúp tài khoản an toàn ngay cả khi lộ mật khẩu: khi đăng nhập, ngoài mật khẩu bạn nhập thêm mã 6 số thay đổi mỗi 30 giây trên điện thoại. Thực hiện 3 bước dưới đây, mất khoảng 2 phút.</p>
+    <ol class="vd-steps">
+      <li class="vd-step">
+        <div>
+          <h3>Cài ứng dụng xác thực trên điện thoại</h3>
+          <p>Tải miễn phí <strong>Google Authenticator</strong> hoặc <strong>Microsoft Authenticator</strong> từ App Store (iPhone) hoặc CH Play (Android).</p>
+        </div>
+      </li>
+      <li class="vd-step">
+        <div>
+          <h3>Quét mã QR</h3>
+          <p>Mở ứng dụng → bấm dấu <strong>+</strong> → <em>Quét mã QR</em>, hướng camera vào mã dưới đây.</p>
+          <div class="vd-qr-wrap">
+            <img class="vd-qr" src="data:image/png;base64,{{ qr }}" alt="Mã QR thiết lập xác thực 2 lớp" width="196" height="196">
+            <div>
+              <p style="margin-bottom:6px">Không quét được? Chọn <em>Nhập khóa thiết lập</em> và gõ mã sau:</p>
+              <code class="vd-secret" aria-label="Mã bí mật">{{ secret_groups }}</code>
+              <div style="margin-top:8px"><button type="button" class="vd-btn" data-vd-copy="{{ secret }}">Sao chép mã</button>
+              <a class="vd-btn" href="?new=1">Tạo mã khác</a></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="vd-step">
+        <div>
+          <h3>Nhập mã 6 số để xác nhận</h3>
+          <p>Nhập 6 số đang hiện trên ứng dụng (dưới tên <em>Di tich Van Don</em>).</p>
+          <form method="post">
+            {% csrf_token %}
+            <div class="vd-code-row">
+              <label class="visually-hidden" for="otp-code">Mã 6 số</label>
+              <input id="otp-code" class="vd-code-input" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required autofocus data-vd-otp placeholder="······">
+              <input type="submit" value="Xác nhận và bật">
+            </div>
+          </form>
+        </div>
+      </li>
+    </ol>
+  {% endif %}
+</div>
+{% endblock %}

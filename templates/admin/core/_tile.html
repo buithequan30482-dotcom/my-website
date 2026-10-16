@@ -1,0 +1,6 @@
+{% load admin_dash %}<li class="vd-tile tone-{{ t.tone }}">
+  {% if t.url %}<a href="{{ t.url }}" title="Xem danh sách: {{ t.label }}">{% else %}<div>{% endif %}
+    <span class="vd-tile-value">{{ t.value|so_vn }}</span>
+    <span class="vd-tile-label">{{ t.label }}</span>
+  {% if t.url %}</a>{% else %}</div>{% endif %}
+</li>

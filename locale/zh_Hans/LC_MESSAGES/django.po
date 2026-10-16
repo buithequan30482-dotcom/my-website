@@ -1,0 +1,872 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: vandon-heritage 1.0\n"
+"POT-Creation-Date: 2026-10-16 12:23+0700\n"
+"PO-Revision-Date: 2026-10-16 12:00+0700\n"
+"Last-Translator: Vân Đồn heritage website team\n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: heritage/models.py:25 templates/partials/map_legend.html:2
+#: templates/public/home.html:10
+msgid "Quốc gia đặc biệt"
+msgstr "国家特别级遗迹"
+
+#: heritage/models.py:26 templates/partials/map_legend.html:2
+#: templates/public/home.html:11
+msgid "Quốc gia"
+msgstr "国家级遗迹"
+
+#: heritage/models.py:27 templates/partials/map_legend.html:3
+#: templates/public/home.html:12
+msgid "Cấp tỉnh"
+msgstr "省级遗迹"
+
+#: heritage/models.py:28 templates/partials/map_legend.html:3
+#: templates/public/home.html:13
+msgid "Kiểm kê"
+msgstr "登记遗迹"
+
+#: heritage/models.py:35
+msgid "Tốt"
+msgstr "良好"
+
+#: heritage/models.py:36
+msgid "Đã tu bổ, tôn tạo"
+msgstr "已修缮、整饰"
+
+#: heritage/models.py:37
+msgid "Phế tích"
+msgstr "遗址"
+
+#: heritage/models.py:38 interactions/i18n_strings.py:13
+#: templates/partials/filters.html:17
+msgid "Khác"
+msgstr "其他"
+
+#: heritage/models.py:418 templates/public/detail.html:88
+msgid "Đi lại"
+msgstr "交通出行"
+
+#: heritage/models.py:419
+msgid "Lưu trú"
+msgstr "住宿"
+
+#: heritage/models.py:420
+msgid "Y tế, khẩn cấp"
+msgstr "医疗与急救"
+
+#: heritage/models.py:421 templates/public/detail.html:92
+msgid "Liên hệ"
+msgstr "联系方式"
+
+#: heritage/models.py:422
+msgid "Lưu ý khi tham quan"
+msgstr "参观须知"
+
+#: heritage/views.py:52
+#, python-format
+msgid "Đảo %s"
+msgstr "%s 岛"
+
+#: interactions/forms.py:48
+msgid ""
+"Vui lòng đồng ý chính sách dữ liệu khi để lại email hoặc số điện thoại."
+msgstr "如留下电子邮箱或电话号码，请同意数据政策。"
+
+#: interactions/forms.py:51
+msgid "Số điện thoại không hợp lệ."
+msgstr "电话号码无效。"
+
+#: interactions/forms.py:56
+msgid "Đánh giá của bạn"
+msgstr "您的评分"
+
+#: interactions/forms.py:57
+msgid "Vui lòng chọn số sao."
+msgstr "请选择星级。"
+
+#: interactions/forms.py:58
+msgid "Nhận xét"
+msgstr "评论"
+
+#: interactions/forms.py:60
+msgid "Nhận xét cần ít nhất 20 ký tự."
+msgstr "评论至少需要20个字符。"
+
+#: interactions/forms.py:61
+msgid "Tên hiển thị"
+msgstr "显示名称"
+
+#: interactions/forms.py:62 interactions/forms.py:83
+msgid "Email (không bắt buộc)"
+msgstr "电子邮箱（选填）"
+
+#: interactions/forms.py:63 interactions/forms.py:84
+msgid "Điện thoại (không bắt buộc)"
+msgstr "电话（选填）"
+
+#: interactions/forms.py:64 interactions/forms.py:85
+msgid "Tôi đồng ý với chính sách xử lý dữ liệu cá nhân"
+msgstr "我同意个人数据处理政策"
+
+#: interactions/forms.py:77
+msgid "Loại góp ý"
+msgstr "反馈类型"
+
+#: interactions/forms.py:79
+msgid "Di tích liên quan (không bắt buộc)"
+msgstr "相关遗迹（选填）"
+
+#: interactions/forms.py:79
+msgid "— Không chọn —"
+msgstr "— 不选择 —"
+
+#: interactions/forms.py:80
+msgid "Nội dung"
+msgstr "内容"
+
+#: interactions/forms.py:82
+msgid "Họ tên (không bắt buộc)"
+msgstr "姓名（选填）"
+
+#: interactions/i18n_strings.py:9
+msgid "Góp ý dịch vụ"
+msgstr "服务意见"
+
+#: interactions/i18n_strings.py:10
+msgid "Mong muốn, đề xuất"
+msgstr "愿望与建议"
+
+#: interactions/i18n_strings.py:11
+msgid "Báo di tích xuống cấp"
+msgstr "报告遗迹损坏"
+
+#: interactions/i18n_strings.py:12 templates/public/feedback.html:23
+msgid "Hỏi đáp"
+msgstr "咨询问答"
+
+#: interactions/i18n_strings.py:15
+msgid "Mới"
+msgstr "新提交"
+
+#: interactions/i18n_strings.py:16
+msgid "Đang xử lý"
+msgstr "处理中"
+
+#: interactions/i18n_strings.py:17
+msgid "Đã xử lý"
+msgstr "已处理"
+
+#: interactions/i18n_strings.py:18 templates/public/detail.html:139
+msgid "Đóng"
+msgstr "已关闭"
+
+#: interactions/views.py:61 interactions/views.py:75
+msgid "Cảm ơn bạn! Nhận xét sẽ hiển thị sau khi được kiểm duyệt."
+msgstr "谢谢！您的评论经审核后将会显示。"
+
+#: interactions/views.py:64 interactions/views.py:95
+msgid "Bạn đã gửi quá nhiều lần trong một giờ. Vui lòng thử lại sau."
+msgstr "您在一小时内提交次数过多，请稍后再试。"
+
+#: interactions/views.py:90
+msgid "Ảnh đính kèm phải là tệp ảnh, tối đa 5 MB mỗi ảnh."
+msgstr "附件须为图片文件，每张不超过5 MB。"
+
+#: templates/404.html:2 templates/404.html:3
+msgid "Không tìm thấy trang"
+msgstr "页面未找到"
+
+#: templates/404.html:3
+msgid "Đường dẫn có thể đã thay đổi. Hãy tìm di tích hoặc quay về trang chủ."
+msgstr "链接可能已变更。请搜索遗迹或返回首页。"
+
+#: templates/404.html:4 templates/public/home.html:16
+msgid "Tìm di tích"
+msgstr "搜索遗迹"
+
+#: templates/404.html:4 templates/partials/filters.html:5
+#: templates/public/home.html:18
+msgid "Tìm"
+msgstr "搜索"
+
+#: templates/base.html:6 templates/base.html:11 templates/base.html:12
+#: templates/base.html:28 templates/public/list.html:6
+msgid "Di tích Vân Đồn"
+msgstr "云屯遗迹"
+
+#: templates/base.html:6
+msgid "Đặc khu Vân Đồn"
+msgstr "云屯特区"
+
+#: templates/base.html:7
+msgid ""
+"Tra cứu di tích lịch sử, văn hóa, danh thắng của Đặc khu Vân Đồn, Quảng "
+"Ninh: bản đồ, tuyến tham quan, lễ hội và thông tin đi lại."
+msgstr "查询广宁省云屯特区的历史、文化遗迹与名胜：地图、参观路线、节庆及交通信息。"
+
+#: templates/base.html:13
+msgid ""
+"Tra cứu di tích lịch sử, văn hóa, danh thắng của Đặc khu Vân Đồn, Quảng "
+"Ninh."
+msgstr "查询广宁省云屯特区的历史、文化遗迹与名胜。"
+
+#: templates/base.html:20
+msgid "Xem chi tiết"
+msgstr "查看详情"
+
+#: templates/base.html:20
+msgid "Đã sao chép"
+msgstr "已复制"
+
+#: templates/base.html:20
+msgid "Không lấy được vị trí. Hãy cho phép trình duyệt truy cập vị trí."
+msgstr "无法获取您的位置，请允许浏览器访问位置信息。"
+
+#: templates/base.html:23
+msgid "Bỏ qua, tới nội dung chính"
+msgstr "跳至主要内容"
+
+#: templates/base.html:28
+msgid "Đặc khu Vân Đồn, tỉnh Quảng Ninh"
+msgstr "广宁省云屯特区"
+
+#: templates/base.html:30
+msgid "Điều hướng chính"
+msgstr "主导航"
+
+#: templates/base.html:31 templates/public/detail.html:14
+#: templates/public/list.html:5
+msgid "Di tích"
+msgstr "遗迹"
+
+#: templates/base.html:32 templates/public/list.html:30
+#: templates/public/map.html:5
+msgid "Bản đồ"
+msgstr "地图"
+
+#: templates/base.html:33 templates/public/home.html:39
+#: templates/public/route_detail.html:4 templates/public/routes.html:2
+#: templates/public/routes.html:4 templates/public/routes.html:5
+msgid "Tuyến tham quan"
+msgstr "参观路线"
+
+#: templates/base.html:34 templates/public/festivals.html:4
+msgid "Lễ hội"
+msgstr "节庆"
+
+#: templates/base.html:35 templates/public/home.html:56
+#: templates/public/useful.html:2 templates/public/useful.html:4
+#: templates/public/useful.html:5
+msgid "Thông tin hữu ích"
+msgstr "实用信息"
+
+#: templates/base.html:36 templates/public/feedback.html:4
+msgid "Góp ý"
+msgstr "意见反馈"
+
+#: templates/base.html:42
+msgid "Menu"
+msgstr "菜单"
+
+#: templates/base.html:52
+msgid "Điện thoại"
+msgstr "电话"
+
+#: templates/base.html:56 templates/public/feedback.html:22
+#: templates/public/lookup.html:6
+msgid "Tra cứu"
+msgstr "查询"
+
+#: templates/base.html:58 templates/public/list.html:2
+msgid "Danh sách di tích"
+msgstr "遗迹列表"
+
+#: templates/base.html:59 templates/public/map.html:2
+#: templates/public/map.html:6
+msgid "Bản đồ di tích"
+msgstr "遗迹地图"
+
+#: templates/base.html:60 templates/public/news.html:2
+#: templates/public/news.html:4 templates/public/news_detail.html:4
+msgid "Tin tức"
+msgstr "新闻"
+
+#: templates/base.html:61
+msgid "Giới thiệu Vân Đồn"
+msgstr "云屯简介"
+
+#: templates/base.html:65
+msgid "Hỗ trợ"
+msgstr "帮助"
+
+#: templates/base.html:67
+msgid "Gửi góp ý, mong muốn"
+msgstr "提交意见与建议"
+
+#: templates/base.html:68 templates/public/lookup.html:2
+#: templates/public/lookup.html:5
+msgid "Tra cứu phản hồi"
+msgstr "查询回复"
+
+#: templates/base.html:69
+msgid "Chính sách dữ liệu cá nhân"
+msgstr "个人数据政策"
+
+#: templates/base.html:75
+msgid ""
+"Ảnh có nhãn “Ảnh minh họa” là ảnh tạm, sẽ được thay bằng ảnh chính thức."
+msgstr "标有“示意图”的图片为临时图片，将替换为正式照片。"
+
+#: templates/partials/card.html:4
+msgid "Phế tích – tra cứu"
+msgstr "遗址（仅供查阅）"
+
+#: templates/partials/card.html:7
+#, python-format
+msgid "%(n)s đánh giá"
+msgid_plural "%(n)s đánh giá"
+msgstr[0] "%(n)s 条评价"
+
+#: templates/partials/filters.html:3
+msgid "Từ khóa"
+msgstr "关键词"
+
+#: templates/partials/filters.html:4
+msgid "Tìm tên di tích…"
+msgstr "输入遗迹名称…"
+
+#: templates/partials/filters.html:8
+msgid "Cấp xếp hạng"
+msgstr "保护级别"
+
+#: templates/partials/filters.html:11
+msgid "Loại hình"
+msgstr "类型"
+
+#: templates/partials/filters.html:14
+msgid "Khu vực / đảo"
+msgstr "区域 / 岛屿"
+
+#: templates/partials/filters.html:15
+msgid "đi tàu"
+msgstr "需乘船"
+
+#: templates/partials/filters.html:18
+msgid "Chỉ di tích tham quan được"
+msgstr "仅显示可参观遗迹"
+
+#: templates/partials/filters.html:20
+msgid "Lọc"
+msgstr "筛选"
+
+#: templates/partials/filters.html:20 templates/public/list.html:43
+msgid "Xóa bộ lọc"
+msgstr "清除筛选"
+
+#: templates/partials/map_legend.html:1
+msgid "Chú giải"
+msgstr "图例"
+
+#: templates/partials/map_legend.html:5
+msgid ""
+"Một số di tích chưa có tọa độ hoặc chỉ có vị trí tương đối, đang được cập "
+"nhật."
+msgstr "部分遗迹尚无坐标或仅有相对位置，正在更新中。"
+
+#: templates/public/detail.html:14 templates/public/feedback.html:4
+#: templates/public/festivals.html:4 templates/public/home.html:2
+#: templates/public/list.html:5 templates/public/map.html:5
+#: templates/public/news.html:4 templates/public/news_detail.html:4
+#: templates/public/page.html:4 templates/public/route_detail.html:4
+#: templates/public/routes.html:4 templates/public/useful.html:4
+msgid "Trang chủ"
+msgstr "首页"
+
+#: templates/public/detail.html:24
+msgid "Bản dịch đang cập nhật – nội dung dưới đây hiển thị bằng tiếng Việt."
+msgstr "翻译更新中——以下内容以越南语显示。"
+
+#: templates/public/detail.html:27
+msgid "Mục lục bài viết"
+msgstr "目录"
+
+#: templates/public/detail.html:28 templates/public/detail.html:35
+msgid "Ảnh"
+msgstr "图片"
+
+#: templates/public/detail.html:28
+msgid "Đánh giá"
+msgstr "评价"
+
+#: templates/public/detail.html:31
+msgid "Bài giới thiệu chi tiết đang được biên soạn."
+msgstr "详细介绍正在编写中。"
+
+#: templates/public/detail.html:33
+msgid "Hướng dẫn tham quan"
+msgstr "参观指南"
+
+#: templates/public/detail.html:36
+msgid "Xem ảnh lớn"
+msgstr "查看大图"
+
+#: templates/public/detail.html:39
+msgid "Video"
+msgstr "视频"
+
+#: templates/public/detail.html:44
+msgid "Lễ hội liên quan"
+msgstr "相关节庆"
+
+#: templates/public/detail.html:46
+msgid "Đánh giá, nhận xét"
+msgstr "评价与评论"
+
+#: templates/public/detail.html:48
+#, python-format
+msgid "%(n)s đánh giá đã duyệt"
+msgid_plural "%(n)s đánh giá đã duyệt"
+msgstr[0] "%(n)s 条已审核评价"
+
+#: templates/public/detail.html:49
+msgid "Phân bố số sao"
+msgstr "星级分布"
+
+#: templates/public/detail.html:54
+msgid "Ban quản trị"
+msgstr "管理方"
+
+#: templates/public/detail.html:55
+msgid "Chưa có nhận xét nào. Hãy là người đầu tiên chia sẻ trải nghiệm."
+msgstr "暂无评论，欢迎率先分享您的体验。"
+
+#: templates/public/detail.html:60
+msgid "Viết nhận xét"
+msgstr "撰写评论"
+
+#: templates/public/detail.html:65
+msgid "20–1.000 ký tự. Nhận xét hiển thị sau khi được kiểm duyệt."
+msgstr "20–1000个字符。评论经审核后显示。"
+
+#: templates/public/detail.html:70 templates/public/feedback.html:16
+msgid "Tôi đồng ý để Phòng Văn hóa – Xã hội xử lý thông tin liên hệ theo"
+msgstr "我同意文化社会科按照以下政策处理我的联系信息："
+
+#: templates/public/detail.html:70 templates/public/feedback.html:16
+msgid "chính sách dữ liệu cá nhân"
+msgstr "个人数据政策"
+
+#: templates/public/detail.html:70
+msgid "Chỉ cần khi để lại email."
+msgstr "仅在留下电子邮箱时需要勾选。"
+
+#: templates/public/detail.html:72
+msgid "Gửi nhận xét"
+msgstr "提交评论"
+
+#: templates/public/detail.html:76
+msgid "Nguồn tham khảo"
+msgstr "参考资料"
+
+#: templates/public/detail.html:83
+msgid "Thông tin tham quan"
+msgstr "参观信息"
+
+#: templates/public/detail.html:85
+msgid "Địa chỉ"
+msgstr "地址"
+
+#: templates/public/detail.html:85
+msgid "Trước 01/7/2025"
+msgstr "2025年7月1日前"
+
+#: templates/public/detail.html:86
+msgid "Phí tham quan"
+msgstr "门票"
+
+#: templates/public/detail.html:86
+msgid "Miễn phí"
+msgstr "免费"
+
+#: templates/public/detail.html:87
+msgid "Giờ mở cửa"
+msgstr "开放时间"
+
+#: templates/public/detail.html:88
+#, python-format
+msgid "Trên đảo %(dao)s – đi tàu từ Bến cảng Ao Tiên."
+msgstr "位于 %(dao)s 岛——从敖仙港乘船前往。"
+
+#: templates/public/detail.html:88
+msgid "Xem thông tin tàu"
+msgstr "查看船运信息"
+
+#: templates/public/detail.html:89
+msgid "Hiện trạng"
+msgstr "现状"
+
+#: templates/public/detail.html:90
+msgid "Xếp hạng"
+msgstr "列级决定"
+
+#: templates/public/detail.html:91
+msgid "Năm kiểm kê"
+msgstr "登记年份"
+
+#: templates/public/detail.html:91
+msgid "Năm xếp hạng"
+msgstr "列级年份"
+
+#: templates/public/detail.html:95
+msgid "Chỉ đường bằng Google Maps"
+msgstr "用 Google 地图导航"
+
+#: templates/public/detail.html:96
+msgid "Muốn đến"
+msgstr "想去"
+
+#: templates/public/detail.html:101
+msgid "Vị trí"
+msgstr "位置"
+
+#: templates/public/detail.html:104
+msgid "Bản đồ vị trí"
+msgstr "位置地图"
+
+#: templates/public/detail.html:110
+msgid "Đang cập nhật vị trí."
+msgstr "位置正在更新中。"
+
+#: templates/public/detail.html:111
+msgid "Các điểm của di tích"
+msgstr "遗迹内各点"
+
+#: templates/public/detail.html:111
+msgid "vị trí tương đối"
+msgstr "相对位置"
+
+#: templates/public/detail.html:111
+msgid "đang cập nhật vị trí"
+msgstr "位置更新中"
+
+#: templates/public/detail.html:115
+msgid "Chia sẻ"
+msgstr "分享"
+
+#: templates/public/detail.html:119
+msgid "Sao chép liên kết"
+msgstr "复制链接"
+
+#: templates/public/detail.html:120
+msgid "In trang"
+msgstr "打印页面"
+
+#: templates/public/detail.html:123
+msgid "Mã QR mở trang di tích"
+msgstr "遗迹页面二维码"
+
+#: templates/public/detail.html:124
+msgid "Quét mã để mở trang này. Mã dùng để in đặt tại di tích."
+msgstr "扫码打开本页。此二维码可打印后放置于遗迹现场。"
+
+#: templates/public/detail.html:131
+msgid "Di tích lân cận"
+msgstr "附近遗迹"
+
+#: templates/public/detail.html:134
+msgid "cùng đảo"
+msgstr "同岛"
+
+#: templates/public/detail.html:134
+msgid "cần đi tàu"
+msgstr "需乘船"
+
+#: templates/public/detail.html:134
+msgid "đường bộ"
+msgstr "陆路"
+
+#: templates/public/detail.html:138
+msgid "Xem ảnh"
+msgstr "查看图片"
+
+#: templates/public/detail.html:140
+msgid "Ảnh trước"
+msgstr "上一张"
+
+#: templates/public/detail.html:142
+msgid "Ảnh sau"
+msgstr "下一张"
+
+#: templates/public/feedback.html:2 templates/public/feedback.html:5
+msgid "Góp ý, mong muốn"
+msgstr "意见与建议"
+
+#: templates/public/feedback.html:6
+msgid ""
+"Gửi góp ý về dịch vụ, đề xuất, câu hỏi hoặc báo di tích xuống cấp. Sau khi "
+"gửi, bạn nhận mã tra cứu để xem phản hồi."
+msgstr "您可提交服务意见、建议、问题或报告遗迹损坏。提交后将获得查询码，用于查看回复。"
+
+#: templates/public/feedback.html:13
+msgid "Ảnh đính kèm (tối đa 3 ảnh, mỗi ảnh ≤ 5 MB)"
+msgstr "附加图片（最多3张，每张≤5 MB）"
+
+#: templates/public/feedback.html:16
+msgid "Chỉ cần khi để lại email hoặc số điện thoại."
+msgstr "仅在留下电子邮箱或电话号码时需要勾选。"
+
+#: templates/public/feedback.html:18
+msgid "Gửi góp ý"
+msgstr "提交反馈"
+
+#: templates/public/feedback.html:21
+msgid "Đã gửi góp ý?"
+msgstr "已提交反馈？"
+
+#: templates/public/feedback.html:21
+msgid "Nhập mã tra cứu để xem trạng thái xử lý và phản hồi."
+msgstr "输入查询码以查看处理状态和回复。"
+
+#: templates/public/feedback.html:22 templates/public/lookup.html:6
+msgid "Mã tra cứu"
+msgstr "查询码"
+
+#: templates/public/feedback_done.html:2 templates/public/feedback_done.html:5
+msgid "Đã gửi góp ý"
+msgstr "反馈已提交"
+
+#: templates/public/feedback_done.html:6
+msgid "Cảm ơn bạn. Mã tra cứu của bạn là:"
+msgstr "谢谢。您的查询码是："
+
+#: templates/public/feedback_done.html:8
+msgid "Hãy lưu lại mã này để xem trạng thái xử lý và phản hồi."
+msgstr "请保存此查询码，以便查看处理状态和回复。"
+
+#: templates/public/feedback_done.html:9
+msgid "Xem trạng thái"
+msgstr "查看状态"
+
+#: templates/public/feedback_done.html:9
+msgid "Về trang chủ"
+msgstr "返回首页"
+
+#: templates/public/festivals.html:2 templates/public/festivals.html:5
+msgid "Lễ hội, sự kiện"
+msgstr "节庆与活动"
+
+#: templates/public/festivals.html:5 templates/public/home.html:47
+msgid ""
+"Thời gian tính theo âm lịch, có thể thay đổi theo thông báo của địa phương."
+msgstr "日期按农历计算，可能根据当地通知调整。"
+
+#: templates/public/festivals.html:6
+msgid "Chưa có lễ hội nào."
+msgstr "暂无节庆信息。"
+
+#: templates/public/home.html:7
+msgid "Vân Đồn – nơi lưu dấu thương cảng cổ Đại Việt"
+msgstr "云屯——大越古商港的印记"
+
+#: templates/public/home.html:8
+msgid ""
+"Từ năm 1149, các bến cảng trên quần đảo Bái Tử Long đã đón thuyền buôn nhiều"
+" nước. Tra cứu di tích, xem vị trí trên bản đồ và chuẩn bị chuyến đi ra đảo."
+msgstr "自1149年起，拜子龙群岛的港口便迎来了各国商船。查询遗迹、在地图上查看位置，并规划您的海岛之旅。"
+
+#: templates/public/home.html:9
+msgid "Số lượng di tích theo cấp xếp hạng"
+msgstr "各级别遗迹数量"
+
+#: templates/public/home.html:17
+msgid "Tên di tích, đảo, xã…"
+msgstr "遗迹名称、岛屿、乡…"
+
+#: templates/public/home.html:22
+msgid "Hải đồ vị trí các di tích Vân Đồn"
+msgstr "云屯遗迹位置海图"
+
+#: templates/public/home.html:23
+msgid ""
+"Vị trí di tích theo tọa độ trong danh mục. Bấm vào điểm để xem chi tiết; nét"
+" đứt minh họa hướng ra các đảo."
+msgstr "按名录坐标标示遗迹位置。点击标记查看详情；虚线示意前往各岛的方向。"
+
+#: templates/public/home.html:31
+msgid "Di tích tiêu biểu"
+msgstr "代表性遗迹"
+
+#: templates/public/home.html:31
+msgid ""
+"Các di tích được xếp hạng quốc gia đặc biệt, quốc gia và những điểm nên đến "
+"khi tới Vân Đồn."
+msgstr "国家特别级、国家级遗迹以及游览云屯时值得一去的地方。"
+
+#: templates/public/home.html:32
+#, python-format
+msgid "Xem cả %(total)s di tích"
+msgstr "查看全部 %(total)s 处遗迹"
+
+#: templates/public/home.html:39
+msgid "Gợi ý hành trình theo chủ đề, đi lần lượt từng điểm."
+msgstr "按主题推荐的行程，逐一游览各个站点。"
+
+#: templates/public/home.html:40
+msgid "Tất cả tuyến"
+msgstr "全部路线"
+
+#: templates/public/home.html:47
+msgid "Lễ hội theo mùa"
+msgstr "四季节庆"
+
+#: templates/public/home.html:48
+msgid "Lịch lễ hội"
+msgstr "节庆日历"
+
+#: templates/public/home.html:55
+msgid "Đến Vân Đồn"
+msgstr "前往云屯"
+
+#: templates/public/home.html:55
+msgid "Lịch tàu, giá vé thay đổi theo mùa – hãy liên hệ cảng trước khi đi."
+msgstr "船期和票价随季节变化，出行前请先联系港口。"
+
+#: templates/public/list.html:7
+msgid ""
+"Lọc theo cấp xếp hạng, loại hình, khu vực; xem dạng danh sách hoặc bản đồ."
+msgstr "可按级别、类型、区域筛选；以列表或地图方式查看。"
+
+#: templates/public/list.html:11 templates/public/map.html:10
+msgid "Bộ lọc"
+msgstr "筛选条件"
+
+#: templates/public/list.html:16
+#, python-format
+msgid "%(n)s di tích"
+msgid_plural "%(n)s di tích"
+msgstr[0] "%(n)s 处遗迹"
+
+#: templates/public/list.html:20
+msgid "Sắp xếp"
+msgstr "排序"
+
+#: templates/public/list.html:22
+msgid "Nổi bật"
+msgstr "推荐"
+
+#: templates/public/list.html:23
+msgid "Tên A–Z"
+msgstr "名称 A–Z"
+
+#: templates/public/list.html:24
+msgid "Đánh giá cao"
+msgstr "评分最高"
+
+#: templates/public/list.html:25
+msgid "Gần tôi"
+msgstr "离我最近"
+
+#: templates/public/list.html:28
+msgid "Kiểu hiển thị"
+msgstr "显示方式"
+
+#: templates/public/list.html:29
+msgid "Danh sách"
+msgstr "列表"
+
+#: templates/public/list.html:39
+msgid "Phân trang"
+msgstr "分页"
+
+#: templates/public/list.html:43
+msgid "Không có di tích phù hợp với bộ lọc."
+msgstr "没有符合筛选条件的遗迹。"
+
+#: templates/public/lookup.html:9
+msgid "Mã"
+msgstr "编码"
+
+#: templates/public/lookup.html:10
+msgid "Loại"
+msgstr "类型"
+
+#: templates/public/lookup.html:11
+msgid "Ngày gửi"
+msgstr "提交日期"
+
+#: templates/public/lookup.html:12
+msgid "Trạng thái"
+msgstr "状态"
+
+#: templates/public/lookup.html:13
+msgid "Phản hồi"
+msgstr "回复"
+
+#: templates/public/lookup.html:13
+msgid "Chưa có phản hồi."
+msgstr "暂无回复。"
+
+#: templates/public/lookup.html:15
+msgid "Không tìm thấy mã tra cứu. Kiểm tra lại mã, ví dụ GY-2026-00001."
+msgstr "未找到该查询码，请核对，例如 GY-2026-00001。"
+
+#: templates/public/map.html:14
+msgid "Vị trí của tôi"
+msgstr "我的位置"
+
+#: templates/public/news.html:7
+msgid "Chưa có tin tức."
+msgstr "暂无新闻。"
+
+#: templates/public/route_detail.html:9
+msgid "Các điểm dừng"
+msgstr "途经站点"
+
+#: templates/public/route_detail.html:15
+msgid "Đường nét đứt nối các điểm theo thứ tự, không phải lộ trình thực tế."
+msgstr "虚线按顺序连接各站点，并非实际路线。"
+
+#: templates/public/routes.html:5
+msgid ""
+"Hành trình gợi ý theo chủ đề. Thời gian đi tàu ra đảo phụ thuộc lịch tàu và "
+"thời tiết."
+msgstr "按主题推荐的行程。乘船上岛的时间取决于船期和天气。"
+
+#: templates/public/routes.html:6
+msgid "Chưa có tuyến tham quan."
+msgstr "暂无参观路线。"
+
+#: templates/public/useful.html:5
+msgid ""
+"Mỗi mục ghi ngày cập nhật. Lịch tàu, giá vé thay đổi theo mùa – hãy liên hệ "
+"cảng trước khi đi."
+msgstr "每条信息均注明更新日期。船期和票价随季节变化，出行前请先联系港口。"
+
+#: templates/public/useful.html:7
+msgid "Nhóm thông tin"
+msgstr "信息分类"
+
+#: templates/public/useful.html:10
+msgid "Trang tham khảo"
+msgstr "参考页面"
+
+#: templates/public/useful.html:11
+#, python-format
+msgid "Cập nhật ngày %(d)s"
+msgstr "更新于 %(d)s"
+
+#: templates/public/useful.html:11
+msgid "Nguồn"
+msgstr "来源"

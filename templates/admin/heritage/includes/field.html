@@ -1,0 +1,10 @@
+<div class="vdh-field field-{{ f.name }}{% if f.errors %} errors{% endif %}{% if f.field.widget.input_type == 'checkbox' %} vdh-field-check{% endif %}{% if extra_class %} {{ extra_class }}{% endif %}">
+  {% if f.field.widget.input_type == 'checkbox' %}
+    <label for="{{ f.id_for_label }}">{{ f }} {{ f.label }}</label>
+  {% else %}
+    {{ f.label_tag }}
+    {{ f }}
+  {% endif %}
+  {{ f.errors }}
+  {% if f.help_text %}<div class="help" id="{{ f.id_for_label }}_helptext">{{ f.help_text|safe }}</div>{% endif %}
+</div>

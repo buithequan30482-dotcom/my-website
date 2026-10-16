@@ -1,0 +1,80 @@
+{% extends "admin/base_site.html" %}
+{% load static humanize %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static 'dashboard/dashboard.css' %}">{% endblock %}
+{% block extrahead %}{{ block.super }}<script src="{% static 'dashboard/moderation.js' %}" defer></script>{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Trang chủ quản trị</a> › <a href="{% url 'dashboard:index' %}">Thống kê tương tác</a> › Kiểm duyệt nhận xét</div>
+{% endblock %}
+
+{% block content_title %}{% endblock %}
+{% block content %}
+<div class="vd-dash vd-mod">
+  <header class="vd-head">
+    <div>
+      <h1>Kiểm duyệt nhận xét</h1>
+      <p class="vd-muted"><strong id="vd-con-lai">{{ tong|intcomma }}</strong> nhận xét đang chờ duyệt. Nhận xét nghi spam xếp lên đầu.</p>
+    </div>
+    <p class="vd-keys" aria-label="Phím tắt">
+      <kbd>j</kbd>/<kbd>k</kbd> di chuyển · <kbd>x</kbd> chọn · <kbd>a</kbd> duyệt · <kbd>h</kbd> ẩn · <kbd>s</kbd> spam · <kbd>r</kbd> trả lời
+    </p>
+  </header>
+
+  <div id="vd-flash" class="vd-flash" role="status" aria-live="polite" hidden></div>
+
+  {% if page.object_list %}
+  <form method="post" action="{% url 'dashboard:moderation_action' %}" id="vd-mod-form">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ request.get_full_path }}">
+    {% if co_the_duyet %}
+    <div class="vd-bulk">
+      <label><input type="checkbox" id="vd-all"> Chọn tất cả trang này</label>
+      <span class="vd-muted" id="vd-dem">0 đã chọn</span>
+      <button class="vd-btn vd-btn-primary" name="act" value="approve:selected">Duyệt đã chọn</button>
+      <button class="vd-btn" name="act" value="hide:selected">Ẩn đã chọn</button>
+      <button class="vd-btn vd-btn-danger" name="act" value="spam:selected">Spam đã chọn</button>
+    </div>
+    {% endif %}
+
+    <ol class="vd-queue">
+      {% for d in page.object_list %}
+      <li class="vd-item{% if d.nghi_spam %} vd-suspect{% endif %}" data-id="{{ d.pk }}" tabindex="-1">
+        <div class="vd-item-top">
+          {% if co_the_duyet %}<input type="checkbox" name="ids" value="{{ d.pk }}" aria-label="Chọn nhận xét {{ d.pk }}">{% endif %}
+          <span class="vd-stars" aria-label="{{ d.so_sao }} sao">{% for i in "12345" %}<span class="{% if forloop.counter <= d.so_sao %}on{% endif %}">★</span>{% endfor %}</span>
+          <strong>{{ d.ten_hien_thi }}</strong>
+          <span class="vd-muted">· {{ d.di_tich.ma }} – {{ d.di_tich.ten }}</span>
+          <span class="vd-muted vd-time" title="Thời gian gửi">{{ d.ngay_tao|date:"d/m/Y H:i" }}</span>
+          <span class="vd-lang">{{ d.ngon_ngu|upper }}</span>
+        </div>
+        {% if d.nghi_spam %}<p class="vd-flag">⚑ Nghi spam{% if d.ly_do_nghi %}: {{ d.ly_do_nghi }}{% endif %}</p>{% endif %}
+        <p class="vd-text">{{ d.noi_dung|linebreaksbr }}</p>
+        {% if co_the_duyet %}
+        <div class="vd-item-actions">
+          <button class="vd-btn vd-btn-primary" name="act" value="approve:{{ d.pk }}" data-act="approve">Duyệt</button>
+          <button class="vd-btn" name="act" value="hide:{{ d.pk }}" data-act="hide">Ẩn</button>
+          <button class="vd-btn vd-btn-danger" name="act" value="spam:{{ d.pk }}" data-act="spam">Spam</button>
+          <details class="vd-reply">
+            <summary class="vd-btn">Trả lời</summary>
+            <textarea name="phan_hoi_{{ d.pk }}" rows="3" maxlength="2000" placeholder="Phản hồi của Ban quản trị (hiển thị công khai dưới nhận xét)">{{ d.phan_hoi }}</textarea>
+            <button class="vd-btn vd-btn-primary" name="act" value="reply:{{ d.pk }}" data-act="reply">Lưu phản hồi và duyệt</button>
+          </details>
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </form>
+
+  {% if page.has_other_pages %}
+  <nav class="vd-pager" aria-label="Phân trang">
+    {% if page.has_previous %}<a class="vd-btn" href="?page={{ page.previous_page_number }}">← Trang trước</a>{% endif %}
+    <span class="vd-muted">Trang {{ page.number }}/{{ page.paginator.num_pages }}</span>
+    {% if page.has_next %}<a class="vd-btn" href="?page={{ page.next_page_number }}">Trang sau →</a>{% endif %}
+  </nav>
+  {% endif %}
+  {% endif %}
+  <p class="vd-empty"{% if page.object_list %} hidden{% endif %} id="vd-empty">Không còn nhận xét nào chờ duyệt.</p>
+</div>
+{% endblock %}

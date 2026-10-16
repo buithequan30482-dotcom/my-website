@@ -1,0 +1,33 @@
+name: Kiểm thử
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: vandon
+          POSTGRES_PASSWORD: vandon
+          POSTGRES_DB: vandon
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgres://vandon:vandon@localhost:5432/vandon
+      DJANGO_DEBUG: "1"
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1,testserver
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: sudo apt-get update && sudo apt-get install -y gettext
+      - run: pip install -r requirements.txt
+      - run: python manage.py compilemessages
+      - run: python manage.py check
+      - run: python manage.py test

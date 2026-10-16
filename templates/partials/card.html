@@ -1,0 +1,9 @@
+{% load i18n %}<article class="card">
+  <div class="card-img">{% if d.anh_dai_dien %}<img src="{{ d.anh_dai_dien.url|default:'' }}" srcset="{{ d.anh_dai_dien.srcset }}" sizes="{% if big %}(max-width: 900px) 100vw, 800px{% else %}(max-width: 600px) 100vw, 400px{% endif %}" alt="{{ d.anh_dai_dien.chu_thich|default:d.ten }}" loading="lazy" width="{{ d.anh_dai_dien.rong }}" height="{{ d.anh_dai_dien.cao }}">{% endif %}</div>
+  <div class="card-body">
+    <div class="card-meta">{% include "partials/seal.html" %}<span>{{ d.khu_vuc.ten }}</span>{% if not d.tham_quan_duoc %}<span class="tag-ruin">{% trans "Phế tích – tra cứu" %}</span>{% endif %}{% if d.khoang_cach and d.khoang_cach < 9999 %}<span>{{ d.khoang_cach|floatformat:1 }} km</span>{% endif %}</div>
+    <h3><a href="{{ d.get_absolute_url }}">{{ d.ten }}</a></h3>
+    <p>{{ d.tom_tat }}</p>
+    {% if d.so_danh_gia %}<div class="card-meta"><span class="stars">★ {{ d.sao_tb|floatformat:1 }}</span><span>{% blocktrans count n=d.so_danh_gia %}{{ n }} đánh giá{% plural %}{{ n }} đánh giá{% endblocktrans %}</span></div>{% endif %}
+  </div>
+</article>

@@ -1,0 +1,126 @@
+# =============================================================================
+# Các location dùng chung cho chế độ HTTP-only và HTTPS.
+# Biến môi trường được thay khi nginx khởi động: ${ADMIN_PATH} (vd /quan-tri-vd/)
+# =============================================================================
+
+limit_req zone=vandon_global burst=60 nodelay;
+limit_conn vandon_conn 60;
+
+# ---- Kiểm tra sống (giám sát uptime) ----
+# /nginx-health: chỉ nginx. /healthz: đi tới Django (core/health.py – trả "ok" khi kết nối được CSDL).
+location = /nginx-health { access_log off; default_type text/plain; return 200 "ok\n"; }
+location = /healthz {
+    access_log off;
+    include /etc/nginx/vandon/snippets/proxy.conf;
+    proxy_pass http://vandon_app;
+}
+
+# ---- Let's Encrypt (webroot) ----
+location ^~ /.well-known/acme-challenge/ {
+    root /var/www/certbot;
+    default_type text/plain;
+    try_files $uri =404;
+}
+
+# ---- Chặn tệp ẩn/nhạy cảm: /.env, /.git, bản sao lưu... ----
+location ~ /\.(?!well-known/) { access_log off; log_not_found off; return 404; }
+location ~* \.(env|ini|log|sql|sqlite3?|bak|old|orig|swp|dump|tar|gz|zip|7z|rar)$ {
+    # tệp nén hợp lệ duy nhất là *.gz của static (phục vụ qua gzip_static, không truy cập trực tiếp)
+    return 404;
+}
+location ~* ^/(wp-admin|wp-login\.php|xmlrpc\.php|phpmyadmin|admin/?$) { access_log off; return 404; }
+
+# ---- Tệp tĩnh (WhiteNoise đã gom + nén .gz lúc build) ----
+location ^~ /static/ {
+    alias /srv/static/;
+    gzip_static on;
+    access_log off;
+    expires off;
+    add_header Cache-Control $vandon_static_cache always;
+    include /etc/nginx/vandon/snippets/security-headers.conf;
+    try_files $uri =404;
+}
+
+# ---- Media do người dùng tải lên: phục vụ trực tiếp, cache 30 ngày, KHÔNG thực thi ----
+location ^~ /media/ {
+    alias /srv/media/;
+    access_log off;
+    autoindex off;
+    add_header Cache-Control "public, max-age=2592000" always;
+    # sandbox: kể cả tệp HTML/SVG lọt vào media cũng không chạy được script
+    add_header Content-Security-Policy "default-src 'none'; img-src 'self' data:; media-src 'self'; style-src 'unsafe-inline'; sandbox" always;
+    include /etc/nginx/vandon/snippets/security-headers.conf;
+
+    # Không bao giờ phục vụ tệp thực thi/kịch bản
+    location ~* \.(php[0-9]?|phtml|phar|pl|py|cgi|sh|bash|jsp|aspx?|exe|dll|bat|cmd|html?|shtml|xhtml|js|mjs|htaccess)$ {
+        return 403;
+    }
+    # Ảnh đính kèm góp ý (dữ liệu cá nhân): không cho máy tìm kiếm lập chỉ mục, không cache công cộng
+    location ^~ /media/gop-y/ {
+        add_header Cache-Control "private, max-age=86400" always;
+        add_header X-Robots-Tag "noindex, nofollow" always;
+        add_header Content-Security-Policy "default-src 'none'; img-src 'self'; sandbox" always;
+        include /etc/nginx/vandon/snippets/security-headers.conf;
+    }
+    # Video: hỗ trợ tua (Range) mặc định
+    location ^~ /media/video/ {
+        add_header Cache-Control "public, max-age=2592000" always;
+        include /etc/nginx/vandon/snippets/security-headers.conf;
+    }
+}
+
+# ---- POST đánh giá di tích: /vi|en|zh-hans/di-tich/<slug>/danh-gia/ ----
+location ~ "^/[a-z]{2}(-[a-z]+)?/di-tich/[^/]+/danh-gia/$" {
+    limit_req zone=vandon_submit burst=3 nodelay;
+    include /etc/nginx/vandon/snippets/proxy.conf;
+    proxy_pass http://vandon_app;
+}
+
+# ---- POST góp ý (có ảnh đính kèm): /vi|en|zh-hans/gop-y/ ----
+location ~ "^/[a-z]{2}(-[a-z]+)?/gop-y/$" {
+    limit_req zone=vandon_submit burst=3 nodelay;
+    client_max_body_size 30m;
+    include /etc/nginx/vandon/snippets/proxy.conf;
+    proxy_pass http://vandon_app;
+}
+
+# ---- POST "Muốn đến" (API công khai, không có tiền tố ngôn ngữ): /api/muon-den/<slug>/ ----
+location ^~ /api/muon-den/ {
+    limit_req zone=vandon_submit burst=10 nodelay;
+    include /etc/nginx/vandon/snippets/proxy.conf;
+    proxy_pass http://vandon_app;
+}
+
+# ---- Khu quản trị ----
+# Đăng nhập + OTP: giới hạn tần suất POST
+location = ${ADMIN_PATH}login/ {
+    limit_req zone=vandon_login burst=5 nodelay;
+    include /etc/nginx/vandon/snippets/proxy.conf;
+    proxy_pass http://vandon_app;
+}
+location ^~ ${ADMIN_PATH}he-thong/bao-mat/ {
+    limit_req zone=vandon_login burst=5 nodelay;
+    include /etc/nginx/vandon/snippets/proxy.conf;
+    proxy_pass http://vandon_app;
+}
+# Phần còn lại: cho phép tải video tới 200 MB (+ phần form), thời gian xử lý dài hơn.
+# Không tách riêng được URL tải video (có cả inline trong trang di tích) nên áp 210m cho toàn khu quản trị.
+location ^~ ${ADMIN_PATH} {
+    client_max_body_size 210m;
+    client_body_timeout 300s;
+    include /etc/nginx/vandon/snippets/proxy.conf;
+    proxy_read_timeout 300s;
+    proxy_send_timeout 300s;
+    # Không cache trang quản trị ở trình duyệt/proxy trung gian
+    add_header Cache-Control "no-store" always;
+    # (Tùy chọn TR 8.2) Giới hạn IP khu quản trị – bỏ chú thích và sửa dải IP:
+    # allow 203.0.113.0/24;
+    # deny all;
+    proxy_pass http://vandon_app;
+}
+
+# ---- Mọi đường dẫn khác: Django ----
+location / {
+    include /etc/nginx/vandon/snippets/proxy.conf;
+    proxy_pass http://vandon_app;
+}
