@@ -198,6 +198,9 @@ class Command(BaseCommand):
                     if dai_dien is None or a.get("dai_dien"):
                         dai_dien = h
                 obj.anh_dai_dien = dai_dien
+                # ảnh ngoài đã bỏ/đổi địa chỉ trong media.json thì xóa (ảnh tải lên giữ nguyên)
+                obj.hinh_anh.filter(tep="").exclude(url_ngoai="").exclude(
+                    url_ngoai__in=[a["url"] for a in m["anh"]]).delete()
             for k, v in enumerate(m.get("video", [])):
                 vo = obj.videos.filter(youtube_url=v["youtube_url"]).first() or Video(di_tich=obj, youtube_url=v["youtube_url"])
                 setl(vo, "tieu_de", v.get("tieu_de") or {})

@@ -1,5 +1,5 @@
 {% load i18n %}<a class="route-card" href="{{ r.get_absolute_url }}">
-  {% if r.anh_bia %}<img src="{{ r.anh_bia.url }}" alt="" loading="lazy">{% else %}<span></span>{% endif %}
+  {% if r.anh_bia %}<img src="{{ r.anh_bia.url }}" alt="" referrerpolicy="no-referrer" loading="lazy">{% else %}<span></span>{% endif %}
   <div><h3>{{ r.ten }}</h3>
     <div class="muted small">{% if r.thoi_luong %}{{ r.thoi_luong }}{% endif %}{% if r.phuong_tien %} – {{ r.phuong_tien }}{% endif %}</div>
     <ol class="stops">{% for s in r.diem_tuyen.all %}<li>{{ s.di_tich.ten }}</li>{% endfor %}</ol>

@@ -131,7 +131,7 @@
 {% if near %}<section class="section band"><div class="wrap">
   <div class="section-head"><h2>{% trans "Di tích lân cận" %}</h2></div>
   <div class="site-grid">{% for km, o, same in near %}<article class="card">
-    <div class="card-img">{% if o.anh_dai_dien %}<img src="{{ o.anh_dai_dien|img:480 }}" alt="" loading="lazy">{% endif %}</div>
+    <div class="card-img">{% if o.anh_dai_dien %}<img referrerpolicy="no-referrer" src="{{ o.anh_dai_dien|img:480 }}" alt="" loading="lazy">{% endif %}</div>
     <div class="card-body"><div class="card-meta">{% include "partials/seal.html" with d=o %}<span>{{ km|floatformat:1 }} km</span><span>{% if same %}{% trans "cùng đảo" %}{% elif o.khu_vuc.la_dao or d.khu_vuc.la_dao %}{% trans "cần đi tàu" %}{% else %}{% trans "đường bộ" %}{% endif %}</span></div>
       <h3><a href="{{ o.get_absolute_url }}">{{ o.ten }}</a></h3></div></article>{% endfor %}</div>
 </div></section>{% endif %}
@@ -139,7 +139,7 @@
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="{% trans "Xem ảnh" %}">
   <button class="lb-btn lb-close" type="button" aria-label="{% trans "Đóng" %}">×</button>
   <button class="lb-btn lb-prev" type="button" aria-label="{% trans "Ảnh trước" %}">‹</button>
-  <img src="" alt=""><p></p>
+  <img src="" alt="" referrerpolicy="no-referrer"><p></p>
   <button class="lb-btn lb-next" type="button" aria-label="{% trans "Ảnh sau" %}">›</button>
 </div>
 {% endblock %}

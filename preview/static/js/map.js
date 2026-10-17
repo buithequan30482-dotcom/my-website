@@ -22,7 +22,7 @@
   function esc(s) { return String(s || "").replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
 
   function popupHTML(p, i18n) {
-    return '<div class="map-pop">' + (p.img ? '<img src="' + esc(p.img) + '" alt="">' : "") +
+    return '<div class="map-pop">' + (p.img ? '<img src="' + esc(p.img) + '" alt="" referrerpolicy="no-referrer">' : "") +
       '<span class="seal seal-' + esc(p.cap) + '">' + esc(p.capLabel) + "</span>" +
       "<b>" + esc(p.site) + "</b>" + (p.name && p.name !== p.site ? '<div class="small muted">' + esc(p.name) + "</div>" : "") +
       '<a href="' + esc(p.url) + '">' + esc((i18n && i18n.view) || "Xem chi tiết") + "</a></div>";
