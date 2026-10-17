@@ -286,6 +286,11 @@ class HinhAnh(models.Model):
         return (self.tep.name or self.url_ngoai or "").rsplit("/", 1)[-1]
 
     @property
+    def la_anh_khu_vuc(self):
+        """Ảnh chụp khu vực nơi có di tích (không phải chính di tích) – nhận biết qua chú thích tiếng Việt."""
+        return "khu vực" in (getattr(self, "chu_thich_vi", None) or self.chu_thich or "")
+
+    @property
     def la_anh_ngoai(self):
         return bool(self.url_ngoai) and not self.tep
 

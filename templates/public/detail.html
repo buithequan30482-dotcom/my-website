@@ -16,7 +16,7 @@
     <h1>{{ d.ten }}</h1>
     <div class="loc">{{ d.dia_chi_moi }}{% for l in d.loai_hinh.all %} – {{ l.ten }}{% endfor %}</div>
   </div></div>
-  {% if d.anh_dai_dien.nguon %}<span class="photo-note">{{ d.anh_dai_dien.nguon }}</span>{% endif %}
+  {% if d.anh_dai_dien.nguon %}<span class="photo-note">{% if d.anh_dai_dien.la_anh_khu_vuc %}{% trans "Ảnh khu vực di tích" %} · {% endif %}{{ d.anh_dai_dien.nguon }}</span>{% endif %}
 </section>
 
 <div class="wrap d-body">

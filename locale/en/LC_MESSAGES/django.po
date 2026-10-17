@@ -908,3 +908,7 @@ msgstr "Updated %(d)s"
 #: templates/public/useful.html:11
 msgid "Nguồn"
 msgstr "Source"
+
+#: templates/public/detail.html:19
+msgid "Ảnh khu vực di tích"
+msgstr "Photo of the surrounding area"

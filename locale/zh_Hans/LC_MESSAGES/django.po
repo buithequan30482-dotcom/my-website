@@ -870,3 +870,7 @@ msgstr "更新于 %(d)s"
 #: templates/public/useful.html:11
 msgid "Nguồn"
 msgstr "来源"
+
+#: templates/public/detail.html:19
+msgid "Ảnh khu vực di tích"
+msgstr "遗迹周边区域照片"

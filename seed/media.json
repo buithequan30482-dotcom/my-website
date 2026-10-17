@@ -216,9 +216,74 @@
      "en": "Altar of Trần Khánh Dư in the inner sanctuary of the Quan Lạn nghè",
      "zh": "官澜祠后宫内的陈庆余 (Trần Khánh Dư) 神龛"
     }
+   },
+   {
+    "url": "https://cdn.baophapluat.vn/w1280/uploaded/quynhluu/2021_03_16/a1_eaqk.jpg",
+    "trang_nguon": "https://baophapluat.vn/dinh-quan-lan-ngoi-dinh-thieng-300-tuoi-ben-song-nuoc-van-don-post385300.html",
+    "nguon": "Báo Pháp luật Việt Nam (bài: Tiểu Vũ)",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Chạm khắc rồng tinh xảo trong đình Quan Lạn",
+     "en": "Elaborate dragon carvings inside Quan Lạn Communal House",
+     "zh": "官澜（Quan Lạn）亭内精美的龙纹雕刻"
+    }
+   },
+   {
+    "url": "https://cdn.baophapluat.vn/w1280/uploaded/quynhluu/2021_03_16/a3_wcxa.jpg",
+    "trang_nguon": "https://baophapluat.vn/dinh-quan-lan-ngoi-dinh-thieng-300-tuoi-ben-song-nuoc-van-don-post385300.html",
+    "nguon": "Báo Pháp luật Việt Nam (bài: Tiểu Vũ)",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Đua thuyền tại lễ hội đình Quan Lạn",
+     "en": "Boat race at the Quan Lạn Communal House Festival",
+     "zh": "官澜（Quan Lạn）亭庙会上的赛船"
+    }
+   },
+   {
+    "url": "https://cdn.baoquocte.vn/stores/news_dataimages/2025/062025/13/16/doc-dao-le-hoi-giau-ban-sac-van-hoa-tai-quan-lan-20250613165428.webp?rt=202610161548",
+    "trang_nguon": "https://baoquocte.vn/doc-dao-le-hoi-giau-ban-sac-van-hoa-tai-quan-lan-317635.html",
+    "nguon": "Báo Thế giới và Việt Nam",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Lễ hội đình Quan Lạn – sinh hoạt văn hóa tín ngưỡng của cư dân làng biển",
+     "en": "Quan Lạn Communal House Festival – a folk-belief celebration of the island village",
+     "zh": "官澜（Quan Lạn）亭庙会——海岛村落的民间信仰文化活动"
+    }
+   },
+   {
+    "url": "https://www.angsana.com/_next/image?url=https%3A%2F%2Fwww.angsana.com%2Fassets%2F2024-03%2FANVNQL-LocalAttraction-Temples.jpg&w=3840&q=75",
+    "trang_nguon": "https://www.angsana.com/vietnam/quan-lan/experiences/local-attractions",
+    "nguon": "Angsana Quan Lạn – Local attractions (nguồn du lịch)",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Cụm đình, đền Quan Lạn (ảnh giới thiệu của Angsana)",
+     "en": "Quan Lạn temple and communal house complex (Angsana promotional photo)",
+     "zh": "官澜（Quan Lạn）亭、庙建筑群（Angsana宣传图）"
+    }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=xJgSjZpJr_U",
+    "loai": "di_tich",
+    "tieu_de": {
+     "vi": "Đình Quan Lạn – ngôi đình độc đáo giữa biển khơi | QTV",
+     "en": "Quan Lạn Communal House – a unique communal house amid the sea | QTV",
+     "zh": "官澜（Quan Lạn）亭——大海中独特的村亭 | QTV"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 31/05/2020"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=jLMqQL7-5uc",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Thương cảng Vân Đồn: Thương cảng đầu tiên của nước Đại Việt | QTV (video về quần thể di tích) (khu vực)",
+     "en": "Vân Đồn Trading Port: the first trading port of Đại Việt | QTV (video on the relic complex) (area)",
+     "zh": "云屯（Vân Đồn）商港：大越第一座商港 | QTV（遗迹群视频）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 23/01/2023"
+   }
+  ]
  },
  "VD03": {
   "ngay_thu_thap": "2026-10-16",
@@ -303,9 +368,41 @@
      "en": "Hồ Chí Minh memorial site on Ngọc Vừng island (posted c. 2021, possibly before renovation)",
      "zh": "玉瓮岛 (Ngọc Vừng) 胡伯伯纪念区（约2021年发布，可能摄于改造前）"
     }
+   },
+   {
+    "url": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/5/3/z4661562265558-4d827bcd9fc76b38eef3f767270b3929-5065-1714737098533-1714737098699696854898.jpg",
+    "trang_nguon": "https://danviet.vn/hon-dao-ngoc-vung-o-quang-ninh-tuong-truyen-xua-la-liet-ngoc-trai-nay-van-hoang-so-the-nay-day-20240503190014739-d1159452.html",
+    "nguon": "Dân Việt (ảnh: CTTĐT Vân Đồn)",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Khu di tích lưu niệm Bác Hồ trên đảo Ngọc Vừng (ảnh: Cổng TTĐT Vân Đồn, Dân Việt đăng 2024)",
+     "en": "The Hồ Chí Minh memorial site on Ngọc Vừng Island (photo: Vân Đồn e-portal, via Dân Việt 2024)",
+     "zh": "玉旺 (Ngọc Vừng) 岛胡志明主席纪念地（图片：云屯 (Vân Đồn) 电子门户网，Dân Việt 2024年刊登）"
+    }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=-YoQzBGrPes",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "9 lần Bác Hồ về thăm Quảng Ninh – trong đó có chuyến thăm đảo Ngọc Vừng tháng 11/1962 (video chủ đề) (khu vực)",
+     "en": "Uncle Hồ's nine visits to Quảng Ninh – including the November 1962 visit to Ngọc Vừng (thematic video) (area)",
+     "zh": "胡伯伯九次视察广宁 (Quảng Ninh)——其中包括1962年11月到访玉旺 (Ngọc Vừng) 岛（专题视频）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 18/04/2025"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=1_SluTQnkT0",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Khám phá hồ nước ngọt trên đảo Ngọc Vừng (video về xã đảo Ngọc Vừng – khu vực di tích)",
+     "en": "Exploring the freshwater lake on Ngọc Vừng Island (video of the island – area of the relic)",
+     "zh": "探访玉旺 (Ngọc Vừng) 岛上的淡水湖（玉旺岛乡视频——遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 24/08/2020"
+   }
+  ]
  },
  "VD04": {
   "ngay_thu_thap": "2026-10-16",
@@ -342,7 +439,28 @@
     }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=wr_fJond_IE",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Văn hóa Hạ Long – QTV (video về nền văn hóa mà Ba Vũng là di chỉ tiêu biểu) (khu vực)",
+     "en": "Ha Long culture – QTV (video on the culture of which Ba Vung is a key site) (area)",
+     "zh": "下龙 (Hạ Long) 文化——QTV（巴汪 (Ba Vũng) 为其代表性遗址）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 11/05/2021"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=kDv4epcJ-iw",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Giá trị văn hóa Hạ Long qua các tư liệu khảo cổ (video chủ đề, khu vực di tích)",
+     "en": "Values of Ha Long culture through archaeological records (thematic video) (area)",
+     "zh": "从考古资料看下龙 (Hạ Long) 文化的价值（专题视频）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 05/12/2024"
+   }
+  ]
  },
  "VD05": {
   "ngay_thu_thap": "2026-10-16",
@@ -369,7 +487,18 @@
     }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=SEMmBUZ9bos",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Du lịch bền vững trên tuyến đảo Vân Đồn – có xã đảo Ngọc Vừng (video khu vực di tích)",
+     "en": "Sustainable tourism on the Vân Đồn island route, including Ngọc Vừng (area video)",
+     "zh": "云屯 (Vân Đồn) 海岛线路的可持续旅游——包括玉旺 (Ngọc Vừng) 岛乡（遗迹所在区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 09/06/2024"
+   }
+  ]
  },
  "VD06": {
   "ngay_thu_thap": "2026-10-16",
@@ -394,9 +523,42 @@
      "en": "The sacrificial rite at Ngọc Vừng communal house, 12 February 2024 (photo: Báo Quảng Ninh)",
      "zh": "玉瓮亭 (đình Ngọc Vừng) 祭礼仪式，2024年2月12日（图：《广宁报》）"
     }
+   },
+   {
+    "url": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/5/3/z4661562319824-85dd83d9745674739385a7d8fd3754ec-1227-1714737097609-1714737097784341084670.jpg",
+    "trang_nguon": "https://danviet.vn/hon-dao-ngoc-vung-o-quang-ninh-tuong-truyen-xua-la-liet-ngoc-trai-nay-van-hoang-so-the-nay-day-20240503190014739-d1159452.html",
+    "nguon": "Dân Việt (ảnh: CTTĐT Vân Đồn)",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Khu di tích đình Ngọc Vừng (ảnh: Cổng TTĐT Vân Đồn, Dân Việt đăng 2024)",
+     "en": "Ngọc Vừng communal house relic site (photo: Vân Đồn e-portal, via Dân Việt 2024)",
+     "zh": "玉旺 (Ngọc Vừng) 亭遗迹区（图片：云屯 (Vân Đồn) 电子门户网，Dân Việt 2024年刊登）"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53BXWT3MldPtcsechxVwsCDrnUXt2hc0LnlN9wt4ANcznX93J27BxslYCQxyPLPqlMn0IaDQSXn1UwB__GjHi_V/2485801_wtm_f71c0c31cbabfee35fe2b912fe3b4c68.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/van-hoa-dong-luc-phat-trien-ben-vung-3399541.html",
+    "nguon": "Báo Quảng Ninh điện tử",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Nghi lễ rước thần từ miếu sang đình Ngọc Vừng (ảnh: Báo Quảng Ninh, đăng 3/2026)",
+     "en": "The procession carrying the deity from the shrine to Ngọc Vừng communal house (photo: Báo Quảng Ninh, March 2026)",
+     "zh": "从庙迎神至玉旺 (Ngọc Vừng) 亭的仪式（图片：《广宁报》，2026年3月刊登）"
+    }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=WcEHVt0y4LE",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Trải nghiệm cào ngao trên bãi biển Ngọc Vừng (video về xã đảo Ngọc Vừng – khu vực di tích)",
+     "en": "Clam raking on Ngọc Vừng beach (video of the island – area of the relic)",
+     "zh": "在玉旺 (Ngọc Vừng) 海滩体验耙蛤（玉旺岛乡视频——遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 07/04/2021"
+   }
+  ]
  },
  "VD07": {
   "ngay_thu_thap": "2026-10-16",
@@ -440,6 +602,50 @@
      "vi": "Động Đông Trong, vịnh Bái Tử Long (ảnh đồ họa của Báo Quảng Ninh)",
      "en": "Đông Trong Cave, Bái Tử Long Bay (graphic by Quảng Ninh newspaper)",
      "zh": "拜子龙湾的东中洞 (Đông Trong)（《广宁报》配图）"
+    }
+   },
+   {
+    "url": "https://cdn.baophapluat.vn/uploaded/quynhluu/2022_04_25/img-6699-8812.jpg",
+    "trang_nguon": "https://baophapluat.vn/den-tho-vi-hoang-de-sang-lap-ra-thuong-cang-van-don-post443903.html",
+    "nguon": "Báo Pháp luật Việt Nam (bài: Diệu Minh)",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Đền thờ vua Lý Anh Tông ở Cái Rồng (ảnh: Báo Pháp luật Việt Nam, 2022)",
+     "en": "Temple of King Lý Anh Tông in Cái Rồng (photo: Báo Pháp luật Việt Nam, 2022)",
+     "zh": "盖龙（Cái Rồng）李英宗（Lý Anh Tông）王祠（图：越南法律报，2022年）"
+    }
+   },
+   {
+    "url": "https://image.baophapluat.vn/Uploaded/quynhluu/2022_04_25/img-6718-5294.jpg",
+    "trang_nguon": "https://baophapluat.vn/den-tho-vi-hoang-de-sang-lap-ra-thuong-cang-van-don-post443903.html",
+    "nguon": "Báo Pháp luật Việt Nam (bài: Diệu Minh)",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Đền thờ vua Lý Anh Tông tựa lưng vào núi Rồng",
+     "en": "The Temple of King Lý Anh Tông, set against Rồng (Dragon) Mountain",
+     "zh": "背靠龙山（núi Rồng）的李英宗（Lý Anh Tông）王祠"
+    }
+   },
+   {
+    "url": "https://image.baophapluat.vn/Uploaded/quynhluu/2022_04_25/img-6710-1227.jpg",
+    "trang_nguon": "https://baophapluat.vn/den-tho-vi-hoang-de-sang-lap-ra-thuong-cang-van-don-post443903.html",
+    "nguon": "Báo Pháp luật Việt Nam (bài: Diệu Minh)",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Chính điện đền thờ vua Lý Anh Tông",
+     "en": "Main hall of the Temple of King Lý Anh Tông",
+     "zh": "李英宗（Lý Anh Tông）王祠正殿"
+    }
+   },
+   {
+    "url": "https://image.baophapluat.vn/Uploaded/quynhluu/2022_04_25/img-6703-2972.jpg",
+    "trang_nguon": "https://baophapluat.vn/den-tho-vi-hoang-de-sang-lap-ra-thuong-cang-van-don-post443903.html",
+    "nguon": "Báo Pháp luật Việt Nam (bài: Diệu Minh)",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Bức bình phong chạm trổ trước sân đền",
+     "en": "Carved screen wall in front of the temple courtyard",
+     "zh": "祠前庭院的雕刻照壁"
     }
    }
   ],
@@ -544,9 +750,52 @@
      "en": "The Mother temple on Quan Lạn island (Angsana promotional photo)",
      "zh": "官澜 (Quan Lạn) 岛上的母庙（Angsana 宣传照片）"
     }
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/%e1%ba%a3nh%20tin%20t%e1%bb%a9c%20s%e1%bb%b1%20ki%e1%bb%87n/th%c3%a1ng%204/2026/z7773578639745_bae8d171679122086feaf7b434cdd9b3.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietTinTuc.aspx?nid=3255",
+    "nguon": "Cổng TTĐT đặc khu Vân Đồn",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Khu vực Eo Gió, thôn Yến Hải cũ ở cửa Đông đảo Quan Lạn – nơi có đền Mẫu trên đường lên Eo Gió (ảnh khu vực)",
+     "en": "Eo Gió area in former Yến Hải hamlet at the eastern end of Quan Lạn Island, where the Mother Goddess Temple lies on the way up (area photo)",
+     "zh": "官澜（Quan Lạn）岛东口原燕海（Yến Hải）村风口（Eo Gió）一带，母庙位于通往风口的路上（区域照片）"
+    }
+   },
+   {
+    "url": "https://static.vinwonders.com/production/2025/04/eo-gio-quan-lan.jpg",
+    "trang_nguon": "https://vinwonders.com/vi/wonderpedia/news/du-lich-quan-lan-2-ngay-1-dem/",
+    "nguon": "VinWonders (ảnh: sưu tầm)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Bình minh ở Eo Gió, phía cửa Đông đảo Quan Lạn gần đền Mẫu (ảnh khu vực)",
+     "en": "Sunrise at Eo Gió, near the Mother Goddess Temple on the eastern side of Quan Lạn Island (area photo)",
+     "zh": "官澜（Quan Lạn）岛东侧风口（Eo Gió）日出，靠近母庙（区域照片）"
+    }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=PkzDb6TMvt4",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về đảo Quan Lạn – Viên ngọc xanh hoang sơ của Quảng Ninh (khu vực di tích)",
+     "en": "Video on Quan Lạn Island – the unspoiled green gem of Quảng Ninh (area of the site)",
+     "zh": "官澜岛（Quan Lạn）——广宁原生态的绿色明珠（遗迹所在区域视频）"
+    },
+    "nguon": "THVL 24News – YouTube, 16/05/2025"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=ZPTmJNvNV90",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về du lịch Quan Lạn – Minh Châu | QTV (khu vực di tích)",
+     "en": "Video on Quan Lạn – Minh Châu tourism | QTV (area of the site)",
+     "zh": "官澜（Quan Lạn）—明珠（Minh Châu）旅游 | QTV（遗迹所在区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 12/04/2021"
+   }
+  ]
  },
  "VD11": {
   "ngay_thu_thap": "2026-10-16",
@@ -561,9 +810,52 @@
      "zh": "镇海殿 (đền Trấn Hải) 省级历史遗迹定级证书接受仪式暨云屯 (Vân Đồn) 传统节庆开幕式，2026年7月29日晚。"
     },
     "dai_dien": true
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/%e1%ba%a3nh%20tin%20t%e1%bb%a9c%20s%e1%bb%b1%20ki%e1%bb%87n/th%c3%a1ng%204/2026/z7773578639745_bae8d171679122086feaf7b434cdd9b3.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietTinTuc.aspx?nid=3255",
+    "nguon": "Cổng TTĐT đặc khu Vân Đồn",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Khu vực Eo Gió, thôn Yến Hải cũ, xã đảo Quan Lạn – nơi có đền Trấn Hải (ảnh khu vực)",
+     "en": "Eo Gió area in former Yến Hải hamlet, Quan Lạn Island, where Trấn Hải Temple is located (area photo)",
+     "zh": "官澜（Quan Lạn）岛原燕海（Yến Hải）村风口（Eo Gió）一带，镇海庙所在地（区域照片）"
+    }
+   },
+   {
+    "url": "https://mia.vn/media/uploads/blog-du-lich/eo-gio-quan-lan-5-1764775233.jpg",
+    "trang_nguon": "https://mia.vn/cam-nang-du-lich/eo-gio-quan-lan-19747",
+    "nguon": "mia.vn (ảnh: Vân Anh Nguyễn)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Con đường ven biển ở Eo Gió, gần đền Cậu (đền Trấn Hải), đảo Quan Lạn (ảnh khu vực)",
+     "en": "Seaside path at Eo Gió, near Cậu Temple (Trấn Hải Temple), Quan Lạn Island (area photo)",
+     "zh": "官澜（Quan Lạn）岛风口（Eo Gió）海边小路，靠近舅庙（镇海庙）（区域照片）"
+    }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=PkzDb6TMvt4",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về đảo Quan Lạn – Viên ngọc xanh hoang sơ của Quảng Ninh (khu vực di tích)",
+     "en": "Video on Quan Lạn Island – the unspoiled green gem of Quảng Ninh (area of the site)",
+     "zh": "官澜岛（Quan Lạn）——广宁原生态的绿色明珠（遗迹所在区域视频）"
+    },
+    "nguon": "THVL 24News – YouTube, 16/05/2025"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=J_JWN-vKH0A",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về xã đảo Quan Lạn vào mùa du lịch hè (khu vực di tích)",
+     "en": "Video on Quan Lạn island commune in the summer tourist season (area of the site)",
+     "zh": "夏季旅游旺季的官澜（Quan Lạn）海岛乡（遗迹所在区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 19/04/2022"
+   }
+  ]
  },
  "VD18": {
   "ngay_thu_thap": "2026-10-16",
@@ -580,7 +872,28 @@
     "dai_dien": true
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=LAd5f2SjFdg",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Vịnh Hạ Long – kỳ quan và nơi lưu giữ nền văn hóa người Việt cổ (video chủ đề, khu vực di tích)",
+     "en": "Ha Long Bay – a wonder and keeper of ancient Vietnamese culture (thematic video) (area)",
+     "zh": "下龙湾——奇观与古越文化的保存地（专题视频）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 12/09/2021"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=kDv4epcJ-iw",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Giá trị văn hóa Hạ Long qua các tư liệu khảo cổ (video chủ đề, khu vực di tích)",
+     "en": "Values of Ha Long culture through archaeological records (thematic video) (area)",
+     "zh": "从考古资料看下龙 (Hạ Long) 文化的价值（专题视频）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 05/12/2024"
+   }
+  ]
  },
  "VD20": {
   "ngay_thu_thap": "2026-10-16",
@@ -617,7 +930,18 @@
     }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=IjK1Q2ljjDI",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Mô hình du lịch nông trại ở xã Hạ Long, Vân Đồn (video khu vực di tích)",
+     "en": "Farm tourism model in Ha Long commune, Van Don (area video)",
+     "zh": "云屯 (Vân Đồn) 下龙 (Hạ Long) 乡的农场旅游模式（区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 14/05/2024"
+   }
+  ]
  },
  "VD21": {
   "ngay_thu_thap": "2026-10-16",
@@ -632,9 +956,52 @@
      "zh": "明珠亭 (Đình Minh Châu) 地基修复期间（2015年）"
     },
     "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50Rfk9Pl18BaqEsn94ri0CoDmrPCJTSvdNdelLpk-QHk6RdfjP1Q_M3KxjGMG47ed2cBSwF8-aeyMdciDynegEQ/2336929_wtm_2a773996c2322a2b69e24e1314a55b4d.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/minh-chau-tu-the-san-sang-cho-mua-du-lich-moi-3351806.html",
+    "nguon": "Báo Quảng Ninh (bài: Công Thành, 13/04/2025)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Làng du lịch Minh Châu, đảo Quan Lạn chuẩn bị đón mùa du lịch 2025, nơi có Đình làng Minh Châu (ảnh khu vực)",
+     "en": "Minh Chau village on Quan Lan island preparing for the 2025 tourist season, where Minh Chau communal house is located (area photo)",
+     "zh": "明珠 (Minh Châu) 村，官澜 (Quan Lạn) 岛，准备迎接2025年旅游季，明珠 (Minh Châu) 村亭所在地（区域照片）"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv502PaWilgNHspOnAybN4ThFMox_yrrGY_Ci0nSOtEOnlXFKmrZ1rsQjyMyMwA-fmsc/1841037_1212312_16044726.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/doi-thay-o-xa-dao-minh-chau-2917731.html",
+    "nguon": "Báo Quảng Ninh (26/05/2021)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Xã đảo Minh Châu, đảo Quan Lạn, nơi có Đình làng Minh Châu (ảnh khu vực)",
+     "en": "Minh Chau island commune, Quan Lan island, where Minh Chau communal house is located (area photo)",
+     "zh": "官澜 (Quan Lạn) 岛上的明珠 (Minh Châu) 岛乡，明珠 (Minh Châu) 村亭所在地（区域照片）"
+    }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=HoK1RI-4FEQ",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Minh Châu: Viên ngọc xanh trên biển biếc – video về xã đảo Minh Châu (khu vực di tích)",
+     "en": "Minh Chau: a green jewel on the blue sea – video on Minh Chau island commune (area of the site)",
+     "zh": "明珠 (Minh Châu)：碧海上的绿宝石——明珠 (Minh Châu) 岛乡视频（遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 11/06/2020"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=ZPTmJNvNV90",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Ngỡ ngàng du lịch Quan Lạn - Minh Châu – video về xã đảo Minh Châu (khu vực di tích)",
+     "en": "Amazing Quan Lan – Minh Chau tourism – video on Minh Chau island commune (area of the site)",
+     "zh": "惊艳的官澜 (Quan Lạn) – 明珠 (Minh Châu) 旅游——明珠 (Minh Châu) 岛乡视频（遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 12/04/2021"
+   }
+  ]
  },
  "VD22": {
   "ngay_thu_thap": "2026-10-16",
@@ -761,9 +1128,52 @@
      "zh": "玉瓮 (Ngọc Vừng) 岛贡安 (Cống Yên) 港"
     },
     "dai_dien": true
+   },
+   {
+    "url": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/5/3/cong-yen-3943-1714737101134-1714737101254222503582.jpg",
+    "trang_nguon": "https://danviet.vn/hon-dao-ngoc-vung-o-quang-ninh-tuong-truyen-xua-la-liet-ngoc-trai-nay-van-hoang-so-the-nay-day-20240503190014739-d1159452.html",
+    "nguon": "Dân Việt (ảnh: QH)",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Bến Cống Yên ngày nay – không gian bến cổ nay là cảng đón khách (Dân Việt, 2024)",
+     "en": "Cống Yên wharf today – the ancient wharf area now serves as a passenger port (Dân Việt, 2024)",
+     "zh": "今日贡安 (Cống Yên) 码头——古码头所在地现为客运港（Dân Việt，2024年）"
+    }
+   },
+   {
+    "url": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/5/3/z4661561931165-badf807a0145b1d16c2cbaa9cb5cf121-9187-1714737095809-17147370959621842558723.jpg",
+    "trang_nguon": "https://danviet.vn/hon-dao-ngoc-vung-o-quang-ninh-tuong-truyen-xua-la-liet-ngoc-trai-nay-van-hoang-so-the-nay-day-20240503190014739-d1159452.html",
+    "nguon": "Dân Việt (ảnh: QH)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Bình minh trên bãi biển Trường Chinh, đảo Ngọc Vừng – nơi có Bến Cống Yên (ảnh khu vực)",
+     "en": "Sunrise on Trường Chinh beach, Ngọc Vừng Island, home of Cống Yên wharf (area photo)",
+     "zh": "玉旺 (Ngọc Vừng) 岛长征 (Trường Chinh) 海滩日出，贡安 (Cống Yên) 码头所在岛屿（区域照片）"
+    }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=m-g273VQ9CY",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Bảo tồn, phát huy giá trị thương cảng Vân Đồn (video về hệ thống thương cảng – khu vực di tích)",
+     "en": "Preserving and promoting the Vân Đồn trading port (video on the port system – area of the relic)",
+     "zh": "保护和发扬云屯 (Vân Đồn) 商港价值（商港体系视频——遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 14/03/2023"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=SEMmBUZ9bos",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Du lịch bền vững trên tuyến đảo Vân Đồn – có xã đảo Ngọc Vừng (video khu vực di tích)",
+     "en": "Sustainable tourism on the Vân Đồn island route, including Ngọc Vừng (area video)",
+     "zh": "云屯 (Vân Đồn) 海岛线路的可持续旅游——包括玉旺 (Ngọc Vừng) 岛乡（遗迹所在区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 09/06/2024"
+   }
+  ]
  },
  "VD31": {
   "ngay_thu_thap": "2026-10-16",
@@ -824,9 +1234,52 @@
      "zh": "国际专家与考古学院在公盖—山豪 (Cống Cái – Sơn Hào) 调查商港遗迹，2017年4月"
     },
     "dai_dien": true
+   },
+   {
+    "url": "https://mia.vn/media/uploads/blog-du-lich/du-lich-dao-quan-lan-chiem-nguong-ve-dep-thien-nhien-hoang-so-07-1641881781.jpeg",
+    "trang_nguon": "https://mia.vn/cam-nang-du-lich/review-dao-quan-lan-19759",
+    "nguon": "mia.vn",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Bãi Sơn Hào, khu vực Cống Cái – Sơn Hào trên đảo Quan Lạn, nơi có bến cổ Cống Cái (ảnh khu vực)",
+     "en": "Sơn Hào beach, the Cống Cái – Sơn Hào area of Quan Lạn Island where the old Cống Cái wharf lies (area photo)",
+     "zh": "官澜（Quan Lạn）岛山豪（Sơn Hào）海滩，即公盖（Cống Cái）古码头所在的公盖—山豪一带（区域照片）"
+    }
+   },
+   {
+    "url": "https://cdn.daidoanket.vn/w3840/2020/5/21/ttxvn_2812_than_cong3_1.jpg.avif",
+    "trang_nguon": "https://daidoanket.vn/phat-hien-sung-than-cong-co-tren-200-nam-o-dao-quan-lan-10092516.html",
+    "nguon": "Báo Đại Đoàn Kết (ảnh: TTXVN)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Súng thần công thời Minh Mạng phát hiện tháng 12/2017 ở thôn Sơn Hào, xã Quan Lạn (ảnh khu vực Cống Cái – Sơn Hào, không phải tại bến)",
+     "en": "Minh Mạng-era cannon found in December 2017 in Sơn Hào hamlet, Quan Lạn (area photo of Cống Cái – Sơn Hào, not at the wharf itself)",
+     "zh": "2017年12月在官澜（Quan Lạn）乡山豪（Sơn Hào）村发现的明命（Minh Mạng）时期铜炮（公盖—山豪一带区域照片，非码头本身）"
+    }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=jLMqQL7-5uc",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Thương cảng Vân Đồn: Thương cảng đầu tiên của nước Đại Việt | QTV (video về quần thể di tích) (khu vực)",
+     "en": "Vân Đồn Trading Port: the first trading port of Đại Việt | QTV (video on the relic complex) (area)",
+     "zh": "云屯（Vân Đồn）商港：大越第一座商港 | QTV（遗迹群视频）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 23/01/2023"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=UAvj7TLgqrw",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Dấu tích thương cảng cổ Vân Đồn | QTV (video về quần thể di tích) (khu vực)",
+     "en": "Traces of the ancient Vân Đồn trading port | QTV (video on the relic complex) (area)",
+     "zh": "云屯（Vân Đồn）古商港遗迹 | QTV（遗迹群视频）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 28/04/2021"
+   }
+  ]
  },
  "VD38": {
   "ngay_thu_thap": "2026-10-16",
@@ -841,9 +1294,41 @@
      "zh": "贡东岛 (Cống Đông) 瓦井 (Vạ Giếng) 遗址（瓦井寺）的建筑构件。"
     },
     "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0NIFJF80SwTq8Nf3ptvOV9Eb0mC5kEq7ANTwEH7fsGp2WJGgDHniZ4dITwk6qAtB-a-LZM3SVLwZm-i_alFD3TkX6rBJToZJc77kyK4eoske/images1273766_images676256_Dao_Cong_Dong.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/thuong-cang-van-don-qua-cac-thoi-ky-lich-su-2196939.html",
+    "nguon": "Báo Quảng Ninh – Thương cảng Vân Đồn qua các thời kỳ lịch sử (25/05/2013)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Đảo Cống Đông, Cống Tây – nơi có phế tích đền Vạ Giếng (ảnh khu vực)",
+     "en": "Cống Đông and Cống Tây islands, where the ruins of Vạ Giếng temple lie (area photo)",
+     "zh": "贡东 (Cống Đông)、贡西 (Cống Tây) 岛——瓦井祠 (Đền Vạ Giếng) 遗址所在地（区域照片）"
+    }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=jLMqQL7-5uc",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về Thương cảng Vân Đồn – khu vực Cống Đông, Cống Tây (khu vực di tích)",
+     "en": "Video on Vân Đồn trading port – Cống Đông–Cống Tây area (area of the site)",
+     "zh": "云屯 (Vân Đồn) 商港视频——贡东–贡西 (Cống Đông–Cống Tây) 区域（遗迹区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 23/01/2023"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=OgtzRvV1BA0",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Bảo tồn, phát huy giá trị Thương cảng Vân Đồn (video khu vực di tích)",
+     "en": "Conserving and promoting Vân Đồn trading port (area video)",
+     "zh": "保护和弘扬云屯 (Vân Đồn) 商港价值（遗迹区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 16/06/2024"
+   }
+  ]
  },
  "VD40": {
   "ngay_thu_thap": "2026-10-16",
@@ -900,7 +1385,18 @@
     }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=XaxznhzDfWo",
+    "loai": "di_tich",
+    "tieu_de": {
+     "vi": "Chùa Cái Bầu – Tìm đến chốn bình yên",
+     "en": "Cai Bau Pagoda – finding a place of peace",
+     "zh": "丐瓢寺 (Chùa Cái Bầu)——寻找宁静之地"
+    },
+    "nguon": "Đồng Nai TV – YouTube, 29/03/2023"
+   }
+  ]
  },
  "VD44": {
   "ngay_thu_thap": "2026-10-16",
@@ -937,6 +1433,1147 @@
     }
    }
   ],
-  "video": []
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=G2oUeHVoMoY",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Sắc vàng Vạn Yên – video về xã Vạn Yên, khu vực có mỏ than Kế Bào (video khu vực)",
+     "en": "The golden colours of Vạn Yên – video about Vạn Yên, where the Kế Bào mine lies (area video)",
+     "zh": "万安 (Vạn Yên) 的金色——吉包 (Kế Bào) 煤矿所在地区的视频（区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 14/01/2024"
+   }
+  ]
+ },
+ "VD09": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://media.quangninh.gov.vn/d07e4659-2aae-4343-a2d5-478b67c08003/Libraries/HinhAnhBaiViet/MINH%20NGUYET/thang5/1%20N%c3%b4ng%20d%c3%a2n%20m%e1%bb%9f%20c%e1%bb%ada%20v%c6%b0%e1%bb%9dn%20%c4%91%c3%b3n%20kh%c3%a1ch%20du%20l%e1%bb%8bch.jpg",
+    "trang_nguon": "https://dulich.quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=4361",
+    "nguon": "Chuyên trang Du lịch Quảng Ninh (Diên Khánh - Nguyên Ngọc)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Vườn thanh mai ở thôn Khe Mai, xã Đoàn Kết cũ – khu vực di tích (ảnh khu vực)",
+     "en": "Bayberry orchard in Khe Mai hamlet, former Đoàn Kết commune – the area of the site (area photo)",
+     "zh": "原团结（Đoàn Kết）社溪梅（Khe Mai）村的杨梅园——遗迹所在区域（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/d07e4659-2aae-4343-a2d5-478b67c08003/Libraries/HinhAnhBaiViet/MINH%20NGUYET/thang5/5%20%20N%c3%b4ng%20d%c3%a2n%20m%e1%bb%9f%20c%e1%bb%ada%20v%c6%b0%e1%bb%9dn%20%c4%91%c3%b3n%20kh%c3%a1ch%20du%20l%e1%bb%8bch.jpg",
+    "trang_nguon": "https://dulich.quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=4361",
+    "nguon": "Chuyên trang Du lịch Quảng Ninh (Diên Khánh - Nguyên Ngọc)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Không gian làng quê ở thôn Khe Mai, xã Đoàn Kết cũ (ảnh khu vực)",
+     "en": "Rural landscape in Khe Mai hamlet, former Đoàn Kết commune (area photo)",
+     "zh": "原团结（Đoàn Kết）社溪梅（Khe Mai）村的乡村风光（区域照片）"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50S6Tcm6N9bj8QeTdoFE5_HMOuoyAcgyJMuRqB_T_PxQ6MXOG8FlYxYsVDSW03mk3gFTm1F0Pg2753iHSiBOJ_5OvvUWgpwzvdSa4aRobDfc8Pw76TYygaVZLEGATf6FKg/2366241_du_khach_tham_gia_trai_nghiem_tai_khe_mai_farm_10512914.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/thuc-day-mo-hinh-du-lich-sinh-thai-trai-nghiem-3362645.html",
+    "nguon": "Báo Quảng Ninh điện tử (bài: Vân Anh)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Khe Mai Farm, thôn Khe Mai, xã Đoàn Kết cũ, gần sân bay Vân Đồn (ảnh khu vực)",
+     "en": "Khe Mai Farm, Khe Mai hamlet, former Đoàn Kết commune, near Vân Đồn airport (area photo)",
+     "zh": "原团结（Đoàn Kết）社溪梅（Khe Mai）村的溪梅农场，靠近云屯（Vân Đồn）机场（区域照片）"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50P7ju7KXjqaWBI3LNCCiKioxFaC23yLWR8eSIg1BzjFIBtNFV_aT1R23vw_OsWT50_RhCqK21ZzvCzs_W9amr24cXqIkekvOf-7PAY2F_87YUubNIcPLc2QAXVctISWDvwmRREBaM9VKbxPImTGqwb/2446111_2423856_ha_tang_co_so_hien_dai_cua_cang_hang_khong_quoc_te_van_don_20094018_04514210.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/phat-huy-loi-the-cang-hang-khong-quoc-te-van-don-post3388135.html",
+    "nguon": "Báo Quảng Ninh điện tử (bài: Đào Linh)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Cảng hàng không quốc tế Vân Đồn ở thôn Khe Mai, xã Đoàn Kết cũ – khu vực di tích (ảnh khu vực)",
+     "en": "Vân Đồn International Airport in Khe Mai hamlet, former Đoàn Kết commune – the area of the site (area photo)",
+     "zh": "位于原团结（Đoàn Kết）社溪梅（Khe Mai）村的云屯（Vân Đồn）国际机场——遗迹所在区域（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=KgGSD58UIaQ",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Cái Rồng: Truyền thuyết và lịch sử – video chung về vùng đất Vân Đồn (chưa có video riêng về di tích)",
+     "en": "Cái Rồng: legends and history – general video about Vân Đồn (no video of the site itself yet)",
+     "zh": "丐龙 (Cái Rồng)：传说与历史——云屯地区综合视频（暂无该遗迹专门视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 03/12/2020"
+   }
+  ]
+ },
+ "VD12": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/%e1%ba%a3nh%20tin%20t%e1%bb%a9c%20s%e1%bb%b1%20ki%e1%bb%87n/th%c3%a1ng%204/2026/z7744674181969_13638d239a818267bb28be15c8a8f23c.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietTinTuc.aspx?nid=3196",
+    "nguon": "Cổng TTĐT Đặc khu Vân Đồn – Khám phá Bản Sen (Ngân Hà, 20/04/2026)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Hang động đá vôi trên đảo Bản Sen, nơi có Hang Nhà Trò (ảnh khu vực)",
+     "en": "Limestone cave scenery on Bản Sen Island, where Nhà Trò Cave is located (area photo)",
+     "zh": "班森（Bản Sen）岛上的石灰岩洞穴景观，戏房洞（Hang Nhà Trò）所在地（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/%e1%ba%a3nh%20tin%20t%e1%bb%a9c%20s%e1%bb%b1%20ki%e1%bb%87n/th%c3%a1ng%204/2026/z7744674193628_5836fd6a283d11f66f5fea9a2542433b.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietTinTuc.aspx?nid=3196",
+    "nguon": "Cổng TTĐT Đặc khu Vân Đồn – Khám phá Bản Sen (Ngân Hà, 20/04/2026)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Cảnh hang động hoang sơ trên đảo Bản Sen, khu vực Hang Nhà Trò (ảnh khu vực)",
+     "en": "Unspoiled cave landscape on Bản Sen Island, the area of Nhà Trò Cave (area photo)",
+     "zh": "班森（Bản Sen）岛上原始的洞穴景观，戏房洞（Hang Nhà Trò）一带（区域照片）"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0JqIRoDaufAuMG4vtwxCiZMUSJcx5qThNFBrMmsnZStCmk2T9L5y0QlotprSb10xuJKqS-FDHK94L1cEN_QVUXU/images809330_IMG_92441.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/kham-pha-ban-sen-2274973.html",
+    "nguon": "Báo Quảng Ninh – Khám phá Bản Sen (29/06/2015)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Đảo Bản Sen, nơi có Hang Nhà Trò (ảnh khu vực)",
+     "en": "Bản Sen Island, home to Nhà Trò Cave (area photo)",
+     "zh": "班森（Bản Sen）岛，戏房洞（Hang Nhà Trò）所在地（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=SEMmBUZ9bos",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Du lịch bền vững trên tuyến đảo Vân Đồn – video khu vực (chưa có video riêng về di tích)",
+     "en": "Sustainable tourism on the Vân Đồn island route – area video (no video of the site itself yet)",
+     "zh": "云屯 (Vân Đồn) 海岛线路可持续旅游——区域视频（暂无该遗迹专门视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 09/06/2024"
+   }
+  ]
+ },
+ "VD13": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/%e1%ba%a3nh%20tin%20t%e1%bb%a9c%20s%e1%bb%b1%20ki%e1%bb%87n/th%c3%a1ng%204/2026/z7744674161359_4c2ae0b5c5b2d66df48510f6b4cd937f.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietTinTuc.aspx?nid=3196",
+    "nguon": "Cổng TTĐT Đặc khu Vân Đồn – Khám phá Bản Sen (Ngân Hà, 20/04/2026)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Thôn Bản Sen, nơi có Đình Bản Sen (ảnh khu vực)",
+     "en": "Bản Sen village, where Bản Sen Communal House stands (area photo)",
+     "zh": "班森（Bản Sen）村，班森亭（Đình Bản Sen）所在地（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv51jh3scLXimnALMaAfBS0tsWomOhzGwXJVV0iaiI8GI-gyH0KBYKwpy6Eg3iwWEH8jNBu4BR0BujILHsIEwwuEY/2523027_wtm_ac824da5a920c2c52c747b44cbe6d364.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/tra-ban-dao-lon-nhat-quan-dao-van-hai-3412589.html",
+    "nguon": "Báo Quảng Ninh – Trà Bản - Đảo lớn nhất quần đảo Vân Hải (Trần Minh, 28/06/2026)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Đảo Trà Bản (Bản Sen), nơi có Đình Bản Sen (ảnh khu vực)",
+     "en": "Trà Bản (Bản Sen) Island, where Bản Sen Communal House is located (area photo)",
+     "zh": "茶本（Trà Bản）岛（班森 Bản Sen），班森亭（Đình Bản Sen）所在地（区域照片）"
+    }
+   },
+   {
+    "url": "https://dbnd.1cdn.vn/2024/11/09/images-86960671d98ad5fa99ccd469414ce04bbb27a04c21c6a5a55349246305e1bebbb35a7a17cb49766223cc8d66a45a67a0-_ban-sen-91124-5.jpg",
+    "trang_nguon": "https://daibieunhandan.vn/uy-vien-bo-chinh-tri-nguyen-xuan-thang-du-ngay-hoi-dai-doan-ket-tai-xa-ban-sen-10351561.html",
+    "nguon": "Báo Đại biểu Nhân dân (ảnh: TTXVN)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Ngày hội Đại đoàn kết toàn dân tộc tại xã Bản Sen năm 2024 – cộng đồng cư dân nơi có Đình Bản Sen (ảnh khu vực)",
+     "en": "National Great Unity Festival in Bản Sen Commune, 2024 – the community of Bản Sen Communal House (area photo)",
+     "zh": "2024年班森（Bản Sen）乡全民大团结日——班森亭（Đình Bản Sen）所在社区（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=SEMmBUZ9bos",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Du lịch bền vững trên tuyến đảo Vân Đồn – video khu vực (chưa có video riêng về di tích)",
+     "en": "Sustainable tourism on the Vân Đồn island route – area video (no video of the site itself yet)",
+     "zh": "云屯 (Vân Đồn) 海岛线路可持续旅游——区域视频（暂无该遗迹专门视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 09/06/2024"
+   }
+  ]
+ },
+ "VD14": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://media.quangninh.gov.vn/618ca5c4-79b3-478a-8adb-4184369067f7/Libraries/HinhAnhBaiViet/thu%20huyen/N%c4%83m%202024/thang%205/tuan%202/B%e1%ba%a3n%20Sen1.jpg",
+    "trang_nguon": "https://quangninh.gov.vn/chuyen-de/chuyendoiso/Trang/ChiTietTinTuc.aspx?nid=137156",
+    "nguon": "Cổng TTĐT tỉnh Quảng Ninh – Chè Vân Bản Sen (Nguyễn Trang, 08/05/2024)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Cây chè Vân cổ thụ trên đảo Bản Sen, nơi có Hang Hoi (ảnh khu vực)",
+     "en": "An ancient Vân tea tree on Bản Sen Island, where Hoi Cave is located (area photo)",
+     "zh": "班森（Bản Sen）岛上的古云茶树，Hoi洞（Hang Hoi）所在地（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/618ca5c4-79b3-478a-8adb-4184369067f7/Libraries/HinhAnhBaiViet/thu%20huyen/N%C4%83m%202024/thang%205/tuan%202/B%E1%BA%A3n%20Sen2.jpg",
+    "trang_nguon": "https://quangninh.gov.vn/chuyen-de/chuyendoiso/Trang/ChiTietTinTuc.aspx?nid=137156",
+    "nguon": "Cổng TTĐT tỉnh Quảng Ninh – Chè Vân Bản Sen (Nguyễn Trang, 08/05/2024)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Người dân xã đảo Bản Sen thu hái chè – khu vực Hang Hoi (ảnh khu vực)",
+     "en": "Residents of Bản Sen Island picking tea – the area of Hoi Cave (area photo)",
+     "zh": "班森（Bản Sen）岛居民采茶——Hoi洞（Hang Hoi）一带（区域照片）"
+    }
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/%e1%ba%a3nh%20tin%20t%e1%bb%a9c%20s%e1%bb%b1%20ki%e1%bb%87n/th%c3%a1ng%204/2026/z7744674174328_555f9a6fd3295ff7f1e30a2bea9cc152.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietTinTuc.aspx?nid=3196",
+    "nguon": "Cổng TTĐT Đặc khu Vân Đồn – Khám phá Bản Sen (Ngân Hà, 20/04/2026)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Vùng nuôi hàu ở Bản Sen, đảo nơi có Hang Hoi (ảnh khu vực)",
+     "en": "Oyster farming at Bản Sen, the island where Hoi Cave is located (area photo)",
+     "zh": "班森（Bản Sen）的牡蛎养殖区，Hoi洞（Hang Hoi）所在岛屿（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=kDv4epcJ-iw",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Giá trị văn hóa Hạ Long qua các tư liệu khảo cổ – video chủ đề khảo cổ tiền sử vùng vịnh (chưa có video riêng về di tích)",
+     "en": "The value of Hạ Long culture through archaeological records – thematic video (no video of the site itself yet)",
+     "zh": "从考古资料看下龙文化的价值——史前考古主题视频（暂无该遗迹专门视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 05/12/2024"
+   }
+  ]
+ },
+ "VD15": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53_dwsUn1jwYBmJsDlE1l2s8HjCRWWAg0lj5l2hWYHAyM7aw_0WU4Jt-Wh_rEDFFiY0reGI_8Xq2hcd7Y8a8ZN-/2311524_wtm_a035cdfbbcd2aa25635e52b2ae733cfb.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/le-hoi-cau-ngu-lan-thu-ii-nam-2025-3343096.html",
+    "nguon": "Báo Quảng Ninh điện tử (bài: Hải Hà)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Lễ hội Cầu ngư 2025 tại Cảng cá Cái Rồng (ảnh khu vực)",
+     "en": "2025 Fishing Prayer Festival at Cái Rồng fishing port (area photo)",
+     "zh": "2025年盖龙（Cái Rồng）渔港祈渔节（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50PjqOEfL06Ufpm5UTdDg3UYX6dTW04Z5XfamrMom2TyWwS7NtbUuL47kTjA8ygqyxzNTx-_CbImUyYPEYBxzc8/2480105_wtm_0be65b72da925fe2b9a4e529b3ca7eb1.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/khai-hoi-cau-ngu-van-don-3397856.html",
+    "nguon": "Báo Quảng Ninh điện tử (bài: Phạm Học)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Lễ hội Cầu ngư xuân Bính Ngọ 2026 ở Cái Rồng (ảnh khu vực)",
+     "en": "Fishing Prayer Festival, spring 2026, in Cái Rồng (area photo)",
+     "zh": "2026年丙午春盖龙（Cái Rồng）祈渔节（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=KgGSD58UIaQ",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Cái Rồng: Truyền thuyết và lịch sử – QTV (video khu vực di tích)",
+     "en": "Cái Rồng: Legend and History – QTV (video of the area around the site)",
+     "zh": "盖龙（Cái Rồng）：传说与历史 – QTV（遗迹所在区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 03/12/2020"
+   }
+  ]
+ },
+ "VD16": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50PjqOEfL06Ufpm5UTdDg3UYX6dTW04Z5XfamrMom2TyWwS7NtbUuL47kTjA8ygqyxzNTx-_CbImUyYPEYBxzc8/2480105_wtm_0be65b72da925fe2b9a4e529b3ca7eb1.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/khai-hoi-cau-ngu-van-don-3397856.html",
+    "nguon": "Báo Quảng Ninh điện tử (bài: Phạm Học)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Lễ hội Cầu ngư xuân Bính Ngọ 2026 ở Cái Rồng (ảnh khu vực)",
+     "en": "Fishing Prayer Festival, spring 2026, in Cái Rồng (area photo)",
+     "zh": "2026年丙午春盖龙（Cái Rồng）祈渔节（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53_dwsUn1jwYBmJsDlE1l2s8HjCRWWAg0lj5l2hWYHAyM7aw_0WU4Jt-Wh_rEDFFiY0reGI_8Xq2hcd7Y8a8ZN-/2311524_wtm_a035cdfbbcd2aa25635e52b2ae733cfb.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/le-hoi-cau-ngu-lan-thu-ii-nam-2025-3343096.html",
+    "nguon": "Báo Quảng Ninh điện tử (bài: Hải Hà)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Lễ hội Cầu ngư 2025 tại Cảng cá Cái Rồng (ảnh khu vực)",
+     "en": "2025 Fishing Prayer Festival at Cái Rồng fishing port (area photo)",
+     "zh": "2025年盖龙（Cái Rồng）渔港祈渔节（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=KgGSD58UIaQ",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Cái Rồng: Truyền thuyết và lịch sử – QTV (video khu vực di tích)",
+     "en": "Cái Rồng: Legend and History – QTV (video of the area around the site)",
+     "zh": "盖龙（Cái Rồng）：传说与历史 – QTV（遗迹所在区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 03/12/2020"
+   }
+  ]
+ },
+ "VD17": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52So3l1QEdQKartBlZTd8CHO_Tkthbqp7sRp6iEE8z2SP1PDuqKQ5dSi1cPe4zPw0I/2208058_img_5747_14501129.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/phat-trien-khu-du-lich-sinh-thai-ben-vung-3296470.html",
+    "nguon": "Báo Quảng Ninh điện tử (bài: Duy Khoa)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Cảnh quan xanh ở thôn Khe Mai, xã Đoàn Kết cũ (ảnh khu vực)",
+     "en": "Green landscape in Khe Mai hamlet, former Đoàn Kết commune (area photo)",
+     "zh": "原团结（Đoàn Kết）社溪梅（Khe Mai）村的绿色景观（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/d07e4659-2aae-4343-a2d5-478b67c08003/Libraries/HinhAnhBaiViet/MINH%20NGUYET/thang5/5%20%20N%c3%b4ng%20d%c3%a2n%20m%e1%bb%9f%20c%e1%bb%ada%20v%c6%b0%e1%bb%9dn%20%c4%91%c3%b3n%20kh%c3%a1ch%20du%20l%e1%bb%8bch.jpg",
+    "trang_nguon": "https://dulich.quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=4361",
+    "nguon": "Chuyên trang Du lịch Quảng Ninh (Diên Khánh - Nguyên Ngọc)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Không gian làng quê ở thôn Khe Mai, xã Đoàn Kết cũ (ảnh khu vực)",
+     "en": "Rural landscape in Khe Mai hamlet, former Đoàn Kết commune (area photo)",
+     "zh": "原团结（Đoàn Kết）社溪梅（Khe Mai）村的乡村风光（区域照片）"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50P7ju7KXjqaWBI3LNCCiKioxFaC23yLWR8eSIg1BzjFIBtNFV_aT1R23vw_OsWT50_RhCqK21ZzvCzs_W9amr24cXqIkekvOf-7PAY2F_87YUubNIcPLc2QAXVctISWDvwmRREBaM9VKbxPImTGqwb/2446111_2423856_ha_tang_co_so_hien_dai_cua_cang_hang_khong_quoc_te_van_don_20094018_04514210.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/phat-huy-loi-the-cang-hang-khong-quoc-te-van-don-post3388135.html",
+    "nguon": "Báo Quảng Ninh điện tử (bài: Đào Linh)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Cảng hàng không quốc tế Vân Đồn ở thôn Khe Mai, xã Đoàn Kết cũ – khu vực di tích (ảnh khu vực)",
+     "en": "Vân Đồn International Airport in Khe Mai hamlet, former Đoàn Kết commune – the area of the site (area photo)",
+     "zh": "位于原团结（Đoàn Kết）社溪梅（Khe Mai）村的云屯（Vân Đồn）国际机场——遗迹所在区域（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=KgGSD58UIaQ",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Cái Rồng: Truyền thuyết và lịch sử – video chung về vùng đất Vân Đồn (chưa có video riêng về di tích)",
+     "en": "Cái Rồng: legends and history – general video about Vân Đồn (no video of the site itself yet)",
+     "zh": "丐龙 (Cái Rồng)：传说与历史——云屯地区综合视频（暂无该遗迹专门视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 03/12/2020"
+   }
+  ]
+ },
+ "VD19": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://media.quangninh.gov.vn/7343e27a-9300-4e2d-80aa-c4ee118af1d6/Libraries/hinhanhbaiviet/2025/th%c3%a1ng%204/di%20t%c3%adch%20kh%e1%ba%a3o%20c%e1%bb%95%20ba%20v%c5%a9ng/z6517830611545_134c1320098169bcecb53eae7c182008.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/So/sovanhoathethao/Trang/ChiTietTinTuc.aspx?nid=12400",
+    "nguon": "Sở VHTT&DL Quảng Ninh",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Khu vực di chỉ Ba Vũng (xã Hạ Long cũ), gần hang Hà Giắt (ảnh khu vực)",
+     "en": "The Ba Vung site area (former Ha Long commune), near Ha Giat cave (area photo)",
+     "zh": "巴汪 (Ba Vũng) 遗址一带（原下龙 (Hạ Long) 乡），靠近河迭 (Hà Giắt) 洞（区域照片）"
+    },
+    "dai_dien": true
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=kDv4epcJ-iw",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Giá trị văn hóa Hạ Long qua các tư liệu khảo cổ (video chủ đề khảo cổ vùng vịnh, khu vực di tích)",
+     "en": "Values of Ha Long culture through archaeological records (regional archaeology video) (area)",
+     "zh": "从考古资料看下龙 (Hạ Long) 文化的价值（区域考古视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 05/12/2024"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=IjK1Q2ljjDI",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Mô hình du lịch nông trại ở xã Hạ Long, Vân Đồn (video khu vực di tích)",
+     "en": "Farm tourism model in Ha Long commune, Van Don (area video)",
+     "zh": "云屯 (Vân Đồn) 下龙 (Hạ Long) 乡的农场旅游模式（区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 14/05/2024"
+   }
+  ]
+ },
+ "VD23": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv536NSc0QOa7M0GYTumwTiCQ3G86aod0zcfhdopvtPFv7do1HGWMQEyuMQgjOplVms4/2215433_faf_06003222.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/trai-nghiem-duoi-tan-rung-tram-minh-chau-3300145.html",
+    "nguon": "Báo Quảng Ninh (bài: Hà Phong, 26/05/2024)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Rừng trâm cổ ở xã đảo Minh Châu, nơi có Miếu Cổng Bà (ảnh khu vực)",
+     "en": "The ancient Syzygium (trâm) forest in Minh Chau island commune, where Cong Ba shrine is located (area photo)",
+     "zh": "明珠 (Minh Châu) 岛乡的古蒲桃 (trâm) 林，公婆庙 (Miếu Cổng Bà)所在地（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53WwCRwHQJkx6XSCUkxn8aQ4GTQ2E2pUPGA8d9ZeedOi_KrVDP9wC0F4B81TsSCF_o/2245513_fa_08061413.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/cung-duong-xanh-dep-nhat-dao-minh-chau-quan-lan-gmt-7-luu-in-email-3314111.html",
+    "nguon": "Báo Quảng Ninh (bài: Hà Phong, 18/08/2024)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Cung đường phi lao xuyên đảo Minh Châu – Quan Lạn, nơi có Miếu Cổng Bà (ảnh khu vực)",
+     "en": "The casuarina-lined road across Minh Chau – Quan Lan island, where Cong Ba shrine is located (area photo)",
+     "zh": "明珠 (Minh Châu) – 官澜 (Quan Lạn) 岛上木麻黄夹道的环岛公路，公婆庙 (Miếu Cổng Bà)所在地（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=ZPTmJNvNV90",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Ngỡ ngàng du lịch Quan Lạn - Minh Châu – video về xã đảo Minh Châu (khu vực di tích)",
+     "en": "Amazing Quan Lan – Minh Chau tourism – video on Minh Chau island commune (area of the site)",
+     "zh": "惊艳的官澜 (Quan Lạn) – 明珠 (Minh Châu) 旅游——明珠 (Minh Châu) 岛乡视频（遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 12/04/2021"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=HoK1RI-4FEQ",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Minh Châu: Viên ngọc xanh trên biển biếc – video về xã đảo Minh Châu (khu vực di tích)",
+     "en": "Minh Chau: a green jewel on the blue sea – video on Minh Chau island commune (area of the site)",
+     "zh": "明珠 (Minh Châu)：碧海上的绿宝石——明珠 (Minh Châu) 岛乡视频（遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 11/06/2020"
+   }
+  ]
+ },
+ "VD24": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52YfbOdYWXICCwhXARt3NGLQvnvE6GvxBEJ8YSQ9mSOHm7fFQoQJLR2P-GhaPwvheA/2006089_thuong_cang_18263010.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/thuong-cang-van-don-thuong-cang-dau-tien-cua-nuoc-dai-viet-3203904.html",
+    "nguon": "Báo Quảng Ninh (bài: Xuân Hòa, 13/09/2022)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Tư liệu về Thương cảng Vân Đồn – hệ thống bến cổ mà Bến Cái Cổng là một bộ phận (ảnh khu vực)",
+     "en": "Archival image of the Van Don trading port – the ancient wharf system that includes Cai Cong wharf (area image)",
+     "zh": "云屯 (Vân Đồn) 商港资料图——盖拱 (Cái Cổng) 码头所属的古码头体系（区域图片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0EpKQuW8OnvTIINFSZZf6kFFDVKdvhunVVkmEhF1Ttu8Gq2D94fjQbJWTl3HC5efiRvzTGHtuyIiIHWf1ZL6hC0/images1223028_Picture_017.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/cua-ngo-giao-thuong-quoc-te-cua-dai-viet-2421466.html",
+    "nguon": "Báo Quảng Ninh (07/02/2019)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Khảo sát khảo cổ Thương cảng Vân Đồn trên đảo Quan Lạn (5/2018) – hệ thống bến cổ có Bến Cái Cổng (ảnh khu vực)",
+     "en": "Archaeological survey of the Van Don trading port on Quan Lan island (May 2018) – the wharf system that includes Cai Cong wharf (area image)",
+     "zh": "2018年5月在官澜 (Quan Lạn) 岛对云屯 (Vân Đồn) 商港的考古调查——盖拱 (Cái Cổng) 码头所属的古码头体系（区域图片）"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv502PaWilgNHspOnAybN4ThFMox_yrrGY_Ci0nSOtEOnlXFKmrZ1rsQjyMyMwA-fmsc/1841037_1212312_16044726.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/doi-thay-o-xa-dao-minh-chau-2917731.html",
+    "nguon": "Báo Quảng Ninh (26/05/2021)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Xã đảo Minh Châu, đảo Quan Lạn, nơi có Bến Cái Cổng (ảnh khu vực)",
+     "en": "Minh Chau island commune, Quan Lan island, where Cai Cong wharf is located (area photo)",
+     "zh": "官澜 (Quan Lạn) 岛上的明珠 (Minh Châu) 岛乡，盖拱 (Cái Cổng) 码头所在地（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=Bu79dEf1dIk",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Thương cảng Vân Đồn - Thương cảng đầu tiên của nước Đại Việt – video về Thương cảng Vân Đồn (hệ thống di tích có bến cổ này) (khu vực)",
+     "en": "Van Don trading port – the first trading port of Dai Viet – video on the Van Don trading port (the site system this wharf belongs to) (area)",
+     "zh": "云屯 (Vân Đồn) 商港——大越第一商港——云屯 (Vân Đồn) 商港视频（该古码头所属遗迹体系）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 16/09/2022"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=UAvj7TLgqrw",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Dấu tích thương cảng cổ Vân Đồn – video về Thương cảng Vân Đồn (hệ thống di tích có bến cổ này) (khu vực)",
+     "en": "Traces of the ancient Van Don trading port – video on the Van Don trading port (the site system this wharf belongs to) (area)",
+     "zh": "云屯 (Vân Đồn) 古商港遗迹——云屯 (Vân Đồn) 商港视频（该古码头所属遗迹体系）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 28/04/2021"
+   }
+  ]
+ },
+ "VD25": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0EpKQuW8OnvTIINFSZZf6kFFDVKdvhunVVkmEhF1Ttu8Gq2D94fjQbJWTl3HC5efiRvzTGHtuyIiIHWf1ZL6hC0/images1223028_Picture_017.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/cua-ngo-giao-thuong-quoc-te-cua-dai-viet-2421466.html",
+    "nguon": "Báo Quảng Ninh (07/02/2019)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Khảo sát khảo cổ Thương cảng Vân Đồn trên đảo Quan Lạn (5/2018) – hệ thống bến cổ có Bến Con Quy (ảnh khu vực)",
+     "en": "Archaeological survey of the Van Don trading port on Quan Lan island (May 2018) – the wharf system that includes Con Quy wharf (area image)",
+     "zh": "2018年5月在官澜 (Quan Lạn) 岛对云屯 (Vân Đồn) 商港的考古调查——昆龟 (Con Quy) 码头所属的古码头体系（区域图片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52YfbOdYWXICCwhXARt3NGLQvnvE6GvxBEJ8YSQ9mSOHm7fFQoQJLR2P-GhaPwvheA/2006089_thuong_cang_18263010.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/thuong-cang-van-don-thuong-cang-dau-tien-cua-nuoc-dai-viet-3203904.html",
+    "nguon": "Báo Quảng Ninh (bài: Xuân Hòa, 13/09/2022)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Tư liệu về Thương cảng Vân Đồn – hệ thống bến cổ mà Bến Con Quy là một bộ phận (ảnh khu vực)",
+     "en": "Archival image of the Van Don trading port – the ancient wharf system that includes Con Quy wharf (area image)",
+     "zh": "云屯 (Vân Đồn) 商港资料图——昆龟 (Con Quy) 码头所属的古码头体系（区域图片）"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53WwCRwHQJkx6XSCUkxn8aQ4GTQ2E2pUPGA8d9ZeedOi_KrVDP9wC0F4B81TsSCF_o/2245513_fa_08061413.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/cung-duong-xanh-dep-nhat-dao-minh-chau-quan-lan-gmt-7-luu-in-email-3314111.html",
+    "nguon": "Báo Quảng Ninh (bài: Hà Phong, 18/08/2024)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Cung đường phi lao xuyên đảo Minh Châu – Quan Lạn, nơi có Bến Con Quy (ảnh khu vực)",
+     "en": "The casuarina-lined road across Minh Chau – Quan Lan island, where Con Quy wharf is located (area photo)",
+     "zh": "明珠 (Minh Châu) – 官澜 (Quan Lạn) 岛上木麻黄夹道的环岛公路，昆龟 (Con Quy) 码头所在地（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=OgtzRvV1BA0",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Bảo tồn, phát huy giá trị thương cảng Vân Đồn – video về Thương cảng Vân Đồn (hệ thống di tích có bến cổ này) (khu vực)",
+     "en": "Preserving and promoting the value of the Van Don trading port – video on the Van Don trading port (the site system this wharf belongs to) (area)",
+     "zh": "保护和弘扬云屯 (Vân Đồn) 商港价值——云屯 (Vân Đồn) 商港视频（该古码头所属遗迹体系）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 16/06/2024"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=Bu79dEf1dIk",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Thương cảng Vân Đồn - Thương cảng đầu tiên của nước Đại Việt – video về Thương cảng Vân Đồn (hệ thống di tích có bến cổ này) (khu vực)",
+     "en": "Van Don trading port – the first trading port of Dai Viet – video on the Van Don trading port (the site system this wharf belongs to) (area)",
+     "zh": "云屯 (Vân Đồn) 商港——大越第一商港——云屯 (Vân Đồn) 商港视频（该古码头所属遗迹体系）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 16/09/2022"
+   }
+  ]
+ },
+ "VD26": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50Rfk9Pl18BaqEsn94ri0CoDmrPCJTSvdNdelLpk-QHk6RdfjP1Q_M3KxjGMG47ed2cBSwF8-aeyMdciDynegEQ/2336929_wtm_2a773996c2322a2b69e24e1314a55b4d.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/minh-chau-tu-the-san-sang-cho-mua-du-lich-moi-3351806.html",
+    "nguon": "Báo Quảng Ninh (bài: Công Thành, 13/04/2025)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Làng du lịch Minh Châu, đảo Quan Lạn chuẩn bị đón mùa du lịch 2025, nơi có Đền Đức Ông (Minh Châu) (ảnh khu vực)",
+     "en": "Minh Chau village on Quan Lan island preparing for the 2025 tourist season, where Duc Ong temple (Minh Chau) is located (area photo)",
+     "zh": "明珠 (Minh Châu) 村，官澜 (Quan Lạn) 岛，准备迎接2025年旅游季，德翁祠 (Đền Đức Ông，明珠 Minh Châu)所在地（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv536NSc0QOa7M0GYTumwTiCQ3G86aod0zcfhdopvtPFv7do1HGWMQEyuMQgjOplVms4/2215433_faf_06003222.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/trai-nghiem-duoi-tan-rung-tram-minh-chau-3300145.html",
+    "nguon": "Báo Quảng Ninh (bài: Hà Phong, 26/05/2024)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Rừng trâm cổ ở xã đảo Minh Châu, nơi có Đền Đức Ông (Minh Châu) (ảnh khu vực)",
+     "en": "The ancient Syzygium (trâm) forest in Minh Chau island commune, where Duc Ong temple (Minh Chau) is located (area photo)",
+     "zh": "明珠 (Minh Châu) 岛乡的古蒲桃 (trâm) 林，德翁祠 (Đền Đức Ông，明珠 Minh Châu)所在地（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=HoK1RI-4FEQ",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Minh Châu: Viên ngọc xanh trên biển biếc – video về xã đảo Minh Châu (khu vực di tích)",
+     "en": "Minh Chau: a green jewel on the blue sea – video on Minh Chau island commune (area of the site)",
+     "zh": "明珠 (Minh Châu)：碧海上的绿宝石——明珠 (Minh Châu) 岛乡视频（遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 11/06/2020"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=ZPTmJNvNV90",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Ngỡ ngàng du lịch Quan Lạn - Minh Châu – video về xã đảo Minh Châu (khu vực di tích)",
+     "en": "Amazing Quan Lan – Minh Chau tourism – video on Minh Chau island commune (area of the site)",
+     "zh": "惊艳的官澜 (Quan Lạn) – 明珠 (Minh Châu) 旅游——明珠 (Minh Châu) 岛乡视频（遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 12/04/2021"
+   }
+  ]
+ },
+ "VD29": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/5/3/cong-yen-3943-1714737101134-1714737101254222503582.jpg",
+    "trang_nguon": "https://danviet.vn/hon-dao-ngoc-vung-o-quang-ninh-tuong-truyen-xua-la-liet-ngoc-trai-nay-van-hoang-so-the-nay-day-20240503190014739-d1159452.html",
+    "nguon": "Dân Việt (ảnh: QH)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Bến Cống Yên ở phía bắc đảo Ngọc Vừng – bến cổ cùng khu vực với Bến Cống Hẹp (ảnh khu vực)",
+     "en": "Cống Yên wharf on northern Ngọc Vừng, the ancient wharf next to Cống Hẹp (area photo)",
+     "zh": "玉旺 (Ngọc Vừng) 岛北部的贡安 (Cống Yên) 码头，与贡狭 (Cống Hẹp) 古码头同属一区（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/5/3/z4661562163396-3ae9d0e237f3bd5cd92fe8e97f425648-6782-1714737094718-17147370949861662202852.jpg",
+    "trang_nguon": "https://danviet.vn/hon-dao-ngoc-vung-o-quang-ninh-tuong-truyen-xua-la-liet-ngoc-trai-nay-van-hoang-so-the-nay-day-20240503190014739-d1159452.html",
+    "nguon": "Dân Việt (ảnh: QH)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Bờ biển đảo Ngọc Vừng, nơi có Bến Cống Hẹp (ảnh khu vực)",
+     "en": "The coast of Ngọc Vừng Island, where Cống Hẹp wharf lies (area photo)",
+     "zh": "玉旺 (Ngọc Vừng) 岛海岸，贡狭 (Cống Hẹp) 码头所在地（区域照片）"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50hD3sXyI4tlab3NAEK_awDaWCdFlbv9w3hqzAf0-XI6hA2HS5Bv6JYczEwEW2P9icyCVIuakoUJ61C0KDo-6un/2352591_wtm_54df02f42d092bf1dfd7efe90a3c897f.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/tu-thuong-cang-co-toi-xa-dao-anh-hung-3358254.html",
+    "nguon": "Báo Quảng Ninh điện tử",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Một góc xã đảo Ngọc Vừng, nơi có Bến Cống Hẹp (ảnh khu vực)",
+     "en": "A corner of Ngọc Vừng island commune, where Cống Hẹp wharf lies (area photo)",
+     "zh": "玉旺 (Ngọc Vừng) 岛乡一角，贡狭 (Cống Hẹp) 码头所在地（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=m-g273VQ9CY",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Bảo tồn, phát huy giá trị thương cảng Vân Đồn (video về hệ thống thương cảng – khu vực di tích)",
+     "en": "Preserving and promoting the Vân Đồn trading port (video on the port system – area of the relic)",
+     "zh": "保护和发扬云屯 (Vân Đồn) 商港价值（商港体系视频——遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 14/03/2023"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=WcEHVt0y4LE",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Trải nghiệm cào ngao trên bãi biển Ngọc Vừng (video về xã đảo Ngọc Vừng – khu vực di tích)",
+     "en": "Clam raking on Ngọc Vừng beach (video of the island – area of the relic)",
+     "zh": "在玉旺 (Ngọc Vừng) 海滩体验耙蛤（玉旺岛乡视频——遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 07/04/2021"
+   }
+  ]
+ },
+ "VD30": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://cdn.baophapluat.vn/uploaded/quynhluu/2021_03_16/a2_FARX.jpg",
+    "trang_nguon": "https://baophapluat.vn/dinh-quan-lan-ngoi-dinh-thieng-300-tuoi-ben-song-nuoc-van-don-post385300.html",
+    "nguon": "Báo Pháp luật Việt Nam",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Đình Quan Lạn – trung tâm làng cổ trên đảo Quan Lạn (ảnh khu vực)",
+     "en": "Quan Lạn Communal House, centre of the old village on Quan Lạn Island (area photo)",
+     "zh": "官澜（Quan Lạn）亭——官澜岛古村中心（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50Br1ymXb5Xn5uMfLWQSGJHT0nhh4Wn0v0oiHIXwlk93K1795Pl-O3-N3b7poY6uuVkCcnUih4Rq5OBJ00PQ4EhVkBprYLRGQhasGw5h-V9Vg/2112442_tuong_cua_giap_doai_bac_vo_chi_huy_boi_chai_05231407.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/le-hoi-thuong-vo-o-xa-dao-quan-lan-3254048.html",
+    "nguon": "Báo Quảng Ninh",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Bơi chải trong Lễ hội truyền thống Vân Đồn ở Quan Lạn, năm 2023 (ảnh khu vực)",
+     "en": "Boat-rowing race at the Vân Đồn Traditional Festival on Quan Lạn, 2023 (area photo)",
+     "zh": "2023年官澜（Quan Lạn）云屯（Vân Đồn）传统节划船比赛（区域照片）"
+    }
+   },
+   {
+    "url": "https://media.thuonghieucongluan.vn/uploads/2026/07/10/le-hoi-van-don-1-1783682079.jpg",
+    "trang_nguon": "https://thuonghieucongluan.com.vn/le-hoi-truyen-thong-van-don-nam-2026-se-duoc-khai-mac-vao-ngay-31-7-a325938.html",
+    "nguon": "Thương hiệu & Công luận",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Đua thuyền truyền thống trong Lễ hội truyền thống Vân Đồn ở Quan Lạn (ảnh khu vực)",
+     "en": "Traditional boat race at the Vân Đồn Traditional Festival on Quan Lạn (area photo)",
+     "zh": "官澜（Quan Lạn）云屯（Vân Đồn）传统节传统赛船（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=xJgSjZpJr_U",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về đình Quan Lạn trên đảo Quan Lạn (khu vực di tích)",
+     "en": "Video on Quan Lạn Communal House, Quan Lạn Island (area of the site)",
+     "zh": "官澜（Quan Lạn）岛官澜亭视频（遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 31/05/2020"
+   }
+  ]
+ },
+ "VD32": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv51gc5oKmZZwnIDHuzR2rp7np_J0box42DBfzm_jDPCxcF3H6EOlBKg-su9_yGJOSVh9GRY2ns1nq9p38-6mQYle/2378111_wtm_7f1d259dc5043fcc1e05050b84208a79.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/tung-bung-le-hoi-truyen-thong-van-don-nam-2025-3366539.html",
+    "nguon": "Báo Quảng Ninh",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Lễ hội truyền thống Vân Đồn năm 2025 tại Quan Lạn, tưởng nhớ Nhân Huệ Vương Trần Khánh Dư (ảnh khu vực)",
+     "en": "Vân Đồn Traditional Festival 2025 on Quan Lạn, commemorating Prince Nhân Huệ Trần Khánh Dư (area photo)",
+     "zh": "2025年官澜（Quan Lạn）云屯（Vân Đồn）传统节，纪念仁惠王陈庆余（Trần Khánh Dư）（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://media.thuonghieucongluan.vn/uploads/2026/07/10/le-hoi-van-don-1783682079.jpg",
+    "trang_nguon": "https://thuonghieucongluan.com.vn/le-hoi-truyen-thong-van-don-nam-2026-se-duoc-khai-mac-vao-ngay-31-7-a325938.html",
+    "nguon": "Thương hiệu & Công luận",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Lễ rước sắc thần trong Lễ hội truyền thống Vân Đồn trên đảo Quan Lạn – lễ hội tưởng nhớ Trần Khánh Dư (ảnh khu vực)",
+     "en": "Procession of the royal decrees at the Vân Đồn Traditional Festival on Quan Lạn Island, honouring Trần Khánh Dư (area photo)",
+     "zh": "官澜（Quan Lạn）岛云屯（Vân Đồn）传统节迎神敕仪式，纪念陈庆余（Trần Khánh Dư）（区域照片）"
+    }
+   },
+   {
+    "url": "https://cdn.baoquocte.vn/stores/news_dataimages/2025/062025/13/16/doc-dao-le-hoi-giau-ban-sac-van-hoa-tai-quan-lan-20250613165428.webp",
+    "trang_nguon": "https://baoquocte.vn/doc-dao-le-hoi-giau-ban-sac-van-hoa-tai-quan-lan-317635.html",
+    "nguon": "Báo Quốc tế",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Lễ hội đình Quan Lạn – còn gọi là lễ hội tưởng nhớ tướng Trần Khánh Dư (ảnh khu vực)",
+     "en": "Quan Lạn Communal House festival, also held in memory of General Trần Khánh Dư (area photo)",
+     "zh": "官澜（Quan Lạn）亭节庆，亦为纪念陈庆余（Trần Khánh Dư）将军（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=xJgSjZpJr_U",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về đình Quan Lạn trên đảo Quan Lạn (khu vực di tích)",
+     "en": "Video on Quan Lạn Communal House, Quan Lạn Island (area of the site)",
+     "zh": "官澜（Quan Lạn）岛官澜亭视频（遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 31/05/2020"
+   }
+  ]
+ },
+ "VD34": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://cdn.daidoanket.vn/w3840/2020/5/21/ttxvn_2812_than_cong3_1.jpg.avif",
+    "trang_nguon": "https://daidoanket.vn/phat-hien-sung-than-cong-co-tren-200-nam-o-dao-quan-lan-10092516.html",
+    "nguon": "Báo Đại Đoàn Kết (ảnh: TTXVN)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Súng thần công cổ phát hiện ở thôn Sơn Hào (12/2017), hiện được cất giữ tại đền Vân Sơn (ảnh hiện vật, không phải ảnh kiến trúc đền) (khu vực)",
+     "en": "Old cannon found in Sơn Hào hamlet (Dec 2017), now kept at Vân Sơn temple (photo of the artefact, not of the temple) (area)",
+     "zh": "2017年12月于山豪（Sơn Hào）村发现的古神功炮，现存于云山（Vân Sơn）庙（文物照片，非庙宇建筑照片）（区域）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://static.vinwonders.com/production/2025/04/bai-tam-son-hao-quan-lan.jpg",
+    "trang_nguon": "https://vinwonders.com/vi/wonderpedia/news/bai-tam-son-hao-quang-ninh/",
+    "nguon": "VinWonders (Ảnh: Sưu tầm)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Bãi biển Sơn Hào, thôn nơi có đền, miếu Vân Sơn (ảnh khu vực)",
+     "en": "Sơn Hào beach, the hamlet where Vân Sơn temple and shrine stand (area photo)",
+     "zh": "山豪（Sơn Hào）海滩——云山（Vân Sơn）庙宇所在村落（区域照片）"
+    }
+   },
+   {
+    "url": "https://static.vinwonders.com/production/2025/04/bai-bien-son-hao.jpg",
+    "trang_nguon": "https://vinwonders.com/vi/wonderpedia/news/bai-tam-son-hao-quang-ninh/",
+    "nguon": "VinWonders (Ảnh: Sưu tầm)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Bờ biển thôn Sơn Hào, đảo Quan Lạn (ảnh khu vực)",
+     "en": "Coast of Sơn Hào hamlet, Quan Lạn Island (area photo)",
+     "zh": "官澜（Quan Lạn）岛山豪（Sơn Hào）村海岸（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=xJgSjZpJr_U",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về đình Quan Lạn trên đảo Quan Lạn (khu vực di tích)",
+     "en": "Video on Quan Lạn Communal House, Quan Lạn Island (area of the site)",
+     "zh": "官澜（Quan Lạn）岛官澜亭视频（遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 31/05/2020"
+   }
+  ]
+ },
+ "VD35": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://cdn.baophapluat.vn/w1280/uploaded/quynhluu/2021_03_16/a3_wcxa.jpg",
+    "trang_nguon": "https://baophapluat.vn/dinh-quan-lan-ngoi-dinh-thieng-300-tuoi-ben-song-nuoc-van-don-post385300.html",
+    "nguon": "Báo Pháp luật Việt Nam",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Thi đua thuyền tại lễ hội đình Quan Lạn – lễ hội gắn với chiến công chống quân Nguyên trên đảo (ảnh khu vực)",
+     "en": "Boat race at the Quan Lạn Communal House festival, linked to the island's resistance against the Yuan (area photo)",
+     "zh": "官澜（Quan Lạn）亭节庆赛船——与岛上抗元事迹相关（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/%e1%ba%a3nh%20tin%20t%e1%bb%a9c%20s%e1%bb%b1%20ki%e1%bb%87n/th%c3%a1ng%207/2025/1%20-%202025-07-09t161400.526.jpg",
+    "trang_nguon": "https://www.quangninh.gov.vn/donvi/vandon/Trang/ChiTietTinTuc.aspx?nid=66",
+    "nguon": "Cổng TTĐT Đặc khu Vân Đồn",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Tướng sĩ hai giáp Văn – Võ múa đao mở đường đoàn rước sắc thần, Lễ hội truyền thống Vân Đồn ở Quan Lạn (ảnh khu vực)",
+     "en": "Civil and military 'generals' perform a sword dance leading the decree procession, Vân Đồn Traditional Festival on Quan Lạn (area photo)",
+     "zh": "文、武两甲将士舞刀为迎神敕队伍开道，官澜（Quan Lạn）云屯（Vân Đồn）传统节（区域照片）"
+    }
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50Br1ymXb5Xn5uMfLWQSGJH3vOAcuNCIWzpRcGsiNBbUXT6rlm56zr1Nn6yDVGrBqY/2114242_quan_lan_10401012.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/quan-lan-mien-di-tich-va-le-hoi-dac-sac-3254438.html",
+    "nguon": "Báo Quảng Ninh",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Xã đảo Quan Lạn – miền di tích và lễ hội (ảnh khu vực)",
+     "en": "Quan Lạn island commune, a land of relics and festivals (area photo)",
+     "zh": "官澜（Quan Lạn）岛乡——遗迹与节庆之地（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=xJgSjZpJr_U",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về đình Quan Lạn trên đảo Quan Lạn (khu vực di tích)",
+     "en": "Video on Quan Lạn Communal House, Quan Lạn Island (area of the site)",
+     "zh": "官澜（Quan Lạn）岛官澜亭视频（遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 31/05/2020"
+   }
+  ]
+ },
+ "VD36": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0NIFJF80SwTq8Nf3ptvOV9GgA30fV2dQ-0EJYeSTLuqUEd4yffXi_YdSrdGsv1srz_KrVDP9wC0F4B81TsSCF_o/images1336076_DSC_4513.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/du-lich-bui-o-dao-thang-loi-2458836.html",
+    "nguon": "Báo Quảng Ninh – Du lịch \"bụi\" ở đảo Thắng Lợi (Công Thành, 27/10/2019)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Xã đảo Thắng Lợi, nơi có Hang Quan (ảnh khu vực)",
+     "en": "Thắng Lợi island commune, where Hang Quan cave is located (area photo)",
+     "zh": "胜利 (Thắng Lợi) 海岛乡，官洞 (Hang Quan) 所在地（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0NIFJF80SwTq8Nf3ptvOV9Eb0mC5kEq7ANTwEH7fsGp2WJGgDHniZ4dITwk6qAtB-a-LZM3SVLwZm-i_alFD3TkX6rBJToZJc77kyK4eoske/images1273766_images676256_Dao_Cong_Dong.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/thuong-cang-van-don-qua-cac-thoi-ky-lich-su-2196939.html",
+    "nguon": "Báo Quảng Ninh – Thương cảng Vân Đồn qua các thời kỳ lịch sử (25/05/2013)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Đảo Cống Đông, Cống Tây – khu vực có Hang Quan (ảnh khu vực)",
+     "en": "Cống Đông and Cống Tây islands – the area of Hang Quan cave (area photo)",
+     "zh": "贡东 (Cống Đông)、贡西 (Cống Tây) 岛——官洞 (Hang Quan) 所在区域（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=jLMqQL7-5uc",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về Thương cảng Vân Đồn – khu vực Cống Đông, Cống Tây nơi có Hang Quan (khu vực di tích)",
+     "en": "Video on Vân Đồn trading port – the Cống Đông–Cống Tây area where Hang Quan lies (area of the site)",
+     "zh": "云屯 (Vân Đồn) 商港视频——官洞 (Hang Quan) 所在的贡东–贡西 (Cống Đông–Cống Tây) 区域（遗迹区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 23/01/2023"
+   }
+  ]
+ },
+ "VD37": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0NIFJF80SwTq8Nf3ptvOV9Eb0mC5kEq7ANTwEH7fsGp2WJGgDHniZ4dITwk6qAtB-a-LZM3SVLwZm-i_alFD3TkX6rBJToZJc77kyK4eoske/images1273766_images676256_Dao_Cong_Dong.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/thuong-cang-van-don-qua-cac-thoi-ky-lich-su-2196939.html",
+    "nguon": "Báo Quảng Ninh – Thương cảng Vân Đồn qua các thời kỳ lịch sử (25/05/2013)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Đảo Cống Đông, Cống Tây – nơi có phế tích chùa vụng Chuồng Bò (ảnh khu vực)",
+     "en": "Cống Đông and Cống Tây islands, where the ruins of Vụng Chuồng Bò pagoda lie (area photo)",
+     "zh": "贡东 (Cống Đông)、贡西 (Cống Tây) 岛——冲博湾寺 (Chùa vụng Chuồng Bò) 遗址所在地（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0NIFJF80SwTq8Nf3ptvOV9GgA30fV2dQ-0EJYeSTLuqUEd4yffXi_YdSrdGsv1srz_KrVDP9wC0F4B81TsSCF_o/images1336076_DSC_4513.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/du-lich-bui-o-dao-thang-loi-2458836.html",
+    "nguon": "Báo Quảng Ninh – Du lịch \"bụi\" ở đảo Thắng Lợi (Công Thành, 27/10/2019)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Xã đảo Thắng Lợi, khu vực có chùa vụng Chuồng Bò (ảnh khu vực)",
+     "en": "Thắng Lợi island commune, the area of Vụng Chuồng Bò pagoda (area photo)",
+     "zh": "胜利 (Thắng Lợi) 海岛乡，冲博湾寺 (Chùa vụng Chuồng Bò) 所在区域（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=jLMqQL7-5uc",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về Thương cảng Vân Đồn – khu vực Cống Đông, Cống Tây (khu vực di tích)",
+     "en": "Video on Vân Đồn trading port – Cống Đông–Cống Tây area (area of the site)",
+     "zh": "云屯 (Vân Đồn) 商港视频——贡东–贡西 (Cống Đông–Cống Tây) 区域（遗迹区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 23/01/2023"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=OgtzRvV1BA0",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Bảo tồn, phát huy giá trị Thương cảng Vân Đồn (video khu vực di tích)",
+     "en": "Conserving and promoting Vân Đồn trading port (area video)",
+     "zh": "保护和弘扬云屯 (Vân Đồn) 商港价值（遗迹区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 16/06/2024"
+   }
+  ]
+ },
+ "VD39": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0NIFJF80SwTq8Nf3ptvOV9Eb0mC5kEq7ANTwEH7fsGp2WJGgDHniZ4dITwk6qAtB-a-LZM3SVLwZm-i_alFD3TkX6rBJToZJc77kyK4eoske/images1273766_images676256_Dao_Cong_Dong.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/thuong-cang-van-don-qua-cac-thoi-ky-lich-su-2196939.html",
+    "nguon": "Báo Quảng Ninh – Thương cảng Vân Đồn qua các thời kỳ lịch sử (25/05/2013)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Đảo Cống Đông, Cống Tây – nơi có phế tích Chùa Trong (ảnh khu vực)",
+     "en": "Cống Đông and Cống Tây islands, where the ruins of Trong pagoda lie (area photo)",
+     "zh": "贡东 (Cống Đông)、贡西 (Cống Tây) 岛——内寺 (Chùa Trong) 遗址所在地（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0NIFJF80SwTq8Nf3ptvOV9GgA30fV2dQ-0EJYeSTLuqUEd4yffXi_YdSrdGsv1srz_KrVDP9wC0F4B81TsSCF_o/images1336076_DSC_4513.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/du-lich-bui-o-dao-thang-loi-2458836.html",
+    "nguon": "Báo Quảng Ninh – Du lịch \"bụi\" ở đảo Thắng Lợi (Công Thành, 27/10/2019)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Xã đảo Thắng Lợi, khu vực có Chùa Trong (ảnh khu vực)",
+     "en": "Thắng Lợi island commune, the area of Trong pagoda (area photo)",
+     "zh": "胜利 (Thắng Lợi) 海岛乡，内寺 (Chùa Trong) 所在区域（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=jLMqQL7-5uc",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Video về Thương cảng Vân Đồn – khu vực Cống Đông, Cống Tây (khu vực di tích)",
+     "en": "Video on Vân Đồn trading port – Cống Đông–Cống Tây area (area of the site)",
+     "zh": "云屯 (Vân Đồn) 商港视频——贡东–贡西 (Cống Đông–Cống Tây) 区域（遗迹区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 23/01/2023"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=OgtzRvV1BA0",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Bảo tồn, phát huy giá trị Thương cảng Vân Đồn (video khu vực di tích)",
+     "en": "Conserving and promoting Vân Đồn trading port (area video)",
+     "zh": "保护和弘扬云屯 (Vân Đồn) 商港价值（遗迹区域视频）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 16/06/2024"
+   }
+  ]
+ },
+ "VD41": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53nEOqBdStKhkWHi0EMtra0HqnqhPP5yAgzi9quYhUi2UfSeSSsY1uo_bZ8EhUit0U/2292455_img_9047_19112214.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/le-hoi-dai-ky-phuc-cum-di-tich-lich-su-dinh-nghe-van-yen-3334692.html",
+    "nguon": "Báo Quảng Ninh (ảnh: Trần Thanh – CTV, theo chú thích bài)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Lễ hội Đại Kỳ Phúc đình – nghè Vạn Yên 2024, xã Vạn Yên cũ – nơi có miếu Cái Bầu (ảnh khu vực)",
+     "en": "Dai Ky Phuc festival at Van Yen communal house and shrine, 2024, former Van Yen commune where Cai Bau shrine stands (area photo)",
+     "zh": "2024年万安 (Vạn Yên) 亭–祠大祈福节，原万安乡，丐瓢 (Cái Bầu) 庙所在地（区域照片）"
+    },
+    "dai_dien": true
+   },
+   {
+    "url": "https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53nEOqBdStKhkWHi0EMtra0_oKSCA6hcayG-3oM03_2DgLNMlirsfEVSO0FnQg8HQowxRBM8wVEvtOllFaYE61APSMNchXU0rSPrzQdL9RvvQuQNgesCzd34DYlOoPR_uE/2289508_z6105889692500_e1a5f76d6a578be568593cca29338974_16214607.jpg.webp",
+    "trang_nguon": "https://baoquangninh.vn/hap-dan-le-cam-van-don-nam-2024-3333464.html",
+    "nguon": "Báo Quảng Ninh",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Lễ hội Cam Vân Đồn 2024 tại xã Vạn Yên cũ (ảnh khu vực)",
+     "en": "Van Don Orange Festival 2024 in former Van Yen commune (area photo)",
+     "zh": "2024年云屯 (Vân Đồn) 橙子节，在原万安 (Vạn Yên) 乡（区域照片）"
+    }
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=G2oUeHVoMoY",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Sắc vàng Vạn Yên (video về xã Vạn Yên, khu vực di tích)",
+     "en": "The golden hue of Van Yen (video about Van Yen commune, area of the site)",
+     "zh": "万安 (Vạn Yên) 金色（关于万安乡的视频，遗迹所在区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 14/01/2024"
+   }
+  ]
+ },
+ "VD42": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://cdn.baoquocte.vn/stores/news_dataimages/2026/052026/19/16/tinh-cam-cua-bac-ho-voi-bo-doi-hai-quan-20260519164456.webp?rt=202610161625",
+    "trang_nguon": "https://baoquocte.vn/tinh-cam-cua-bac-ho-voi-bo-doi-hai-quan-395849.html",
+    "nguon": "Báo Quốc tế (ảnh: Quân chủng Hải quân cung cấp)",
+    "loai": "di_tich",
+    "chu_thich": {
+     "vi": "Chủ tịch Hồ Chí Minh thăm Đoàn 135 Hải quân tại Vạn Hoa ngày 13/11/1962 – sự kiện gắn với di tích (ảnh tư liệu)",
+     "en": "President Ho Chi Minh visiting Navy Group 135 at Van Hoa on 13 Nov 1962 – the event commemorated by the site (archival photo)",
+     "zh": "1962年11月13日胡志明主席视察万花 (Vạn Hoa) 海军135团——该遗迹纪念的事件（历史照片）"
+    },
+    "dai_dien": true
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=-YoQzBGrPes",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "9 lần Bác Hồ về thăm Quảng Ninh (video chung, trong đó có chuyến thăm quân cảng Vạn Hoa 13/11/1962)",
+     "en": "Uncle Ho's nine visits to Quang Ninh (general video, including the 13 Nov 1962 visit to Van Hoa naval port)",
+     "zh": "胡伯伯九次视察广宁（综合视频，包括1962年11月13日视察万花 (Vạn Hoa) 军港）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 18/04/2025"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=pETK2fv610M",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Lữ đoàn 170 Hải quân: 45 năm xây dựng và trưởng thành (đơn vị có Hải đội 135 – đơn vị Bác thăm năm 1962) (khu vực)",
+     "en": "Naval Brigade 170: 45 years of growth (parent unit of Squadron 135, visited by Uncle Ho in 1962) (area)",
+     "zh": "海军第170旅：建设与成长45年（下辖1962年胡伯伯视察的第135海队）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 23/01/2024"
+   }
+  ]
+ },
+ "VD43": {
+  "ngay_thu_thap": "2026-10-17",
+  "anh": [
+   {
+    "url": "https://cdn.baoquocte.vn/stores/news_dataimages/2026/052026/19/16/tinh-cam-cua-bac-ho-voi-bo-doi-hai-quan-20260519164456.webp?rt=202610161625",
+    "trang_nguon": "https://baoquocte.vn/tinh-cam-cua-bac-ho-voi-bo-doi-hai-quan-395849.html",
+    "nguon": "Báo Quốc tế (ảnh: Quân chủng Hải quân cung cấp)",
+    "loai": "khu_vuc",
+    "chu_thich": {
+     "vi": "Quân cảng Vạn Hoa năm 1962 – nơi sau này tàu 154 xuất phát (ảnh tư liệu khu vực)",
+     "en": "Van Hoa naval port in 1962 – where ship 154 later set out (archival area photo)",
+     "zh": "1962年的万花 (Vạn Hoa) 军港——后来154号船出发之地（区域历史照片）"
+    },
+    "dai_dien": true
+   }
+  ],
+  "video": [
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=aIMFFEz1YEc",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Ký ức về đoàn tàu không số (video về thủy thủ Quảng Ninh trên tàu không số) (khu vực)",
+     "en": "Memories of the 'ships without numbers' (video on Quang Ninh sailors) (area)",
+     "zh": "无号船队的记忆（关于广宁 (Quảng Ninh) 水手的视频）（区域）"
+    },
+    "nguon": "Quảng Ninh TV – YouTube, 17/04/2025"
+   },
+   {
+    "youtube_url": "https://www.youtube.com/watch?v=SWDg2t_jkXk",
+    "loai": "khu_vuc",
+    "tieu_de": {
+     "vi": "Đường Hồ Chí Minh trên biển – con đường huyền thoại trong lòng dân (video chung về tuyến đường)",
+     "en": "The Ho Chi Minh Trail at sea – a legendary route in people's hearts (general video)",
+     "zh": "海上胡志明小道——人民心中的传奇之路（综合视频）"
+    },
+    "nguon": "VTV24 – YouTube, 16/02/2025"
+   }
+  ]
  }
 }
