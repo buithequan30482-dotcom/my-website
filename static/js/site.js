@@ -41,7 +41,8 @@
               li.appendChild(a); box.appendChild(li);
             });
             box.hidden = !d.items.length;
-          });
+          })
+          .catch(function () { box.hidden = true; });  // bản xem trước tĩnh không có API gợi ý
       }, 180);
     });
     input.addEventListener("keydown", function (e) {
@@ -58,8 +59,12 @@
   });
 
   // Bộ lọc tự gửi khi thay đổi
+  // (trang danh sách/bản đồ có static/js/filter.js lọc ngay trên trình duyệt thì bỏ qua)
   $$("form[data-autosubmit]").forEach(function (f) {
-    f.addEventListener("change", function (e) { if (e.target.matches("input[type=checkbox],select")) f.submit(); });
+    f.addEventListener("change", function (e) {
+      if (f.hasAttribute("data-live")) return;
+      if (e.target.matches("input[type=checkbox],select")) f.submit();
+    });
   });
 
   // Thư viện ảnh – xem phóng to, vuốt trên điện thoại (FR-P05)
@@ -120,15 +125,15 @@
     });
   });
 
-  // Sắp xếp "Gần tôi"
+  // Sắp xếp "Gần tôi" khi không có filter.js (filter.js tự xử lý và đặt data-live)
   var sortSel = $("#sort");
-  if (sortSel) sortSel.addEventListener("change", function (e) {
-    if (sortSel.value !== "gan") return;
-    e.stopPropagation();
+  if (sortSel) sortSel.addEventListener("change", function () {
+    if (sortSel.form.hasAttribute("data-live")) return;
+    if (sortSel.value !== "gan") { sortSel.form.submit(); return; }
     if (!navigator.geolocation) return;
     navigator.geolocation.getCurrentPosition(function (pos) {
       var f = sortSel.form;
       f.lat.value = pos.coords.latitude.toFixed(5); f.lng.value = pos.coords.longitude.toFixed(5); f.submit();
     }, function () { alert(t("geoFail", "Không lấy được vị trí. Hãy cho phép trình duyệt truy cập vị trí.")); });
-  }, true);
+  });
 })();

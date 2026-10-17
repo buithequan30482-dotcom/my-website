@@ -874,3 +874,21 @@ msgstr "来源"
 #: templates/public/detail.html:19
 msgid "Ảnh khu vực di tích"
 msgstr "遗迹周边区域照片"
+
+msgid "1 di tích"
+msgstr "1 处遗迹"
+
+msgid "__N__ di tích"
+msgstr "__N__ 处遗迹"
+
+msgid "Xem __N__ di tích"
+msgstr "查看 __N__ 处遗迹"
+
+msgid "Xem kết quả"
+msgstr "查看结果"
+
+msgid "1 di tích có vị trí trên bản đồ"
+msgstr "地图上有 1 处遗迹"
+
+msgid "__N__ di tích có vị trí trên bản đồ"
+msgstr "地图上有 __N__ 处遗迹"

@@ -19,9 +19,9 @@ from heritage.models import DiTich, TrangTinh, TuyenThamQuan
 
 ROOTS = ("vi", "en", "zh-hans", "static", "media", "qr", "api", "d", "i18n", "quan-tri-vd", "healthz", "sitemap.xml")
 BANNER = {
-    "vi": "Bản xem trước tĩnh trên GitHub Pages – gửi nhận xét, góp ý, tìm kiếm và lọc chỉ hoạt động khi chạy trên máy chủ.",
-    "en": "Static preview on GitHub Pages – reviews, feedback, search and filters work only on the live server.",
-    "zh-hans": "GitHub Pages 静态预览——评价、意见反馈、搜索和筛选仅在正式服务器上可用。",
+    "vi": "Bản xem trước tĩnh trên GitHub Pages – bộ lọc và tìm kiếm chạy ngay trên trình duyệt; gửi nhận xét, góp ý và gợi ý tìm kiếm chỉ hoạt động khi chạy trên máy chủ.",
+    "en": "Static preview on GitHub Pages – filters and search run in your browser; reviews, feedback and search suggestions work only on the live server.",
+    "zh-hans": "GitHub Pages 静态预览——筛选和搜索在浏览器中运行；评价、意见反馈和搜索提示仅在正式服务器上可用。",
 }
 
 

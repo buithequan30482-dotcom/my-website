@@ -59,7 +59,21 @@ class PublicPagesTests(TestCase):
 
     def test_filters(self):
         self.assertContains(self.client.get("/vi/di-tich/?cap=qgdb"), "Đình Quan Lạn")
-        self.assertNotContains(self.client.get("/vi/di-tich/?cap=qg"), "card-body")
+        r = self.client.get("/vi/di-tich/?cap=qg")
+        # mọi di tích vẫn có trong trang (để lọc ngay trên trình duyệt) nhưng di tích không khớp bị ẩn
+        self.assertContains(r, 'data-cap="qgdb"')
+        self.assertRegex(r.content.decode(), r'data-cap="qgdb"[^>]*\shidden>')
+        self.assertContains(r, "0 di tích")
+        self.assertNotRegex(self.client.get("/vi/di-tich/?cap=qgdb").content.decode(), r'data-cap="qgdb"[^>]*\shidden>')
+
+    def test_filter_data_for_browser(self):
+        r = self.client.get("/vi/di-tich/")
+        self.assertContains(r, 'data-khu="quan-lan"')
+        self.assertContains(r, 'data-loai="lich-su"')
+        self.assertContains(r, "js/filter.js")
+        m = self.client.get("/vi/ban-do/?cap=qg")
+        self.assertContains(m, '"khu": ["quan-lan"]')  # bản đồ nhận đủ điểm, filter.js lọc theo địa chỉ
+        self.assertContains(m, 'value="qg" checked')
 
     def test_external_image_shown_with_source(self):
         from heritage.models import HinhAnh

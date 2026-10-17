@@ -38,8 +38,33 @@ def _base_qs():
                       so_danh_gia=Count("danh_gia", filter=Q(danh_gia__trang_thai=TrangThaiDuyet.APPROVED), distinct=True)))
 
 
-def map_points(qs):
-    """Dữ liệu điểm cho bản đồ (JSON nhúng vào trang)."""
+def search_norm(d):
+    """Chuỗi tìm kiếm không dấu, bỏ từ trùng (gọn cho thuộc tính data-s / JSON bản đồ)."""
+    return " ".join(dict.fromkeys(strip_accents(d.search_text).split()))
+
+
+def site_areas(d):
+    return [d.khu_vuc.slug] + [k.slug for k in d.khu_vuc_phu.all()]
+
+
+def filter_options():
+    """Các lựa chọn của bộ lọc kèm số di tích; ẩn khu vực chưa có di tích."""
+    sites = list(DiTich.objects.published().select_related("khu_vuc").prefetch_related("loai_hinh", "khu_vuc_phu"))
+    caps = [(k, v, sum(1 for d in sites if d.cap_xep_hang == k)) for k, v in CapXepHang.choices]
+    loai = []
+    for lh in LoaiHinh.objects.all():
+        lh.n = sum(1 for d in sites if any(x.pk == lh.pk for x in d.loai_hinh.all()))
+        loai.append(lh)
+    khu = []
+    for k in KhuVuc.objects.all():
+        k.n = sum(1 for d in sites if k.slug in site_areas(d))
+        if k.n:
+            khu.append(k)
+    return {"caps": caps, "loai_list": loai, "khu_list": khu}
+
+
+def map_points(qs, filt=False):
+    """Dữ liệu điểm cho bản đồ (JSON nhúng vào trang). filt=True: kèm trường cho bộ lọc phía trình duyệt."""
     pts = []
     for d in qs:
         for p in d.diem.all():
@@ -51,6 +76,9 @@ def map_points(qs):
                     "main": p.diem_chinh, "ma": d.ma,
                     "dao": d.khu_vuc.dao_vi or "", "daoLabel": (_("Đảo %s") % d.khu_vuc.dao) if d.khu_vuc.dao else "",
                 })
+                if filt:  # static/js/filter.js
+                    pts[-1].update({"loai": [lh.slug for lh in d.loai_hinh.all()], "khu": site_areas(d),
+                                    "tq": d.tham_quan_duoc, "s": search_norm(d)})
     return pts
 
 
@@ -104,10 +132,22 @@ def _filtered(request):
     return qs, f
 
 
+def _sort(sites, sort):
+    if sort == "az":
+        return sorted(sites, key=lambda d: strip_accents(d.ten))
+    if sort == "danhgia":
+        return sorted(sites, key=lambda d: (-(d.sao_tb or 0), -(d.so_danh_gia or 0), d.thu_tu))
+    return sorted(sites, key=lambda d: d.thu_tu)
+
+
 def site_list(request):
+    """Danh sách hiển thị TẤT CẢ di tích; di tích không khớp bộ lọc được đánh dấu ẩn.
+    Nhờ vậy trình duyệt lọc tức thì (static/js/filter.js) – kể cả trên bản xem trước tĩnh – còn khi tắt JavaScript
+    máy chủ vẫn lọc đúng."""
     track(request)
     qs, f = _filtered(request)
-    sites = list(qs)
+    matched = set(qs.values_list("pk", flat=True))
+    sites = _sort(list(_base_qs().prefetch_related("khu_vuc_phu")), f["sort"])
     lat, lng = request.GET.get("lat"), request.GET.get("lng")
     if f["sort"] == "gan" and lat and lng:
         try:
@@ -118,15 +158,21 @@ def site_list(request):
             sites.sort(key=lambda d: d.khoang_cach)
         except ValueError:
             pass
+    for d in sites:
+        d.match = d.pk in matched
+        d.areas = " ".join(site_areas(d))
+        d.loai_slugs = " ".join(lh.slug for lh in d.loai_hinh.all())
+        d.s_norm = search_norm(d)
+        p = d.diem_chinh
+        d.lat_s, d.lng_s = (str(p.lat), str(p.lng)) if p else ("", "")
     view = request.GET.get("view", "list")
-    page = Paginator(sites, 24).get_page(request.GET.get("page"))
     params = request.GET.copy()
     params.pop("page", None)
+    params.pop("view", None)
     ctx = {
-        "page": page, "sites": page.object_list, "total": len(sites), "f": f, "view": view,
-        "caps": CapXepHang.choices, "loai_list": LoaiHinh.objects.all(), "khu_list": KhuVuc.objects.all(),
-        "points_json": js(map_points(sites)),
-        "qs_nopage": params.urlencode(),
+        "sites": sites, "total": len(matched), "f": f, "view": view, "mode": "list",
+        "points_json": js(map_points(sites, filt=True)) if view == "map" else "[]",
+        "qs_nopage": params.urlencode(), **filter_options(),
     }
     return render(request, "public/list.html", ctx)
 
@@ -184,9 +230,12 @@ def site_detail(request, slug):
 
 def map_page(request):
     track(request)
-    qs, f = _filtered(request)
-    ctx = {"points_json": js(map_points(qs)), "f": f,
-           "caps": CapXepHang.choices, "loai_list": LoaiHinh.objects.all(), "khu_list": KhuVuc.objects.all()}
+    _, f = _filtered(request)
+    params = request.GET.copy()
+    params.pop("view", None)
+    sites = _base_qs().prefetch_related("khu_vuc_phu").order_by("thu_tu")
+    ctx = {"points_json": js(map_points(sites, filt=True)), "f": f, "mode": "map",
+           "qs_nopage": params.urlencode(), **filter_options()}
     return render(request, "public/map.html", ctx)
 
 

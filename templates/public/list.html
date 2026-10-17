@@ -12,37 +12,34 @@
     {% url 'heritage:list' as action %}{% include "partials/filters.html" %}
   </div>
   <div>
-    <div class="toolbar">
-      <strong aria-live="polite">{% blocktrans count n=total %}{{ n }} di tích{% plural %}{{ n }} di tích{% endblocktrans %}</strong>
-      <form method="get" class="no-print" style="display:flex;gap:10px;align-items:center">
+    <div class="toolbar" id="results">
+      <strong aria-live="polite" data-count data-one="{% trans "1 di tích" %}" data-many="{% trans "__N__ di tích" %}">{% blocktrans count n=total %}{{ n }} di tích{% plural %}{{ n }} di tích{% endblocktrans %}</strong>
+      <form method="get" class="no-print" style="display:flex;gap:10px;align-items:center" data-sort-form>
         {% for k, vals in request.GET.lists %}{% if k != 'sort' and k != 'page' and k != 'lat' and k != 'lng' %}{% for v in vals %}<input type="hidden" name="{{ k }}" value="{{ v }}">{% endfor %}{% endif %}{% endfor %}
         <input type="hidden" name="lat"><input type="hidden" name="lng">
         <label for="sort" class="small muted">{% trans "Sắp xếp" %}</label>
-        <select id="sort" name="sort" onchange="if(this.value!=='gan')this.form.submit()">
+        <select id="sort" name="sort">
           <option value="noibat" {% if f.sort == 'noibat' %}selected{% endif %}>{% trans "Nổi bật" %}</option>
           <option value="az" {% if f.sort == 'az' %}selected{% endif %}>{% trans "Tên A–Z" %}</option>
           <option value="danhgia" {% if f.sort == 'danhgia' %}selected{% endif %}>{% trans "Đánh giá cao" %}</option>
           <option value="gan" {% if f.sort == 'gan' %}selected{% endif %}>{% trans "Gần tôi" %}</option>
         </select>
+        <noscript><button class="btn btn-sm" type="submit">{% trans "Lọc" %}</button></noscript>
       </form>
       <nav class="seg" aria-label="{% trans "Kiểu hiển thị" %}">
-        <a href="?{{ qs_nopage }}{% if qs_nopage %}&{% endif %}view=list" {% if view != 'map' %}aria-current="true"{% endif %}>{% trans "Danh sách" %}</a>
-        <a href="?{{ qs_nopage }}{% if qs_nopage %}&{% endif %}view=map" {% if view == 'map' %}aria-current="true"{% endif %}>{% trans "Bản đồ" %}</a>
+        <a href="{% url 'heritage:list' %}{% if qs_nopage %}?{{ qs_nopage }}{% endif %}" data-keepqs {% if view != 'map' %}aria-current="true"{% endif %}>{% trans "Danh sách" %}</a>
+        <a href="{% url 'heritage:map' %}{% if qs_nopage %}?{{ qs_nopage }}{% endif %}" data-keepqs {% if view == 'map' %}aria-current="true"{% endif %}>{% trans "Bản đồ" %}</a>
       </nav>
     </div>
     {% if view == 'map' %}
       <div class="map-box map-full" id="list-map" data-map="pts-list" data-key="{{ MAPS_KEY }}" data-static="{% get_static_prefix %}" data-cluster></div>
       {% include "partials/map_legend.html" %}
       <script id="pts-list" type="application/json">{{ points_json|safe }}</script>
-    {% elif sites %}
-      <div class="site-grid">{% for d in sites %}{% include "partials/card.html" %}{% endfor %}</div>
-      {% if page.has_other_pages %}<nav class="pager" aria-label="{% trans "Phân trang" %}">
-        {% for n in page.paginator.page_range %}{% if n == page.number %}<span class="cur" aria-current="page">{{ n }}</span>{% else %}<a href="?{{ qs_nopage }}&page={{ n }}">{{ n }}</a>{% endif %}{% endfor %}
-      </nav>{% endif %}
     {% else %}
-      <div class="empty"><p>{% trans "Không có di tích phù hợp với bộ lọc." %}</p><a class="btn btn-ghost" href="{% url 'heritage:list' %}">{% trans "Xóa bộ lọc" %}</a></div>
+      <div class="site-grid" data-results>{% for d in sites %}<div class="site-item" data-cap="{{ d.cap_xep_hang }}" data-loai="{{ d.loai_slugs }}" data-khu="{{ d.areas }}" data-tq="{{ d.tham_quan_duoc|yesno:'1,0' }}" data-s="{{ d.s_norm }}" data-order="{{ forloop.counter0 }}" data-thu-tu="{{ d.thu_tu }}" data-rating="{{ d.sao_tb|default:0|stringformat:'s' }}" data-nrating="{{ d.so_danh_gia|default:0 }}" data-lat="{{ d.lat_s }}" data-lng="{{ d.lng_s }}"{% if not d.match %} hidden{% endif %}>{% include "partials/card.html" %}</div>{% endfor %}</div>
+      <div class="empty" data-empty{% if total %} hidden{% endif %}><p>{% trans "Không có di tích phù hợp với bộ lọc." %}</p><a class="btn btn-ghost" href="{% url 'heritage:list' %}" data-clear>{% trans "Xóa bộ lọc" %}</a></div>
     {% endif %}
   </div>
 </div>
 {% endblock %}
-{% block scripts %}<script src="{% static 'js/map.js' %}" defer></script>{% endblock %}
+{% block scripts %}<script src="{% static 'js/filter.js' %}" defer></script><script src="{% static 'js/map.js' %}" defer></script>{% endblock %}

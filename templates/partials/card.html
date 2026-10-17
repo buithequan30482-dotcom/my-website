@@ -1,5 +1,5 @@
 {% load i18n %}<article class="card">
-  <div class="card-img">{% if d.anh_dai_dien %}<img src="{{ d.anh_dai_dien.url|default:'' }}" srcset="{{ d.anh_dai_dien.srcset }}" sizes="{% if big %}(max-width: 900px) 100vw, 800px{% else %}(max-width: 600px) 100vw, 400px{% endif %}" alt="{{ d.anh_dai_dien.chu_thich|default:d.ten }}" loading="lazy" width="{{ d.anh_dai_dien.rong }}" height="{{ d.anh_dai_dien.cao }}">{% endif %}</div>
+  <div class="card-img">{% if d.anh_dai_dien %}<img src="{{ d.anh_dai_dien.url|default:'' }}" srcset="{{ d.anh_dai_dien.srcset }}" sizes="{% if big %}(max-width: 900px) 100vw, 800px{% else %}(max-width: 600px) 100vw, 400px{% endif %}" alt="{{ d.anh_dai_dien.chu_thich|default:d.ten }}" loading="lazy"{% if d.anh_dai_dien.rong %} width="{{ d.anh_dai_dien.rong }}" height="{{ d.anh_dai_dien.cao }}"{% endif %}{% if d.anh_dai_dien.la_anh_ngoai %} referrerpolicy="no-referrer"{% endif %}>{% endif %}</div>
   <div class="card-body">
     <div class="card-meta">{% include "partials/seal.html" %}<span>{{ d.khu_vuc.ten }}</span>{% if not d.tham_quan_duoc %}<span class="tag-ruin">{% trans "Phế tích – tra cứu" %}</span>{% endif %}{% if d.khoang_cach and d.khoang_cach < 9999 %}<span>{{ d.khoang_cach|floatformat:1 }} km</span>{% endif %}</div>
     <h3><a href="{{ d.get_absolute_url }}">{{ d.ten }}</a></h3>

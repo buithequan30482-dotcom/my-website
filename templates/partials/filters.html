@@ -6,16 +6,16 @@
   </div>
   {% if view %}<input type="hidden" name="view" value="{{ view }}">{% endif %}
   <fieldset><legend>{% trans "Cấp xếp hạng" %}</legend>
-    {% for k, v in caps %}<label><input type="checkbox" name="cap" value="{{ k }}" {% if k in f.cap %}checked{% endif %}><span class="seal seal-{{ k }}">{{ v }}</span></label>{% endfor %}
+    {% for k, v, n in caps %}<label><input type="checkbox" name="cap" value="{{ k }}" {% if k in f.cap %}checked{% endif %}><span class="seal seal-{{ k }}">{{ v }}</span><small class="muted cnt">{{ n }}</small></label>{% endfor %}
   </fieldset>
   <fieldset><legend>{% trans "Loại hình" %}</legend>
-    {% for l in loai_list %}<label><input type="checkbox" name="loai" value="{{ l.slug }}" {% if l.slug in f.loai %}checked{% endif %}>{{ l.ten }}</label>{% endfor %}
+    {% for l in loai_list %}<label><input type="checkbox" name="loai" value="{{ l.slug }}" {% if l.slug in f.loai %}checked{% endif %}>{{ l.ten }}<small class="muted cnt">{{ l.n }}</small></label>{% endfor %}
   </fieldset>
   <fieldset><legend>{% trans "Khu vực / đảo" %}</legend>
-    {% for k in khu_list %}<label><input type="checkbox" name="khu" value="{{ k.slug }}" {% if k.slug in f.khu %}checked{% endif %}>{{ k.ten }}{% if k.la_dao %} <small class="muted">({% trans "đi tàu" %})</small>{% endif %}</label>{% endfor %}
+    {% for k in khu_list %}<label><input type="checkbox" name="khu" value="{{ k.slug }}" {% if k.slug in f.khu %}checked{% endif %}>{{ k.ten }}{% if k.la_dao %} <small class="muted">({% trans "đi tàu" %})</small>{% endif %}<small class="muted cnt">{{ k.n }}</small></label>{% endfor %}
   </fieldset>
   <fieldset><legend>{% trans "Khác" %}</legend>
     <label><input type="checkbox" name="tq" value="1" {% if f.tq %}checked{% endif %}>{% trans "Chỉ di tích tham quan được" %}</label>
   </fieldset>
-  <div class="filters-actions"><noscript><button class="btn btn-sm" type="submit">{% trans "Lọc" %}</button></noscript><a href="{{ action }}">{% trans "Xóa bộ lọc" %}</a></div>
+  <div class="filters-actions"><noscript><button class="btn btn-sm" type="submit">{% trans "Lọc" %}</button></noscript><button class="btn btn-sm filters-done" type="button" data-done data-label="{% trans "Xem __N__ di tích" %}" hidden>{% trans "Xem kết quả" %}</button><a href="{{ action }}" data-clear>{% trans "Xóa bộ lọc" %}</a></div>
 </form>

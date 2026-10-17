@@ -44,7 +44,7 @@
   </div>
 </header>
 
-<div style="background:#A3302A;color:#fff;padding:8px 16px;font-size:14px;text-align:center">GitHub Pages 静态预览——评价、意见反馈、搜索和筛选仅在正式服务器上可用。</div><main id="main">
+<div style="background:#A3302A;color:#fff;padding:8px 16px;font-size:14px;text-align:center">GitHub Pages 静态预览——筛选和搜索在浏览器中运行；评价、意见反馈和搜索提示仅在正式服务器上可用。</div><main id="main">
 <div class="wrap page-head">
   <div class="crumbs"><a href="/my-website/preview/zh-hans/">首页</a> / 遗迹</div>
   <h1>云屯遗迹</h1>
@@ -61,43 +61,44 @@
   </div>
   <input type="hidden" name="view" value="list">
   <fieldset><legend>保护级别</legend>
-    <label><input type="checkbox" name="cap" value="qgdb" ><span class="seal seal-qgdb">国家特别级遗迹</span></label><label><input type="checkbox" name="cap" value="qg" ><span class="seal seal-qg">国家级遗迹</span></label><label><input type="checkbox" name="cap" value="tinh" ><span class="seal seal-tinh">省级遗迹</span></label><label><input type="checkbox" name="cap" value="kiemke" ><span class="seal seal-kiemke">登记遗迹</span></label>
+    <label><input type="checkbox" name="cap" value="qgdb" ><span class="seal seal-qgdb">国家特别级遗迹</span><small class="muted cnt">1</small></label><label><input type="checkbox" name="cap" value="qg" ><span class="seal seal-qg">国家级遗迹</span><small class="muted cnt">3</small></label><label><input type="checkbox" name="cap" value="tinh" ><span class="seal seal-tinh">省级遗迹</span><small class="muted cnt">7</small></label><label><input type="checkbox" name="cap" value="kiemke" ><span class="seal seal-kiemke">登记遗迹</span><small class="muted cnt">33</small></label>
   </fieldset>
   <fieldset><legend>类型</legend>
-    <label><input type="checkbox" name="loai" value="lich-su" >历史</label><label><input type="checkbox" name="loai" value="kien-truc-nghe-thuat" >建筑艺术</label><label><input type="checkbox" name="loai" value="khao-co" >考古</label><label><input type="checkbox" name="loai" value="danh-lam-thang-canh" >风景名胜</label>
+    <label><input type="checkbox" name="loai" value="lich-su" >历史<small class="muted cnt">34</small></label><label><input type="checkbox" name="loai" value="kien-truc-nghe-thuat" >建筑艺术<small class="muted cnt">1</small></label><label><input type="checkbox" name="loai" value="khao-co" >考古<small class="muted cnt">3</small></label><label><input type="checkbox" name="loai" value="danh-lam-thang-canh" >风景名胜<small class="muted cnt">8</small></label>
   </fieldset>
   <fieldset><legend>区域 / 岛屿</legend>
-    <label><input type="checkbox" name="khu" value="cai-rong" >Cái Rồng</label><label><input type="checkbox" name="khu" value="dong-xa" >东舍 (Đông Xá)</label><label><input type="checkbox" name="khu" value="ha-long" >下龙（云屯）</label><label><input type="checkbox" name="khu" value="van-yen" >万安 (Vạn Yên)</label><label><input type="checkbox" name="khu" value="doan-ket" >团结 (Đoàn Kết)</label><label><input type="checkbox" name="khu" value="ban-sen" >Bản Sen <small class="muted">(需乘船)</small></label><label><input type="checkbox" name="khu" value="minh-chau" >明珠 (Minh Châu) <small class="muted">(需乘船)</small></label><label><input type="checkbox" name="khu" value="quan-lan" >官澜 (Quan Lạn) <small class="muted">(需乘船)</small></label><label><input type="checkbox" name="khu" value="thang-loi" >胜利 (Thắng Lợi) <small class="muted">(需乘船)</small></label><label><input type="checkbox" name="khu" value="ngoc-vung" >Ngọc Vừng <small class="muted">(需乘船)</small></label>
+    <label><input type="checkbox" name="khu" value="cai-rong" >Cái Rồng<small class="muted cnt">3</small></label><label><input type="checkbox" name="khu" value="ha-long" >下龙（云屯）<small class="muted cnt">5</small></label><label><input type="checkbox" name="khu" value="van-yen" >万安 (Vạn Yên)<small class="muted cnt">4</small></label><label><input type="checkbox" name="khu" value="doan-ket" >团结 (Đoàn Kết)<small class="muted cnt">2</small></label><label><input type="checkbox" name="khu" value="ban-sen" >Bản Sen <small class="muted">(需乘船)</small><small class="muted cnt">3</small></label><label><input type="checkbox" name="khu" value="minh-chau" >明珠 (Minh Châu) <small class="muted">(需乘船)</small><small class="muted cnt">6</small></label><label><input type="checkbox" name="khu" value="quan-lan" >官澜 (Quan Lạn) <small class="muted">(需乘船)</small><small class="muted cnt">10</small></label><label><input type="checkbox" name="khu" value="thang-loi" >胜利 (Thắng Lợi) <small class="muted">(需乘船)</small><small class="muted cnt">5</small></label><label><input type="checkbox" name="khu" value="ngoc-vung" >Ngọc Vừng <small class="muted">(需乘船)</small><small class="muted cnt">7</small></label>
   </fieldset>
   <fieldset><legend>其他</legend>
     <label><input type="checkbox" name="tq" value="1" >仅显示可参观遗迹</label>
   </fieldset>
-  <div class="filters-actions"><noscript><button class="btn btn-sm" type="submit">筛选</button></noscript><a href="/my-website/preview/zh-hans/di-tich/">清除筛选</a></div>
+  <div class="filters-actions"><noscript><button class="btn btn-sm" type="submit">筛选</button></noscript><button class="btn btn-sm filters-done" type="button" data-done data-label="查看 __N__ 处遗迹" hidden>查看结果</button><a href="/my-website/preview/zh-hans/di-tich/" data-clear>清除筛选</a></div>
 </form>
 
   </div>
   <div>
-    <div class="toolbar">
-      <strong aria-live="polite">44 处遗迹</strong>
-      <form method="get" class="no-print" style="display:flex;gap:10px;align-items:center">
+    <div class="toolbar" id="results">
+      <strong aria-live="polite" data-count data-one="1 处遗迹" data-many="__N__ 处遗迹">44 处遗迹</strong>
+      <form method="get" class="no-print" style="display:flex;gap:10px;align-items:center" data-sort-form>
         
         <input type="hidden" name="lat"><input type="hidden" name="lng">
         <label for="sort" class="small muted">排序</label>
-        <select id="sort" name="sort" onchange="if(this.value!=='gan')this.form.submit()">
+        <select id="sort" name="sort">
           <option value="noibat" selected>推荐</option>
           <option value="az" >名称 A–Z</option>
           <option value="danhgia" >评分最高</option>
           <option value="gan" >离我最近</option>
         </select>
+        <noscript><button class="btn btn-sm" type="submit">筛选</button></noscript>
       </form>
       <nav class="seg" aria-label="显示方式">
-        <a href="?view=list" aria-current="true">列表</a>
-        <a href="?view=map" >地图</a>
+        <a href="/my-website/preview/zh-hans/di-tich/" data-keepqs aria-current="true">列表</a>
+        <a href="/my-website/preview/zh-hans/ban-do/" data-keepqs >地图</a>
       </nav>
     </div>
     
-      <div class="site-grid"><article class="card">
-  <div class="card-img"><img src="https://media.quangninh.gov.vn/618ca5c4-79b3-478a-8adb-4184369067f7/Libraries/HinhAnhBaiViet/My%20folder/NGOC%20ANH%202025/NAnh2025thuongcangvandon.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="云屯古商港素描画，现保存于官澜亭" loading="lazy" width="0" height="0"></div>
+      <div class="site-grid" data-results><div class="site-item" data-cap="qgdb" data-loai="lich-su" data-khu="thang-loi quan-lan" data-tq="1" data-s="vd01 quan the thuong cang van don don, trang tran thon thang loi, lan 1, 2, 3, dac khu xa lan, huyen lap nam 1149 duoi trieu vua ly anh tong, la he thong ben trai tren nhieu dao cua vinh bai tu long, ngo giao quoc te dai viet trong ky. 2023, duoc xep hang di tich gia biet. trading port complex founded in under king was a network of harbours spread across islands long bay and served for centuries as viet&#x27;s gateway to international trade. 2023 designated special national monument. 云屯商港遗址群 (van don) 云屯 商港创立于1149年李英宗 (ly tong) 在位时期，是分布于拜子龙湾 (bai long) 诸岛之间的港口体系，数百年间一直是大越对外贸易的门户。2023年，该遗址群被列为国家特别级遗迹。 loi" data-order="0" data-thu-tu="1" data-rating="0" data-nrating="0" data-lat="20.886972" data-lng="107.313361"><article class="card">
+  <div class="card-img"><img src="https://media.quangninh.gov.vn/618ca5c4-79b3-478a-8adb-4184369067f7/Libraries/HinhAnhBaiViet/My%20folder/NGOC%20ANH%202025/NAnh2025thuongcangvandon.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="云屯古商港素描画，现保存于官澜亭" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-qgdb">国家特别级遗迹</span>
 <span>胜利 (Thắng Lợi)</span></div>
@@ -106,8 +107,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/t%e1%bb%95ng%20quan%20v%c3%a2n%20%c4%91%e1%bb%93n/l%e1%bb%8bch%20s%e1%bb%ad%20ph%c3%a1t%20tri%e1%bb%83n/image_tzf1622351772.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="官澜庙，供奉范氏三兄弟将军" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="qg" data-loai="lich-su kien-truc-nghe-thuat" data-khu="quan-lan" data-tq="1" data-s="vd02 cum di tich quan lan: mieu sao on, dong ho, cao son lich su va kien truc nghe thuat lan, dinh – chua ho thon lan 1, 2, dac khu van don xa huyen quoc gia tren dao xep hang tu nam 1990, gan voi ba anh em pham nhung nguoi duoc tho vi co cong trong tran 1288. dinh, chua, duc ong khanh du nay thuoc the thuong cang don. relic cluster: and shrines a national historical architectural cluster on island, listed in 1990 linked to three brothers, venerated for their role 1288 battle of communal house, pagoda, shrine now belong trading port complex. 官澜 (quan lan) 遗迹群：sao 庙、dong 庙、cao 庙 官澜岛上的国家级历史与建筑艺术遗迹群，1990年列级，与因在1288年云屯之战中立功而受祭祀的范氏三兄弟紧密相关。其中的亭、寺、德翁庙和陈庆余祠现已并入云屯商港遗址群。" data-order="1" data-thu-tu="11" data-rating="0" data-nrating="0" data-lat="20.858944" data-lng="107.483556"><article class="card">
+  <div class="card-img"><img src="https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/t%e1%bb%95ng%20quan%20v%c3%a2n%20%c4%91%e1%bb%93n/l%e1%bb%8bch%20s%e1%bb%ad%20ph%c3%a1t%20tri%e1%bb%83n/image_tzf1622351772.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="官澜庙，供奉范氏三兄弟将军" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-qg">国家级遗迹</span>
 <span>官澜 (Quan Lạn)</span></div>
@@ -116,8 +117,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://image.sggp.org.vn/w1000/Uploaded/2026/duxredwsxr/2022_09_02/dao-ngoc-vung_LJGT.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="玉瓮岛 (Ngọc Vừng) 胡伯伯纪念区园地与胡伯伯榕树" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="qg" data-loai="lich-su" data-khu="ngoc-vung" data-tq="1" data-s="vd03 dia diem luu niem chu tich ho chi minh tren dao ngoc vung khu bac thon vung, dac van don xa noi ghi dau chuyen tham cua toi quan va dan thang 11/1962. di gom vuc san dap truc voi nha trung bay, bia, ban nguyet; duoc xep hang quoc gia nam 2023. president memorial site on island commemorates minh&#x27;s visit to the soldiers and people of in november 1962. comprises helicopter landing ground a area with an exhibition hall, stele house half-moon pond; it was listed as national monument 岛胡志明主席纪念地 纪念胡志明主席于1962年11月探望 岛军民。遗迹包括直升机降落场和纪念区（展览馆、碑亭、半月湖），2023年被列为国家级遗迹。" data-order="2" data-thu-tu="12" data-rating="0" data-nrating="0" data-lat="20.813944" data-lng="107.359194"><article class="card">
+  <div class="card-img"><img src="https://image.sggp.org.vn/w1000/Uploaded/2026/duxredwsxr/2022_09_02/dao-ngoc-vung_LJGT.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="玉瓮岛 (Ngọc Vừng) 胡伯伯纪念区园地与胡伯伯榕树" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-qg">国家级遗迹</span>
 <span>Ngọc Vừng</span></div>
@@ -126,8 +127,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://media.quangninh.gov.vn/7343e27a-9300-4e2d-80aa-c4ee118af1d6/Libraries/hinhanhbaiviet/2025/th%c3%a1ng%204/di%20t%c3%adch%20kh%e1%ba%a3o%20c%e1%bb%95%20ba%20v%c5%a9ng/z6517830611545_134c1320098169bcecb53eae7c182008.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="巴湾（Ba Vũng）考古遗址景观" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="qg" data-loai="khao-co" data-khu="ha-long" data-tq="1" data-s="vd04 di tich khao co ba vung chi vung, hayart (ten m. colani dat) khu pho ha long 1, dac van don thon 3, xa tieu bieu cua hoa tren dao cai bau, vua la noi cu tru cong xuong che tac da dan tien su cach nay khoang 4.500–3.000 nam. duoc xep hang quoc gia nam 2025. archaeological site a type of the culture on bau island, both settlement and stone-tool workshop prehistoric people some 4,500–3,000 years ago. listed as national monument in 考古遗址 位于 岛上的下龙文化代表性遗址，既是史前居民的聚落，也是距今约4,500至3,000年的石器制作工场。2025年被列为国家级遗迹。" data-order="3" data-thu-tu="13" data-rating="0" data-nrating="0" data-lat="21.093083" data-lng="107.470278"><article class="card">
+  <div class="card-img"><img src="https://media.quangninh.gov.vn/7343e27a-9300-4e2d-80aa-c4ee118af1d6/Libraries/hinhanhbaiviet/2025/th%c3%a1ng%204/di%20t%c3%adch%20kh%e1%ba%a3o%20c%e1%bb%95%20ba%20v%c5%a9ng/z6517830611545_134c1320098169bcecb53eae7c182008.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="巴湾（Ba Vũng）考古遗址景观" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-qg">国家级遗迹</span>
 <span>下龙（云屯）</span></div>
@@ -136,8 +137,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://static.wixstatic.com/media/13b421_ed2572c1be2142ffbbc7a7660657c604~mv2.jpg/v1/crop/x_0,y_11,w_800,h_521/fill/w_799,h_521,al_c,q_85,enc_avif,quality_auto/%E1%BA%A3nh%201.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="玉瓮 (Ngọc Vừng) 岛店更 (Điếm Canh) 山上的12.7毫米机枪阵地——击落广宁上空第200架美机之地。" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="tinh" data-loai="lich-su" data-khu="ngoc-vung" data-tq="1" data-s="vd05 tran dia phao 12,7 mm cua dan quan xa ngoc vung doi diem canh thon vung, dac khu van don huyen tren canh, ngay 24/12/1972, trung voi ba khau sung may phong khong da ban roi chiec bay my thu 200 bau troi quang ninh. di tich cap tinh tu nam 2002. militia 12.7 anti-aircraft position on hill 24 december 1972, the platoon, armed with three machine guns, shot down 200th american aircraft over a provincial monument since 乡民兵12.7毫米高射机枪阵地 1972年12月24日，ngoc 乡民兵排在 山上用三挺12.7毫米高射机枪击落了广宁上空第200架美机。该地自2002年起为省级遗迹。" data-order="4" data-thu-tu="24" data-rating="0" data-nrating="0" data-lat="20.816667" data-lng="107.352778"><article class="card">
+  <div class="card-img"><img src="https://static.wixstatic.com/media/13b421_ed2572c1be2142ffbbc7a7660657c604~mv2.jpg/v1/crop/x_0,y_11,w_800,h_521/fill/w_799,h_521,al_c,q_85,enc_avif,quality_auto/%E1%BA%A3nh%201.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="玉瓮 (Ngọc Vừng) 岛店更 (Điếm Canh) 山上的12.7毫米机枪阵地——击落广宁上空第200架美机之地。" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-tinh">省级遗迹</span>
 <span>Ngọc Vừng</span></div>
@@ -146,8 +147,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50hLD-wZ9Wt4kZtqb1hECpyVrFdmbwbrsQz2_i9KxsT5vQQtacgCpfWWUr_Om_JLzhIlq5eErOquc3o20YAAl34Evmzva1ZC6i1CdCiBf39gQ0zA4_N0wDHC8Y7QsPfChheL8mpBondLZX9Ei6DoiE-7VbhFP45j-OhuLjeNj5AsCvfASHQv7AjJVbOD4q92ho/2184616_doan_ruoc_co_doi_co_than_doi_nhac_le_doi_te_khi_doi_dang_le_cung_dong_dao_nhan_dan_du_khach_tham_gia_03483223.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="玉瓮 (Ngọc Vừng) 亭庙祭典迎神队伍，甲辰年正月初三（2024年）（图：《广宁报》）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="tinh" data-loai="lich-su" data-khu="ngoc-vung" data-tq="1" data-s="vd06 dinh – mieu ngoc vung vung, thon dac khu van don xa huyen quan the tin nguong dung tu ky xviii, tho ba anh em ho pham nhung nguoi duoc ton lam thanh hoang lang vi co cong trong tran nam 1288. le te mung 3 tet phuc 2024 sau hon 60 gian doan. communal house and shrine an 18th-century place of worship honouring three brothers, venerated as village guardian deities for their role in 1288 battle don. its rite on third day was revived after more than years. 亭庙 始建于18世纪的信仰建筑群，供奉因1288年云屯之战立功而被尊为城隍的范氏三兄弟。正月初三的亭庙祭礼在中断60多年后于2024年恢复。" data-order="5" data-thu-tu="25" data-rating="0" data-nrating="0" data-lat="20.819472" data-lng="107.358361"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50hLD-wZ9Wt4kZtqb1hECpyVrFdmbwbrsQz2_i9KxsT5vQQtacgCpfWWUr_Om_JLzhIlq5eErOquc3o20YAAl34Evmzva1ZC6i1CdCiBf39gQ0zA4_N0wDHC8Y7QsPfChheL8mpBondLZX9Ei6DoiE-7VbhFP45j-OhuLjeNj5AsCvfASHQv7AjJVbOD4q92ho/2184616_doan_ruoc_co_doi_co_than_doi_nhac_le_doi_te_khi_doi_dang_le_cung_dong_dao_nhan_dan_du_khach_tham_gia_03483223.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="玉瓮 (Ngọc Vừng) 亭庙祭典迎神队伍，甲辰年正月初三（2024年）（图：《广宁报》）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-tinh">省级遗迹</span>
 <span>Ngọc Vừng</span></div>
@@ -156,8 +157,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0DWEUXLGn2FXqa2obRhb6WnIEEEzkTB64kwgcJYhrNya1RuSmD3p5uS4zJBFuiKQrA/images627531_0.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="修缮后的李英宗庙 (Vân Hải linh từ)" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="tinh" data-loai="lich-su danh-lam-thang-canh" data-khu="cai-rong" data-tq="1" data-s="vd07 den tho vua ly anh tong va dong trong van hai linh tu, tong, hang khu pho cai rong 4, dac don thi tran huyen ngoi o – nguoi cho lap trang nam 1149, tuong truyen dung 1172 duoc xay lai tren nen cu giai doan 1993–1997; cung cum di tich la trong, noi tru mai tang cua dan hoa ha long. king temple and cave a in honouring who founded the estate 1149; it is said to date from was rebuilt on its old foundations 1993–1997. listed site also includes cave, dwelling burial place of long culture. 李英宗庙与 洞 位于 的庙宇，供奉1149年设立云屯庄的李英宗，相传建于1172年，1993至1997年在旧址上重建；同一遗迹还包括 洞——下龙文化居民的居住和墓葬之所。" data-order="6" data-thu-tu="26" data-rating="0" data-nrating="0" data-lat="21.062528" data-lng="107.429083"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0DWEUXLGn2FXqa2obRhb6WnIEEEzkTB64kwgcJYhrNya1RuSmD3p5uS4zJBFuiKQrA/images627531_0.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="修缮后的李英宗庙 (Vân Hải linh từ)" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-tinh">省级遗迹</span>
 <span>Cái Rồng</span></div>
@@ -166,8 +167,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://afamilycdn.com/150157425591193600/2026/5/30/thanh-co-nha-mac-dao-ngoc-vung1-1780113377762794292887.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="玉翁古城 (Thành cổ Ngọc Vừng) 遗迹标志碑" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="tinh" data-loai="lich-su" data-khu="ngoc-vung" data-tq="1" data-s="vd08 thanh co ngoc vung bao tinh hai, don nha mac (ten dan gian), nguyen thon vung, dac khu van xa huyen quan su canh phong bien ben bai truong chinh, dao vung. lieu trieu ghi duoc xay nam 1839 voi ten hai; gian quen goi la mac. hien chi con dau tich mot doan tuong thanh. ancient citadel a coastal defence post beside chinh beach on island. nguyen-dynasty records state it was built in as hai fort, though locals long called the citadel. only traces of one wall section remain. 古城 位于 岛长征滩旁的海防戍堡。阮朝史料记载其建于1839年，名为“静海堡”；民间习称“莫朝城”。现仅存一段城墙遗迹。" data-order="7" data-thu-tu="27" data-rating="0" data-nrating="0" data-lat="20.801194" data-lng="107.374139"><article class="card">
+  <div class="card-img"><img src="https://afamilycdn.com/150157425591193600/2026/5/30/thanh-co-nha-mac-dao-ngoc-vung1-1780113377762794292887.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="玉翁古城 (Thành cổ Ngọc Vừng) 遗迹标志碑" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-tinh">省级遗迹</span>
 <span>Ngọc Vừng</span></div>
@@ -176,8 +177,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://media.quangninh.gov.vn/d07e4659-2aae-4343-a2d5-478b67c08003/Libraries/HinhAnhBaiViet/MINH%20NGUYET/thang5/1%20N%c3%b4ng%20d%c3%a2n%20m%e1%bb%9f%20c%e1%bb%ada%20v%c6%b0%e1%bb%9dn%20%c4%91%c3%b3n%20kh%c3%a1ch%20du%20l%e1%bb%8bch.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="原团结（Đoàn Kết）社溪梅（Khe Mai）村的杨梅园——遗迹所在区域（区域照片）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="tinh" data-loai="lich-su" data-khu="doan-ket" data-tq="0" data-s="vd09 can cu khang chien khe mai thon doan ket 1, dac khu van don xa huyen di tich lich su cap tinh tai duoc danh muc ghi nhan la dia cach mang cua dang bo huyen; xep hang nam 2015. tu lieu chi tiet ve sung. resistance base a provincial historical monument in 1 hamlet, recorded the inventory as revolutionary of district party organisation; listed detailed information is being compiled. 抗战根据地 位于团结1村 (doan 1) 的省级历史遗迹，名录记载为县党部的革命根据地，2015年列级。详细资料正在补充中。" data-order="8" data-thu-tu="28" data-rating="0" data-nrating="0" data-lat="21.121278" data-lng="107.428611"><article class="card">
+  <div class="card-img"><img src="https://media.quangninh.gov.vn/d07e4659-2aae-4343-a2d5-478b67c08003/Libraries/HinhAnhBaiViet/MINH%20NGUYET/thang5/1%20N%c3%b4ng%20d%c3%a2n%20m%e1%bb%9f%20c%e1%bb%ada%20v%c6%b0%e1%bb%9dn%20%c4%91%c3%b3n%20kh%c3%a1ch%20du%20l%e1%bb%8bch.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="原团结（Đoàn Kết）社溪梅（Khe Mai）村的杨梅园——遗迹所在区域（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-tinh">省级遗迹</span>
 <span>团结 (Đoàn Kết)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
@@ -186,8 +187,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50IAgFSrBlR6jU9ZAP5y7JhbnOHLIScZeiVK8QJIaRlCtEs3xm6NzVvU4uTs56QtnheFEUnE9TCYZXnYyowj6Vi/2135589_den_mau_nhin_tu_tren_cao_10245110.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="俯瞰官澜 (Quan Lạn) 母庙" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="tinh" data-loai="lich-su" data-khu="quan-lan" data-tq="1" data-s="vd10 den mau quan lan cua dong, tho tam toa thanh mau, dong hai linh tu thon 1, dac khu van don xa huyen ngoi nam tren doi dat nho ra bien o dao lan, con giu sac phong thai thu nhat (1889) va nhieu co vat. gio ngay mung 3 thang am lich. di tich cap tinh 2023. mother goddess temple (den mau) a to the three goddesses on spit of land jutting into sea at eastern gate island, preserving royal decree 1889 and several antiques. mother&#x27;s anniversary falls 3rd day lunar month. provincial monument since 官澜圣母庙 供奉三府圣母的庙宇，坐落在官澜岛东门伸入海中的沙洲上，保存有成泰元年（1889年）敕封及多件古物。圣母忌日为农历三月初三。2023年列为省级遗迹。" data-order="9" data-thu-tu="29" data-rating="0" data-nrating="0" data-lat="20.824944" data-lng="107.470806"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50IAgFSrBlR6jU9ZAP5y7JhbnOHLIScZeiVK8QJIaRlCtEs3xm6NzVvU4uTs56QtnheFEUnE9TCYZXnYyowj6Vi/2135589_den_mau_nhin_tu_tren_cao_10245110.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="俯瞰官澜 (Quan Lạn) 母庙" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-tinh">省级遗迹</span>
 <span>官澜 (Quan Lạn)</span></div>
@@ -196,8 +197,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52DJ6C24ehj3VWTUykE1eFG-0uvYHaPg8JlfJXHRi1bhg-BiCNsdx9x0jvCzqFwnq-tPIVzbbDVYEdW893kK6ip/2535882_wtm_a08b60df064a4a33c2858c3d61366640.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="镇海殿 (đền Trấn Hải) 省级历史遗迹定级证书接受仪式暨云屯 (Vân Đồn) 传统节庆开幕式，2026年7月29日晚。" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="tinh" data-loai="lich-su" data-khu="quan-lan" data-tq="1" data-s="vd11 den tran hai (den cau) cau thon quan lan 1, dac khu van don yen hai, xa huyen ngoi o cu, dao lan, tho hoai hau quoc toan – vi tuong tre tuoi cua nha tran; duoc phuc hoi nam 2007. xua kia la diem vong cuoc dua thuyen lang hai. temple a in former hamlet on island honouring toan, the young tran-dynasty general; restored past it marked turning point of village boat race. 镇海庙 / 位于官澜岛原燕海村的庙宇，供奉陈朝少年将领怀文侯陈国瓒，2007年修复。昔日曾是燕海村赛船的折返点。" data-order="10" data-thu-tu="30" data-rating="0" data-nrating="0" data-lat="20.971" data-lng="107.533556"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52DJ6C24ehj3VWTUykE1eFG-0uvYHaPg8JlfJXHRi1bhg-BiCNsdx9x0jvCzqFwnq-tPIVzbbDVYEdW893kK6ip/2535882_wtm_a08b60df064a4a33c2858c3d61366640.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="镇海殿 (đền Trấn Hải) 省级历史遗迹定级证书接受仪式暨云屯 (Vân Đồn) 传统节庆开幕式，2026年7月29日晚。" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-tinh">省级遗迹</span>
 <span>官澜 (Quan Lạn)</span></div>
@@ -206,8 +207,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/%e1%ba%a3nh%20tin%20t%e1%bb%a9c%20s%e1%bb%b1%20ki%e1%bb%87n/th%c3%a1ng%204/2026/z7744674181969_13638d239a818267bb28be15c8a8f23c.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="班森（Bản Sen）岛上的石灰岩洞穴景观，戏房洞（Hang Nhà Trò）所在地（区域照片）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="danh-lam-thang-canh" data-khu="ban-sen" data-tq="1" data-s="vd12 hang nha tro thon ban sen 1, dac khu van don xa huyen dong da voi tren dao sen, duoc kiem ke la danh lam thang canh nam 1996; muc ghi nhan dau vet thoi ky do va quan tu nhien con hoang so. cave a limestone on island, inventoried as scenic landscape in 1996. the heritage list records stone age traces and an unspoilt natural landscape. tro洞（hang tro） 位于ban sen岛的石灰岩洞穴，1996年作为名胜景观列入清查名录；名录记载洞内有石器时代遗迹，并保留着原始的天然洞穴景观。" data-order="11" data-thu-tu="61" data-rating="0" data-nrating="0" data-lat="20.971056" data-lng="107.491917"><article class="card">
+  <div class="card-img"><img src="https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/%e1%ba%a3nh%20tin%20t%e1%bb%a9c%20s%e1%bb%b1%20ki%e1%bb%87n/th%c3%a1ng%204/2026/z7744674181969_13638d239a818267bb28be15c8a8f23c.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="班森（Bản Sen）岛上的石灰岩洞穴景观，戏房洞（Hang Nhà Trò）所在地（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>Bản Sen</span></div>
@@ -216,8 +217,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/%e1%ba%a3nh%20tin%20t%e1%bb%a9c%20s%e1%bb%b1%20ki%e1%bb%87n/th%c3%a1ng%204/2026/z7744674161359_4c2ae0b5c5b2d66df48510f6b4cd937f.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="班森（Bản Sen）村，班森亭（Đình Bản Sen）所在地（区域照片）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="ban-sen" data-tq="1" data-s="vd13 dinh ban sen thon 1, dac khu van don xa huyen ngoi cua cu dan dao sen, khoi dung nam 1925, tho danh tuong pham cong chinh; da duoc ton tao voi quy mo ba gian. communal house the of islanders, first built in 1925 and dedicated to general it has been restored as a three-bay building. sen亭（dinh sen） sen岛居民的村亭，始建于1925年，供奉名将范公正（pham chinh）；现已修缮为三开间规模。" data-order="12" data-thu-tu="62" data-rating="0" data-nrating="0" data-lat="20.943028" data-lng="107.4995"><article class="card">
+  <div class="card-img"><img src="https://media.quangninh.gov.vn/108a993b-2741-48f9-add2-8701702fd5ba/Libraries/hinhanhbaiviet/%e1%ba%a3nh%20tin%20t%e1%bb%a9c%20s%e1%bb%b1%20ki%e1%bb%87n/th%c3%a1ng%204/2026/z7744674161359_4c2ae0b5c5b2d66df48510f6b4cd937f.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="班森（Bản Sen）村，班森亭（Đình Bản Sen）所在地（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>Bản Sen</span></div>
@@ -226,8 +227,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://media.quangninh.gov.vn/618ca5c4-79b3-478a-8adb-4184369067f7/Libraries/HinhAnhBaiViet/thu%20huyen/N%c4%83m%202024/thang%205/tuan%202/B%e1%ba%a3n%20Sen1.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="班森（Bản Sen）岛上的古云茶树，Hoi洞（Hang Hoi）所在地（区域照片）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="danh-lam-thang-canh" data-khu="ban-sen" data-tq="0" data-s="vd14 hang hoi thon ban sen 1, dac khu van don xa huyen dong tren dia sen, duoc kiem ke nam 1996; danh muc ghi nhan dau vet thoi ky do da va vai tro noi cat giau luong thuc, dan trong khang chien chong my. cave a in the area, inventoried 1996. heritage list records stone age traces and its use for storing food ammunition during resistance war against united states. hoi洞（hang hoi） 位于ban sen地区的洞穴，1996年列入清查名录；名录记载洞内有石器时代遗迹，抗美战争期间曾用于储藏粮食和弹药。" data-order="13" data-thu-tu="63" data-rating="0" data-nrating="0" data-lat="21.016" data-lng="107.442028"><article class="card">
+  <div class="card-img"><img src="https://media.quangninh.gov.vn/618ca5c4-79b3-478a-8adb-4184369067f7/Libraries/HinhAnhBaiViet/thu%20huyen/N%c4%83m%202024/thang%205/tuan%202/B%e1%ba%a3n%20Sen1.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="班森（Bản Sen）岛上的古云茶树，Hoi洞（Hang Hoi）所在地（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>Bản Sen</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
@@ -236,8 +237,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53_dwsUn1jwYBmJsDlE1l2s8HjCRWWAg0lj5l2hWYHAyM7aw_0WU4Jt-Wh_rEDFFiY0reGI_8Xq2hcd7Y8a8ZN-/2311524_wtm_a035cdfbbcd2aa25635e52b2ae733cfb.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="2025年盖龙（Cái Rồng）渔港祈渔节（区域照片）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="cai-rong" data-tq="0" data-s="vd15 noi bat song giac lai my dac khu van don thi tran cai rong huyen dia diem ghi dau su kien dan quan thach ha phi cong nam 1966 tai vuc cu; nay chi con la phe tich. site of the capture a us pilot marking by militia in former township; today only ruins remain. 活捉美军飞行员旧址 纪念1966年thach ha民兵在原cai rong镇活捉美军飞行员事件的地点；现仅存遗址。" data-order="14" data-thu-tu="64" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53_dwsUn1jwYBmJsDlE1l2s8HjCRWWAg0lj5l2hWYHAyM7aw_0WU4Jt-Wh_rEDFFiY0reGI_8Xq2hcd7Y8a8ZN-/2311524_wtm_a035cdfbbcd2aa25635e52b2ae733cfb.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="2025年盖龙（Cái Rồng）渔港祈渔节（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>Cái Rồng</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
@@ -246,8 +247,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50PjqOEfL06Ufpm5UTdDg3UYX6dTW04Z5XfamrMom2TyWwS7NtbUuL47kTjA8ygqyxzNTx-_CbImUyYPEYBxzc8/2480105_wtm_0be65b72da925fe2b9a4e529b3ca7eb1.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="2026年丙午春盖龙（Cái Rồng）祈渔节（区域照片）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="cai-rong" data-tq="0" data-s="vd16 den tho ho ly (mieu ba co) mieu co khu pho cai rong 3, dac van don thi tran huyen phe tich mot noi tu tin nguong ban dia o rong, duoc danh muc ghi khoi dung thoi va lien quan vua anh tong. family temple (ba shrine) the ruins of a local place worship in recorded heritage list as founded dynasty and connected with king 李氏祠（三姑庙，mieu co） rong一处本土信仰祭祀场所的遗址，名录记载其始建于李朝，与李英宗（ly tong）有关。" data-order="15" data-thu-tu="65" data-rating="0" data-nrating="0" data-lat="21.07175" data-lng="107.425722"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50PjqOEfL06Ufpm5UTdDg3UYX6dTW04Z5XfamrMom2TyWwS7NtbUuL47kTjA8ygqyxzNTx-_CbImUyYPEYBxzc8/2480105_wtm_0be65b72da925fe2b9a4e529b3ca7eb1.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="2026年丙午春盖龙（Cái Rồng）祈渔节（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>Cái Rồng</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
@@ -256,8 +257,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52So3l1QEdQKartBlZTd8CHO_Tkthbqp7sRp6iEE8z2SP1PDuqKQ5dSi1cPe4zPw0I/2208058_img_5747_14501129.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="原团结（Đoàn Kết）社溪梅（Khe Mai）村的绿色景观（区域照片）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="doan-ket" data-tq="0" data-s="vd17 dinh lang ha vuc thon doan ket 1, dac khu van don xa huyen phe tich ngoi (xa cu), khoi dung nam 1911, tho thanh hoang lang; nay con dau vet cap nen va mot so manh gach ngoi. village communal house the ruins of village&#x27;s (former commune), built in 1911 and dedicated to guardian deity; traces stepped foundation some brick tile fragments remain. vuc村亭（dinh vuc） vuc村亭遗址（原团结乡），始建于1911年，供奉城隍（村落守护神）；现存台基痕迹及部分砖瓦残片。" data-order="16" data-thu-tu="66" data-rating="0" data-nrating="0" data-lat="21.108861" data-lng="107.415639"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52So3l1QEdQKartBlZTd8CHO_Tkthbqp7sRp6iEE8z2SP1PDuqKQ5dSi1cPe4zPw0I/2208058_img_5747_14501129.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="原团结（Đoàn Kết）社溪梅（Khe Mai）村的绿色景观（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>团结 (Đoàn Kết)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
@@ -266,8 +267,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://halongbay.com.vn/Data/images/ls1.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="梭汝洞 (hang Soi Nhụ) 考古遗址" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="khao-co" data-khu="ha-long" data-tq="0" data-s="vd18 hang soi nhu dac khu van don xa ha long huyen di chi dong thoi ky do da, duoc phat hien tu dau thap nien 1960; ten dung de goi &quot;van hoa nhu&quot; – tien su truoc cai beo va o vung vinh bai long. cave a stone age site discovered in the early 1960s, whose name has been given to &quot;soi culture&quot; prehistoric culture that preceded and cultures bay area. nhu洞（hang nhu） 石器时代洞穴遗址，发现于20世纪60年代初；“soi nhu文化”即以此洞命名——这是下龙湾—拜子龙湾地区早于cai beo文化和下龙文化的史前文化。" data-order="17" data-thu-tu="67" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://halongbay.com.vn/Data/images/ls1.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="梭汝洞 (hang Soi Nhụ) 考古遗址" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>下龙（云屯）</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
@@ -276,8 +277,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://media.quangninh.gov.vn/7343e27a-9300-4e2d-80aa-c4ee118af1d6/Libraries/hinhanhbaiviet/2025/th%c3%a1ng%204/di%20t%c3%adch%20kh%e1%ba%a3o%20c%e1%bb%95%20ba%20v%c5%a9ng/z6517830611545_134c1320098169bcecb53eae7c182008.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="巴汪 (Ba Vũng) 遗址一带（原下龙 (Hạ Long) 乡），靠近河迭 (Hà Giắt) 洞（区域照片）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="khao-co" data-khu="ha-long" data-tq="0" data-s="vd19 hang ha giat khu pho long 1, dac van don xa huyen di chi dong thoi ky do da o cu; hien vat tim thay co nhieu net tuong voi hoa cai beo – mot trong nhung bien tien su som nhat viet nam. cave a stone age site in the former commune; its artefacts closely resemble those of culture, one earliest prehistoric maritime cultures vietnam. giat洞（hang giat） 原下龙乡的石器时代洞穴遗址；出土文物与越南最早的史前海洋文化之一——cai beo文化有诸多相似之处。" data-order="18" data-thu-tu="68" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://media.quangninh.gov.vn/7343e27a-9300-4e2d-80aa-c4ee118af1d6/Libraries/hinhanhbaiviet/2025/th%c3%a1ng%204/di%20t%c3%adch%20kh%e1%ba%a3o%20c%e1%bb%95%20ba%20v%c5%a9ng/z6517830611545_134c1320098169bcecb53eae7c182008.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="巴汪 (Ba Vũng) 遗址一带（原下龙 (Hạ Long) 乡），靠近河迭 (Hà Giắt) 洞（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>下龙（云屯）</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
@@ -286,8 +287,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0AkWI4_PGAf51teARoL8aYyWhqYZR4Zgd9DEm1r1k8aNFr7iolhqj_yLM_jqXuwei8FD-y9MZ_JOOkGX-xaROyE/images858485_anh_1__1_.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="夏日的长滩 (Bãi Dài) 旅游区" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="danh-lam-thang-canh" data-khu="ha-long" data-tq="1" data-s="vd20 bai tam ha long dai (can xac minh) khu pho 1, dac van don xa huyen bien ven vinh tu thuoc cu tren dao cai bau, duoc kiem ke la danh lam thang canh nam 1996; vuc nay co – diem du lich quen gan chua bau. beach (van don) a on bay in the former commune bau island, inventoried as scenic landscape 1996. area includes (long beach), popular seaside spot near pagoda. 下龙海滩（云屯） 位于cai bau岛原下龙乡、拜子龙湾畔的海滩，1996年作为名胜景观列入清查；该区域有bai dai（长滩）——靠近cai bau寺的热门海滨景点。" data-order="19" data-thu-tu="69" data-rating="0" data-nrating="0" data-lat="21.10775" data-lng="107.484639"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0AkWI4_PGAf51teARoL8aYyWhqYZR4Zgd9DEm1r1k8aNFr7iolhqj_yLM_jqXuwei8FD-y9MZ_JOOkGX-xaROyE/images858485_anh_1__1_.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="夏日的长滩 (Bãi Dài) 旅游区" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>下龙（云屯）</span></div>
@@ -296,8 +297,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0JqIRoDaufAuMG4vtwxCiZMb0mC5kEq7ANTwEH7fsGp2qs62AoITbEr3vVtOUYJIlfkWZr-L6KzZTnIFEPuNPzA/images789469_345.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="明珠亭 (Đình Minh Châu) 地基修复期间（2015年）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="minh-chau" data-tq="1" data-s="vd21 dinh lang minh chau thon chau, dac khu van don xa huyen ngoi cua bien tren dao quan lan, duoc ban sac phong nam 1887 va 1905; mai xua da mat 2015 dong phuc dung. village communal house the of fishing on lan island, which received royal ordinations in and its original roof has been lost a restoration campaign began 2015. 明珠村亭（dinh chau） 官澜岛明珠渔村的村亭，曾于1887年和1905年获颁敕封；旧时亭顶已毁，2015年开始募集修复。" data-order="20" data-thu-tu="70" data-rating="0" data-nrating="0" data-lat="20.936722" data-lng="107.541556"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0JqIRoDaufAuMG4vtwxCiZMb0mC5kEq7ANTwEH7fsGp2qs62AoITbEr3vVtOUYJIlfkWZr-L6KzZTnIFEPuNPzA/images789469_345.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="明珠亭 (Đình Minh Châu) 地基修复期间（2015年）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>明珠 (Minh Châu)</span></div>
@@ -306,8 +307,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv51VxRAHno8atKfPsv42ADORcovBW3Fm-Vp3E1yYCe0UrSrVKMhH3zjnGXSNQ2Gb8X0/1987292_a_07564611.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="明珠 (Minh Châu) 海滩的日出" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="danh-lam-thang-canh" data-khu="minh-chau" data-tq="1" data-s="vd22 bai tam minh chau bien thon chau, dac khu van don xa huyen hinh vong cung, cat trang min, nuoc trong va bo doc thoai tren dao quan lan, thuong duoc xep vao nhom dep nhat mien bac; ven co rung tram co. beach a crescent-shaped of fine white sand, clear water and gently sloping shore on lan island, often ranked among the most beautiful beaches in northern vietnam; old syzygium (tram) trees line its edge. 明珠海滩（bai chau） 官澜岛上的弧形海滩，白沙细腻、海水清澈、滩坡平缓，常被誉为越南北部最美的海滩之一；滩边有古老的蒲桃树林。" data-order="21" data-thu-tu="71" data-rating="0" data-nrating="0" data-lat="20.945306" data-lng="107.550361"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv51VxRAHno8atKfPsv42ADORcovBW3Fm-Vp3E1yYCe0UrSrVKMhH3zjnGXSNQ2Gb8X0/1987292_a_07564611.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="明珠 (Minh Châu) 海滩的日出" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>明珠 (Minh Châu)</span></div>
@@ -316,8 +317,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv536NSc0QOa7M0GYTumwTiCQ3G86aod0zcfhdopvtPFv7do1HGWMQEyuMQgjOplVms4/2215433_faf_06003222.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="明珠 (Minh Châu) 岛乡的古蒲桃 (trâm) 林，公婆庙 (Miếu Cổng Bà)所在地（区域照片）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="minh-chau" data-tq="0" data-s="vd23 mieu cong ba thon minh chau, dac khu van don xa chau huyen ngoi thuoc tin nguong ban dia cua cu dan duoc danh muc kiem ke ghi nhan co nien dai tu thoi ly. shrine a of local folk belief in recorded the heritage inventory as dating from ly dynasty. ba庙（mieu ba） 明珠居民的本土信仰庙宇，清查名录记载其年代可追溯至李朝。" data-order="22" data-thu-tu="72" data-rating="0" data-nrating="0" data-lat="20.971" data-lng="107.533556"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv536NSc0QOa7M0GYTumwTiCQ3G86aod0zcfhdopvtPFv7do1HGWMQEyuMQgjOplVms4/2215433_faf_06003222.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="明珠 (Minh Châu) 岛乡的古蒲桃 (trâm) 林，公婆庙 (Miếu Cổng Bà)所在地（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>明珠 (Minh Châu)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
@@ -326,8 +327,8 @@
     
   </div>
 </article>
-<article class="card">
-  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52YfbOdYWXICCwhXARt3NGLQvnvE6GvxBEJ8YSQ9mSOHm7fFQoQJLR2P-GhaPwvheA/2006089_thuong_cang_18263010.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="云屯 (Vân Đồn) 商港资料图——盖拱 (Cái Cổng) 码头所属的古码头体系（区域图片）" loading="lazy" width="0" height="0"></div>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="minh-chau" data-tq="0" data-s="vd24 ben cai cong thon minh chau, dac khu van don xa chau huyen phe tich mot co thuoc he thong thuong cang o duoc danh muc kiem ke xac dinh tu thoi ly. landing the remains of an ancient trading port system in dated by heritage inventory to ly dynasty. cong码头（ben cong） 明珠一处云屯商港体系古码头的遗址，清查名录认定其始于李朝。" data-order="23" data-thu-tu="73" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52YfbOdYWXICCwhXARt3NGLQvnvE6GvxBEJ8YSQ9mSOHm7fFQoQJLR2P-GhaPwvheA/2006089_thuong_cang_18263010.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="云屯 (Vân Đồn) 商港资料图——盖拱 (Cái Cổng) 码头所属的古码头体系（区域图片）" loading="lazy" referrerpolicy="no-referrer"></div>
   <div class="card-body">
     <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
 <span>明珠 (Minh Châu)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
@@ -336,10 +337,208 @@
     
   </div>
 </article>
-</div>
-      <nav class="pager" aria-label="分页">
-        <span class="cur" aria-current="page">1</span><a href="?&page=2">2</a>
-      </nav>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="minh-chau" data-tq="0" data-s="vd25 ben con quy thon minh chau, dac khu van don xa chau huyen co duoc gioi khao xac dinh la mot trong hai trung tam som nhat cua thuong cang (cuoi the ky xii – dau xiii); nay phe tich. landing an ancient identified by archaeologists as one of two earliest centres trading port (late 12th early 13th century); today it is a ruin. quy码头（ben quy） 考古学界认定的云屯商港两个最早中心之一（12世纪末—13世纪初）的古码头；现为遗址。" data-order="24" data-thu-tu="74" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0EpKQuW8OnvTIINFSZZf6kFFDVKdvhunVVkmEhF1Ttu8Gq2D94fjQbJWTl3HC5efiRvzTGHtuyIiIHWf1ZL6hC0/images1223028_Picture_017.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="2018年5月在官澜 (Quan Lạn) 岛对云屯 (Vân Đồn) 商港的考古调查——昆龟 (Con Quy) 码头所属的古码头体系（区域图片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>明珠 (Minh Châu)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/ben-con-quy/">Con Quy码头（Bến Con Quy）</a></h3>
+    <p>考古学界认定的云屯商港两个最早中心之一（12世纪末—13世纪初）的古码头；现为遗址。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="minh-chau" data-tq="1" data-s="vd26 den duc ong (minh chau) thon minh chau, dac khu van don xa chau huyen ngoi o tho pham cong chinh – nguoi anh ca trong ba em tuong ho pham; danh muc ghi khoi dung thoi tran va moi duoc ton tao. temple a in dedicated to chinh, the eldest of three brothers; heritage list dates it dynasty and notes recent restoration. 德翁祠（明珠，den ong） 明珠一座供奉范氏三兄弟长兄范公正（pham chinh）的祠庙；名录记载其始建于陈朝，近年经修缮。" data-order="25" data-thu-tu="75" data-rating="0" data-nrating="0" data-lat="20.934222" data-lng="107.538333"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50Rfk9Pl18BaqEsn94ri0CoDmrPCJTSvdNdelLpk-QHk6RdfjP1Q_M3KxjGMG47ed2cBSwF8-aeyMdciDynegEQ/2336929_wtm_2a773996c2322a2b69e24e1314a55b4d.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="明珠 (Minh Châu) 村，官澜 (Quan Lạn) 岛，准备迎接2025年旅游季，德翁祠 (Đền Đức Ông，明珠 Minh Châu)所在地（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>明珠 (Minh Châu)</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/den-duc-ong-minh-chau/">德翁祠（明珠，Đền Đức Ông）</a></h3>
+    <p>明珠一座供奉范氏三兄弟长兄范公正（Phạm Công Chính）的祠庙；名录记载其始建于陈朝，近年经修缮。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="danh-lam-thang-canh" data-khu="ngoc-vung" data-tq="1" data-s="vd27 bai tam ngoc vung truong chinh (can xac minh) thon vung, dac khu van don xa huyen cat trang min hinh khuyet dai gan 3 km o phia nam dao noi tieng voi ten chinh; cuoi la hon phao dai. beach a crescent of fine white sand nearly long on the south island, known as beach; islet lies at its far end. vung海滩（bai vung） vung岛南部近3公里长的新月形细白沙滩，以“长征滩”（bai chinh）闻名；海滩尽头是炮台岛（hon dai）。" data-order="26" data-thu-tu="76" data-rating="0" data-nrating="0" data-lat="20.80825" data-lng="107.356944"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52CpsXY752F_bZrgS8r_EMJSX_oZoiB4rAhdgT3DBUMGU7KFCTkMOVSiL16GmUH6i4/2271474_fa_05123322.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="玉瓮 (Ngọc Vừng) 岛南侧的长征 (Trường Chinh) 沙滩与炮台 (Pháo Đài) 小岛" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>Ngọc Vừng</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/bai-tam-ngoc-vung/">Ngọc Vừng海滩（Bãi tắm Ngọc Vừng）</a></h3>
+    <p>Ngọc Vừng岛南部近3公里长的新月形细白沙滩，以“长征滩”（bãi Trường Chinh）闻名；海滩尽头是炮台岛（hòn Pháo Đài）。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="ngoc-vung" data-tq="1" data-s="vd28 ben cong yen cang co thon ngoc vung, dac khu van don xa vung huyen kin gio o phia bac dao tung la &quot;tram trung chuyen&quot; cua thuong thoi ly – tran; nay phe tich, tren khong gian xua da tau khach hien dai. landing a sheltered cove on the north of island that served as &quot;transit station&quot; trading port in tran period; ancient is now ruin, and modern passenger pier stands old harbour area. yen码头（ben yen） vung岛北部的避风小湾，李—陈时期曾是云屯商港的“中转站”；古码头现为遗址，旧港区上已建成现代客运码头。" data-order="27" data-thu-tu="77" data-rating="0" data-nrating="0" data-lat="20.848361" data-lng="107.341667"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv52s-Hi9LfYvnvadbls7wMGxvuOUTu5SYucspdBiy6Xfp9bItwDlUcIvP2_0rVkArYw/2155820_f_07511205.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="玉瓮 (Ngọc Vừng) 岛贡安 (Cống Yên) 港" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>Ngọc Vừng</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/ben-cong-yen/">Cống Yên码头（Bến Cống Yên）</a></h3>
+    <p>Ngọc Vừng岛北部的避风小湾，李—陈时期曾是云屯商港的“中转站”；古码头现为遗址，旧港区上已建成现代客运码头。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="ngoc-vung" data-tq="0" data-s="vd29 ben cong hep thon ngoc vung, dac khu van don xa vung huyen co o phia bac dao cung yen tung la thuyen sam uat trong he thong thuong cang don; nay phe tich. landing an ancient on the north of island which, together with yen, was a busy harbour trading port system; now in ruins. hep码头（ben hep） vung岛北部的古码头，与cong yen同为云屯商港体系中繁忙的码头；现为遗址。" data-order="28" data-thu-tu="78" data-rating="0" data-nrating="0" data-lat="20.830917" data-lng="107.358139"><article class="card">
+  <div class="card-img"><img src="https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/5/3/cong-yen-3943-1714737101134-1714737101254222503582.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="玉旺 (Ngọc Vừng) 岛北部的贡安 (Cống Yên) 码头，与贡狭 (Cống Hẹp) 古码头同属一区（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>Ngọc Vừng</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/ben-cong-hep/">Cống Hẹp码头（Bến Cống Hẹp）</a></h3>
+    <p>Ngọc Vừng岛北部的古码头，与Cống Yên同为云屯商港体系中繁忙的码头；现为遗址。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="quan-lan" data-tq="0" data-s="vd30 nha tho ho pham van thon quan lan 2, dac khu don xa huyen dong toc tren dao lan, co nien dai thoi nguyen theo danh muc kiem ke. family ancestral hall the of on island, dated to dynasty in heritage inventory. 范文氏祠堂（nha van） 官澜岛上范文氏家族的祠堂，清查名录记载其年代为阮朝。" data-order="29" data-thu-tu="79" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://cdn.baophapluat.vn/uploaded/quynhluu/2021_03_16/a2_FARX.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="官澜（Quan Lạn）亭——官澜岛古村中心（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>官澜 (Quan Lạn)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/nha-tho-ho-pham-van/">范文氏祠堂（Nhà thờ họ Phạm Văn）</a></h3>
+    <p>官澜岛上范文氏家族的祠堂，清查名录记载其年代为阮朝。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="danh-lam-thang-canh" data-khu="quan-lan" data-tq="1" data-s="vd31 bai tam quan lan bien thon 1, dac khu van don xa huyen cat trang min dai hang kilomet tren dao lan, gan trung soi dong voi cho, pho di bo va nhieu co so luu tru. beach kilometres of fine white sand on island, close to a lively centre with market, walking street and plenty accommodation. 官澜海滩（bai lan） 官澜岛上绵延数公里的细白沙滩，靠近设有集市、步行街和众多住宿设施的热闹中心区。" data-order="30" data-thu-tu="80" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://mia.vn/media/uploads/blog-du-lich/bai-tam-quan-lan-hop-hon-du-khach-tu-anh-nhin-dau-tien-2-1641735769.jpeg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="官澜 (Quan Lạn) 的细白沙滩" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>官澜 (Quan Lạn)</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/bai-tam-quan-lan/">官澜海滩（Bãi tắm Quan Lạn）</a></h3>
+    <p>官澜岛上绵延数公里的细白沙滩，靠近设有集市、步行街和众多住宿设施的热闹中心区。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="quan-lan" data-tq="1" data-s="vd32 den van hai thon quan lan 3, dac khu don xa huyen ngoi tren dao tho tran khanh du – vi tuong gan voi chien thang nam 1288; theo danh muc kiem ke, duoc xay dung lai 1992. temple a on island dedicated to du, the general associated with victory of according heritage inventory it was rebuilt in 云海祠（den hai） 官澜岛上供奉陈庆余的祠庙——陈庆余是与1288年云屯大捷相关的将领；据清查名录，该祠于1992年重建。" data-order="31" data-thu-tu="81" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv51gc5oKmZZwnIDHuzR2rp7np_J0box42DBfzm_jDPCxcF3H6EOlBKg-su9_yGJOSVh9GRY2ns1nq9p38-6mQYle/2378111_wtm_7f1d259dc5043fcc1e05050b84208a79.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="2025年官澜（Quan Lạn）云屯（Vân Đồn）传统节，纪念仁惠王陈庆余（Trần Khánh Dư）（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>官澜 (Quan Lạn)</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/den-van-hai/">云海祠（Đền Vân Hải）</a></h3>
+    <p>官澜岛上供奉陈庆余的祠庙——陈庆余是与1288年云屯大捷相关的将领；据清查名录，该祠于1992年重建。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="quan-lan" data-tq="0" data-s="vd33 ben cong cai – son hao thon quan lan 3, dac khu van don xa huyen co o lan, cung con quy la trung tam som nhat cua thuong cang va lai giai doan cuoi (the ky xvii–xviii); nay phe tich khao co. landing an ancient on which, with quy, was the earliest centre of trading port and again its in final phase (17th–18th centuries); now archaeological ruin. cai码头（ben cai） 官澜的古码头，与con quy同为云屯商港最早的中心，并在末期（17—18世纪）再度成为中心；现为考古遗址。" data-order="32" data-thu-tu="82" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0MLt6-DvWQSnUQi16xz0Z1Kuuh3YoUaUkwZsfLG7ZJA9oq8TDu6q86c6xuUnyt-R3_kWZr-L6KzZTnIFEPuNPzA/images939253_tr6.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="国际专家与考古学院在公盖—山豪 (Cống Cái – Sơn Hào) 调查商港遗迹，2017年4月" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>官澜 (Quan Lạn)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/ben-cong-cai/">Cống Cái码头（Bến Cống Cái）</a></h3>
+    <p>官澜的古码头，与Con Quy同为云屯商港最早的中心，并在末期（17—18世纪）再度成为中心；现为考古遗址。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="quan-lan" data-tq="1" data-s="vd34 den, mieu van son thon quan lan 3, dac khu don hao, xa huyen cum o hao (quan lan) co nien dai thoi tran theo danh muc kiem ke, tho thanh mau, ba anh em ho pham va than cao son. temple and shrine a temple-and-shrine complex in hamlet lan), dated to the dynasty heritage inventory, dedicated holy mother, three brothers mountain god 云山祠庙（den, son） 位于官澜son hao村的祠庙群，清查名录记载其年代为陈朝，供奉圣母、范氏三兄弟和高山神。" data-order="33" data-thu-tu="83" data-rating="0" data-nrating="0" data-lat="20.906333" data-lng="107.522444"><article class="card">
+  <div class="card-img"><img src="https://cdn.daidoanket.vn/w3840/2020/5/21/ttxvn_2812_than_cong3_1.jpg.avif" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="2017年12月于山豪（Sơn Hào）村发现的古神功炮，现存于云山（Vân Sơn）庙（文物照片，非庙宇建筑照片）（区域）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>官澜 (Quan Lạn)</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/den-mieu-van-son/">云山祠庙（Đền, miếu Vân Sơn）</a></h3>
+    <p>位于官澜Sơn Hào村的祠庙群，清查名录记载其年代为陈朝，供奉圣母、范氏三兄弟和高山神。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="quan-lan" data-tq="1" data-s="vd35 mieu ba (quan lan) thon quan lan 3, dac khu van don xa huyen o tho pham khanh – nguoi dan dia phuong co cong giup nghia chong nguyen theo danh muc kiem ke; duoc phuc hoi nam 2013. shrine a on honouring lady khanh, local woman who, according to the heritage inventory, helped resistance forces against mongol-yuan army; it was restored in 婆庙（官澜，mieu ba） 官澜一座供奉范卿（pham khanh）的庙宇——据清查名录，她是曾协助义军抗元的当地人；该庙于2013年修复。" data-order="34" data-thu-tu="84" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://cdn.baophapluat.vn/w1280/uploaded/quynhluu/2021_03_16/a3_wcxa.jpg" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="官澜（Quan Lạn）亭节庆赛船——与岛上抗元事迹相关（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>官澜 (Quan Lạn)</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/mieu-ba-quan-lan/">婆庙（官澜，Miếu Bà）</a></h3>
+    <p>官澜一座供奉范卿（Phạm Khanh）的庙宇——据清查名录，她是曾协助义军抗元的当地人；该庙于2013年修复。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="danh-lam-thang-canh" data-khu="thang-loi" data-tq="0" data-s="vd36 hang quan thon thang loi, dac khu van don xa loi huyen dong o cu, duoc kiem ke la danh lam canh nam 1996; muc ghi nhan dau vet thoi ky do da va vai tro co so neo dau, sua chua tau cua hai quan. cave a in the former commune, inventoried as scenic landscape heritage list records stone age traces and its use mooring repair base for naval vessels. quan洞（hang quan） 原胜利乡的洞穴，1996年作为名胜景观列入清查；名录记载洞内有石器时代遗迹，并曾作为海军舰船停泊和维修基地。" data-order="35" data-thu-tu="85" data-rating="0" data-nrating="0" data-lat="20.900083" data-lng="107.328389"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0NIFJF80SwTq8Nf3ptvOV9GgA30fV2dQ-0EJYeSTLuqUEd4yffXi_YdSrdGsv1srz_KrVDP9wC0F4B81TsSCF_o/images1336076_DSC_4513.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="胜利 (Thắng Lợi) 海岛乡，官洞 (Hang Quan) 所在地（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>胜利 (Thắng Lợi)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/hang-quan/">Quan洞（Hang Quan）</a></h3>
+    <p>原胜利乡的洞穴，1996年作为名胜景观列入清查；名录记载洞内有石器时代遗迹，并曾作为海军舰船停泊和维修基地。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="thang-loi" data-tq="0" data-s="vd37 chua vung chuong bo thon thang loi, dac khu van don xa loi huyen phe tich mot ngoi tho phat thoi tran ben (thang loi) – vuc thuoc quan the thuong cang don. pagoda ruins of a tran-dynasty buddhist by cove loi), an area within trading port complex. bo湾寺遗址（chua bo） 胜利乡chuong bo湾畔一座陈朝佛寺的遗址，该区域属于云屯商港遗迹群。" data-order="36" data-thu-tu="86" data-rating="0" data-nrating="0" data-lat="20.887139" data-lng="107.3075"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0NIFJF80SwTq8Nf3ptvOV9Eb0mC5kEq7ANTwEH7fsGp2WJGgDHniZ4dITwk6qAtB-a-LZM3SVLwZm-i_alFD3TkX6rBJToZJc77kyK4eoske/images1273766_images676256_Dao_Cong_Dong.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="贡东 (Cống Đông)、贡西 (Cống Tây) 岛——冲博湾寺 (Chùa vụng Chuồng Bò) 遗址所在地（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>胜利 (Thắng Lợi)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/chua-vung-chuong-bo/">Chuồng Bò湾寺遗址（Chùa vụng Chuồng Bò）</a></h3>
+    <p>胜利乡Chuồng Bò湾畔一座陈朝佛寺的遗址，该区域属于云屯商港遗迹群。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="thang-loi" data-tq="0" data-s="vd38 den va gieng (den vung gieng) gieng, chua thon thang loi, dac khu van don xa loi huyen phe tich tren dao cong dong (thang loi), duoc danh muc ghi la thoi tran tho hung dai vuong quoc tuan; nguoi dan da dung mieu nho nen cu. temple ruins (vung on island recorded in the heritage list as a tran-dynasty to local people have built small shrine old foundation. gieng祠遗址（den gieng） dong岛（胜利乡）上的遗址，名录记载为陈朝供奉兴道大王陈国峻的祠庙；当地居民已在旧基址上建起一座小庙。" data-order="37" data-thu-tu="87" data-rating="0" data-nrating="0" data-lat="20.910528" data-lng="107.313694"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0DWEUXLGn2FXqa2obRhb6WkqhZnAmbIJeyQoytjrvgIkgzOT3ai86gT9Noa73JWNVPkWZr-L6KzZTnIFEPuNPzA/images644594_Tr4.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="贡东岛 (Cống Đông) 瓦井 (Vạ Giếng) 遗址（瓦井寺）的建筑构件。" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>胜利 (Thắng Lợi)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/den-va-gieng-den-vung-gieng/">Vạ Giếng祠遗址（Đền Vạ Giếng）</a></h3>
+    <p>Cống Đông岛（胜利乡）上的遗址，名录记载为陈朝供奉兴道大王陈国峻的祠庙；当地居民已在旧基址上建起一座小庙。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="thang-loi" data-tq="0" data-s="vd39 chua trong thon thang loi, dac khu van don xa loi huyen phe tich mot ngoi tho phat thoi tran o cu, vung dao thuoc he thong thuong cang don. pagoda ruins the of a tran-dynasty buddhist in former commune, islands trading port system. 内寺遗址（chua trong） 原胜利乡一座陈朝佛寺的遗址，位于云屯商港体系所在的岛屿。" data-order="38" data-thu-tu="88" data-rating="0" data-nrating="0" data-lat="20.880806" data-lng="107.317694"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0NIFJF80SwTq8Nf3ptvOV9Eb0mC5kEq7ANTwEH7fsGp2WJGgDHniZ4dITwk6qAtB-a-LZM3SVLwZm-i_alFD3TkX6rBJToZJc77kyK4eoske/images1273766_images676256_Dao_Cong_Dong.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="贡东 (Cống Đông)、贡西 (Cống Tây) 岛——内寺 (Chùa Trong) 遗址所在地（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>胜利 (Thắng Lợi)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/chua-trong/">内寺遗址（Chùa Trong）</a></h3>
+    <p>原胜利乡一座陈朝佛寺的遗址，位于云屯商港体系所在的岛屿。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="ha-long" data-tq="1" data-s="vd40 chua cai bau thien vien truc lam giac tam, phuc linh khu pho ha long 1, dac van don xa huyen tam ben vinh bai tu long, xay dung tren nen co thoi tran; tuong phat cao 50 m dinh nui va nhin bao quat vinh. pagoda the zen monastery on bay, built site of tran-dynasty pagoda, with a 50-metre buddha statue hilltop and sweeping views over bay. bau寺（chua bau） 拜子龙湾畔的竹林觉心禅院，建于陈朝福灵寺旧址之上；山顶有高50米的佛像，可俯瞰整个海湾。" data-order="39" data-thu-tu="89" data-rating="0" data-nrating="0" data-lat="21.123278" data-lng="107.505083"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv50hLD-wZ9Wt4kZtqb1hECpycpYOK-atHSeIiBIsn_ta7Oj93Z7dnvO1nGfUv4fz5Ds/2181185_anh_1_15092512.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="2024年甲辰春节期间的盖宝寺 (Cái Bầu)" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>下龙（云屯）</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/chua-cai-bau/">Cái Bầu寺（Chùa Cái Bầu）</a></h3>
+    <p>拜子龙湾畔的竹林觉心禅院，建于陈朝福灵寺旧址之上；山顶有高50米的佛像，可俯瞰整个海湾。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="van-yen" data-tq="1" data-s="vd41 mieu cai bau (dai vuong co mieu) dai thon van yen 1, dac khu don xa huyen ngoi thoi nguyen o yen, con goi la mieu, tho than cua bien. shrine a nguyen-dynasty in also known as (&quot;ancient of the great king&quot;), dedicated to god estuary. bau庙（大王古庙） 万安的一座阮朝庙宇，又称大王古庙，供奉海口神。" data-order="40" data-thu-tu="90" data-rating="0" data-nrating="0" data-lat="21.1215" data-lng="107.505222"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0FOd0EIz064I2WLaDuldv53nEOqBdStKhkWHi0EMtra0HqnqhPP5yAgzi9quYhUi2UfSeSSsY1uo_bZ8EhUit0U/2292455_img_9047_19112214.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="2024年万安 (Vạn Yên) 亭–祠大祈福节，原万安乡，丐瓢 (Cái Bầu) 庙所在地（区域照片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>万安 (Vạn Yên)</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/mieu-cai-bau-dai-vuong-co-mieu/">Cái Bầu庙（大王古庙）</a></h3>
+    <p>万安的一座阮朝庙宇，又称大王古庙，供奉海口神。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="van-yen" data-tq="0" data-s="vd42 di tich luu niem bac ho (van yen) thon van yen 2, dac khu don xa huyen tai cu, duoc danh muc kiem ke ghi nhan gan voi su kien ve tham, xay dung nam 1962. uncle memorial site a in the former commune, recorded heritage inventory as connected with visit by president chi minh and built 胡伯伯纪念地（万安） 原万安乡的纪念地，清查名录记载其与胡志明主席到访有关，建于1962年。" data-order="41" data-thu-tu="91" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://cdn.baoquocte.vn/stores/news_dataimages/2026/052026/19/16/tinh-cam-cua-bac-ho-voi-bo-doi-hai-quan-20260519164456.webp?rt=202610161625" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="1962年11月13日胡志明主席视察万花 (Vạn Hoa) 海军135团——该遗迹纪念的事件（历史照片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>万安 (Vạn Yên)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/di-tich-luu-niem-bac-ho-van-yen/">胡伯伯纪念地（万安）</a></h3>
+    <p>原万安乡的纪念地，清查名录记载其与胡志明主席到访有关，建于1962年。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="van-yen" data-tq="0" data-s="vd43 duong mon ho chi minh tren bien bien, ben van hoa thon yen 2, dac khu don xa huyen dia diem o gan voi – noi xuat phat cua nhung chuyen &quot;tau khong so&quot; vien chien truong mien nam; la tau 154 len nam 1969. trail at sea (van yen) a site in linked to the sea, departure point for &quot;ships without numbers&quot; that supplied southern battlefields; landing is where ship set out 海上胡志明小道（万安） 万安一处与海上胡志明小道有关的地点，是支援南方战场的“无号船”出发地之一；1969年154号船从万花（van hoa）码头启航。" data-order="42" data-thu-tu="92" data-rating="0" data-nrating="0" data-lat="" data-lng=""><article class="card">
+  <div class="card-img"><img src="https://cdn.baoquocte.vn/stores/news_dataimages/2026/052026/19/16/tinh-cam-cua-bac-ho-voi-bo-doi-hai-quan-20260519164456.webp?rt=202610161625" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="1962年的万花 (Vạn Hoa) 军港——后来154号船出发之地（区域历史照片）" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>万安 (Vạn Yên)</span><span class="tag-ruin">遗址（仅供查阅）</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/duong-mon-ho-chi-minh-tren-bien/">海上胡志明小道（万安）</a></h3>
+    <p>万安一处与海上胡志明小道有关的地点，是支援南方战场的“无号船”出发地之一；1969年154号船从万花（Vạn Hoa）码头启航。</p>
+    
+  </div>
+</article>
+</div><div class="site-item" data-cap="kiemke" data-loai="lich-su" data-khu="van-yen" data-tq="1" data-s="vd44 dia diem luu niem mo than ke bao thon van yen 2, dac khu don xa huyen dau tich – do nguoi phap lap ngay 1/9/1888, duoc coi la tien o viet nam; con cau sat, duong ham xuyen nui, lo thong gio va mang rot cang hoa. coal mine memorial site remains of the mine, founded by french on 1 september 1888 and regarded as vietnam&#x27;s first mine; iron bridges, mountain tunnels, a ventilation shaft chute at hoa port survive. bao煤矿纪念地 bao煤矿遗迹——该矿由法国人于1888年9月1日设立，被视为越南第一座煤矿；现存铁桥、穿山隧道、通风井以及万花港的运煤溜槽。" data-order="43" data-thu-tu="93" data-rating="0" data-nrating="0" data-lat="21.131" data-lng="107.501833"><article class="card">
+  <div class="card-img"><img src="https://assets.baoquangninh.vn/images/ank-bybNl2Ob75B3CcnF0AkWI4_PGAf51teARoL8aYxn81rfi-eZEYWi_D_UR6NrH3Qk85S2KN9YyywB2H9eiZneCwJVdtQF-6lzeTnum6_5Fma_i-is2U5yBRD7jT8w/images844268_Tr4._mo_than_ke_bao.jpg.webp" srcset="" sizes="(max-width: 600px) 100vw, 400px" alt="计宝 (Kế Bào) 煤矿遗迹的通风井口(《广宁报》2016年文章配图)" loading="lazy" referrerpolicy="no-referrer"></div>
+  <div class="card-body">
+    <div class="card-meta"><span class="seal seal-kiemke">登记遗迹</span>
+<span>万安 (Vạn Yên)</span></div>
+    <h3><a href="/my-website/preview/zh-hans/di-tich/dia-diem-luu-niem-mo-than-ke-bao/">Kế Bào煤矿纪念地</a></h3>
+    <p>Kế Bào煤矿遗迹——该矿由法国人于1888年9月1日设立，被视为越南第一座煤矿；现存铁桥、穿山隧道、通风井以及万花港的运煤溜槽。</p>
+    
+  </div>
+</article>
+</div></div>
+      <div class="empty" data-empty hidden><p>没有符合筛选条件的遗迹。</p><a class="btn btn-ghost" href="/my-website/preview/zh-hans/di-tich/" data-clear>清除筛选</a></div>
     
   </div>
 </div>
@@ -375,6 +574,6 @@
   <div class="foot-bottom"><div class="wrap"><span>© 2026 Phòng Văn hóa – Xã hội, Đặc khu Vân Đồn</span><span>标有“示意图”的图片为临时图片，将替换为正式照片。</span></div></div>
 </footer>
 <script src="/my-website/preview/static/js/site.js" defer></script>
-<script src="/my-website/preview/static/js/map.js" defer></script>
+<script src="/my-website/preview/static/js/filter.js" defer></script><script src="/my-website/preview/static/js/map.js" defer></script>
 </body>
 </html>

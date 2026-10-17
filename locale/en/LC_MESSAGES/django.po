@@ -912,3 +912,21 @@ msgstr "Source"
 #: templates/public/detail.html:19
 msgid "Ảnh khu vực di tích"
 msgstr "Photo of the surrounding area"
+
+msgid "1 di tích"
+msgstr "1 site"
+
+msgid "__N__ di tích"
+msgstr "__N__ sites"
+
+msgid "Xem __N__ di tích"
+msgstr "Show __N__ sites"
+
+msgid "Xem kết quả"
+msgstr "Show results"
+
+msgid "1 di tích có vị trí trên bản đồ"
+msgstr "1 site located on the map"
+
+msgid "__N__ di tích có vị trí trên bản đồ"
+msgstr "__N__ sites located on the map"

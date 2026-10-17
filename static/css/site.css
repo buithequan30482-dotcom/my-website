@@ -231,11 +231,17 @@ p { margin: 0 0 1em; }
 .seg a { padding: 7px 14px; text-decoration: none; font-weight: 500; font-size: 15px; }
 .seg a[aria-current="true"] { background: var(--teal); color: #fff; }
 .filter-toggle { display: none; }
+.site-item { display: flex; min-width: 0; }
+.site-item > .card { flex: 1; }
+.site-item[hidden] { display: none; }
+.filters label .cnt { margin-left: auto; font-size: 13px; }
+.filters-done { display: none; }
 @media (max-width: 860px) {
   .layout-filter { grid-template-columns: 1fr; gap: 0; }
   .filter-toggle { display: inline-flex; margin-bottom: 16px; }
   .filters { display: none; padding: 16px; background: var(--paper-3); border: 1px solid var(--line); margin-bottom: 20px; }
   .filters.open { display: block; }
+  .filters-done:not([hidden]) { display: inline-flex; }
 }
 .empty { padding: 40px; text-align: center; border: 1px dashed var(--line); color: var(--stone); }
 .pager { display: flex; gap: 6px; justify-content: center; margin-top: 40px; flex-wrap: wrap; }
