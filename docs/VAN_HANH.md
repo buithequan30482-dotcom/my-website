@@ -46,7 +46,8 @@ lưu (`make backup-list`); cân nhắc giảm `BACKUP_KEEP_DAYS`/`MEDIA_KEEP_WEE
 | 7 | Kiểm tra bản sao lưu đọc được | `docker compose exec backup sh -c 'f=$(ls -1 /backups/db/vandon-*.dump \| tail -n1); pg_restore --list "$f" \| head -n 5'` |
 | 8 | Rà tài khoản quản trị | Khu quản trị → Người dùng: khóa tài khoản cán bộ đã nghỉ/chuyển công tác; superuser đều đã bật OTP |
 | 9 | Nhật ký thao tác | Khu quản trị → Nhật ký thao tác (AuditLog): rà xóa/xuất bản bất thường |
-| 10 | Ghi sổ vận hành | Ngày, người thực hiện, phiên bản đã cập nhật, sự cố, dung lượng đĩa |
+| 10 | Ảnh liên kết ngoài | Mở danh sách di tích (`/vi/di-tich/`) và vài trang di tích, xem ảnh nào không hiện (trang nguồn đã xóa/đổi địa chỉ). Khu quản trị → Ảnh: sửa địa chỉ ảnh hoặc thay bằng ảnh tải lên; ưu tiên thay dần bằng ảnh của cơ quan |
+| 11 | Ghi sổ vận hành | Ngày, người thực hiện, phiên bản đã cập nhật, sự cố, dung lượng đĩa |
 
 ## 4. Hằng quý / trước nghiệm thu
 
