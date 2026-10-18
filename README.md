@@ -6,8 +6,9 @@ Phòng Văn hóa – Xã hội. Kỹ thuật: Django 5.2 LTS, Python 3.13, Postg
 
 
 > **Bản xem trước tĩnh (GitHub Pages):** https://buithequan30482-dotcom.github.io/my-website/
-> Chỉ để xem giao diện và nội dung. Gửi nhận xét, góp ý, tìm kiếm, lọc và khu quản trị chỉ chạy khi triển khai Django lên máy chủ.
-> Ảnh hiện tại là **ảnh minh họa tạm**, cần thay bằng ảnh chính thức. Tạo lại bản xem trước:
+> Chỉ để xem giao diện và nội dung. Bộ lọc, tìm kiếm chạy ngay trên trình duyệt; gửi nhận xét, góp ý, gợi ý tìm kiếm
+> và khu quản trị chỉ chạy khi triển khai Django lên máy chủ.
+> Ảnh di tích là ảnh thật dạng liên kết ngoài (ghi nguồn từng ảnh; ảnh khu vực được ghi rõ "khu vực"). Tạo lại bản xem trước:
 > `python manage.py export_static_preview --out preview --prefix /my-website/preview/`
 
 **Tài liệu kèm theo:** hướng dẫn sử dụng khu quản trị [docs/HDSD_Quan_tri_Website_Di_tich_Van_Don.docx](docs/HDSD_Quan_tri_Website_Di_tich_Van_Don.docx)

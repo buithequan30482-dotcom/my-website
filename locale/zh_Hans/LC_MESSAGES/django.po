@@ -892,3 +892,8 @@ msgstr "地图上有 1 处遗迹"
 
 msgid "__N__ di tích có vị trí trên bản đồ"
 msgstr "地图上有 __N__ 处遗迹"
+
+msgid ""
+"Ảnh và video dẫn từ báo chí, cổng thông tin chính thống; nguồn ghi tại trang"
+" từng di tích."
+msgstr "图片和视频引自正规新闻及官方门户网站；来源列于各遗迹页面。"

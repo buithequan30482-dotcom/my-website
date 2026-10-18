@@ -69,6 +69,16 @@ ARTICLES = [
 <li>Định dạng JPG, PNG, WebP, HEIC (iPhone); tối đa 25 MB/ảnh.</li>
 <li>Chỉ dùng ảnh của cơ quan hoặc ảnh đã được tác giả cho phép. Ảnh báo chí phải có văn bản đồng ý.</li>
 </ul>
+<h3>Ảnh từ liên kết ngoài</h3>
+<p>Có thể dùng ảnh đang đăng trên trang khác mà không tải tệp về: mở <strong>Ảnh</strong> → <em>Thêm</em> → mục
+<strong>Ảnh từ liên kết ngoài</strong>, dán địa chỉ ảnh (bắt đầu bằng https://) và địa chỉ trang bài viết chứa ảnh, ghi
+<strong>nguồn</strong>. Trang công khai hiển thị dòng "Nguồn ảnh" dẫn về bài gốc. Ảnh chụp khu vực quanh di tích (không phải
+chính di tích) phải ghi "(khu vực)" trong chú thích.</p>
+<ul>
+<li>Ảnh ngoài phụ thuộc trang nguồn: nếu trang nguồn xóa hoặc đổi địa chỉ, ảnh sẽ không hiện. Nên kiểm tra định kỳ.</li>
+<li>Ảnh ngoài vẫn thuộc bản quyền của trang nguồn. Khi có ảnh của cơ quan hoặc ảnh đã được phép, tải ảnh lên thay thế,
+chọn làm ảnh đại diện rồi xóa ảnh ngoài.</li>
+</ul>
 <h3>Ảnh minh họa tạm</h3>
 <p>Ảnh có nhãn "ẢNH MINH HỌA – CHỜ ẢNH CHÍNH THỨC" do hệ thống tạo để giữ chỗ. Khi có ảnh thật: tải ảnh mới, chọn làm ảnh đại diện rồi xóa ảnh minh họa.</p>
 <h3>Video</h3>
