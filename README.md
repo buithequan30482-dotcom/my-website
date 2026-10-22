@@ -223,7 +223,7 @@ cấu hình 6 giờ/lần. Kiểm tra: `docker compose run --rm --entrypoint cer
 
 ## 6. Cấu hình Google Maps
 
-Không có khóa, website tự dùng bản đồ OpenStreetMap. Để dùng Google Maps:
+Không có khóa, website tự dùng khung Google Maps nhúng (không cần khóa) kèm danh sách điểm; có khóa thì dùng Google Maps đầy đủ (biểu tượng theo cấp xếp hạng, nhóm điểm, cửa sổ thông tin). Để dùng Google Maps đầy đủ:
 
 1. Vào Google Cloud Console bằng tài khoản của cơ quan → tạo project → bật **Maps JavaScript API**,
    **Maps Embed API**, **Places API** (mã nguồn dùng `maps/api/js` với `libraries=places` và `maps/embed/v1/place`).
